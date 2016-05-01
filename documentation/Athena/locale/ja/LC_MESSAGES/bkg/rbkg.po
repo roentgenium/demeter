@@ -1,0 +1,331 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../bkg/rbkg.rst:45
+msgid "The AUTOBK Algorithm and the Rbkg Parameter"
+msgstr "Autobk アルゴリズムと Rbkg パラメータ"
+
+#: ../../bkg/rbkg.rst:47
+msgid ""
+"The frequency cutoff between the background and the data discussed in the"
+" previous section is determined by the :procparam:`rbkg` parameter. This "
+"is the second parameter displayed in the background removal section of "
+"the main window."
+msgstr ""
+"前節で紹介したバックグラウンドとデータの周波数カットオフは :procparam:`rbkg` "
+"パラメータによって決まります．これは，メインウィンドウのバックグラウンド"
+"除去セクションに表示されている2つめのパラメータです．"
+
+#: ../../bkg/rbkg.rst:52
+msgid ""
+"When data are imported into :demeter:`athena`, :procparam:`rbkg` is set "
+"to its `default value <../params/defaults.html>`__, normally 1."
+msgstr ""
+":demeter:`athena` にデータを取り込むと，:procparam:`rbkg` は"
+" `デフォルト値 <../params/defaults.html>`__ ，通常は 1 に，設定されます．"
+
+#: ../../bkg/rbkg.rst:55
+msgid ""
+"This example, like many of the examples in this Users' Guide, can be "
+"found `among the examples at my XAS-Education site "
+"<http://bruceravel.github.io/XAS-Education/>`__."
+msgstr ""
+"この例は，このユーザガイドの中の多くの例と同じように，"
+"`私が公開している XAFS 教育用サイト <http://bruceravel.github.io/XAS-Education/>`__ "
+"の中にも出てきます．"
+
+#: ../../bkg/rbkg.rst:59
+msgid ""
+"Among these example files is one called :file:`fe.060`, which contains a "
+"spectrum from an iron foil measured at 60 K. Import this by selecting "
+":menuselection:`File --> Import data` or by pressing "
+":button:`Control`-:button:`o`. Navigate to the location of your example "
+"files and select :file:`fe.060`. The `column selection dialog "
+"<../import/columns.html>`__ then appears. For now, just click OK."
+msgstr ""
+"例の中には鉄箔を 60 K で測定したスペクトルがあり，ファイル名は :file:`fe.060` です．"
+":menuselection:`File --> Import data` を選択するか，:button:`Control`-:button:`o` を"
+"タイプして，ファイルを読み込んでください．測定例ファイルの場所まで移動し，"
+" :file:`fe.060` を選択してください．`列選択ダイアログ <../import/columns.html>`__ "
+"が現れるので，今回はそのまま OK を押してください．"
+
+#: ../../bkg/rbkg.rst:66
+msgid ""
+"The data is imported and :procparam:`rbkg` is set to its default value of"
+" 1. The data and the background function found using the default "
+"parameter values can be found by pressing the :button:`E,orange` button. "
+"This is shown here on the left."
+msgstr ""
+"読み込まれたデータの :procparam:`rbkg` は，既定値の 1 になっています．"
+":button:`E,orange` ボタンを押すと，既定値を使ったデータとバックグラウンド"
+"関数が表示されます．これは，下図の左に示されています．"
+
+#: ../../bkg/rbkg.rst:78
+msgid "The :file:`fe.060` data and its default background function."
+msgstr ":file:`fe.060` データと既定のバックグラウンド関数"
+
+#: ../../bkg/rbkg.rst:85
+msgid "The :file:`fe.060` |chi| (k) data with its default background function."
+msgstr "デフォルトのバックグラウンド関数による :file:`fe.060` の |chi| (k)"
+
+#: ../../bkg/rbkg.rst:92
+msgid "The :file:`fe.060` |chi| (R) data with its default background function."
+msgstr "デフォルトのバックグラウンド関数による :file:`fe.060` の |chi| (R)"
+
+#: ../../bkg/rbkg.rst:99
+msgid ""
+"The background function is subtracted from the data and normalized, "
+"resulting in a |chi| (k) function. Press the :button:`k,orange` button to"
+" see |chi| (k), shown in the right panel above."
+msgstr ""
+"データからバックグラウンド関数が引かれ，規格化されて，|chi| (k) 関数が"
+"得られます．:button:`k,orange` ボタンを押すと，上図の右のような |chi| (k)"
+" が現れます．"
+
+#: ../../bkg/rbkg.rst:103
+msgid ""
+"When you press the :button:`R,orange` button, the Fourier transform is "
+"plotted, as in the bottom panel above."
+msgstr ""
+":button:`R,orange` ボタンを押すと，上記の下のグラフのようなフーリエ変換"
+"されたスペクトルがプロットされます．"
+
+#: ../../bkg/rbkg.rst:106
+msgid ""
+"So :procparam:`rbkg` is the value below which the :demeter:`autobk` "
+"algorithm removes Fourier components. As you can see, below 1 the |chi| "
+"(R) function is essentially 0, but above 1 the spectrum is non-zero."
+msgstr ""
+":procparam:`rbkg` は :demeter:`autobk` アルゴリズムがフーリエ成分を"
+"取り除くための値です．ご覧のように，|chi| (R) スペクトルの 1 以下のところは"
+"ほぼ 0 になっていますが，1 以上のところは 0 ではない値になっています．"
+
+#: ../../bkg/rbkg.rst:111
+msgid ""
+"Now let's examine the effect of choosing different values for "
+":procparam:`rbkg`.  First, make a copy of the data so we can directly "
+"compare different values. Do that by selecting :menuselection:`Group --> "
+"Copy current group` or by pressing :button:`Alt`-:button:`y`. "
+":demeter:`athena` now looks like this."
+msgstr ""
+"それでは，:procparam:`rbkg` に異なる値を選んだ場合の効果について"
+"検証してみたいと思います．まず，データのコピーを作り，異なる値を取ると"
+"どうなるか直接比較できるようにします．これは，"
+":menuselection:`Group --> Copy current group` を選択するか，"
+":button:`Alt`-:button:`y` とタイプすることでできます．"
+"こうすると，以下の様になります．"
+
+#: ../../bkg/rbkg.rst:122
+msgid "The original :file:`fe.060` data and a copy of that data."
+msgstr "元の :file:`fe.060` のデータとそのコピー "
+
+#: ../../bkg/rbkg.rst:124
+msgid ""
+"Click on the group *Copy of fe.060* to display its parameters in the main"
+" window. Change :procparam:`rbkg` to 0.2. Now we want to directly compare"
+" these two ways of removing the background. The way of plotting multiple "
+"items in the groups list involves the row of purple plotting buttons and "
+"the little check buttons next to the items in the group list. Click on "
+"the little check buttons next to :guilabel:`fe.060` and :guilabel:`Copy 1"
+" of fe.060`, as shown in the screenshot above. Now plot these two items "
+"by clicking the :button:`R,purple` button. It should look something like "
+"this."
+msgstr ""
+"メインウィンドウで *Copy of fe.060* グループを選択してそのパラメータを"
+"表示して下さい．:procparam:`rbkg` を 0.2 に変化させると，バックグラウンド"
+"除去を2つの異なる方法で行った結果を比較することができます．グループリストに"
+"ある複数の項目をプロットするには，紫色のプロットボタンとグループリストの"
+"項目の隣にあるチェックボックスを使います．:guilabel:`fe.060` と"
+" :guilabel:`Copy 1 of fe.060` の隣にある小さなチェックボックスを"
+"クリックすると，上のスクリーンショットのように表示されるはずです．"
+" :button:`R,purple` ボタンをクリックすると，2つのスペクトルがプロットされ，"
+"以下の様に見えるはずです．"
+
+#: ../../bkg/rbkg.rst:141
+msgid ""
+"Comparing |chi| (R) for the data and its copy with :procparam:`rbkg` "
+"values of 1 and 0.2."
+msgstr ":procparam:`rbkg` の値を 1 と 0.2 にした時の |chi| (R) の比較"
+
+#: ../../bkg/rbkg.rst:149
+msgid ""
+"Comparing |chi| (k) for the data and its copy with :procparam:`rbkg` "
+"values of 1 and 0.2."
+msgstr ":procparam:`rbkg` の値を 1 と 0.2 にした時の |chi| (k) の比較"
+
+
+#: ../../bkg/rbkg.rst:157
+msgid ""
+"|mu| (E) and the background for the copy with an :procparam:`rbkg` value "
+"0.2."
+msgstr ":procparam:`rbkg` の値を 0.2 にした時の |mu| (E) とバックグラウンド"
+"
+
+#: ../../bkg/rbkg.rst:165
+msgid ""
+"I suspect the blue spectrum is something like what you expect EXAFS data "
+"to look like, while the red one seems somehow worse. In fact, it is easy "
+"to understand why the red one looks the way it does. The "
+":procparam:`rbkg` parameter specifies the R value below which the data is"
+" removed from the |mu| (E) spectrum. That is exactly what has happened in"
+" the red spectrum -- below 0.2 the signal is very small and the first big"
+" peak is, in fact, above 0.2."
+msgstr ""
+"青のスペクトルはおそらくあなたが予想していた通りの EXAFS スペクトルだと"
+"思いますが，赤のスペクトルはあまりよくないように見えます．実際，赤のスペクトルが"
+"なぜこのように見えているのかは簡単に理解することができます．"
+":procparam:`rbkg` パラメータはこの R の値より小さな範囲のデータが |mu| (E)"
+" スペクトルから取り除かれることを意味しています．これが赤のスペクトルに"
+"起きていることです，つまり，0.2 以下のシグナルはとても小さいのに対して，"
+"最初の大きなピークは実際に 0.2 以上のところに見られています．"
+
+#: ../../bkg/rbkg.rst:173
+msgid "Those two, plotted as |chi| (k), are shown above on the right."
+msgstr "|chi| (k) についてプロットされたものが上図の右のグラフです"
+
+#: ../../bkg/rbkg.rst:175
+msgid ""
+"The blue spectrum oscillates around the zero axis, as one would expect. "
+"The red one has an obvious, long-wavelength oscillation. It is that "
+"oscillation that gives rise to the low-R peak in the |chi| (R) spectrum."
+msgstr ""
+"青のスペクトルが予想通り，0 を中心に振動しているのに対し，赤のスペクトルには"
+"明らかに波長の長い振動があります．この振動が |chi| (R) スペクトルにおいて，
+"R の小さい領域でピークが生じる要因です．"
+
+#: ../../bkg/rbkg.rst:179
+msgid ""
+"The background function, computed using 0.2 as the value of "
+":procparam:`rbkg` and plotted in energy, is shown above in the bottom "
+"panel."
+msgstr ""
+"バックグラウンド関数の計算に :procparam:`rbkg` の値として 0.2 が使われ，"
+"エネルギー軸に対してプロットされると，上図の下のグラフのようになります．"
+
+#: ../../bkg/rbkg.rst:183
+msgid ""
+"Using an :procparam:`rbkg` value of 0.2 yields a background function that"
+" is not able to follow the actual shape of the data."
+msgstr ""
+":procparam:`rbkg` を 0.2 にすると，元のスペクトルに沿わないバックグラウンド"
+"関数になってしまいます．"
+
+#: ../../bkg/rbkg.rst:186
+msgid ""
+"What happens if the value of :procparam:`rbkg` is set to a very large "
+"value? The |chi| (R) data for the values 1 and 2.5 are shown here."
+msgstr ""
+":procparam:`rbkg` がとても大きな値になると何が起こるでしょうか？"
+":procparam:`rbkg` を 1 や 2.5 にすると，|chi| (R) は下図のようになります． 
+
+#: ../../bkg/rbkg.rst:197
+msgid ""
+"Comparing |chi| (R) for the data and its copy with :procparam:`rbkg` "
+"values of 1 and 2.5."
+msgstr ":procparam:`rbkg` の値を 1 および 2.5 にした時の |chi| (R) の比較"
+
+#: ../../bkg/rbkg.rst:205
+msgid ""
+"|mu| (E) and the background for the copy with an :procparam:`rbkg` value "
+"2.5."
+msgstr ":procparam:`rbkg` の値を 2.5 にした時の |mu| (E) とバックグラウンド"
+
+#: ../../bkg/rbkg.rst:213
+msgid ""
+"Using a very large value of :procparam:`rbkg` results in significant "
+"change to the first peak in |chi| (R). We can see why by looking at the "
+"background function in energy . With such a large value of "
+":procparam:`rbkg`, the background function has enough freedom to "
+"oscillate with frequencies that resemble the data. This results in a "
+"reduction of intensity under the first peak."
+msgstr ""
+":procparam:`rbkg` として非常に大きな値を使うと，|chi| (R) の最初のピークに"
+"明らかな変化が起こります．エネルギーに対するバックグラウンド関数を見ると，"
+"この理由がわかります．このように :procparam:`rbkg` に大きな値を取ると，"
+"バックグラウンド関数はデータに強く追随するような振動を示すだけの自由度を"
+"持つことになります．その結果1つめのピークより下の強度が弱くなってしまいます．"
+
+#: ../../bkg/rbkg.rst:219
+msgid ""
+"The spline used to compute the background function has a limited amount "
+"of freedom to oscillate. The number of spline knots is determined by the "
+"Nyquist criterion. This number is proportional to the extent of the data "
+"in k-space multiplied by :procparam:`rbkg`. These knots are spaced evenly"
+" in wavenumber. Thus the spline function can only have frequency "
+"components below :procparam:`rbkg`."
+msgstr ""
+"バックグラウンド関数を計算するのに使われるスプラインは，振動に対して"
+"限られた自由度しか持ちません．スプラインの節の数は，Nyquist の基準によって"
+"決定されます．この数は，k 空間におけるデータの範囲に :procparam:`rbkg` を"
+"かけたものに比例します．節は波数に対して等間隔で並びます．よって，スプライン"
+"関数は :procparam:`rbkg` 以下の周波数成分しか持たないことになります．"
+
+#: ../../bkg/rbkg.rst:226
+msgid ""
+"So where does that leave us? We want to make :procparam:`rbkg` as big as "
+"possible so that the low-R peaks are as well suppressed as possible. On "
+"the other hand, too large of a value will result in damage to the data. "
+"The trick is to find a balance."
+msgstr ""
+"どうすれば，R の低い領域のピークを抑えるために，できるだけ大きな"
+" :procparam:`rbkg` を取ることができるでしょうか？他方で，値が大き過ぎると"
+"データに悪影響を与えます．バランスが大事です．"
+
+#: ../../bkg/rbkg.rst:231
+msgid ""
+"A good rule of thumb is that :procparam:`rbkg` should be about half the "
+"distance to the nearest neighbor. But that is only a rule of thumb. Real "
+"data can be really difficult. Noisy data, data with strong white lines, "
+"data truncated by the appearance of another edge |nd| all of these "
+"require careful consideration. While :procparam:`rbkg` is the primary "
+"background removal parameter, several others should be investigated to "
+"yield a good background removal. Several of these are the subjects of the"
+" following sections."
+msgstr ""
+":procparam:`rbkg` の値は最近接原子の距離の半分くらいがちょうど良いと思われます．"
+"しかし，これは単なる経験則です．実際のデータはより難しいこともあります．"
+"ノイズが多かったり，ホワイトラインが大きかったり，他の元素の吸収端によって"
+"データが短くなったりしている場合には，十分な検討が必要です．:procparam:`rbkg` は"
+"バックグラウンド除去で最も重要なパラメータですが，よいバックグラウンド除去を"
+"行うには他のパラメータに関してもよく検討しておく必要があります．"
+"それらの内のいくつかは続くセクションのテーマです．"
+
+#: ../../bkg/rbkg.rst:240
+msgid "The literature reference for the :demeter:`autobk` algorithm is:"
+msgstr ":demeter:`autobk` アルゴリズムの文献は以下の通りです．"
+
+#: ../../bkg/rbkg.rst:254
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../bkg/rbkg.rst:259
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../bkg/rbkg.rst:263
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

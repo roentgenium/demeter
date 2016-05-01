@@ -1,0 +1,179 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../import/projsel.rst:45
+msgid "Project selection dialog"
+msgstr "プロジェクトファイル選択ダイアログ"
+
+#: ../../import/projsel.rst:47
+msgid ""
+"The project selection dialog is used to importing data from "
+":demeter:`athena` project files.  `Project files "
+"<../output/project.html>`__ are :demeter:`athena`'s mechanism for saving "
+"the state of an analysis project. The project selection dialog, shown "
+"below, provides a way of selectively importing part or all of the "
+"contents of the project file."
+msgstr ""
+"プロジェクト選択ダイアログは，:demeter:`athena` プロジェクトファイルを"
+"読み込むために使われます．`プロジェクトファイル <../output/project.html>`__ は，"
+" :demeter:`athena` で解析したデータの状態を保存するための仕組みです．"
+"下図に示すプロジェクト選択ダイアログより，プロジェクトファイルの中身の一部あるいは"
+"すべてを読み込むことができます．"
+
+#: ../../import/projsel.rst:59
+msgid "The project selection dialog."
+msgstr "プロジェクト選択ダイアログ"
+
+#: ../../import/projsel.rst:61
+#, python-format
+msgid ""
+"Project files, like any other files are imported using the file selection"
+" dialog (:numref:`Fig. %s <fig-importfiledialog>`). :demeter:`athena` "
+"will recognize a project file and present the project selection dialog. "
+"Alternately, you can drag one or more project files from your computer's "
+"file manager and drop them onto the group list."
+msgstr ""
+"プロジェクトファイルやその他の似たようなファイルはファイル選択ダイアログ"
+" (:numref:`Fig. %s <fig-importfiledialog>`) を使って読み込まれます．"
+":demeter:`athena` はプロジェクトファイルを認識し，プロジェクト選択"
+"ダイアログを表示します．あるいは，1つ以上のプロジェクトファイルを"
+"エクスプローラなどからグループリストにドロップすることもできます．"
+
+#: ../../import/projsel.rst:67
+msgid ""
+"The contents of the project file are listed on the left side of the "
+"dialog. The contents of the `journal <../other/journal.html>`__ are "
+"listed in the box at the top right. When you click on one of the data "
+"groups in the list on the left, it gets plotted and its title lines are "
+"inserted into the box at the lower right. Using these parts of the "
+"dialog, you can examine the contents of your project file before "
+"importing them into :demeter:`athena`."
+msgstr ""
+"プロジェクトファイルの中身は，ダイアログの左側のリストに表示されます．"
+"`メモ(journal) <../other/journal.html>`__ の中身は右上のボックスに"
+"表示されます．左のリストにあるデータをクリックするとスペクトルがプロットされ，"
+"そのタイトル行が右下のボックスに読み込まれます．この操作により，
+" :demeter:`athena` でデータを読み込む前にプロジェクトファイルの中身を確認できます．"
+
+#: ../../import/projsel.rst:75
+msgid ""
+"The plot that is made when you select a data group is controlled by the "
+":guilabel:`Plot as` box of radio buttons.  These buttons have no impact "
+"on how the data imported into :demeter:`athena`.  They are only used to "
+"determine how the data are displayed to you as you select data groups for"
+" import."
+msgstr ""
+"データグループを選択すると，:guilabel:`Plot as` のラジオボタンで"
+"選択されている形式でプロットされます．これらのボタンは，データが :demeter:`athena` "
+"にどのように読み込まれるかには関係がありません．"
+"つまり，どのデータを読み込みか選んでいるときにどのようにプロットされるか"
+"のみを指定しています．"
+
+#: ../../import/projsel.rst:81
+msgid ""
+"By selecting some of the projects from the list, you can import a subset "
+"of the project file. The group listing uses extended selection:"
+msgstr ""
+"リストからいくつかのデータを選択すると，プロジェクトファイルの一部を"
+"読み込むことができます．データ選択にはいくつかの方法があります．"
+
+#: ../../import/projsel.rst:84
+msgid "Click on an item in the list to select one group"
+msgstr "データを1つだけ選ぶ場合は，1つの項目をクリックして下さい。 "
+
+#: ../../import/projsel.rst:86
+msgid ""
+":button:`Control`-:mark:`leftclick,..` (i.e. hold down the "
+":button:`Control` key while clicking the left mouse button) on an item in"
+" the list to add it to the selection"
+msgstr ""
+"選択するデータを追加するには，:button:`Control`-:mark:`leftclick,..` "
+"（つまり，:button:`Ctrl` キーを押しながら，左クリック）して下さい．"
+
+#: ../../import/projsel.rst:90
+msgid ""
+":button:`Shift`-:mark:`leftclick,..` to on a group to select all groups "
+"between it and the previously selected group."
+msgstr ""
+"ある範囲のデータを選択したい場合は，選択したい範囲の端のデータをクリックし，"
+":button:`Shift`-:mark:`leftclick,..` とクリックして，一連のデータを選択してください．"
+
+#: ../../import/projsel.rst:93
+msgid ""
+"The buttons labeled :button:`Select all,light` and :button:`Select "
+"none,light` can be used to select all groups or to clear the selection. "
+"The :button:`Invert,light` button will invert the selection of each "
+"group."
+msgstr ""
+":button:`Select all,light` や :button:`Select none,light` と"
+"ラベルされているボタンはすべてのデータを選択したり，選択を取り消したり"
+"することができます．:button:`Invert,light` ボタンは選択を反転することができます．"
+
+#: ../../import/projsel.rst:98
+msgid ""
+"Below those three buttons are a series of controls allowing somewhat "
+"finer grained control over how items from the group list are selected. "
+"The :button:`Select every,light` line allows selection by a regular "
+"pattern.  :button:`Select matching,light` allows you to select groups "
+"that match a specified pattern using the full strength of perl's `regular"
+" expressions <../ui/mark.html#using-regular-expressions-to-mark-"
+"groups>`__."
+msgstr ""
+
+"その下にある2つのボタンを使うと，リストの中からどれを選択するかについて"
+"より細かな制御が可能になります．:button:`Select every,light` は繰り返しの"
+"パターンで選択することができます．:button:`Select matching,light` を使うと，"
+" Perl の `正規表現 <../ui/mark.html#using-regular-expressions-to-mark-groups>`__ "
+"を利用して，合致したデータを選択することができます．"
+
+#: ../../import/projsel.rst:106
+msgid ""
+"Once you have selected the groups you want to import, click the "
+":button:`Import selected data,light` button."
+msgstr ""
+"読み込みたいファイルを選んだら，:button:`Import selected data,light` "
+"ボタンをクリックして下さい．"
+
+#: ../../import/projsel.rst:109
+msgid ""
+"If no groups are selected then *all* the groups will be imported.  The "
+":button:`Select all,light` button is not, strictly speaking, necessary."
+msgstr ""
+"どのファイルも選択していなければ， *全て* のファイルを読み込みます．"
+"つまり， :button:`Select all,light` は実際のところあまり必要ではありません．"
+
+#: ../../import/projsel.rst:122
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../import/projsel.rst:127
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../import/projsel.rst:131
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

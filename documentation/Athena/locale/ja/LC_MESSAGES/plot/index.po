@@ -1,0 +1,279 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../plot/index.rst:43
+msgid "Plotting Your Data"
+msgstr "データのプロット"
+
+#: ../../plot/index.rst:46
+msgid ""
+"Two of the main design goals of :demeter:`athena` are to make basic data "
+"processing, i.e. background removal and Fourier transforms, as "
+"transparent as possible and to make processing of large amounts of data "
+"as seamless as processing a single data group. To this end, there are no "
+"buttons or other kinds of controls that explicitly tell :demeter:`athena`"
+" to perform the basic processing chores. Instead, there are the plot "
+"buttons. When you click one of the plot buttons, the data processing "
+"which is required will be performed before the plot is made. For example,"
+" if you press the :button:`R,orange` button, the background will be "
+"removed from the current group and the |chi| (k) will be Fourier "
+"transformed to |chi| (R). Once all that is finished, the plot in R-space "
+"will be made."
+msgstr ""
+":demeter:`athena` の主な設計目標のうちの2つは，バックグラウンド除去とフーリエ変換と"
+"いった基本的なデータ処理をできるだけ透過的に行えるようにすることと，"
+"1つのデータを処理するのと同じように，大量のデータに対してもデータ処理を"
+"可能にすることです．結果的に，:demeter:`athena` にはこれらの基本的な操作を明示的に"
+"行うためのボタンなどの制御方法がありません．その代わり，プロットボタンが"
+"あります．プロットボタンのうち1つをクリックすると，必要なデータ処理が"
+"行なわれた後，グラフが描かれます．例えば，:button:`R,orange` ボタンを押すと，バック"
+"グラウンド除去が実行された後で，|chi| (k) が |chi| (R) にフーリエ変換されます．"
+"全ての処理が終わった後，R 空間でのグラフが表示されます．"
+
+#: ../../plot/index.rst:59
+msgid ""
+"As you change the values of the parameters in the main window, "
+":demeter:`athena` keeps track of what has been changed and which data "
+"processing steps need to be redone. If you change the :procparam:`krange`"
+" parameters, then press the :button:`R,orange` button again, the Fourier "
+"transform will be updated, but :demeter:`athena` will recognize that the "
+"background removal is still up-to-date."
+msgstr ""
+"メインウインドウ中のパラメータを変更すると，:demeter:`athena` は何が変更され，
+"どのデータ処理を再実行する必要があるのか追跡します．«krange» のパラメータを"
+"変更し，再度 :button:`R,orange` ボタンをを押すと，フーリエ変換が更新されますが，"
+":demeter:`athena` はバックグラウンドの除去がまだ最新であると認識しています．"
+
+#: ../../plot/index.rst:67
+msgid "**Plotting the current group**"
+msgstr "**選択中のデータのプロット**"
+
+#: ../../plot/index.rst:69
+msgid ""
+"The row of orange buttons are used to plot the current group. The current"
+" group is the one highlighted in the group list and the one whose "
+"parameter values are displayed in the main window. The controls used to "
+"determine how the plots are displayed are described in `the next section "
+"<../plot/tabs.html>`__."
+msgstr ""
+"オレンジ色のボタンの列は現在選択されたデータをプロットするために使われます．"
+"選択中のデータとは，データリストの中で強調されているものであり，"
+"そのパラメータがメインウインドウに表示されています．プロットに関する"
+"設定項目については `次節 <../plot/tabs.html>`__ で説明します．"
+
+#: ../../plot/index.rst:75
+msgid ""
+"Clicking :mark:`leftclick,..` the :button:`E,orange` button brings the "
+"background removal up to date and plots the |mu| (E) data"
+msgstr ""
+":button:`E,orange` ボタンを :mark:`leftclick,..` クリックすると，"
+"バックグラウンド除去を更新し，|mu| (E) データをプロットします．"
+
+#: ../../plot/index.rst:78
+msgid ""
+"Clicking :mark:`leftclick,..` the :button:`k,orange` button brings the "
+"background removal up to date and plots the |chi| (k) data"
+msgstr ""
+":button:`k,orange` ボタンを :mark:`leftclick,..` クリックすると，"
+"バックグラウンド除去を更新し，|chi| (k)データをプロットします．"
+
+#: ../../plot/index.rst:81
+msgid ""
+"Clicking :mark:`leftclick,..` the :button:`R,orange` button brings the "
+"background removal and Fourier transform up to date and plots the |chi| "
+"(R) data"
+msgstr ""
+":button:`R,orange` ボタンをクリックすると，バックグラウンド除去と"
+"フーリエ変換を更新し，|chi| (R) データをプロットします．"
+
+#: ../../plot/index.rst:84
+msgid ""
+"Clicking :mark:`leftclick,..` the :button:`q,orange` button brings the "
+"background removal, Fourier transform, and backwards transform up to date"
+" and plots the |chi| (q) data"
+msgstr ""
+":button:`q,orange` ボタンを :mark:`leftclick,..` クリックすると，"
+"バックグラウンド除去，フーリエ変換，逆フーリエ変換を更新し，|chi| (q) データを"
+"プロットします．"
+
+#: ../../plot/index.rst:88
+msgid ""
+"Clicking :mark:`leftclick,..` the :button:`kq,orange` button brings the "
+"background removal, Fourier transform, and backwards transform up to date"
+" and plots the |chi| (k) data along with the real part of the |chi| (q) "
+"data"
+msgstr ""
+":button:`kq,orange` ボタンを :mark:`leftclick,..` クリックすると，"
+"バックグラウンド除去，フーリエ変換，逆フーリエ変換を更新し，|chi| (q) "
+"データの実数部と共に |chi| (k) データをプロットします．"
+
+#: ../../plot/index.rst:93
+msgid "**Plotting many groups**"
+msgstr "**複数データのプロット**"
+
+#: ../../plot/index.rst:95
+msgid ""
+"The row of purple buttons are used to plot the set of marked groups. The "
+"marked groups are the ones with their purple button checked in the group "
+"list. More details about the marking groups are found `elsewhere in this "
+"document <../ui/mark.html>`__. The controls used to determine how the "
+"plots are displayed are described in `the next section "
+"<../plot/tabs.html>`__."
+msgstr ""
+"紫色のボタンは，マークをつけたデータをプロットするために使用します．"
+"マークをつけたデータとは，メインウィンドウ右上でのリストの中でチェックを"
+"つけたデータです．データのチェックの詳細は，このマニュアルの様々な箇所に"
+"記述されています．プロットに関する設定項目については次節で説明します．"
+
+#: ../../plot/index.rst:102
+msgid ""
+"Clicking :mark:`leftclick,..` the :button:`E,purple` button brings the "
+"background removal up to date for all marked groups and plots their |mu| "
+"(E) data"
+msgstr ""
+":button:`E,purple` ボタンを :mark:`leftclick,..` クリックすると，"
+"マークをつけた全てのデータのバックグラウンド除去を更新し，それらの"
+" |mu| (E) データをプロットします．"
+
+#: ../../plot/index.rst:105
+msgid ""
+"Clicking :mark:`leftclick,..` the :button:`k,purple` button brings the "
+"background removal up to date for all marked groups and plots their |chi|"
+" (k) data"
+msgstr ""
+":button:`k,purple` ボタンを :mark:`leftclick,..` クリックすると，"
+"マークをつけた全てのデータのバックグラウンド除去を更新し，"
+"それらの |chi| (E) データをプロットします．"
+
+#: ../../plot/index.rst:108
+msgid ""
+"Clicking :mark:`leftclick,..` the :button:`R,purple` button brings the "
+"background removal and Fourier transform up to date for all marked groups"
+" and plots their |chi| (R) data"
+msgstr ""
+":button:`R,purple` ボタンを :mark:`leftclick,..` クリックすると，"
+"マークをつけた全てのデータのバックグラウンド除去とフーリエ変換を更新し，"
+"それらの |chi| (R) データをプロットします．"
+
+#: ../../plot/index.rst:112
+msgid ""
+"Clicking :mark:`leftclick,..` the :button:`q,purple` button brings the "
+"background removal, Fourier transform, and backwards transform up to date"
+" for all marked groups and plots their |chi| (q) data"
+msgstr ""
+":button:`q,purple` ボタンをクリックすると，印を付けた全てのファイルの"
+"バックグラウンド除去，フーリエ変換，逆フーリエ変換を更新し，"
+"それらの |chi| (q) データをプロットします．"
+
+#: ../../plot/index.rst:117
+msgid "**Right clicking on plot buttons**"
+msgstr "プロットボタンを右クリック"
+
+#: ../../plot/index.rst:119
+msgid ""
+"Several of the plot buttons will respond to a right click by making one "
+"of `the special plots <../plot/etc.html>`__ from the :guilabel:`Plot` "
+"menu."
+msgstr ""
+"いくつかのプロットボタンを右クリックすることで，:guilabel:`Plot` メニューにある"
+"`特別なプロット <../plot/etc.html>`__ を実行できる．"
+
+#: ../../plot/index.rst:123
+msgid ""
+"Right click :mark:`rightclick,..` the :button:`E,orange` button: plot "
+"|mu| (E) with I\\ :sub:`0` and the signal"
+msgstr ""
+":button:`E,orange` ボタンを :mark:`rightclick,..` 右クリック: |mu| (E) が"
+" I\\ :sub:`0`，シグナルとともにプロットされる"
+
+#: ../../plot/index.rst:126
+msgid ""
+"Right click :mark:`rightclick,..` the :button:`k,orange` button: display "
+"the k123 plot"
+msgstr ""
+":button:`k,orange` ボタンを :mark:`rightclick,..` 右クリック: k123 プロットが表示される"
+
+#: ../../plot/index.rst:128
+msgid ""
+"Right click :mark:`rightclick,..` the :button:`R,orange` button: display "
+"the R123 plot"
+msgstr ""
+":button:`R,orange` ボタンを :mark:`rightclick,..` 右クリック: R123 プロットが表示される"
+
+#: ../../plot/index.rst:130
+msgid ""
+"Right click :mark:`rightclick,..` the :button:`kq,orange` button: display"
+" the quad plot"
+msgstr ""
+":button:`kq,orange` ボタンを :mark:`rightclick,..` 右クリック: quad プロットが表示される"
+
+#: ../../plot/index.rst:132
+msgid ""
+"Right click :mark:`rightclick,..` the :button:`E,purple` button: plot I\\"
+" :sub:`0` for each marked group"
+msgstr ""
+":button:`E,purple` ボタンを :mark:`rightclick,..` 右クリック: マークされたグループの"
+" I\\ :sub:`0` が表示される"
+
+#: ../../plot/index.rst:135
+msgid ""
+"Right click :mark:`rightclick,..` the :button:`q,purple` button: display "
+"the bi-quad plot"
+msgstr ""
+":button:`q,purple` ボタンを :mark:`rightclick,..` 右クリック: bi-quad プロットが表示される"
+
+#: ../../plot/index.rst:137
+msgid ""
+"All other plot keys respond to a right-click :mark:`rightclick,..` in the"
+" same way as a left-click :mark:`leftclick,..`."
+msgstr ""
+"他のすべてのプロットボタンは :mark:`rightclick,..` 右クリックと"
+" :mark:`leftclick,..` で同じプロットを示す．"
+
+#: ../../plot/index.rst:140
+msgid ""
+"The responses of the :button:`E,orange` button and the :button:`E,purple`"
+" button can be configured with the "
+":configparam:`Athena,right\\_single\\_e` and "
+":configparam:`Athena,right\\_marked\\_e` `configuration parameters "
+"<../other/prefs.html>`__."
+msgstr ""
+":button:`E,orange` と :button:`E,purple` の効果については，"
+" `環境設定 <../other/prefs.html>`__ の :configparam:`Athena,right\\_single\\_e` "
+" と :configparam:`Athena,right\\_marked\\_e` で変更することができる．"
+
+#: ../../plot/index.rst:166
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../plot/index.rst:171
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../plot/index.rst:175
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

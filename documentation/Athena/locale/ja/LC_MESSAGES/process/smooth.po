@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../process/smooth.rst:44
+msgid "Smoothing data"
+msgstr "データのスムージング"
+
+#: ../../process/smooth.rst:46
+msgid ""
+"Smoothing data is usually a bad idea. The best way to improve noisy data "
+"is to rethink your samle preparation or measurement procedure whenever "
+"possible. The second best way is to measure more of it and rely upon the "
+"`central limit theorem <https://speakerdeck.com/bruceravel/the-central-"
+"limit-theorem-in-exafs>`__ to work its magic. Smoothing is usually little"
+" more than an aesthetic fix and it introduces distortions to your data "
+"that become serious sources of systematic uncertainty in any later "
+"attempts to interpet the smoothed data."
+msgstr ""
+"データのスムージングを行うことは，大抵の場合よくないアイデアです．"
+"ノイズの多いデータを改善するのに最もよい方法は，試料調製や測定手順に"
+"ついて考え直すことです．次によい方法は，測定を何度も行い，"
+"`中心極限定理 <https://speakerdeck.com/bruceravel/the-central-limit-theorem-in-exafs>`__ "
+"の「魔法」に頼ることです．スムージングを行うことは，大抵の場合，"
+"見た目をちょっとよくする以上のことはなく，データに対してゆがみを"
+"入れてしまい，スムージング後のデータに解釈において，重大な系統的な"
+"不確かさを入れ込んでしまうという問題があります．"
+
+#: ../../process/smooth.rst:56
+msgid ""
+"The default smoothing algorithm is a boxcar average, implemented as a "
+"generic linear filter using a flat, symetric kernel. The width in data "
+"points of this kernel is the specified parameter. An odd kernel size is "
+"enforced. If you set the size parameter to, say, 12, a value of 13 will "
+"be used."
+msgstr ""
+"デフォルトのスムージングアルゴリズムは boxcar 平均であり，平坦で対称的な"
+" kernel をもつ一般的な線形フィルターとして実装されています．この kernel"
+" のデータ点の幅は指定可能なパラメータであり，奇数である必要があります．"
+"もし，このパラメータに 12 を設定した場合は，13 が使われます．"
+
+#: ../../process/smooth.rst:62
+msgid ""
+"There is an option for a Gaussian filter, which is also implemented as a "
+"generic linear filter. In this case, you must specify both the kernel "
+"size and the |sigma| of the Gaussian."
+msgstr ""
+"他には Gaussian フィルターを使うことができます．これも一般的な線形"
+"フィルターとして実装されています．この場合，kernel サイズと Gaussian"
+" における |sigma| を指定する必要があります．"
+
+#: ../../process/smooth.rst:66
+msgid ""
+"The final smoothing option is :demeter:`ifeffit`'s three-point smoothing "
+"algorithm repeatedly to your data. The number of repetitions is set using"
+" the number selection control used to set the kernel size of the other "
+"two options.."
+msgstr ""
+"スムージングの最後の選択肢は，IFEFFIT が提供する3点スムージング"
+"アルゴリズムを繰り返し適用することです．繰り返し回数はを設定することができ，"
+"他の2つのオプションで kernel サイズを設定することができます．"
+
+#: ../../process/smooth.rst:71
+#, python-format
+msgid ""
+"A `Savitsky-Golay filter "
+"<http://en.wikipedia.org/wiki/Savitzky%E2%80%93Golay_smoothing_filter>`__."
+" is available when using :demeter:`larch`, but not with "
+":demeter:`ifeffit`."
+msgstr ""
+":demeter:`larch` を使っている場合，`Savitsky-Golay フィルタ <http://en.wikipedia.org/wiki/Savitzky%E2%80%93Golay_smoothing_filter>`__ "
+"が利用可能ですが，:demeter:`ifeffit` では使えません．"
+
+#: ../../process/smooth.rst:76
+msgid ""
+"You can overplot the data and the smoothed data using the :button:`Plot "
+"data and smoothed,light`. The :button:`Make smoothed group,light` button "
+"makes a group out of the smoothed data and places it in the group list."
+msgstr ""
+"下図に示しているように左側にあるボタンを使って，スムージング前後の"
+"データを重ね書きすることができます．もう1つのボタンは，スムージングされた"
+"データを新しいデータとして生成するボタンです．"
+
+#: ../../process/smooth.rst:86
+msgid "The smoothing tool."
+msgstr "スムージングツール"
+
+#: ../../process/smooth.rst:93
+msgid ""
+"Some noisy gold oxide data that has been smoothed using the boxcar "
+"average."
+msgstr "ノイジーな酸化金のデータを boxcar 平均を使ってスムージングしたところ"
+
+#: ../../process/smooth.rst:105
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../process/smooth.rst:110
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../process/smooth.rst:114
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

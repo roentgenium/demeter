@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../bkg/index.rst:45
+msgid "Normalization and background removal"
+msgstr "規格化とバックグラウンド除去"
+
+#: ../../bkg/index.rst:48
+msgid ""
+"The primary function of :demeter:`athena` is to import and process XAS "
+"data. In the broadest sense, this task takes three steps:"
+msgstr ""
+":demeter:`athena` の第一の機能は，XAS データを読み込んで処理することです．"
+"この処理は大まかに3ステップに分けられます．"
+
+#: ../../bkg/index.rst:51
+msgid "Import raw data and convert it to |mu| (E)."
+msgstr "測定データの読み込みと，|mu| (E) への変換"
+
+#: ../../bkg/index.rst:53
+msgid ""
+"Normalize the data so that the measurement is independent of the details "
+"of the sample or the detector setup."
+msgstr "試料の状態や検出器のセットアップによる測定間の差を取り除くための規格化"
+
+#: ../../bkg/index.rst:56
+msgid ""
+"Determine the background function and subtract it from the data to make "
+"|chi| (k)."
+msgstr "データから |chi| (k) を抽出するためのバックグラウンド関数の決定と差し引き"
+
+#: ../../bkg/index.rst:59
+msgid ""
+"Of course, there are many other details, such as calibration, alignment, "
+"deglitching, and so on. Those will be discussed in detail in later "
+"sections of the document. In this section, we will cover the details of "
+"the normalization algorithm and the :demeter:`autobk` background removal "
+"algorithm.  Special attention will be payed to the most important "
+"background removal parameters."
+msgstr ""
+"もちろん，他にも多くの機能があります．例えば較正や整列，グリッチ除去などです．"
+"これらの操作方法は後の節で紹介します．この節では，規格化アルゴリズムと"
+" :demeter:`autobk` バックグラウンド除去アルゴリズムの詳細について説明します．"
+"最も重要なバックグラウンド除去パラメータについては，特に詳しく説明します．"
+
+#: ../../bkg/index.rst:66
+msgid ""
+"For many measured |mu| (E) spectra, :demeter:`athena` will do a good job "
+"of normalizing data and removing the background using its default "
+"parameters. In other situations |nd| noisy data, data with large white "
+"lines, data which terminate in the appearance of another edge |nd| user "
+"intervention is required. for those situations it is important that you "
+"understand well how the various parameters in the background removal "
+"section of the main window affect the data."
+msgstr ""
+":demeter:`athena` はデフォルトのパラメータのままでも，多くの |mu| (E) "
+"スペクトルについて，うまく規格化やバックグラウンド除去を行うことができます．"
+"しかし，ノイズの大きなデータやホワイトラインの大きいデータ，複数元素の"
+"吸収端が混在するデータの場合はユーザによる操作が必要でしょう．"
+"そのような場合，メインウィンドウのバックグラウンド除去セクションに表示されて"
+"いる様々なパラメータが，データに対してどのような影響を与えるのかを十分に"
+"理解しておく必要があります．"
+
+#: ../../bkg/index.rst:93
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../bkg/index.rst:98
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../bkg/index.rst:102
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

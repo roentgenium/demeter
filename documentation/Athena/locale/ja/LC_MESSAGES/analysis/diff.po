@@ -1,0 +1,279 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../analysis/diff.rst:45
+msgid "Difference spectra"
+msgstr "差スペクトル"
+
+#: ../../analysis/diff.rst:47
+msgid ""
+"In many situations, the trends in a sequence measured data can be "
+"indicative of the of the physical process being measured. Shown in the "
+"figure below is a sequence of Pt L\\ :sub:`III` spectra measured on a "
+"hydrogenated Pt catalyst. In this sequence, the hydrogen is being "
+"desorbed, resulting in measurable changes in the spectra."
+msgstr ""
+"多くの場合において，一連の測定データの変化は測定中に起きている物理的な"
+"過程を示していることがあります．以下に示す図は水素が吸着した Pt 触媒に"
+"ついて測定された一連の Pt L\\ :sub:`III` スペクトルです．このシーケンスでは，"
+"水素が脱離していっており，スペクトルに観測可能な変化が現れています．"
+
+#: ../../analysis/diff.rst:60
+msgid "The dehydrogenation sequence of a Pt-bearing catalyst."
+msgstr "Pt を含む触媒の水素脱離過程"
+
+#: ../../analysis/diff.rst:62
+msgid ""
+"Selecting one of the difference spectra options from the main menu "
+"replaces the main window with the difference tool, as shown below. "
+"Difference spectra can be computed as |mu| (E), normalized |mu| (E), and "
+"derivative or second derivative of |mu| (E)."
+msgstr ""
+"メインメニューから差スペクトルを選択すると，以下に示すような差スペクトル"
+"ツールに置き換えられます．このツールを使って，|mu| (E)，規格化された |mu| (E)，"
+"あるいは |mu| (E) の一次微分あるいは二次微分の差スペクトルを計算することができます．"
+
+#: ../../analysis/diff.rst:67
+msgid ""
+"For difference spectra to be meaningful, it is essential that data "
+"processing be performed correctly for each data group. It is essential "
+"that you take great care with `selecting parameters "
+"<../params/constrain.html>`__, `calibrating <../process/cal.html>`__, "
+"`aligning <../process/align.html>`__, and all other processing chores."
+msgstr ""
+"差スペクトルを意味のあるものにするには，それぞれのデータを正しく"
+"データ処理しておくことが必須です．つまり，"
+" `パラメータの選択 <../params/constrain.html>`__"
+" `エネルギー較正 <../process/cal.html>`__，"
+" `データの整列 <../process/align.html>`__，"
+"してその他すべての処理について十分な注意を払うことが必要です．"
+
+#: ../../analysis/diff.rst:79
+msgid ""
+"The difference spectrum tool with data taken from the ``diff.prj`` demo "
+"file."
+msgstr "``diff.prj`` デモファイルからのデータと差スペクトルツール "
+
+#: ../../analysis/diff.rst:82
+msgid ""
+"As you :mark:`leftclick,..` click on each group in the group list, the "
+"difference spectrum is computed as the difference between the groups "
+"selected as the standard by menu control at the top of the window and the"
+" selected group from the group list. The difference spectrum will be "
+"plotted, optionally along with the data and standard used to make the "
+"subtraction. The form of the difference spectrum |nd| |mu| (E), "
+"normalized |mu| (E), and derivative or second derivative of |mu| (E) |nd|"
+" is selected from the menu labeled :guilabel:`Form`. The multiplier is a "
+"scaling factor that can be applied to the standard before subtraction."
+msgstr ""
+"グループリストのそれぞれのデータをクリックすると，ウィンドウ上部にある"
+"メニューで標準スペクトルとして選択されたグループとグループリストで"
+"選択されたグループの差スペクトルが計算されます．差スペクトルは，オプションが"
+"選択されていれば対象データおよび差スペクトルの基準スペクトルと共にプロット"
+"されます．:guilabel:`Form` とラベルされたメニューから |mu| (E)，規格化された"
+" |mu| (E)，|mu| (E) の一次微分あるいは二次微分のどのスペクトルについて差スペクトルを"
+"計算するか選択することができます．multiplier は引き算を行う前に"
+"基準スペクトルに対して適用されるスケール因子です．"
+
+#: ../../analysis/diff.rst:92
+msgid ""
+"If you have accidentally swapped the standard and data, click the "
+":button:`invert,light` button to change the order of the subtraction."
+msgstr ""
+"もし，基準スペクトルと対象データをひっくり返してしまったら，:button:`invert,light` "
+"ボタンをクリックすることで引き算の順序を変更することができます．"
+
+#: ../../analysis/diff.rst:95
+msgid ""
+"You can select two points, shown in the plot below by the brown markers, "
+"and integrate the area under that part of the spectrum."
+msgstr ""
+"プロットウィンドウで茶色の印で示されている2つの点を選択することで，"
+"選択範囲の積分を行うことができます．"
+
+#: ../../analysis/diff.rst:98
+msgid ""
+"The difference spectra saved to data groups. Those data groups are "
+"treated in every way like any other data group. By default, difference "
+"groups are marked as normalized groups |nd| that is, a flag is set which "
+"skips the normalization algorithm. The :button:`renormalize,light` button"
+" can be ticked to make the resulting group a normal |mu| (E) group. When "
+"the form of the difference is set to plain |mu| (E), that button will be "
+"ticked."
+msgstr ""
+"差スペクトルはデータグループとして保存できます．これらのデータグループは"
+"他のデータと同じように扱うことができます．デフォルトでは，差スペクトルは"
+"規格化されたグループとしてマークされます．すなわち，規格化アルゴリズムを"
+"スキップするということです．:button:`renormalize` ボタンをクリックすることで，"
+"得られたグループを通常の |mu| (E) データとして扱うようにすることもできます．"
+"差分の形式が普通の |mu| (E) に設定されると，ボタンが付きます．"
+
+#: ../../analysis/diff.rst:106
+msgid ""
+"The name of the resulting data group will be set using the "
+":guilabel:`Name template`, which includes a mini-language of tokens that "
+"will be substituted by specific values."
+msgstr ""
+"得られたデータグループの名前は :guilabel:`Name template` を使って設定され，"
+"特定の値によって置換されるトークンを使うことができます．"
+
+#: ../../analysis/diff.rst:110
+#, python-format
+msgid "``%d``"
+msgstr ""
+
+#: ../../analysis/diff.rst:111
+msgid "Replaced by the name of the data group."
+msgstr "データスペクトルグループの名前"
+
+#: ../../analysis/diff.rst:112
+#, python-format
+msgid "``%s``"
+msgstr ""
+
+#: ../../analysis/diff.rst:113
+msgid "Replaced by the name of the standard group."
+msgstr "標準スペクトルグループの名前"
+
+#: ../../analysis/diff.rst:114
+#, python-format
+msgid "``%f``"
+msgstr ""
+
+#: ../../analysis/diff.rst:115
+msgid "Replaced by the form of the difference spectrum"
+msgstr "差スペクトルの形式"
+
+#: ../../analysis/diff.rst:116
+msgid "``%m``"
+msgstr ""
+
+#: ../../analysis/diff.rst:117
+msgid "Replaced by the multiplier value"
+msgstr "スケール因子の値"
+
+#: ../../analysis/diff.rst:118
+msgid "``%n``"
+msgstr ""
+
+#: ../../analysis/diff.rst:119
+msgid "Replaced by the lower bound of the integration range"
+msgstr "積分範囲の下限"
+
+#: ../../analysis/diff.rst:120
+#, python-format
+msgid "``%x``"
+msgstr ""
+
+#: ../../analysis/diff.rst:121
+msgid "Replaced by the upper bound of the integration range"
+msgstr "積分範囲の上限"
+
+#: ../../analysis/diff.rst:124
+msgid "``%a``"
+msgstr ""
+
+#: ../../analysis/diff.rst:123
+msgid "Replaced by the compted area over the integration range"
+msgstr "積分面積"
+
+#: ../../analysis/diff.rst:134
+msgid ""
+"The difference spectra between the first group in the list and the "
+"current group in the screenshot of the difference tool."
+msgstr "リストの最初のグループと現在選択されているグループの差スペクトル"
+
+#: ../../analysis/diff.rst:143
+msgid "The difference spectra plotted after making data groups from each one."
+msgstr "それぞれの差スペクトルから生成されたデータのプロット"
+
+#: ../../analysis/diff.rst:151
+msgid ""
+"The integrated areas obtained by computing a sequence over all groups "
+"marked in the group list can be plotted by clicking the button labeled "
+":button:`Plot integrated areas for all marked groups,light`.  The result "
+"of this shown below."
+msgstr ""
+"グループリストでマークのついたすべてのグループについて順に計算された"
+"積分面積は :button:`Plot integrated areas for all marked groups,light` "
+"とラベルされたボタンをクリックすることでプロットすることができます．"
+"その結果は以下の様になります．"
+
+#: ../../analysis/diff.rst:162
+msgid "Integrated areas for a sequence of difference spectra."
+msgstr "一連の差スペクトルの積分面積"
+
+#: ../../analysis/diff.rst:166
+msgid "Here are some example uses of difference spectra:"
+msgstr "差スペクトルの利用"
+
+#: ../../analysis/diff.rst:171
+msgid "**Magnetic dichroism**"
+msgstr "**磁気二色性 (Magnetic dichroism)**"
+
+#: ../../analysis/diff.rst:170
+msgid ""
+"This part of :demeter:`athena` is directly applicable to dichroism "
+"studies. The difference spectra is made in normalized |mu| (E) and the "
+"integration can be used to measure magnetic moments in magnetic "
+"materials."
+msgstr ""
+":demeter:`athena` のこの機能は二色性の検討に直接適用することができます．"
+"規格化された |mu| (E) の差スペクトルとその積分は磁性材料の磁気モーメントの"
+"計算に利用することができます．"
+
+#: ../../analysis/diff.rst:185
+msgid "**Experimental corrections**"
+msgstr "**実験に関する補正**"
+
+#: ../../analysis/diff.rst:174
+msgid ""
+"Certain kinds of corrections for nonlinearities in the XAS measurement "
+"can be corrected by normalizing measured data by a blank scan |nd| that "
+"is a measurement through the same energy range using the same "
+"instrumentation, but measured without the sample in the beam path. This "
+"sort of correction, as shown in by Chantler, Barnea, et al., is "
+"equivalent to a difference spectrum measured in plain |mu| (E) between "
+"the data and balnk scan."
+msgstr ""
+"規格化された測定データとブランク測定 – すなわち，同じエネルギー範囲において"
+"同じ測定系を利用して，光路上に試料を置かずに測定したデータを利用して，"
+"XAS 測定における非線形性に対して，ある種の補正を行うことができます．"
+"この種の補正は，Chantler らが示しているように，普通の |mu| (E) を試料ありと"
+"なしで測定したときの差スペクトルと等価です．"
+
+#: ../../analysis/diff.rst:194
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../analysis/diff.rst:199
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../analysis/diff.rst:203
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

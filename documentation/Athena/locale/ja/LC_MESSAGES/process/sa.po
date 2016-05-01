@@ -1,0 +1,426 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../process/sa.rst:44
+msgid "Self-absorption approximations"
+msgstr "「自己吸収」補正 "
+
+#: ../../process/sa.rst:46
+msgid ""
+":mark:`bend,..` The statement that |mu| (E) measured in fluorescence is "
+"the ratio of the signals on the fluorescence and incident ion chambers is"
+" only true in the limit of very thin samples or very dilute samples. For "
+"thick, concentrated samples, the depth into which the incident beam can "
+"penetrate changes as fine structure of |mu| (E) changes. As the "
+"oscillatory part wiggles up, the penetration depth diminishes. As it "
+"wiggles down, the depth increases. This serves to attenuate the "
+"oscillatory structure."
+msgstr ""
+":mark:`bend,..` 蛍光法により測定された |mu| (E) がイオンチャンバで測定した"
+"入射 X 線と蛍光 X 線の信号の比であるということは，十分厚みの薄い試料か"
+"十分濃度が薄い試料の場合にしか正しくありません．分厚く濃度の高い試料に"
+"ついては，入射 X 線が進入できる深さにより |mu| (E) の微細構造が変化して"
+"しまいます．振動部分が大きくなれば，進入深さは小さくなり，振動が小さく"
+"なれば，進入深さは大きくなります．その結果，振動構造が減衰してしまいます．"
+
+#: ../../process/sa.rst:55
+msgid ""
+"The term :quoted:`self-absortion` is sort of a misnomer and is confusing "
+"when compared to what the term means in other areas.  For example, in "
+"X-ray fluorescence, :quoted:`self-absorption` actually means the "
+"attenuation of fluorescence generated within a sample as it travels out "
+"of the sample, which is different from the effect discussed here.  The "
+"term :quoted:`self-absorption` was first used in the Troger reference to "
+"describe an effect first described in the much earlier paper by Goulon, "
+"et al.  Many in the XAS community prefer the term :quoted:`over-"
+"absorption` or Goulon's phrase :quoted:`attenuation factor`."
+msgstr ""
+":quoted:`自己吸収` という言葉は，他の分野でこの言葉が意味していることと比べると"
+"若干混乱招く表現と言えます．例えば，X 線蛍光測定において，:quoted:`自己吸収` "
+"という言葉は，試料中で生成した蛍光 X 線が試料の外に飛び足す過程で減衰することを"
+"指しています．これは，ここでいう自己吸収効果とは異なります．"
+":quoted:`自己吸収` という言葉は，最初，Goulon らによる古い文献で記述されている"
+"現象を説明するために Troger によって初めて使われました．"
+"XAS コミュニティの多くの人は，:quoted:`over-absorption（過大吸収？）` あるいは"
+"Goulon による :quoted:`attenuation factor（減衰因子）` という単語を好みます．"
+
+#: ../../process/sa.rst:72
+msgid ""
+"Ideally, all your samples that must be measured in fluorescence should be"
+" either sufficiently thin or sufficiently dilute that your data is "
+"unaffected by this self-absorption effect. Sometimes, the constraints of "
+"the sample are such that self-absorption cannot be avoided. In that case,"
+" you need to figure out what to do at the level of the data analysis to "
+"find the correct answer in the face of this problem. One solution is "
+"presented here."
+msgstr ""
+"理想的には，蛍光法によって測定する必要があるすべての試料は，この「自己吸収」"
+"効果によってデータが影響を受けないように，十分厚みが薄いか十分濃度が"
+"薄い必要があります． 場合によっては，試料における制限のため，「自己吸収」が"
+"避けられない場合もあるでしょう．この場合には，この問題に直面しながらも"
+"正しい答えを得るために，データ解析の段階において何をしなければならないか"
+"理解する必要があります．解決策の1つをここでご紹介します．"
+
+#: ../../process/sa.rst:80
+msgid ""
+"The self-absorption correction tool offers four different algorithms to "
+"approximate the effect of self-absorption using tables of x-ray "
+"absorption coefficients. One of them works on XANES data, while all four "
+"can be used to correct EXAFS data. One of the algorithms works well for "
+"samples that are not in the infinitely thick limit. These various "
+"algorithms are taken from the available literature and are offered to "
+"allow you to compare."
+msgstr ""
+"「自己吸収」補正ツールは X 線吸収係数の表を使って，「自己吸収」の効果を"
+"見積もるための4つの異なるアルゴリズムを提供しています．そのうち1つは"
+" XANES データについて適用でき，また，4つ全ては EXAFS データの補正に"
+"使うことができます．アルゴリズムのうちの1つは十分厚みが厚くない試料に"
+"ついてもうまく働きます．これらの様々なアルゴリズムは，文献からとられており，"
+"比較のために提供されています．"
+
+#: ../../process/sa.rst:88
+msgid ""
+"The examples I show here are particularly well suited to this sort of "
+"correction. In both cases, we have a way to evaluate the success of the "
+"correction. In general, it can be difficult to guarantee the success of "
+"the correction, particularly if the entire composition of the sample is "
+"not well known. That means that, in practice, this sort of correction may"
+" not be useful or reliable."
+msgstr ""
+"ここで示す例は，この種の補正に特に適当と思われるものです．共に，補正が"
+"うまくっているかどうか確認するすべがあります．一般的には，補正がうまく"
+"働いているかどうかを保証することは困難です．試料全体の組成が不明な場合は"
+"特に困難といえます．このことは，実際上は，この種の補正が役に立たないか"
+"あるいは信頼できないものであることを示しています．"
+
+#: ../../process/sa.rst:95
+msgid ""
+"It is also important to understand that the self-absorption effect only "
+"effects the amplitude of your EXAFS data, not the phase. Thus even if you"
+" are unable to properly correct, you can still analyze your EXAFS data "
+"for bond lengths."
+msgstr ""
+"「自己吸収」効果は EXAFS データの振幅にだけ影響し，位相については影響を"
+"与えないことを理解しておくことは重要です．よって，例え，適切に補正する"
+"ことができなくても，EXAFS を使って結合長に関する解析を行うことは可能です． 
+
+#: ../../process/sa.rst:100
+msgid ""
+"`Here is my presentation on self-absorption corrections. "
+"<https://speakerdeck.com/bruceravel/understanding-self-absorption-in"
+"-%0Afluorescence-xas>`__ There I discuss the applicability of this tool "
+"in more detail. You will find that, in general, the self-absorption tool "
+"is very hard to apply to real data. There is quite a bit of useful "
+"information on this topic at `XAFS.org "
+"<http://xafs.org/Experiment/OverAbsorption>`__."
+msgstr ""
+"こちらから，`私の「自己吸収」補正に関する発表内容 <https://speakerdeck.com/bruceravel/understanding-self-absorption-in-%0Afluorescence-xas>`__ "
+"をご覧になることができます．このツールの適用性についてより詳細に説明しています．"
+"一般的には，「自己吸収」ツールを実データに対して適用するのは極めて困難で"
+"あるといえます．`XAFS.org <http://xafs.org/Experiment/OverAbsorption>`__ "
+"ではこの点に関してとても重要な情報を提供しています．"
+
+#: ../../process/sa.rst:110
+msgid "Correcting XANES data"
+msgstr "XANES データの補正"
+
+#: ../../process/sa.rst:112
+msgid ""
+"The self-absorption tool below allows you to choose between the four "
+"algorithms and to provide the parameters of the correction."
+msgstr ""
+"下の「自己吸収」ツールでは，4つのアルゴリズムから選択して，"
+"補正のためのパラメータを入力することができます．"
+
+#: ../../process/sa.rst:120
+msgid "The self-absorption tool."
+msgstr "「自己吸収」補正ツール"
+
+#: ../../process/sa.rst:122
+msgid ""
+"In this example of correcting XANES data, ammonium sulfate was dissolved "
+"in water at three different molarities: 0.1, 0.47, and 0.94. The "
+"correction algorithm requires a complete description of the sample, so we"
+" need to determine the ratio of water to ammonium sulfate."
+msgstr ""
+"この XANES データの補正の例では，それぞれ，0.1, 0.47, 0.94 M 硫酸"
+"アンモニウム水溶液のデータを使います．補正アルゴリズムは試料の完全な"
+"組成が必要なため，硫酸アンモニウムに対する水の比率を決定する必要があります．"
+
+#: ../../process/sa.rst:139
+msgid ""
+"Adjusted for the density change upon adding the solute, there are about "
+"54.8 moles of water in the solution"
+msgstr ""
+"溶質を加えることによる密度変化について調整すると，溶液中にはおよそ 54.8 mol の水が存在します．"
+
+#: ../../process/sa.rst:142
+msgid ""
+"So the formulas for these three molar solution are ((NH\\ :sub:`4`)\\ "
+":sub:`2`\\ SO\\ :sub:`4`)\\ :sub:`0.10`\\ (H\\ :sub:`2`\\ O)\\ "
+":sub:`54.8`, ((NH\\ :sub:`4`)\\ :sub:`2`\\ SO\\ :sub:`4`)\\ :sub:`0.47`\\"
+" (H\\ :sub:`2`\\ O)\\ :sub:`54.8`, and ((NH\\ :sub:`4`)\\ :sub:`2`\\ SO\\"
+" :sub:`4`)\\ :sub:`0.94`\\ (H\\ :sub:`2`\\ O)\\ :sub:`54.8`."
+msgstr ""
+"よって，これら3つの溶液の組成式に相当するものは，"
+"((NH\\ :sub:`4`)\\ :sub:`2`\\ SO\\ :sub:`4`)\\ :sub:`0.10`\\ (H\\ :sub:`2`\\ O)\\ :sub:`54.8`, "
+"((NH\\ :sub:`4`)\\ :sub:`2`\\ SO\\ :sub:`4`)\\ :sub:`0.47`\\ (H\\ :sub:`2`\\ O)\\ :sub:`54.8`, "
+"そして ((NH\\ :sub:`4`)\\ :sub:`2`\\ SO\\ :sub:`4`)\\ :sub:`0.94`\\ (H\\ :sub:`2`\\ O)\\ :sub:`54.8` です．"
+
+#: ../../process/sa.rst:148
+msgid ""
+"The uncorrected and corrected data for the 0.94M sample are shown here on"
+" the right. The three uncorrected spectra are shown on the left and the "
+"corrected spectra are shown on the bottom."
+msgstr ""
+"右図に 0.94 M の試料について，補正無しおよび補正有りのデータを示しています．"
+"左図には3つの補正無しのスペクトル，下図には補正後のスペクトルを示しています．"
+
+#: ../../process/sa.rst:160
+msgid "This is the 0.94M data corrected by this algorithm."
+msgstr "補正された 0.94 M のデータ"
+
+#: ../../process/sa.rst:167
+msgid ""
+"Here is the raw data for the three samples. You can see the effect of "
+"self-absorption growing for the more concentrated samples."
+msgstr ""
+"補正無しの 3 試料のデータ．濃度が高くなると，「自己吸収」の効果が"
+"強くなっていることがわかります．
+
+#: ../../process/sa.rst:175
+msgid "The corrected data. Not bad, eh?"
+msgstr "補正有りのデータ．悪くないでしょ？"
+
+#: ../../process/sa.rst:182
+msgid "Thanks to Dani Haskel and Zhang Ghong for these data."
+msgstr "Dani Haskel と Zhang Ghong によるデータ提供に感謝します．"
+
+#: ../../process/sa.rst:187
+msgid "Correcting EXAFS data"
+msgstr "EXAFS データの補正"
+
+#: ../../process/sa.rst:189
+msgid ""
+"Of the four algorithms, only the Booth algorithm as shown in this figure "
+"is suitable for samples of finite thickness. The other three all assume "
+"that samples are infinitely thick."
+msgstr ""
+"4つのアルゴリズムのうちでは，こちらに示しているように Booth アルゴリズム"
+"だけが有限の厚さを持つ試料に対して適用可能です．他の3つは試料が無限に"
+"分厚いことを仮定しています．"
+
+#: ../../process/sa.rst:198
+msgid ""
+"The self-absorption tool with copper data for correction using the Booth "
+"algorithm."
+msgstr "Booth アルゴリズムを使って銅箔の補正を行う様子"
+
+#: ../../process/sa.rst:201
+msgid ""
+"After selecting an algorithm, you can use the other controls to enter the"
+" incident and outgoing angles in degree and the thickness of the sample "
+"in microns. All algorithms require that you specify the formula of the "
+"sample with stoichiometries in atomic percent."
+msgstr ""
+"アルゴリズムを選択した後で，入射 X 線および検出器に対する角度あるいは"
+"試料の厚みについてマイクロメートル単位でを入力することができます．"
+"全てのアルゴリズムでは試料の化学量論比についても入力する必要があります．"
+
+#: ../../process/sa.rst:206
+msgid ""
+"These two data groups were measured from the same thin copper foil, one "
+"in transmission and the other in fluorescence. These data were provided "
+"by Corwin Booth and are the data from the paper where he and Bud Bridges "
+"presented their algorithm (citation below)."
+msgstr ""
+"これらの2つのデータは同じ薄い銅箔を，一方は透過法で，他方は蛍光法で"
+"測定したものです．データは Corwin Booth により提供されたものであり，"
+"また，このデータが示されている論文には彼と Bud Bridges によって"
+"アルゴリズムが示されています．（citation は末尾に示しています）"
+
+#: ../../process/sa.rst:211
+msgid ""
+"Since this is a thin film, only the Booth algorithm is appropriate. "
+"(Although you might want to compare it to the other algorithms, if only "
+"to see how the others overestimate the size of the correction due to the "
+"fact that they do not consider film thickness.)"
+msgstr ""
+"これは薄膜のため，Booth アルゴリズムのみが適用可能です．（もし，他の"
+"アルゴリズムと比較したければ，他のアルゴリズムが試料の厚みを考慮しない"
+"ために，補正量を大きく見積りすぎることがわかるでしょう．） "
+
+#: ../../process/sa.rst:216
+msgid ""
+"The formula for copper is Cu and Corwin reports that the thickness of the"
+" sample is 4.6, the incident was 49 degrees and the outgoing angle was 41"
+" degrees. Enter these values and plot the correction. Save the corrected "
+"data group and compare it to the transmission data, as shown in the plot "
+"below."
+msgstr ""
+"銅の化学式は Cu であり，Corwin は試料厚さが 4.6 であると報告しています．"
+"入射 X 線の角度は 49 度であり，出射角は 41 度です．これらの値を入力し"
+"補正後についてプロットして下さい．補正されたデータを保存し，透過法に"
+"よるデータと比較すると以下のようになります．"
+
+#: ../../process/sa.rst:227
+msgid ""
+"It works pretty well. The green trace is the corrected fluorescence "
+"spectrum, which compares well to the transmission data, albeit a little "
+"too big."
+msgstr ""
+"とてもうまく働いています．緑色が補正された蛍光法によるスペクトルであり，"
+"少し大きいですが，透過法のデータと比較可能であることがわかります．"
+
+#: ../../process/sa.rst:231
+msgid ""
+"There are several things that can effect the comparison of the corrected "
+"fluorescence data and the transmission data. These include how the two "
+"data sets were normalized, the incident and outgoing angles, and the "
+"thickness. Try changing all those things to see how they effect the "
+"correction."
+msgstr ""
+"補正された蛍光法によるデータと透過法によるデータを比較する上ではいくつか"
+"考慮すべき点があります．すなわち，2つのデータがどのように規格化されたか，"
+"入射角および出射角はどうか，それに厚みにもよります．これらの値を変えて"
+"その変化が補正に対してどのような効果を及ぼすのか試してみて下さい．"
+
+#: ../../process/sa.rst:239
+msgid ""
+"The Booth algorithm was updated and corrected.  It now requires that the "
+"density of the material be provided.  There is a box for the density next"
+" to the thickness box.  The density box becomes enabled (not grayed out) "
+"when the Booth algorithm is selected."
+msgstr ""
+"Booth アルゴリズムは更新および訂正されています．今は，試料の密度も必要です．"
+"厚みを入力する欄の横に密度を入力する欄があります．密度を入力する欄は"
+"Booth アルゴリズムが選択されたときに有効化されます．"
+
+#: ../../process/sa.rst:245
+msgid "Information depth"
+msgstr ""
+
+#: ../../process/sa.rst:247
+msgid ""
+"For any sample, you can plot the information depth as a function of "
+"wavenumber. This quantity was defined by Troger et al. (citation below) "
+"and represents the depth into the sample probed by the incident beam for "
+"a given sample geometry as a function of energy. In that depth, 68 "
+"percent of the incident photons are absorbed and 68 percent of the "
+"fluorescence photons are generated. The information depth provides a "
+"useful metric for whether a film sample can be considered :quoted:`thick`"
+" in a particular experiment."
+msgstr ""
+"どんな試料においても，波数に対する関数として「情報深さ」をプロットする"
+"ことができます．この量は Troger らによって定義されたものであり，"
+"与えられた試料位置に対して入射 X 線がどこまで進入したかをエネルギーの"
+"関数として表現したものです．この深さに関しては，入射 X 線の 68 % が"
+"吸収され，蛍光 X 線が 68 % 生成しました．この情報深さは，ある薄膜試料が"
+"ある実験条件において，:quoted:`thick` かどうかの便利な指標として提供されています．"
+
+#: ../../process/sa.rst:263
+msgid "The information depth for an iron/gallium alloy, plotted in energy."
+msgstr "エネルギーに対してプロットされた FeGa 合金の情報深さ"
+
+#: ../../process/sa.rst:270
+msgid "The same plot, but in wavenumber."
+msgstr "同じグラフを波数に対してプロットしたもの"
+
+#: ../../process/sa.rst:279
+msgid "Algorithm references"
+msgstr "アルゴリズムに関するリファレンス"
+
+#: ../../process/sa.rst:284
+msgid "**Fluo algorithm**"
+msgstr "**Fluo アルゴリズム**"
+
+#: ../../process/sa.rst:282
+msgid ""
+"The program documentation for Fluo can be found at Dani's web site and "
+"includes the mathematical derivation: "
+"http://www.aps.anl.gov/xfd/people/haskel/fluo.html"
+msgstr ""
+"Fluo に関するドキュメントは数学的な導出も含めて，Dani の Web サイトで"
+"見つかります．: http://www.aps.anl.gov/xfd/people/haskel/fluo.html"
+
+#: ../../process/sa.rst:291
+msgid "**Booth Algorithm**"
+msgstr "**Booth アルゴリズム**"
+
+#: ../../process/sa.rst:291
+msgid "See also Corwin's web site: http://lise.lbl.gov/RSXAP/"
+msgstr "Corwin の Web サイトもご覧下さい: http://lise.lbl.gov/RSXAP/"
+
+#: ../../process/sa.rst:296
+msgid "**Troger Algorithm**"
+msgstr "**Troger アルゴリズム**"
+
+#: ../../process/sa.rst:309
+msgid "**Pfalzer Algorithm**"
+msgstr "**Pfalzer アルゴリズム**"
+
+#: ../../process/sa.rst:299
+msgid "Another interesting approach to correcting self-absorption is presented in"
+msgstr "「自己吸収」補正に関する他のおもしろいアプローチが，以下のように提案されています"
+
+#: ../../process/sa.rst:306
+msgid ""
+"This is not implemented in :demeter:`athena` because the main result "
+"requires an integral over the solid angle subtended by the detector. This"
+" could be implemented, but the amount of solid angle subtended it is not "
+"something one typically writes in the lab notebook."
+msgstr ""
+"このアルゴリズムは主な結果を得るために検出器の立体角の積分値を必要とする"
+"ために，:demeter:`athena` には実装されていません．実装することは可能ですが，ここで"
+"いう立体角は通常実験ノートに記載するものとは異なるものです．もしこの"
+"アルゴリズムの実装について，本当に興味があるなら作者の Bruce まで連絡して下さい．"
+
+#: ../../process/sa.rst:317
+msgid "**Atoms Algorithm**"
+msgstr "**Atoms アルゴリズム**"
+
+#: ../../process/sa.rst:316
+msgid ""
+"See also the documentation for Atoms at Bruce's website for more details "
+"about it's fluorescence correction calculations."
+msgstr "蛍光補正の計算の詳細については Atoms のドキュメントと作者の Web サイトをご覧下さい．"
+
+#: ../../process/sa.rst:324
+msgid "**Elam tables of absorption coefficients**"
+msgstr "**Elam による吸収係数の表**"
+
+#: ../../process/sa.rst:333
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../process/sa.rst:338
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../process/sa.rst:342
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

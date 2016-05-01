@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../process/sum.rst:44
+msgid "Data summation"
+msgstr "データの足し合わせ"
+
+#: ../../process/sum.rst:46
+msgid ""
+"This tool is used to make arbitrary sumations of data. This is a little "
+"bit like the `linear combination fitting <../analysis/lcf.html>`__ tool "
+"and a little bit like the `difference spectrum <../analysis/diff.html>`__"
+" tool, but different. This tool allows you to make an arbitrary summation"
+" of |mu| (E), normalized |mu| (E), or |chi| (k) data. There is no "
+"requirement that the specified weights be positive or sum to one."
+msgstr ""
+"このツールは，データの任意の足し合わせを行うためのものです．"
+"これは `線形結合フィッティング <../analysis/lcf.html>`__ ツールや "
+"`差スペクトル <../analysis/diff.html>`__ ツールに少し似ていますが，"
+"異なるものです．このツールでは，|mu| (E)，規格化された |mu| (E)，あるいは |chi| (k)"
+" データについて任意の足し合わせを行うことができます．重み付けが，正の数で"
+"無くても構いませんし，合計が 1 でなくても構いません．"
+
+#: ../../process/sum.rst:54
+msgid ""
+"Plots can optionally include the scaled components or the marked groups "
+"from the group list. If the summation is made on |chi| (k) data, the "
+"button for plotting as |chi| (R) will be enabled."
+msgstr ""
+"スケールされたものやグループリストでマークのついたグループを含めて"
+"プロットすることもできます．もし，足し合わせが |chi| (k) に対して行われるので"
+"あれば，|chi| (R) としてプロットするためのボタンが有効化されます．"
+
+#: ../../process/sum.rst:58
+msgid ""
+"A group can be made from the summation and inserted into the group list. "
+"That new group will be treated like normal data."
+msgstr ""
+"足し合わせによって新たに作成されたデータをグループリストに追加することが"
+"できます．新しいデータは他のデータと同じように扱うことができます．"
+
+#: ../../process/sum.rst:66
+msgid "The data summation tool."
+msgstr "データ足し合わせツール"
+
+#: ../../process/sum.rst:73
+msgid ""
+"A plot containing an arbitrary sum of three standards. Included in the "
+"plot is the marked group from the group list and the three standards "
+"scaled by the specified weight."
+msgstr ""
+"3つの標準の任意の足し合わせによるプロット．プロットには，グループリストで"
+"マークのついたグループと指定された重みでスケールされた標準データを含みます．"
+
+#: ../../process/sum.rst:86
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../process/sum.rst:91
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../process/sum.rst:95
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

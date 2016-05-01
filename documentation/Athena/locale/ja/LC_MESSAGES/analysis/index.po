@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../analysis/index.rst:43
+msgid "Data analysis"
+msgstr "データ解析"
+
+#: ../../analysis/index.rst:45
+msgid ""
+":demeter:`athena` provides various kinds of data analysis. None of the "
+"data analysis capabilities in :demeter:`athena` require the use of "
+":demeter:`feff`. Analysis of data using :demeter:`feff` is a huge topic "
+"and is the purpose of the :demeter:`artemis` program. The data analysis "
+"techniques included in :demeter:`athena` are all purely empirical. While "
+"there is no substitute for careful, sophisticated analysis of EXAFS data "
+"using theory from :demeter:`feff`, often the empirical techniques "
+"described in this chapter are adequate to answer the questions you have "
+"about your data."
+msgstr ""
+":demeter:`athena` を使うと様々な解析を行うことができます．:demeter:`athena` で行うことができる"
+"データ解析には，:demeter:`feff` は必要ありません．:demeter:`feff` を用いたデータ解析は極めて大きな"
+"トピックであり，これは，:demeter:`artemis` が目的とするところです．:demeter:`athena` に含まれている"
+"データ解析技術は全て完全に経験的なものです．:demeter:`feff` による理論に基づいた注意深く，"
+"洗練された EXAFS 解析の代わりにはなりませんが，この章で説明する経験的な手法は"
+"しばしば，データに対して持っている疑問に答えることができるでしょう．"
+
+#: ../../analysis/index.rst:55
+msgid ""
+":demeter:`athena`'s analysis tools are accessed from the analysis section"
+" of the main menu, as shown below."
+msgstr ""
+":demeter:`athena` の解析ツールは，以下のように Analysis メニューからアクセスすることができます．"
+
+#: ../../analysis/index.rst:64
+msgid "The data analysis tools in the main menu."
+msgstr "メインメニューのデータ解析ツール"
+
+#: ../../analysis/index.rst:85
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../analysis/index.rst:90
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../analysis/index.rst:94
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

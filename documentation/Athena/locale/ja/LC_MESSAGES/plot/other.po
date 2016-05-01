@@ -1,0 +1,434 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../plot/other.rst:44
+msgid "Other plotting options"
+msgstr "その他のプロットオプション"
+
+#: ../../plot/other.rst:47
+msgid "Zooming and cursor position"
+msgstr "ズームとカーソル位置"
+
+#: ../../plot/other.rst:49
+msgid ""
+"Zooming on a region of a plot is done using :program:`Gnuplot`'s own "
+"capabilities.  In the plot window, a zoom is initiated by a right click "
+":mark:`rightclick,..`. The mouse is then dragged to cover a rectangular "
+"area on the plot. Right-clicking :mark:`rightclick,..` a second time will"
+" cause the plot to be redisplayed on the zoomed region."
+msgstr ""
+"プロット範囲のズームは，:program:`Gnuplot` がもっている機能を利用しています．"
+"プロットウィンドウで，:mark:`rightclick,..` 右クリックすると，ズームが"
+"開始されます．マウスを動かして，プロット上に長方形のエリアを選択し，"
+"もう一度，:mark:`rightclick,..` 右クリックを押すと，選択範囲が拡大されて"
+"プロットされます．"
+
+#: ../../plot/other.rst:55
+msgid ""
+":program:`Gnuplot` displays the position of the cursor in the bottom part"
+" of the plot window. This is continuously updated as the mouse moves over"
+" the plot window."
+msgstr ""
+":program:`Gnuplot` ではプロットウィンドウの下部にカーソル位置が表示されます．"
+"これは，マウスがプロットウィンドウ上で動くと常に更新され続けます．"
+
+#: ../../plot/other.rst:61
+msgid "Special plotting targets"
+msgstr "特別なプロットターゲット"
+
+#: ../../plot/other.rst:63
+msgid ""
+"The Plot menu provides a few more ways to control how your data are "
+"displayed. The :menuselection:`Plot --> Save last plot as` submenu allows"
+" you to send the most recent plot to a PNG or PDF file. You will be "
+"prompted for a filename, then the most recent plot will be written to "
+"that file in the format specified. Currently, only PNG and PDF are "
+"supported. Saving to a file does not work for quad plots |nd| you'll have"
+" to rely on a screen-capture tool for that."
+msgstr ""
+"Plot メニューを使うと，データの表示方法をコントロールすることができます．"
+":menuselection:`Plot --> Save last plot as` のサブメニューを選択すると，"
+"最後にプロットしたグラフを PNG あるいは PDF 形式で保存することができます．"
+"ファイル名を入力すると，最後にプロットしたグラフが選択された形式で保存されます．"
+"現時点では，PNG および PDF 形式だけがサポートされています．"
+"また，quad プロットをファイルへ保存することはできないため，必要であれば，"
+"スクリーンショットを取る必要があります．"
+
+#: ../../plot/other.rst:71
+msgid ""
+"Finally, you have the option of directing the on-screen plot to one of "
+"four terminals. The selected terminal, number 1 by default, is updated as"
+" new plots are made. When you switch to a new terminal, other active "
+"terminals will become unchanging. This means you can save a particular "
+"plot on screen while continuing to make new plots."
+msgstr ""
+"また，4つあるターミナルのうちの1つを選んでプロットすることもできます．"
+"選択されたターミナルは，デフォルトでは 1 であり，新しくプロットするごとに"
+"更新されます．新しいターミナルに変更すると，他のターミナルは変更されなくなります．"
+"つまり，特定のプロットを保存したままで，他のプロットを行うことできます．"
+
+#: ../../plot/other.rst
+msgid "Todo"
+msgstr ""
+
+#: ../../plot/other.rst:77
+msgid ""
+":demeter:`athena` should offer other vector output images, like SVG or "
+"EPS.  Also should make the number of terminals a configurable parameter."
+msgstr ""
+":demeter:`athena` で SVG や EPS といった他のベクトル形式の画像出力もできるようにする．"
+"また，ターミナルの数も設定で変更できるようにする．"
+
+#: ../../plot/other.rst:84
+msgid "Stacked plots"
+msgstr "積み重ねプロット"
+
+#: ../../plot/other.rst:86
+msgid ""
+"When marked group plots are made using the purple plot buttons, the "
+"default behavior is to overplot the various data groups. At times, it "
+"might be preferable to place an offset between the plots. This is done in"
+" general by setting the :procparam:`y-axis offset` parameter. Stacking "
+"plots in a systematic manner is done using the stack tab. Stacking is "
+"done by setting the :procparam:`y-axis offset` parameters of the marked "
+"groups sequentially."
+msgstr ""
+"紫色のプロットボタンを使ってマークをつけたグループをプロットすると，"
+"デフォルトの動作ではデータをそのまま重ね書きします．場合によっては，"
+"スペクトル間で適当なオフセットをかけた方がよいかも知れません．これは"
+"一般的には，:procparam:`y-axis offset` パラメータを設定することでできます．"
+"系統的にプロットの積み重ね表示を行いたい場合は，stack タブを使います．"
+"積み重ねはマークをつけたグループに対して順番に :procparam:`y-axis offset` "
+"パラメータを設定することで行われます．"
+
+#: ../../plot/other.rst:94
+msgid ""
+"This tab contains two text entry boxes. The first is used to set the "
+":procparam:`y-axis offset` parameter of the first marked group. "
+"Subsequent marked groups have their :procparam:`y-axis offset` parameters"
+" incremented by the amount of the second text entry box. Clicking the "
+":button:`Apply to marked,light` button sets these values for each marked "
+"group."
+msgstr ""
+"このタブには2つのテキスト入力ボックスがあります．1つめは，マークをつけた"
+"最初のデータの :procparam:`y-axis offset` を設定するために使われます．"
+"続くデータは :procparam:`y-axis offset` パラメータは2つめのテキスト入力"
+"ボックスの値だけ順に加算された値に設定されます．:button:`Apply to marked,light` "
+"ボタンをクリックすると，マークをつけたグループそれぞれに対して値が設定されます．"
+
+#: ../../plot/other.rst:107
+msgid "The plot stacking tab."
+msgstr "積み重ね表示タブ"
+
+#: ../../plot/other.rst:114
+msgid ""
+"An example of a stacked plot. Note that the stacking increment is "
+"negative so that that order of the colors is the same in the legend as in"
+" the plot."
+msgstr ""
+"積み重ね表示の例．積み重ねのための増分は負の値に設定されているため，"
+"プロットにおける凡例と色の順番が一致しています．"
+
+#: ../../plot/other.rst:126
+msgid "Indicators"
+msgstr "インジケータ"
+
+#: ../../plot/other.rst:128
+msgid ""
+"Indicators are vertical lines drawn from the top to the bottom of the "
+"plot frame. They are used to draw attention to specific points in plots "
+"of your data. This can be useful for comparing specific features in "
+"different data sets or for seeing how a particular feature propagates "
+"from energy to k to q."
+msgstr ""
+"インジケータはプロット領域において上下に描かれる垂直の線であり，データ"
+"プロットで特に注目したい点に対して注意を引くために使われます．これは，"
+"異なるデータ間で特定の特徴を比較したい場合や，ある特徴がエネルギーに対して"
+"プロットした時から k 空間あるいは q 空間にどのように伝播するかを確認するのに"
+"便利です．"
+
+#: ../../plot/other.rst:134
+msgid ""
+"Points to mark by indicators are chosen using `the pluck buttons "
+"<ui/pluck.html>`__ in the indicators tab. Click on the pluck button then "
+"on a spot in the plot. That value will be inserted into the adjacent text"
+" entry box. When the check button is selected, that indicator lines will "
+"be plotted (if possible) in each subsequent plot."
+msgstr ""
+"インジケータによってマークされた点はインジケータタブの `プランクボタン <ui/pluck.html>`__ "
+"使って選択することができます．プランクボタン，続いてプロットの適当な点を"
+"クリックして下さい．この値は隣のテキスト入力ボックスに反映されます．チェックボタンが"
+"選択されていれば，インジケータの線が（可能な場合に）それぞれの連続した"
+"スペクトルに対してプロットされます．"
+
+#: ../../plot/other.rst:140
+msgid ""
+"Points selected in energy, k, or q are plotted in any of those spaces. "
+"Points selected in R can only be plotted in R. Points outside the plot "
+"range are ignored."
+msgstr ""
+"エネルギー，k，あるいは q に対して選択された点は，いずれの空間においても"
+"プロットされます．一方，R 空間に対して選択された点は，R 空間でのみプロット"
+"されます．プロット範囲外の点は無視されます．"
+
+#: ../../plot/other.rst:151
+msgid "The indicator tab."
+msgstr "インジケータタブ"
+
+#: ../../plot/other.rst:158
+msgid ""
+"An example of a plot with indicators.  Note that plots made in E, k, or q"
+" will plot indicators selected in any of those three spaces."
+msgstr ""
+"インジケータの例．E, k, q のいずれの空間においてもインジケータがプロットされます．"
+
+#: ../../plot/other.rst:166
+msgid ""
+"The following `preferences <../other/prefs.html>`__ can be set to "
+"customize the appearance of the indicators."
+msgstr ""
+"続く `環境設定 <../other/prefs.html>`__ では，インジケータの見た目を"
+"カスタマイズすることができます．"
+
+#: ../../plot/other.rst:169
+msgid ""
+":configparam:`Plot,nindicators`: the maximum number of indicators that "
+"can be set"
+msgstr ""
+":configparam:`Plot,nindicators`: インジケータ設定の最大値"
+
+#: ../../plot/other.rst:171
+msgid ":configparam:`Plot,indicatorcolor`: the color of the indicator line"
+msgstr ":configparam:`Plot,indicatorcolor`: インジケータ線の色 
+
+#: ../../plot/other.rst:173
+msgid ":configparam:`Plot,indicatorline`: the line type of the indicator"
+msgstr ":configparam:`Plot,indicatorline`: インジケータ線の種類"
+
+#: ../../plot/other.rst:177
+msgid "Title and legend"
+msgstr "タイトルと凡例"
+
+#: ../../plot/other.rst:179
+msgid ""
+"Fine grained control over the title and legend of the plot is available "
+"in the :guilabel:`Title, legend, single file` tab."
+msgstr ""
+":guilabel:`Title, legend, single file` タブでプロットのタイトルや凡例を"
+"細かく指定することできます．
+
+#: ../../plot/other.rst:187
+msgid ""
+"The tab with controls for the title and legend of the plot as well as "
+"plot pausing and single file output."
+msgstr ""
+"プロットのタイトルや凡例を指定するタブでは，中断したり単一ファイルの"
+"出力も可能です．"
+
+#: ../../plot/other.rst:190
+msgid ""
+"Normally the title of a marked group plot is determined from the name of "
+"the project file.  If there is not yet a name for the project file, then "
+"the title of a marked groups plot (i.e. one made with a purple plot "
+"button) will be :quoted:`marked groups`."
+msgstr ""
+"通常，マークされたグループのタイトルにはプロジェクトファイルの名前が使われます．"
+"もしプロジェクトファイルの名前がなければ，マークされたプロットのタイトルは，"
+":quoted:`marked groups` になります．"
+
+#: ../../plot/other.rst:195
+msgid ""
+"This behavior can, however, be overridden by specifying a title in the "
+"text box labeled :guilabel:`Title for marked group plot`.  The text "
+"specified there will be used as the title.  The title for a marked group "
+"plot can be suppressed by specifying one or more spaces in that text box."
+msgstr ""
+"この動作は，:guilabel:`Title for marked group plot` とラベルされた"
+"テキストボックスにタイトルを指定することで上書きすることができます．"
+"そこに指定された文字列がタイトルとして利用されます．"
+"マークされたグループのプロットのタイトルは，テキストボックスに空白文字を"
+"書くことで抑制することができます．"
+
+#: ../../plot/other.rst:201
+msgid ""
+"The plot legend is place, by default, near the inner, top, right corner "
+"of the plot.  This sometimes interferes with the display of the data.  "
+"The corner can be selected using the radio buttons in the "
+":guilabel:`Legend location` box.  The placement of the legend inside or "
+"outside of the frame of the plot is controlled by the :guilabel:`Outside`"
+" check button.  Checking the :guilabel:`Suppress legend` button causes "
+"the legend not to be displayed."
+msgstr ""
+"デフォルトでは凡例はグラフ中の内側の右上に表示されます．しかし，時には，"
+"データ表示と干渉してしまうことがあります．どこに表示するかは，"
+":guilabel:`Legend location` ボックスのラジオボタンで選択することができます．"
+"反省をグラフの枠の内側にするか外側にするかについても，:guilabel:`Outside` "
+"チェックボタンで制御することができます． :guilabel:`Suppress legend` を"
+"チェックしておくと，凡例が表示されなくなります．"
+
+#: ../../plot/other.rst:214
+msgid ""
+"Plot of Fe metal showing the legend outside the plot frame and in the "
+"lower right corner."
+msgstr ""
+"グラフの外側の右下の角に凡例を表示した金属鉄のプロット例"
+
+#: ../../plot/other.rst:218
+msgid "Pausing display of data during import"
+msgstr "読み込み中のデータ表示の抑止"
+
+#: ../../plot/other.rst:220
+#, python-format
+msgid ""
+"When examining a sequence of XAS scans, it can be instructive to focus on"
+" the scan-to-scan changes in the data,  When the text box next to "
+":guilabel:`Marked plot pause` in :numref:`Fig. %s <fig-plottlsf>` is set "
+"to a non zero value, there will be a pause introduced between the display"
+" of the groups included in a marked group plot."
+msgstr ""
+"一連の XAS データの解析の際に，スペクトルごとの変化に着目すると有益な場合が"
+"あります．:numref:`Fig. %s <fig-plottlsf>` の :guilabel:`Marked plot pause` "
+"の隣にあるテキストボックスに 0 以外の数を入力すると，各スペクトルを表示する際に"
+"間が置かれます．"
+
+#: ../../plot/other.rst:227
+msgid ""
+"For example, consider a sequence of data in the reduction of hexavalent "
+"chromium to trivalent chromium.  Standards for these two forms of "
+"chromium are shown below."
+msgstr ""
+"例えば，六価クロムの三価クロムへの還元における一連のデータを想定してみましょう．"
+"2つのクロム種の標準は以下の通りです．"
+"
+
+#: ../../plot/other.rst:236
+msgid ""
+"Hexavalent chromium, with its large pre-edge peak, plotted with trivalent"
+" chromium."
+msgstr ""
+"大きなプレエッジピークを示す六価クロムと三価クロム"
+
+#: ../../plot/other.rst:239
+msgid ""
+"As the reduction progresses, the size of the pre-edge peak diminishes and"
+" the main rising edge shifts to the right.  A pause introduced to the "
+"marked group plot serves to animate the spectral change during this "
+"reduction."
+msgstr ""
+"還元過程において，プレエッジピークの大きさは小さくなっていき，吸収端は"
+"左側にシフトしていきます．マークされたグループのプロットで，間を置いて"
+"プロットすると，この還元過程の変化をアニメーションで確認することができます．"
+
+#: ../../plot/other.rst:244
+msgid ""
+"The value of this pause is in milliseconds.  A value of 250 or 500 is "
+"good starting point.  The value of zero turns off this animation feature "
+"and the plot will be made as quickly as possible."
+msgstr ""
+"この中断の値の単位はミリ秒です．まずはじめは 250 や 500 くらいにしてみる"
+"のがよいでしょう．0 にすると，このアニメーション機能がオフになり，できるだけ"
+"早くプロットされることになります．"
+
+#: ../../plot/other.rst:249
+msgid "Single file output"
+msgstr "単一ファイル出力"
+
+#: ../../plot/other.rst:251
+msgid ""
+":demeter:`athena` has some `fancy plots <etc.html>`_ hardwired. "
+"reproducing these plots in another plotting program using "
+":demeter:`athena`'s `column output files <../output/columns.html>`_ can "
+"be tricky."
+msgstr ""
+":demeter:`athena` は，固定の `特別なプロット <etc.html>`_ を行うことができます．"
+"これらのプロットを，:demeter:`athena` の `列出力ファイル <../output/columns.html>`_ "
+"を使って，他のプロットプログラムで再現するのは簡単でありません．"
+
+#: ../../plot/other.rst:256
+#, python-format
+msgid ""
+"To make it easier to reproduce plots made by :demeter:`athena`, there is "
+"an option to export the content of a plot to a single column data file.  "
+"This is enabled by toggling the :button:`Save next plot to a file,light` "
+"button shown in :numref:`Fig. %s <fig-plottlsf>`."
+msgstr ""
+":demeter:`athena` によるプロットを簡単に再現するには，プロットの内容を"
+"単一の列データとして出力してしまうことが考えられます．これは，"
+" :numref:`Fig. %s <fig-plottlsf>` にある :button:`Save next plot to a file,light` "
+"ボタンをクリックすることで実行できます．"
+
+#: ../../plot/other.rst:261
+#, python-format
+msgid ""
+"When toggled on, the next plot made will directed to a file rather than "
+"to the screen and you will be prompted for the name of the output file.  "
+"Any y-axis shifts or scaling factors will be included in the data written"
+" to that column data file.  Using the data from that file, stacked plots "
+"like :numref:`Fig. %s <fig-stacked>`, k123 plots like :numref:`Fig. %s "
+"<fig-k123plot>`, and others can be reproduced easily."
+msgstr ""
+"このボタンが有効化されていると，次のプロットはスクリーンではなく，ファイルに"
+"直接行われ，出力ファイル名の入力プロンプトが表示されます．Y 軸方向のシフトや"
+"スケーリングはすべて適用された状態で列形式のデータとして出力されます．"
+"このファイルからデータを利用すると，:numref:`Fig. %s <fig-stacked>` のような"
+"積み重ねプロットや，:numref:`Fig. %s <fig-k123plot>` のような k123 プロット，"
+"あるいはその他のプロットも同様に行うことできます．"
+
+#: ../../plot/other.rst:268
+msgid ""
+"Once the single file output is written, the :button:`Save next plot to a "
+"file,light` button will toggle off. The nextplot that is made will be "
+"directed again to the screen."
+msgstr ""
+"一度単一ファイルが書き出されると，:button:`Save next plot to a file,light` "
+"ボタンはオフになります．次のプロットはまたスクリーンに表示されます．"
+
+#: ../../plot/other.rst:272
+#, python-format
+msgid ""
+"Note that single file output will not include `plot markers "
+"<../bkg/norm.html#the-normalization-algorithm>`_ or `indicators "
+"<#indicators>`_, nor can it be used to reproduce all four panels at once "
+"of a quad (:numref:`Fig. %s <fig-quadplot>`) or bi-quad (:numref:`Fig. %s"
+" <fig-biquadplot>`) plot."
+msgstr ""
+"単一ファイルの出力には，`plot markers <../bkg/norm.html#the-normalization-algorithm>`_ "
+"や `indicators <#indicators>`_ は含まれず，quad (:numref:`Fig. %s <fig-quadplot>`) "
+"あるいは bi-quad (:numref:`Fig. %s <fig-biquadplot>`) プロットの4つまとめての"
+"プロットを再現することには利用できないことに注意してください．"
+
+#: ../../plot/other.rst:286
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../plot/other.rst:291
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../plot/other.rst:295
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

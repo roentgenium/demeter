@@ -1,0 +1,131 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../ui/frozen.rst:44
+msgid "Frozen groups"
+msgstr "グループのロック"
+
+#: ../../ui/frozen.rst:46
+msgid ""
+"There is a feature that :demeter:`athena` shares with almost any other "
+"computer program |nd| not just analysis programs, but any program. Soon "
+"after starting to use :demeter:`athena`, you will do something silly and "
+"regrettable.  Often this is as simple as changing a parameter to some bad"
+" value and forgetting what the good value was. To help mitigate this sort"
+" of problem, :demeter:`athena` allows you to *freeze* data groups."
+msgstr ""
+":demeter:`athena` には他の多くのプログラム，解析プログラムだけでなく，その他の"
+"プログラムとも共通した機能もあります．:demeter:`athena` を使い始めるとすぐに，"
+"何かばかなことや後悔するようなことを行ってしまうでしょう．パラメータを"
+"間違った値にしてしまったり，何がよい値であったかを忘れてしまうといったことは"
+"よく起こります．この種の問題を和らげるために，:demeter:`athena` ではデータグループを"
+" *ロックする (freeze)* ことができます．"
+
+#: ../../ui/frozen.rst:54
+msgid ""
+"A frozen group is one for which you cannot change its parameter values. "
+"When a group is frozen, the entry boxes associated with parameters become"
+" deactivated, which means that it is impossible to type in them. "
+"Furthermore, any global action, such as constraining parameters or using "
+"the alignment tool, will have no effect on the frozen group."
+msgstr ""
+"ロックされたグループのパラメータは変えることはできません．グループが"
+"ロックされると，関連するパラメータが無効化され，入力できなくなります．"
+"さらに，パラメータの拘束や整列操作といった全体に適用される操作もロックされた"
+"グループには適用されません．"
+
+#: ../../ui/frozen.rst:60
+msgid ""
+"The idea behind frozen groups is that, after working for a while to find "
+"parameter values that you like, you can freeze the group to avoid "
+"inadvertently altering its parameters. The various group freezing "
+"functions can be found in the :guilabel:`Freeze` menu, as shown in the "
+"screenshot below."
+msgstr ""
+"ロック機能は，最適なパラメータを探した後にうっかりしてそのパラメーターを"
+"変更しないようにするためにあります．以下のスクリーンショットで示している"
+"ように，様々なロック機能は :guilabel:`Freeze` メニューからアクセスすることが"
+"できます．"
+
+#: ../../ui/frozen.rst:71
+msgid ""
+"Several visual cues indicate that a group is frozen, including the green "
+"highlighting the group list and the disabling of most controls."
+msgstr ""
+"データのロックはいくつかの方法で視覚化されており，グループリストで"
+"緑色に強調されたり，多くの操作項目が無効化されています．"
+
+#: ../../ui/frozen.rst:74
+msgid ""
+"The frozen state of the current group can be toggled using the "
+":guilabel:`Freeze` check button or by typing :button:`Alt`-:button:`f`. "
+"You can set the frozen state of multiple groups using the items in the "
+":guilabel:`Freeze` menu. There you will find options for freezing or "
+"unfreezing all groups, all marked groups, or groups which match `regular "
+"expressions <mark.html#using-regular-expressions-to-mark-groups>`__."
+msgstr ""
+"選択中のグループのロック状態を変更するには，:guilabel:`Freeze` ボタンに"
+"チェックを入れるか，:button:`Alt`-:button:`f` とタイプしてください．"
+":guilabel:`Freeze` メニューの項目を使うと，複数のグループのロック状態を"
+"設定することができます．全てのデータ，マークのついたグループあるいは"
+"正規表現に一致するグループに対して，ロックをかけたりあるいはロックを"
+"解除したりすることもできます．"
+
+#: ../../ui/frozen.rst:82
+msgid ""
+"There are various visual changes when a group is frozen. The highlight "
+"color in the group list changes to light green and all the widgets on the"
+" main window become disabled."
+msgstr ""
+"ファイルをロックすると，いくつか見た目の変化があります．グループリストで"
+"選択されたときの強調の色が薄い緑色に変わり，メインウィンドウの入力欄は"
+"無効になります．"
+
+#: ../../ui/frozen.rst:86
+msgid ""
+"When a group is frozen, direct edits of parameter values are disallowed."
+"  Frozen groups are skipped for algorithmic edits, such as parameter "
+"constraints or alignment. You can, however, still remove a frozen group "
+"from the project. Unfreezing a group is a simple as hitting "
+":button:`Alt`-:button:`f` again."
+msgstr ""
+"ロックしたデータのパラメータを直接編集することはできません．ロックされた"
+"データに対しては，パラメータの拘束や整列といった操作は適用されませんが，"
+"プロジェクトから削除してしまうことはできます．ロックを解除するには，"
+"もう一度 :button:`Alt`-:button:`f` を押して下さい．"
+
+#: ../../ui/frozen.rst:100
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../ui/frozen.rst:105
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../ui/frozen.rst:109
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

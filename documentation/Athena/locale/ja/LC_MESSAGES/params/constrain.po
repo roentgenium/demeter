@@ -1,0 +1,264 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../params/constrain.rst:44
+msgid "Constraining parameters between data groups"
+msgstr "データ間パラメータの束縛"
+
+#: ../../params/constrain.rst:46
+msgid ""
+":mark:`lightning,..` In :demeter:`athena`, a *constraint* is the setting "
+"of a parameter to be the same for two or more data groups. (That word is "
+"used in a different context in :demeter:`artemis`.) :demeter:`athena` "
+"gives you a high level of control over the values of the parameters used "
+"to process your data. This control is very fine-grained in the sense that"
+" every group can have its own values for any parameters, thus allowing "
+"you to customize the data processing for each individual data group."
+msgstr ""
+":mark:`lightning,..` :demeter:`athena` で，*constraint* とは2つ以上の"
+"データグループのパラメータを同じにしておくことを指しています．"
+"（これは，:demeter:`artemis` における言葉の使い方とは異なります．）"
+" :demeter:`athena` では，データ処理を行う際に用いるパラメータに対して"
+"高いレベルの制御，すなわち，すべてのデータについて，それぞれのパラメータを"
+"非常に細かく設定できます．このため，それぞれ独立のデータに対してデータ"
+"処理を行うことができます．"
+
+#: ../../params/constrain.rst:55
+msgid ""
+"Often, however, your data groups are sufficiently similar that it is "
+"expedient to use identical values for some or all parameters. Were you "
+"forced to click through the data groups setting each parameter value for "
+"each group individually, then :demeter:`athena` would be very tedious to "
+"use.  Fortunately, there are a number of tools dedicated to the problem "
+"of constraining parameter values."
+msgstr ""
+"しかしながら，多くの場合，解析しようとしているデータは互いに似通っており，"
+"いくつかあるいはすべてのパラメータに対して同じ値を使う方がよいことも多い"
+"でしょう．もし，それぞれのデータグループに対して個別に別々のパラメータを"
+"設定するのに，それぞれのデータをクリックしなければならないとすれば，"
+":demeter:`athena` を使うのは非常に面倒でしょう．幸運なことに，パラメータを"
+"束縛するために利用できる様々なツールが用意されています．"
+
+#: ../../params/constrain.rst:64
+msgid "Constraining individual parameters"
+msgstr "個別のパラメータの束縛"
+
+#: ../../params/constrain.rst:66
+msgid ""
+"The first such tool is used to constrain individual parameters. A "
+":mark:`rightclick,..` *right mouse click* on any of the parameter labels "
+"on the main window will post a context menu, as shown in this figure."
+msgstr ""
+"1つめの例は，個別のパラメータを束縛するものです．メインウィンドウにある"
+"パラメータのラベルを *右クリック* すると，以下に示すようなコンテキスト"
+"メニューが表示されます．"
+
+#: ../../params/constrain.rst:76
+msgid "Posting a context menu for an individual parameter."
+msgstr "個別のパラメータに関するコンテキストメニュー"
+
+#: ../../params/constrain.rst:78
+msgid ""
+"The first two items in this context menu are used to set the values of "
+"this parameter for other groups to its value for the current group. The "
+"current group is, of course, the one whose values are currently displayed"
+" in the main window and the one which is highlighted in the group list. "
+"This parameter value can be applied to all groups or to the set of marked"
+" groups. The set of marked groups are the ones with their little check "
+"buttons in the group list checked. So here we see again one of the many "
+"uses of the mark buttons."
+msgstr ""
+"このコンテキストメニューの最初の2つの項目は，現在選択されているグループの"
+"値を他のグループに対しても適用するために利用されます．現在選択されている"
+"グループとは，もちろん，現時点でメインウィンドウに表示されているもので，"
+"グループリストで強調されています．この値は他のすべてのグループあるいは"
+"マークをつけている一連のグループに対して適用することができます．マークの"
+"ついたグループのセットとは，右上のグループリストでチェックが入ったグループの"
+"ことです．これもグループリストにあるチェックボックスを使う例です．"
+
+#: ../../params/constrain.rst:87
+msgid ""
+"The last options involves resetting a parameter to its default value. "
+"This is handy if you have changed a parameter and found yourself in a "
+"place where the data processing is obviously wrong. By resetting the "
+"parameter to its default, you can return to a sensible place"
+msgstr ""
+"最後の選択肢は，パラメータをデフォルトの値にリセットするために使われます．"
+"もし，パラメータを変更していて，処理結果が明らかに間違っていると"
+"気づいた時には便利です．パラメータをデフォルトに戻すと，まともな状態に"
+"戻ることができるでしょう．"
+
+#: ../../params/constrain.rst:92
+msgid ""
+"Several of the parameter context menus have a few more entries in their "
+"context menus:"
+msgstr ""
+"いくつかのパラメータのコンテキストメニューにはもう少し選択肢があることも"
+"あります．: 
+
+#: ../../params/constrain.rst:95
+msgid ""
+"The :procparam:`energy shift` context menu has entries related to "
+"reference groups and options for displaying energy shift values for all "
+"or marked groups."
+msgstr ""
+":procparam:`energy shift` のコンテキストメニューには，参照グループに"
+"関する項目とすべてあるいはマークのついたグループのエネルギーシフトを"
+"表示するための選択肢があります．"
+
+#: ../../params/constrain.rst:99
+msgid ""
+"The :procparam:`importance` context menu has entries for resetting the "
+":procparam:`importance` of all groups or marked groups to 1."
+msgstr ""
+":procparam:`importance` のコンテキストメニューにはすべてあるいはマークの"
+"ついたグループの :procparam:`importance` を 1 に戻すための項目があります．"
+
+#: ../../params/constrain.rst:102
+msgid ""
+"The :procparam:`E0` context menu has several options for changing the "
+"value of :procparam:`e0`. All of the options will be explained in `the "
+"next section <../params/e0.html>`__."
+msgstr ""
+":procparam:`E0` のコンテキストメニューには :procparam:`e0` の値を変更する"
+"ためのいくつかの選択肢があります．すべての選択肢は `次節 <../params/e0.html>`__ で説明します．"
+
+#: ../../params/constrain.rst:106
+msgid ""
+"The :procparam:`Edge step` context menu as options for displaying edge "
+"step values for all or marked groups. There is also an option for "
+"approximating the uncertainty in the edge step value. When selected, the "
+"pre- and post-edge line parameters will be varied randomly a number of "
+"times. Each normalization will be plotted. The standard devaition of the "
+"edge steps will be computed and displayed in the echo area."
+msgstr ""
+":procparam:`Edge step` コンテキストメニューはすべてあるいはマークの"
+"ついたデータの吸収端ジャンプ量を表示するための選択肢があります．また，"
+"ジャンプ量計算の不確かさを表示することもできます．これを選択しておくと，"
+"プレエッジおよびポストエッジに関するパラメータが何回かランダムに変更され，"
+"それぞれの条件で規格化されたものがプロットされます．吸収端ジャンプ量の"
+"標準偏差が計算され，エコーエリアに表示されます．"
+
+#: ../../params/constrain.rst:114
+msgid ""
+"The Fourier transform :procparam:`krange` context menu has an option for "
+"setting the upper bound to :demeter:`ifeffit`'s suggestion, which is "
+"based on the level of noise in the data."
+msgstr ""
+"フーリエ変換の :procparam:`krange` コンテキストメニューには，上限値を"
+"データのノイズレベルに基づいて :demeter:`ifeffit` が提案する値に上限を"
+"設定する選択肢があります．"
+
+#: ../../params/constrain.rst:121
+msgid "Constraining groups of parameters"
+msgstr "パラメータグループの束縛"
+
+#: ../../params/constrain.rst:123
+msgid ""
+"In the main window, the parameters are grouped into sets of related "
+"parameters. All of the parameters associated with background removal are "
+"in one box, all the Fourier transform parameters are in another box, and "
+"so on. The labels at the top of each box are sensitive to "
+":mark:`rightclick,..` mouse clicks much like the entry box labels. A "
+":mark:`rightclick,..` right click posts a context menu, as shown in the "
+"picture below."
+msgstr ""
+"メインウィンドウではパラメータはいくつかの関係するパラメータの組に"
+"グループ化されています．バックグラウンド除去に関するすべてのパラメータは"
+"1つのボックスに存在し，フーリエ変換についても1つのボックスにまとめられており，"
+"他も同様です．それぞれのボックスの一番上のラベル入力ボックスのラベルと"
+"同様にクリックすることができます．:mark:`leftclick,..` 左クリックすると，"
+"エコーエリアにヘルプメッセージを出力し，:mark:`rightclick,..` "
+"右クリックするとコンテキストメニューが以下の様に表示されます．"
+
+#: ../../params/constrain.rst:136
+msgid "Posting a context menu for a group of parameters."
+msgstr "パラメータグループのコンテキストメニュー"
+
+#: ../../params/constrain.rst:138
+msgid ""
+"The various options behave much the same as in the individual parameter "
+"context menus, except that all of the parameters in the box are effected."
+" This, then, gives you a way of constraining all background removal "
+"parameters or all Fourier transform parameters between groups. It also "
+"provides a way of restoring default values for a set of parameters."
+msgstr ""
+"多くの選択肢は個々のパラメータのコンテキストメニューと同じように動作し，"
+"その適用範囲はボックス全体のパラメータに渡ります．よって，データ間の"
+"バックグラウンド除去あるいはフーリエ変換パラメータをまとめて同じ値に"
+"することができます．同様に一連のパラメータをすべてデフォルト値に戻す"
+"こともできます．"
+
+#: ../../params/constrain.rst:148
+msgid "Constraining all parameters"
+msgstr "全パラメータの束縛"
+
+#: ../../params/constrain.rst:150
+msgid ""
+"The functionality which allows you to constrain parameter values between "
+"groups operates at three levels. We have seen the finest level of "
+"granularity, allowing individual parameters to be constrained. We have "
+"also seen how sets of parameters can be constrained. It is also possible "
+"to perform the same constraining operations on all parameters at once. "
+"These all-parameter operations are found in the Group menu, as shown in "
+"this picture."
+msgstr ""
+"データ間のパラメータを束縛する機能は3段階で提供されています．すでに"
+"個々のパラメータについて束縛するというもっとも細かな調整方法について"
+"紹介しました．また，一連のパラメータについてまとめて束縛する方法についても"
+"紹介しました．更に，すべてのパラメータを一気に同じ値にしてしまうことも"
+"できます．このようにすべてのパラメータをまとめて設定する方法は以下の様に"
+" Group メニューから実行することができます．"
+
+#: ../../params/constrain.rst:163
+msgid ""
+"The :guilabel:`Group` menu, which contains the options for constraining "
+"all parameters at once."
+msgstr "すべてのパラメータについて一度に束縛するための :guilabel:`Group` メニュー"
+
+#: ../../params/constrain.rst:166
+msgid ""
+"Again, these operations work identically to the explanation above, except"
+" that every parameter is effected, with the exceptions of "
+":procparam:`file` and :procparam:`energy shift`, which would not be "
+"sensible to constrain in this way."
+msgstr ""
+"もちろん，これらの操作は影響範囲が全体にわたるという点以外には，これまでに"
+"説明したのと同様に働きます．但し，:procparam:`file` と"
+" :procparam:`energy shift` はこの全体設定の影響を受けません．"
+
+#: ../../params/constrain.rst:180
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../params/constrain.rst:185
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../params/constrain.rst:189
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

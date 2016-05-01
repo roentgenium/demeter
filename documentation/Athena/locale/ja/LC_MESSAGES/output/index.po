@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../output/index.rst:43
+msgid "Data export"
+msgstr "データのエクスポート"
+
+#: ../../output/index.rst:46
+msgid ""
+"Although :demeter:`athena` handles many of your XAS data processing "
+"chores, there are many other things you may want to do with you data, "
+"such as preparing beautiful plots for publication or importing data into "
+":demeter:`artemis`. This chapter explains the various kinds of output "
+"files available in :demeter:`athena`."
+msgstr ""
+":demeter:`athena` は XAS データ処理の全てについての面倒を見ますが，データに関して"
+"それ以外にも，例えば，出版用のきれいなプロットを行うとか，:demeter:`artemis` に"
+"データを読み込むなど他のこともしたいと思います．この章では，:demeter:`athena` で"
+"行うことができる様々な出力について説明します．
+
+#: ../../output/index.rst:52
+msgid ""
+"There are three main types of export files, each of which is explained on"
+" the following pages:"
+msgstr ""
+"出力ファイルには大きく分けて3種類あり，それぞれについて以下のように説明します．:"
+
+#: ../../output/index.rst:55
+msgid "Column data files useful for importing into other plotting programs"
+msgstr "他のプロットプログラムへのインポートに便利な列形式のデータファイル"
+
+#: ../../output/index.rst:57
+msgid ""
+"Project files which capture the entire state of your current work in "
+":demeter:`athena`. These can be re-imported into :demeter:`athena`, "
+"imported into :demeter:`artemis`, or emailed to your collaborator in "
+"another time zone."
+msgstr ""
+":demeter:`athena` で作業中の全ての状態を保存するためのプロジェクトファイル．"
+"これは :demeter:`athena` で再読み込みできるだけでなく，:demeter:`artemis` に"
+"読み込んだり，他のタイムゾーンにいる共同研究者の元へメールで送ることもできます．"
+
+#: ../../output/index.rst:62
+msgid ""
+"Report files summarizing parameter values for all the data groups in your"
+" project. These report files can be imported into spreadsheet or a "
+"database program."
+msgstr ""
+"プロジェクトにおける全てのデータのパラメータをまとめたレポートファイル．"
+"これらは Excel のような表計算ソフトやデータベースに読み込むことができます．"
+
+#: ../../output/index.rst:83
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../output/index.rst:88
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../output/index.rst:92
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

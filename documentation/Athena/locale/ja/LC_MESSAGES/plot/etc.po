@@ -1,0 +1,416 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../plot/etc.rst:43
+msgid "Special plots for XAS data"
+msgstr "XAS データの特別なプロット"
+
+#: ../../plot/etc.rst:47
+msgid "Special plots for the current group"
+msgstr "選択中データに対する特別なプロット"
+
+#: ../../plot/etc.rst:54
+msgid ""
+"A number of special plots and other plotting features are provided for "
+"visualizing particular aspects of your data. The plot types described "
+"below are all available from the :guilabel:`Plot` menu."
+msgstr ""
+"データの特徴を可視化するために，他のプロット機能と共にいくつかの特別な"
+"プロット機能が備わっています．以下で説明するプロット機能はすべて :guilabel:`Plot` "
+"メニューからアクセスすることができます． "
+
+#: ../../plot/etc.rst:71
+msgid "**Quad plot**"
+msgstr "**四連プロットt**"
+
+#: ../../plot/etc.rst:59
+msgid ""
+"The quad plot is the default plot that gets made when data are first "
+"imported. Using the current set of processing parameters, the data are "
+"displayed in energy, k, R, and back-transform k all in the same plot "
+"window. This plot can also be made by right-clicking "
+":mark:`rightclick,..` on the :button:`kq,orange` button."
+msgstr ""
+"四連プロットは，データが最初に読み込まれたときにデフォルトで表示される"
+"プロットです． 現在の一連の処理パラメータを使って，データをエネルギー，"
+"k，R，そして逆フーリエ変換された k に対するプロットを1つのウィンドウに"
+"表示させることができます．"
+"このプロットは，:button:`kq,orange` ボタンを :mark:`rightclick,..` 右クリック"
+"することでも表示できます．"
+
+#: ../../plot/etc.rst:71
+msgid "Quad plot of Fe foil."
+msgstr "鉄箔の四連プロット"
+
+#: ../../plot/etc.rst:83
+msgid "**Normalized data and derivative**"
+msgstr "**規格化されたデータと微分**"
+
+#: ../../plot/etc.rst:74
+msgid ""
+"This plot type shows the normalized |mu| (E) spectrum along with its "
+"derivative. The derivative spectrum is scaled by an amount that makes it "
+"display nicely along with the normalized data."
+msgstr ""
+"このプロット形式は，規格化された |mu| (E) スペクトルをその微分と共に"
+"表示させることができます．微分スペクトルは規格化されたデータに対して"
+"うまく見えるように適当にスケールされて表示されます．"
+
+#: ../../plot/etc.rst:83
+msgid "Norm and deriv of Fe foil"
+msgstr "鉄箔の規格化されたスペクトルとその微分"
+
+#: ../../plot/etc.rst:102
+msgid "**Data + I0 + signal**"
+msgstr ""
+
+#: ../../plot/etc.rst:86
+msgid ""
+"I\\ :sub:`0` can be plotted along with |mu| (E) and the signal as shown "
+"below. The I\\ :sub:`0` and signal channel is among the data saved in `a "
+"project file <../output/project.html>`__. This example shows |mu| (E) of "
+"Au chloride along with the signal and I\\ :sub:`0` channels. This plot "
+"can also be made by right-clicking on the :button:`E,orange` button. (The"
+" norm+deriv plot can be configured for right-click :mark:`rightclick,..` "
+"use with the :configparam:`Athena,right\\_single\\_e` `configuration "
+"parameter <../other/prefs.html>`__.)"
+msgstr ""
+"以下のように I\\ :sub:`0` を |mu| (E) とシグナルに対してプロットすることが"
+"できます．I\\ :sub:`0` とシグナルは `プロジェクトファイル <../output/project.html>`__ "
+"にも合わせて保存されます．以下の例では，塩化金の |mu| (E) をシグナルと I\\ :sub:`0` "
+"に合わせて表示しています．"
+"このプロットは，:button:`E,orange` ボタンを右クリックすることでも表示できます．"
+"（規格化スペクトルと微分のプロットは，`環境設定 <../other/prefs.html>`__ の"
+" :configparam:`Athena,right\\_single\\_e` を変更することで，右クリックでの"
+"動作を変更することができます．"
+
+#: ../../plot/etc.rst:101
+msgid "mu(E) of Au chloride along with the signal and I\\ :sub:`0` channels."
+msgstr "塩化金の mu(E) をシグナル，I\\ :sub:`0` とともに表示"
+
+#: ../../plot/etc.rst:117
+msgid "**k123 plot**"
+msgstr "**k123 プロット**"
+
+#: ../../plot/etc.rst:105
+msgid ""
+"A k123 plot is a way of visualizing the effect of k-weighting on the "
+"|chi| (k) spectrum. The k\\ :sup:`1`-weighted spectrum is scaled up to be"
+" about the same size as the k\\ :sup:`2`-weighted spectrum. Similarly, "
+"the k\\ :sup:`3`-weighted spectrum is scaled down. This plot can also be "
+"made by right-clicking :mark:`rightclick,..` on the :button:`k,orange` "
+"button."
+msgstr ""
+"k123 プロットは |chi| (k) スペクトルに対する k の重み付けの効果を可視化する"
+"方法の1つです．k\\ :sup:`1` で重み付けされたスペクトルは k\\ :sup:`2` で"
+"重み付けされたスペクトルと同じ大きさになるように適当にスケールされます．"
+"同様に，k\\ :sup:`3` で重み付けされたスペクトルについても適当にスケール"
+"ダウンされます．"
+"このプロットは，:button:`k,orange` ボタンを :mark:`rightclick,..` "
+"右クリックすることでも表示できます．"
+
+
+#: ../../plot/etc.rst:117
+msgid "k123 plot of Fe foil"
+msgstr "鉄箔の k123 プロット"
+
+#: ../../plot/etc.rst:137
+msgid "**R123 plot**"
+msgstr "**R123 プロット**"
+
+#: ../../plot/etc.rst:120
+msgid ""
+"A R123 plot is a way of visualizing the effect of k-weighting on the "
+"|chi| (R) spectrum. The Fourier transform is made with k-weightings of 1,"
+" 2, and, 3. The FT of the k\\ :sup:`1`-weighted spectrum is scaled up to "
+"be about the same size as the FT or the k\\ :sup:`2`-weighted spectrum. "
+"Similarly, the FT of the k\\ :sup:`3`-weighted spectrum is scaled down. "
+"The current setting in the `R tab <tabs.html#plotting-in-r-space>`__ is "
+"used to make this plot. For this figure, the magnitude setting was "
+"selected. This plot can also be made by right-clicking "
+":mark:`rightclick,..` on the :button:`R,orange` button."
+msgstr ""
+"R123 プロットは |chi| (R) スペクトルに対する k の重み付けの効果を可視化する"
+"方法の1つです．k の重み付けとして 1, 2, 3 を使ったフーリエ変換後のスペクトルが"
+"表示されます．k\\ :sup:`1` で重み付けされたスペクトルは k\\ :sup:`2` で"
+"重み付けされたフーリエ変換後のスペクトルと同じ大きさになるように適当に"
+"スケールされます．同様に，k\\ :sup:`3` で重み付けされたスペクトルについても"
+"適当にスケールダウンされます．プロットする際には R タブにおける現在の設定が"
+"適用されます．この図では，magnitude が選択されています．"
+"このプロットは，:button:`R,orange` ボタンを :mark:`rightclick,..` "
+"右クリックすることでも表示できます．"
+
+#: ../../plot/etc.rst:136
+msgid "R123 plot of Fe foil"
+msgstr "鉄箔の R123 プロット"
+
+#: ../../plot/etc.rst:140
+msgid "Special plots for the marked groups"
+msgstr "マークされたデータに関する特別なプロット"
+
+#: ../../plot/etc.rst:142
+msgid ""
+"The :menuselection:`Plot --> Marked groups` submenu offers two special "
+"kinds of plots relating to the set of groups in the group list that have "
+"been `marked <../ui/mark.html>`__."
+msgstr ""
+":menuselection:`Plot --> Marked groups` サブメニューでは，"
+"`マーク <../ui/mark.html>`__ された一連のデータに関連した2つの特別な"
+"プロット機能を提供しています．"
+
+#: ../../plot/etc.rst:158
+msgid "**Bi-Quad plot**"
+msgstr "**双四連プロット (Bi-Quad plot)**"
+
+#: ../../plot/etc.rst:147
+msgid ""
+"This special plot is like the quad plot described above, but is used to "
+"compare two marked groups. To make this plot you must have two |nd| and "
+"only two |nd| groups selected from the group list. This plot can also be "
+"made by right-clicking :mark:`rightclick,..` on the :button:`q,purple` "
+"button."
+msgstr ""
+"この特別なプロットは，上述の四連プロットのようなものですが，2つのマークされた"
+"グループを比較するために利用されます．このプロットを書くには，2つの |nd| "
+" そして2つだけの |nd| グループをリストから選択する必要があります．"
+"このプロットは，:button:`q,purple` ボタンを :mark:`rightclick,..` "
+"右クリックすることでも表示できます．"
+
+#: ../../plot/etc.rst:158
+msgid "A quad plot comparing two marked groups."
+msgstr "2つのマークされたスペクトルを比較するための四連プロット"
+
+#: ../../plot/etc.rst:171
+msgid "**Plot with E0 at 0**"
+msgstr "**Plot with E0 at 0**"
+
+#: ../../plot/etc.rst:161
+msgid ""
+"This special plot is used to visualize |mu| (E) spectra measured at "
+"different edges. Each spectrum, Cu and Fe in this example, is shifted so "
+"that its point of E\\ :sub:`0` is displayed at 0 on the energy axis."
+msgstr ""
+"この特別なプロットは，異なる吸収端で測定された |mu| (E) スペクトルを"
+"可視化するために利用されます．以下の例はでは，Cu と Fe のそれぞれの"
+"スペクトルについて，E\\ :sub:`0` がエネルギー軸の 0 になるようにシフト"
+"されています．"
+
+#: ../../plot/etc.rst:171
+msgid "Plot of Fe and Cu foils with E0 at 0."
+msgstr "鉄箔と銅箔の E0 を 0 にそろえてプロット"
+
+#: ../../plot/etc.rst:187
+msgid "**Plot I0 of marked groups**"
+msgstr "**マークされたグループの I0 のプロット**"
+
+#: ../../plot/etc.rst:174
+msgid ""
+"This plot allows examination of the I\\ :sub:`0` signals of a set of "
+"marked groups. This plot can also be made by right-clicking on the "
+":button:`E,purple` button. (The other two special marked groups plots can"
+" be configured for right-click :mark:`rightclick,..` use with the "
+":configparam:`Athena,right\\_marked\\_e` `configuration parameter "
+"<../other/prefs.html>`__.)"
+msgstr ""
+"このプロットでは，マークされた一連のデータの I\\ :sub:`0` が表示されます．"
+"このプロットは，:button:`E,purple` ボタンを :mark:`rightclick,..` "
+"右クリックすることでも表示できます．"
+"（他の2つの特別な複数用のプロットは，`環境設定 <../other/prefs.html>`__ の "
+" :configparam:`Athena,right\\_marked\\_e` を変更することで利用できます．"
+
+#: ../../plot/etc.rst:187
+msgid "The I0 signals of three marked groups"
+msgstr "マークされた3つのグループの I0 シグナル"
+
+#: ../../plot/etc.rst:202
+msgid "**Plot scaled by edge step**"
+msgstr "**エッジジャンプでスケールされたプロット**"
+
+#: ../../plot/etc.rst:190
+msgid ""
+"The marked groups can be plotted as normalized |mu| (E), but scaled by "
+"the size of the edge step. Without flattening, this is identical to "
+"plotting the |mu| (E) data with the pre-edge line subtracted. Otherwise, "
+"it is different in that the post-edge region will be flattened and will "
+"oscillate around the level of the edge step size."
+msgstr ""
+"マークされたグループの規格化された |mu| (E) をエッジジャンプ量で規格化して，"
+"プロットします．平滑化しなければ，これは，プレエッジを引き算した |mu| (E) と"
+"等価です．しかし，吸収端後の領域が平滑化されているので，エッジジャンプの量に"
+"応じた振動を示します．"
+
+#: ../../plot/etc.rst:201
+msgid "Plot of normalized data scaled by edge step."
+msgstr "エッジジャンプでスケールされた規格化データのプロット"
+
+#: ../../plot/etc.rst:205
+msgid "Special plots for merged groups"
+msgstr "マージされたグループに対する特別なプロット"
+
+#: ../../plot/etc.rst:207
+#, python-format
+msgid ""
+"When data are merged, the standard deviation spectrum is also computed "
+"and saved in `project files <../output/project.html>`__. The merged data "
+"can be plotted along with its standard deviation as shown in the merge "
+"section (Figure :numref:`Fig. %s <fig-mergestddev>`) in a couple of "
+"interesting ways."
+msgstr ""
+"データがマージされた場合，標準偏差のスペクトルが計算され，"
+" `プロジェクトファイル <../output/project.html>`__ に保存されます．"
+"マージされたデータは，マージに関する節に示されている通り"
+"(:numref:`Fig. %s <fig-mergestddev>`) ，いくつかのおもしろい方法で，"
+"その標準偏差を含めてプロットすることができます．"
+
+#: ../../plot/etc.rst:227
+msgid "**Merge + standard deviation**"
+msgstr "**Merge + standard deviation**"
+
+#: ../../plot/etc.rst:214
+msgid ""
+"In this plot, the merged data are displayed along with the standard "
+"deviation. The standard deviation has been added to and subtracted from "
+"the merged data. This is the plot that is displayed by default when a "
+"merge is made. This behavior is controled by the "
+":configparam:`Athena,merge\\_plot` `configuration parameter "
+"<../other/prefs.html>`__."
+msgstr ""
+"このプロットでは，マージされたデータが標準偏差と共にプロットされます．"
+"マージされたデータから標準偏差が加算および減算されています．このプロットは"
+"デフォルトではマージされた際に表示されます．この動作は"
+" `環境設定 <../other/prefs.html>`__ の :configparam:`Athena,merge\\_plot` "
+"によって制御されています．"
+
+#: ../../plot/etc.rst:226
+msgid "A plot of merged data +/- the standard deviation for Au hydroxide data"
+msgstr "水酸化金のマージされたデータとその標準偏差のプロット"
+
+#: ../../plot/etc.rst:242
+msgid "**Merge + variance**"
+msgstr "**Merge + variance**"
+
+#: ../../plot/etc.rst:230
+msgid ""
+"In this plot, the standard deviation spectrum is plotted directly. It is "
+"scaled to plot nicely with the merged data. The point of this plot is to "
+"see how the variability in the data included in the merge is distributed "
+"in energy."
+msgstr ""
+"このプロットでは，標準偏差スペクトルが直接プロットされます．標準偏差は"
+"マージされたデータに対して適当にスケールされます．このプロット方法の"
+"ポイントは，エネルギーに対して，マージされたデータのばらつきがどの程度で"
+"あるかをみるということです．"
+
+#: ../../plot/etc.rst:240
+msgid "A plot of merged data and the variance for Fe foil data"
+msgstr "マージされた鉄箔データとその分散"
+
+#: ../../plot/etc.rst:245
+msgid "Phase corrected plots"
+msgstr "位相補正したプロット"
+
+#: ../../plot/etc.rst:247
+msgid ""
+"When the :guilabel:`phase correction` check button is clicked on, the "
+"Fourier transform for that data group will be made by subtracting the "
+"central atom phase shift. This is an incomplete phase correction |nd| in "
+":demeter:`athena` we know the central atom but do not necessarily have "
+"any knowledge about the scattering atom."
+msgstr ""
+":guilabel:`phase correction` ボタンをクリックすると，データに対する"
+"フーリエ変換が中心元素による位相シフトの分だけ補正されます． これは，"
+"位相シフトの補正としては不十分です．:demeter:`athena` において，"
+"中心原子が何なのかはわかっていますが，散乱原子が何なのかということが"
+"わかっているとは限りません．"
+
+#: ../../plot/etc.rst:253
+msgid ""
+"Note that, when making a phase corrected plot, the window function in R "
+"is not corrected in any way, thus the window will not line up with the "
+"central atom phase corrected |chi| (R)."
+msgstr ""
+"位相について補正されたプロットを行う際には，R 空間において窓関数が"
+"いかなる意味でも適切に補正されない，すなわち，窓が中心元素について"
+"位相補正された |chi| (R) にうまく沿いません．"
+
+#: ../../plot/etc.rst:257
+msgid ""
+"Also note that the phase correction propagates through to |chi| (q). "
+"While the window function will display sensibly with the central atom "
+"phase corrected |chi| (q), a :button:`kq,orange` plot will be somewhat "
+"less insightful because phase correction is not performed on the original"
+" |chi| (k) data."
+msgstr ""
+"位相シフトの補正は |chi| (q) に対しても伝播することにも注意して下さい．"
+"窓関数は，中心原子について位相補正された |chi| (q) に対してうまく表示されている"
+"ように見えますが，元の |chi| (k) データに対して，位相補正が行われていないため，"
+":button:`kq,orange` プロットを表示しても余り有益ではないでしょう．"
+
+#: ../../plot/etc.rst:265
+msgid "XKCD-style plots"
+msgstr "XKCD スタイルのプロット"
+
+#: ../../plot/etc.rst:267
+msgid ""
+":demeter:`athena` can make plots in a style that resembles the famous "
+"`XKCD comic <http://xkcd.com/>`__."
+msgstr ""
+":demeter:`athena` は有名な `XKCD comic <http://xkcd.com/>`__ に似せた"
+"スタイルでプロットすることもできます．"
+
+#: ../../plot/etc.rst:270
+msgid ""
+"To make use of this most essential feature, you should first download and"
+" install the `Humor-Sans font "
+"<http://antiyawn.com/uploads/humorsans.html>`__ onto your computer."
+msgstr ""
+"この最も重要な機能を使うには，まず，`Humor-Sans フォント <http://antiyawn.com/uploads/humorsans.html>`__ "
+"をダウンロード，インストールする必要があります．"
+
+#: ../../plot/etc.rst:274
+msgid ""
+"Once you have installed the font, simply check :menuselection:`Plot --> "
+"Plot XKCD style`. Enjoy!"
+msgstr ""
+"フォントがインストールできれば，:menuselection:`Plot --> Plot XKCD style` "
+"をチェックしておくだけです！"
+
+#: ../../plot/etc.rst:283
+msgid "A plot sort of in the XKCD style."
+msgstr "XKCD スタイルのプロットの例"
+
+#: ../../plot/etc.rst:294
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../plot/etc.rst:299
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../plot/etc.rst:303
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

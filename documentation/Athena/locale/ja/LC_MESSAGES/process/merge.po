@@ -1,0 +1,264 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../process/merge.rst:44
+msgid "Merging data groups"
+msgstr "データのマージ（統合）"
+
+#: ../../process/merge.rst:47
+msgid "Averaging scans and computing their standard deviation"
+msgstr "複数スキャンの平均化と標準偏差の計算"
+
+#: ../../process/merge.rst:49
+msgid ""
+"Sadly, most data that we measure is, frankly, kind of crappy. A single "
+"scan typically ranges from noisy to so dominated by noise that it's hard "
+"to recognize it as oscillatory. Fortunately, `the central limit theorem "
+"<https://speakerdeck.com/bruceravel/the-central-limit-theorem-in-"
+"exafs>`__ works every single time. If you add up enough noisy scans, it "
+"eventually turns into real data!"
+msgstr ""
+"残念なことに，私たちが測定するデータの多くは率直に言って，ひどいものです．"
+"1回のスキャンはたいていの場合，ノイズかあるいはノイズが支配的なもので，"
+"振動として認識するのは難しいです．幸運にも，中心極限定理は常に成り立ちます．"
+"ノイズが大きくても，もし十分な量だけ積算することができるのであれば，真の"
+"データとなり得るでしょう！"
+
+#: ../../process/merge.rst:56
+msgid ""
+"All entries in the group list which are marked will be included in the "
+"merge. Make sure that the marked groups really are the ones you want to "
+"include in the merge!"
+msgstr ""
+"グループリストにあるマークの付いたすべての項目はマージの際にひとまとめに"
+"されます．マークされたグループが本当にマージしたいものなのか注意してください！"
+
+#: ../../process/merge.rst:60
+msgid ""
+"Data can be merged as |mu| (E), normalized |mu| (E), or |chi| (k). In "
+"most cases, it makes little difference which one you choose. |chi| (R) "
+"will be the same regardless. (This can be tested, in fact, I encourage "
+"you to do so.) The standard deviation in the merged data is also computed"
+" and stays with the data in project and certain output files, although "
+":demeter:`athena` does nothing else with the standard deviation other "
+"than plotting it, which is shown below. By default, each data set is "
+"weighted the same in the merge."
+msgstr ""
+"データは |mu| (E)，規格化された |mu| (E)，あるいは |chi| (k) のいずれかとして"
+"マージすることができます．多くの場合は，どれを選んでもほとんど変わりは"
+"ありません．|chi| (R) についても同じことです．（これはテストすることができます．"
+"実際，試しに行ってみることをお勧めします．）マージされたデータの標準偏差も"
+"計算され，プロジェクト中のデータや特定の出力ファイルと共に保存されますが，"
+":demeter:`athena` は標準偏差について，以下に示したようにプロットする以上のことは"
+"行いません．デフォルトでは，それぞれのデータについて同じ重みでマージされます．"
+
+#: ../../process/merge.rst:76
+msgid ""
+"The contents of the :guilabel:`Merge` menu, showing the various ways that"
+" data can merged."
+msgstr ":guilabel:`Merge` メニューからデータを様々な方法でマージすることができる"
+
+#: ../../process/merge.rst:79
+msgid ""
+"After a merge is made, a plot is displayed showing the merge in some "
+"manner. The type of merge plot is controled by the "
+":configparam:`Athena,merge\\_plot` `configuration parameter "
+"<../other/prefs.html>`__. The default is to show the data along with the "
+"data ± the standard devaition, as shown below. The other options are the "
+"`the variance plot <../plot/etc.html#special-plots-for-merged-groups>`__ "
+"or a plot with the merge and all the data that entered the merge."
+msgstr ""
+"マージされた後は，マージされたものが一定のスタイルでプロットされます．"
+"マージプロットのスタイルは，`環境設定 <../other/prefs.html>`__ の"
+" :configparam:`Athena,merge\\_plot` 設定項目で設定することができます．"
+"デフォルトでは，以下のようにデータ ± 標準偏差という形で表示されます．"
+"他の選択肢は，分散プロット やマージされたデータとマージする前の"
+"すべてのデータをプロットするというものです．"
+
+#: ../../process/merge.rst:95
+msgid "Data merged as |mu| (E) plotted with its standard deviation."
+msgstr "|mu| (E) についてマージされ，標準偏差と共にプロットされた場合"
+
+#: ../../process/merge.rst:97
+msgid ""
+"The data merging feature is one of :demeter:`athena`'s most important. My"
+" typical work pattern is to carefully align the scans measured on a "
+"sample, merge them, then further work with the merged data in "
+":demeter:`athena` and :demeter:`artemis`."
+msgstr ""
+"データマージ機能は :demeter:`athena` で最も重要なものの1つです．私のいつもの"
+"やり方では，試料について測定されたスキャンを注意深く整列，マージし，"
+"そのデータを :demeter:`athena` や :demeter:`artemis` で更に解析するというものです．"
+
+#: ../../process/merge.rst:102
+msgid ""
+"It is **essential** that your data be well-aligned before merging. "
+"Merging poorly aligned data has the effect of significantly attenuating "
+"the fine structure."
+msgstr ""
+"マージする前にデータがきちんと整列されているかどうかは，**本質的に** "
+"重要なことです．正しく整列されていないデータについてマージしてしまうと，"
+"微細構造を有意に減衰させてしまうでしょう．"
+
+#: ../../process/merge.rst:106
+msgid ""
+"When merging as |mu| (E) or normalized |mu| (E), if every data group "
+"included in the merge has a reference channel, the reference channels "
+"will also be merged and these two merged spectra will be tied together as"
+" `a reference channels <../import/ref.html>`__. Thus the merge of the "
+"reference channels can serve as the alignment standard for the merge of "
+"the data."
+msgstr ""
+"|mu| (E) や 規格化された |mu| (E) としてマージし，マージされるデータ"
+"すべてに参照スペクトルが存在する場合，これもマージされ，マージに"
+"より新しくできた2つのスペクトルは同じように参照チャンネルとして"
+"結びつけられます．そして，マージされた参照チャンネルはマージされた"
+"データの整列用の標準として使うことができます．"
+
+#: ../../process/merge.rst:113
+msgid ""
+"There is one situation where merging as |mu| (E) will be substantively "
+"different from the other two options. If something happens to change the "
+"values of the signals on the detectors in such a way that |mu| (E) for "
+"subsequent scans is of very different sizes but the normalized |mu| (E) "
+"data is consistent for all the data, then the merge in |mu| (E) will be "
+"dominated by the scans with larger absolute values while the merge in "
+"normalized |mu| (E) will treat all the data with similar weights. One way"
+" of having this happen is to change amplifier gains between scans. In "
+"that situation, you probably should choose to merge normalized or |chi| "
+"(k) data."
+msgstr ""
+"|mu| (E) についてマージした場合には，他の2つの選択肢とは本質的に異なる点が"
+"あります．もし，検出器からの信号の値が変化してしまうよう何かが起き，"
+"連続するスキャンの |mu| (E) が大きく異なっているが，規格化された |mu| (E) "
+"データについては矛盾がないという場合には，|mu| (E) に対するマージが"
+"絶対値が大きなスキャンに引きずられてしまいます．規格化された |mu| (E) に"
+"ついてマージを行えばすべてのデータについて同じような重み付けで処理されます．"
+"このようなことは例えば，スキャン毎のアンプのゲインを変化させると起こります．"
+"このような場合，規格化されたものか |chi| (k) についてマージした方がよいかも"
+"しれません．"
+
+#: ../../process/merge.rst:125
+msgid "Merging options"
+msgstr "マージのオプション"
+
+#: ../../process/merge.rst:143
+msgid "**Weighting options**"
+msgstr "重み付けオプション"
+
+#: ../../process/merge.rst:128
+msgid ""
+"There are three ways to weight the spectra which go into the merge.  The "
+"default is to merge by the value of the :procparam:`importance` "
+"parameter.  Since the :procparam:`importance` is by default 1, this "
+"choice usually means to weight the spectra equally in the merge. Because "
+":procparam:`importance` is a user-definable parameter, the weighting can "
+"be made in any way by setting those values appropriately. The other two "
+"options are attempts to weight according to quality of data. The "
+":quoted:`noise` option uses :demeter:`ifeffit`'s measure of noise in "
+"|chi| (k), thus giving more weight to data with less shot noise. The "
+":quoted:`edge step` uses the value of :procparam:`edge step` determined "
+"form the normalization, thus giving more weight to data with larger edge "
+"steps. The idea for the edge step option is that, for data measured in "
+"fluorescence, a more concentrated sample has a larger edge step and is "
+"likely to give higher quality data.  The choice between the three "
+"weighting options is made using the radio buttons in the "
+":guilabel:`Merge` menu."
+msgstr ""
+"マージするスペクトルの重み付けには3つの方法があります．デフォルトでは，"
+":procparam:`importance` パラメータの値を使ってマージが実行されます．デフォルトでは"
+" :procparam:`importance` の値は1なので，この選択はたいていの場合，マージにおいて"
+"スペクトルをそのまま使うことを意味しています．:procparam:`importance` は"
+"ユーザによって変更可能なパラメータなので，重み付けはそれらの値を適切に"
+"設定することで好きなように行うことができます．他の2つの選択肢は，"
+"データの質に対して重み付けを試みるというものです．:quoted:`noise` "
+"オプションは :demeter:`ifeffit` が |chi| (k) において見積もったノイズを用います．"
+"すなわちノイズの小さなデータを強い重み付けを行います．:quoted:`edge step` "
+"は規格化の際に決定される :procparam:`edge step` の値を使います．すなわち，吸収端の"
+"ジャンプが大きなものを重視してマージを行います．吸収端オプションの"
+"アイデアは，蛍光法による測定を行ったデータのためにあります．より濃度の"
+"高い試料は大きな吸収端のジャンプをしめし，データの質も高いと考えられます．"
+"つの重み付けの選択肢は :guilabel:`Merge` メニューにあるラジオボタンを"
+"使うことで変更できます．"
+
+#: ../../process/merge.rst:155
+msgid "**Preferences**"
+msgstr "**環境設定**"
+
+#: ../../process/merge.rst:146
+msgid ""
+"There are `preferences <../other/prefs.html>`__ which have some influence"
+" on how the merge happens. :configparam:`Merge,exclude\\_short\\_data` "
+"allows you to choose whether to exclude data sets with far fewer data "
+"points into the merge. The default to exclude short data sets. "
+":configparam:`Merge,short\\_data\\_margin` defines how many fewer data "
+"points triggers that exclusion for a data set. "
+":configparam:`Merge,weightby` sets the default choice of weighting option"
+" between the three options explained above."
+msgstr ""
+"`環境設定 <../other/prefs.html>`__ の中には，マージを行った時の動作に対して"
+"効果があるものもあります．:configparam:`Merge,exclude\\_short\\_data` では，"
+"マージする際にエネルギー範囲の短いものを除外するかどうか設定することができます．"
+"デフォルトでは，エネルギー範囲の短いものは除外されます．"
+":configparam:`Merge,short\\_data\\_margin` は，どの程度のデータ点であれば"
+"除外するかを決めています．:configparam:`Merge,weightby` は上で説明した3つ"
+"選択肢のうちのデフォルトの選択を設定します．"
+
+#: ../../process/merge.rst:158
+msgid "Keyboard shortcuts"
+msgstr "キーボードショートカット"
+
+#: ../../process/merge.rst:160
+msgid "There are keyboard shortcuts for merging:"
+msgstr "マージ用にもショートカットがあります．"
+
+#: ../../process/merge.rst:162
+msgid ":button:`Control`-:button:`shift`-:button:`m` : merge as |mu| (E)"
+msgstr ":button:`Ctrl`-:button:`shift`-:button:`m` : |mu| (E) でマージ"
+
+#: ../../process/merge.rst:164
+msgid ""
+":button:`Control`-:button:`shift`-:button:`n` : merge as normalized |mu| "
+"(E)"
+msgstr ":button:`Ctrl`-:button:`shift`-:button:`n` : 規格化された |mu| (E) でマージ"
+
+
+#: ../../process/merge.rst:166
+msgid ":button:`Control`-:button:`shift`-:button:`c` : merge as |chi| (k)"
+msgstr ":button:`Ctrl`-:button:`shift`-:button:`c` : |chi| (k) でマージ"
+
+#: ../../process/merge.rst:177
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../process/merge.rst:182
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../process/merge.rst:186
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

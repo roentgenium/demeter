@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../bkg/range.rst:45
+msgid "Spline range in background removal"
+msgstr "バックグラウンド除去におけるスプライン範囲"
+
+#: ../../bkg/range.rst:47
+msgid ""
+"Two parameters that can have a big effect on the quality of the "
+"background removal are the limits of the spline range. By default, the "
+"spline used to approximate the background function is computed between "
+"0.5 |AA|\\ :sup:`-1` and the end of the data range. (Those defaults can "
+"be set with the :configparam:`Bkg,spl1` and :configparam:`Bkg,spl2` "
+"preferences.)  In the main menu, there are entry boxes for the values of "
+"the spline range in k and in energy.  You can edit those interchangeably,"
+" when one pair is changed, the other pair is updated. The same is true if"
+" you use `the pluck buttons <ui/pluck.html>`__ to set their values."
+msgstr ""
+"バックグラウンド除去の質に大きな影響を与えるパラメータはスプラインの範囲です．"
+"デフォルトでは，バックグラウンド関数を近似するためのスプライン関数は，"
+"0.5 Å⁻¹ から データの末端までの範囲を利用します．（これらのデフォルト値は，"
+":configparam:`Bkg,spl1` と :configparam:`Bkg,spl2` の設定画面で変更する"
+"ことができます．）メインメニューには，スプライン範囲を波数あるいはエネルギーで"
+"入力するためのボックスがあります．これらは相互に編集することができ，"
+"どちらかの値を変更すると，もう一方も更新されます．"
+" `プランクボタン <ui/pluck.html>`__ を使って値を変更したときも同様です．"
+
+#: ../../bkg/range.rst:58
+msgid ""
+"There are good reasons to try changing the lower or upper bounds of the "
+"spline range. In the case of data with a large, sharp white line, the "
+":demeter:`autobk` algorithm might have a hard time following that swiftly"
+" changing part of |mu| (E). The background removal might be improved by "
+"starting the spline range at a higher value. A good way to test the "
+"effect of spline range is to make a copy (:button:`Alt`-:button:`y`) of "
+"the data group, change the lower spline boundary to a large value for the"
+" copy, and plot both groups as |chi| (k) or |chi| (R) using the "
+":button:`k,purple` button or the :button:`R,purple` button."
+msgstr ""
+"スプライン範囲の上限下限を変更してみてください．大きく鋭いホワイトラインを"
+"もつデータの場合，|mu| (E) が急激に変化するところで :demeter:`autobk` アルゴリズムがうまく"
+"働かないかも知れません．スプラインの範囲をもう少し高いところから始めることで"
+"バックグラウンド除去がうまくいくようになるかもしれません． スプライン範囲の"
+"効果をテストするよい方法として，データをコピー (:button:`Alt`-:button:`y`) して，"
+"コピーのスプライン範囲の下限をより大きな値に変更し，:button:`k,purple` ボタン"
+"あるいは :button:`R,purple` ボタンをクリックして，|chi| (k) あるいは"
+" |chi| (R) をプロットしてみるとよいでしょう． "
+
+#: ../../bkg/range.rst:69
+msgid ""
+"Changing the upper bound of the spline range is often helpful in data "
+"where the signal becomes very small at high k such that the level of "
+"greatly exceeds the |chi| (k) data when k-weighted or if the shape of the"
+" background function is unstable due to sample inhomogeneity or some "
+"other measurement problem."
+msgstr ""
+"k の大きなところでシグナルがとても小さく，k の重みをかけた時に |chi| (k)"
+"データ範囲を大きく超えてしまったり，バックグラウンド関数の形が試料の"
+"不均一性やその他の測定上の問題によって不安定だったりする場合には，"
+"スプライン範囲の上限を変えるとよい場合が多いです．"
+
+#: ../../bkg/range.rst:75
+msgid "This shows an example of a change in the upper bound of the spline range."
+msgstr "下図に，スプライン範囲の上限値を変えた例を示します．"
+
+#: ../../bkg/range.rst:83
+msgid ""
+"Gold foil data showing the effect of changing the upper end of the spline"
+" range."
+msgstr "スプライン範囲の上限値を変えた金箔のデータ"
+
+#: ../../bkg/range.rst:86
+msgid ""
+"The obvious effect of changing the spline range is that |chi| (k) is 0 "
+"outside the spline range, as seen on the high-k end of the plot. Changing"
+" one end of the spline range can also have an effect on the opposite end "
+"of the spectrum. This can be seen on the low-k end of the spectrum in the"
+" plot."
+msgstr ""
+"スプライン範囲を変更することによる明らかな影響としては，k の大きな"
+"ところで見られるように |chi| (k) がスプライン範囲外で 0 になることです．"
+"スプライン範囲の値を変更すると，スペクトルの反対側に対しても影響を及ぼします．"
+"これは，k の小さなところで見られます．"
+
+#: ../../bkg/range.rst:92
+msgid ""
+"When you are working on data for which a good background removal is "
+"difficult, changing the spline range is one of the tricks you can pull "
+"out of your tool box."
+msgstr ""
+"うまくバックグラウンド除去するのが難しいデータの解析を行っている場合に"
+"おいて，スプライン範囲の変更はちょっとした助けになるかも知れません．"
+
+#: ../../bkg/range.rst:105
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../bkg/range.rst:110
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../bkg/range.rst:114
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

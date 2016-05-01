@@ -1,0 +1,237 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../plot/tabs.rst:44
+msgid "Plotting space tabs"
+msgstr "プロット空間タブ"
+
+#: ../../plot/tabs.rst:48
+msgid "Plotting in energy"
+msgstr "エネルギーに対してのプロット"
+
+#: ../../plot/tabs.rst:50
+msgid ""
+"The appearance of the plots made in E-, k-, R-, or q-space are controlled"
+" by the contents of the plot options tabs in the lower right hand corner "
+"of :demeter:`athena`. This is highlighted in the following figure."
+msgstr ""
+"E, k, R, あるいは q 空間でのプロットの見た目は，:demeter:`athena` の"
+"右下隅にあるプロットオプションタブの内容によって制御されます．"
+"次の図中で強調したところです．"
+
+#: ../../plot/tabs.rst:54
+msgid ""
+"In energy, you have the option of plotting |mu| (E) normalized or not and"
+" derivative or not. The orange buttons on the left control how the "
+"current group is plotted. The purple buttons on the right control how "
+"marked groups are plotted. For the current group, you also have the "
+"option of plotting the background function, the pre-edge line, or the "
+"post-edge polynomial. As discussed in `the normalization section "
+"<../bkg/norm.html>`__, it is very helpful to examine the pre- and post-"
+"edge lines to verify that data normalization is done correctly."
+msgstr ""
+"エネルギーに対するプロットに関しては，|mu| (E) を規格化するかあるいは"
+"しないか，微分を表示するかしないかというオプションがあります．"
+"左側のオレンジのボタンは現在選択されているデータをどのように"
+"プロットするかを制御しています．右側の紫のボタンはマークのついたデータを"
+"どのようにプロットするかを制御しています．選択中のデータについては，"
+"バックグラウンド関数，プレエッジ，ポストエッジの多項式を表示するかどうかの"
+"オプションがあります．`規格化 <../bkg/norm.html>`__ の時に説明したように，
+"規格化が正しく行われているかどうかを確認するために，プレエッジやポストエッジを"
+"確認することはとても役に立ちます． "
+
+#: ../../plot/tabs.rst:68
+msgid "The plot options section with the energy tab showing."
+msgstr "エネルギーに対するプロットを行う際のプロットオプション"
+
+#: ../../plot/tabs.rst:70
+msgid ""
+"The two text entry boxes at the bottom of the tab are used to determine "
+"the extent of the data range plotted on the x-axis. Both those these "
+"numbers are relative to :procparam:`e0`. The :configparam:`Plot,emin` and"
+" :configparam:`Plot,emax` preferences can be used to set the default plot"
+" range. See also the `plot styles section <../ui/styles.html>`__."
+msgstr ""
+"タブの下にある2つのテキスト入力ボックスはデータがプロットされる X 軸の"
+"範囲を決めています．いずれの値も :procparam:`e0` に対する相対値です．"
+" :configparam:`Plot,emin` と :configparam:`Plot,emax` の設定項目では"
+"デフォルトのプロット範囲を設定することができます．"
+"`プロットスタイルの節 <../ui/styles.html>`__ についても参照して下さい．"
+
+#: ../../plot/tabs.rst:78
+msgid "Plotting in k-space"
+msgstr "k 空間でのプロット"
+
+#: ../../plot/tabs.rst:80
+msgid ""
+"The plot of |chi| (k) is mostly determined by the value of the `plotting "
+"k-weight buttons <../ui/kweight.html>`__. The only option on the k-space "
+"tab is to make the plot as k-weighted |chi| (E) rather than |chi| (k). "
+"For the |chi| (E) plot, the k-axis is translated to absolute energy using"
+" the value of :procparam:`e0`."
+msgstr ""
+"|chi| (k) のプロットは，プロットに関する k の重みボタンによってほとんど決定"
+"されます．k 空間タブにあるただ一つのオプションは，|chi| (k) ではなく k の重みが"
+"かけられた |chi| (E) としてプロットするというものです．|chi| (E) プロットにおいては，"
+"k 軸は :procparam:`e0` の値を使用して，絶対的なエネルギーに変換されます．"
+
+#: ../../plot/tabs.rst:92
+msgid "The k tab."
+msgstr "k 空間のタブ"
+
+#: ../../plot/tabs.rst:94 ../../plot/tabs.rst:168
+msgid ""
+"If the window button is checked, the windowing function used to make the "
+"forward Fourier transform will be plotted along with the plot for the "
+"current group."
+msgstr ""
+"ウィンドウボタンがチェックされていると，フーリエ変換を行うために"
+"使用される窓関数が選択中のデータとともにプロットされます．"
+
+#: ../../plot/tabs.rst:98
+msgid ""
+"The two text entry boxes at the bottom of the tab are used to determine "
+"the extent of the data range plotted on the x-axis. Although either "
+"number can be a negative value, there is no data below k=0. The "
+":configparam:`Plot,kmin` and :configparam:`Plot,kmax` preferences can be "
+"used to set the default plot range. See also the `plot styles section "
+"<../ui/styles.html>`__."
+msgstr ""
+"タブの下にある2つのテキスト入力ボックスはデータがプロットされる X 軸の"
+"範囲を決めています．いずれの値も負の値を取ることができますが，k = 0 以下に"
+"データはありません．:configparam:`Plot,kmin` と :configparam:`Plot,kmax` の"
+"設定項目でデフォルトのプロット範囲を設定することができます．"
+"`プロットスタイルの節 <../ui/styles.html>`__ についても参照して下さい．"
+
+#: ../../plot/tabs.rst:107
+msgid "Plotting in R-space"
+msgstr "R 空間でのプロット"
+
+#: ../../plot/tabs.rst:114
+msgid "The R tab."
+msgstr "R 空間のタブ"
+
+#: ../../plot/tabs.rst:116
+msgid ""
+"The plot of |chi| (R) is determined in part by the value of the `plotting"
+" k-weight buttons <../ui/kweight.html>`__. The options in the tab tell "
+":demeter:`athena` which part of the complex |chi| (R) to plot. For the "
+"current group, the parts are inclusive. Each selected part is plot."
+msgstr ""
+"|chi| (R) のプロットは，プロットに関する k の重みボタンの値によって一部決定"
+"されます．タブにあるオプションを使って，:demeter:`athena` が複雑な |chi| (R) のどの部分を"
+"プロットするのか選ぶことができます．選択中のデータに対しては，重ね書きする"
+"ことができ，選択された部分がそれぞれプロットされます．"
+
+#: ../../plot/tabs.rst:121 ../../plot/tabs.rst:162
+msgid ""
+"For the current group, you also have the option of plotting the envelope,"
+" which is the magnitude plotted in the same color as the negative "
+"magnitude. Selecting the envelope deselects the magnitude and vice versa."
+" For marked groups, the parts are plotted exclusively and the envelope is"
+" not available."
+msgstr ""
+"選択中のデータについては，包絡線をプロットするオプションもあり，正負の両方の"
+" magnitude についてプロットされます．包絡線を選択し magnitude を選択しないことも，"
+"その逆も可能です．マークをつけたグループについて，各部分は排他的にプロットされ，"
+"包絡線を表示することはできません．（訳注: 例えば，フーリエ変換の実部と"
+" Magnitude を複数のデータにわたって重ね書きすることはできないという意味．）"
+
+#: ../../plot/tabs.rst:127 ../../plot/tabs.rst:172
+msgid ""
+"The two text entry boxes at the bottom of the tab are used to determine "
+"the extent of the data range plotted on the x-axis, behave much like the "
+"same boxes on the k tab, and have similar preferences."
+msgstr ""
+"タブの下にある2つのテキスト入力ボックスはデータがプロットされる X 軸の範囲を"
+"決めています．k 空間でプロットしたときのタブと同じような効果を持ちます．"
+
+#: ../../plot/tabs.rst:131
+msgid ""
+"When the :guilabel:`phase correction` button is clicked on, the Fourier "
+"transform for that data group will be made by subtracting the central "
+"atom phase shift. This is an incomplete phase correction |nd| in "
+":demeter:`athena` we know the central atom but do not necessarily have "
+"any knowledge about the scattering atom."
+msgstr ""
+":guilabel:`phase correction` ボタンにチェックが入っている場合，フーリエ"
+"変換後のスペクトルは中心原子の位相シフトを差し引かれた形で計算されます．"
+"これは，不十分な位相補正です．すなわち，:demeter:`athena` において，中心原子については"
+"わかりますが，必ずしも散乱原子に関する情報を持っていません．"
+
+#: ../../plot/tabs.rst:137
+msgid ""
+"Note that, when making a phase corrected plot, the window function in R "
+"is not corrected in any way, thus the window will not line up with the "
+"central atom phase corrected |chi| (R)."
+msgstr ""
+"位相補正有りのプロットを行う場合には，R 空間における窓関数はどのような意味に"
+"おいても修正されないことに注意してください．したがって，ウィンドウは"
+"中心原子について位相補正を行った |chi| (R) とはそろいません．"
+
+#: ../../plot/tabs.rst:143
+msgid "Plotting in q-space"
+msgstr "q 空間でのプロット"
+
+#: ../../plot/tabs.rst:145
+msgid ""
+"The letter *q* is used to denote wavenumber of the filtered |chi| (k) "
+"function and to avoid confusion with unfiltered k-space. The units of "
+"``q`` are inverse Angstroms, just as for ``k``."
+msgstr ""
+"*q* という文字はフーリエ変換を経ていない k 空間と区別するために使われ，"
+"逆フーリエ変換された |chi| (k) 関数のことを指しています．``q`` の単位は"
+" inverse Angstroms であり，``k`` におけるものと同じです．"
+
+#: ../../plot/tabs.rst:154
+msgid "The q tab."
+msgstr "q 空間のタブ"
+
+#: ../../plot/tabs.rst:156
+msgid ""
+"The plot of |chi| (q) is determined in part by the value of the `plotting"
+" k-weight buttons <../ui/kweight.html>`__. The options in the tab tell "
+":demeter:`athena` which part of the complex |chi| (q) to plot. For the "
+"current group, the parts are inclusive. Each selected part is plot."
+msgstr ""
+"|chi| (q) プロットは，`プロットに関する k の重みボタン <../ui/kweight.html>`__ "
+"の値によって一部決定されます．タブにあるオプションを使って，"
+":demeter:`athena` が複雑な |chi| (q) のどの部分をプロットするのか選ぶことができます．"
+"選択中のデータに対しては，重ね書きすることができ，選択された部分が"
+"それぞれプロットされます．"
+
+#: ../../plot/tabs.rst:185
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../plot/tabs.rst:190
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../plot/tabs.rst:194
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

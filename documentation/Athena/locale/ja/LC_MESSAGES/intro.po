@@ -1,0 +1,395 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../intro.rst:43
+msgid "Introduction to ATHENA"
+msgstr "Athena 入門"
+
+#: ../../intro.rst:45
+msgid ""
+":demeter:`athena` is an interactive graphical utility for processing "
+"EXAFS data. It handles most of the common data handling chores of "
+"interest at the beamline or for preparing your data to begin analysis. "
+":demeter:`athena` is a graphical front end to Matt Newville's "
+":demeter:`ifeffit` library written entirely in the Perl programming "
+"language and using the :program:`Gnuplot` program for data display. It is"
+" being developed on Linux and tested on various flavors of Windows, but "
+"should work on any unix-like, Windows, or Mac operating system."
+msgstr ""
+":demeter:`athena` は EXAFS データ処理のためのインタラクティブな GUI ソフトです．"
+"ビームラインで測定したほとんどのデータを扱うことができ，ビームラインで"
+"興味のあるところの処理を行ったり，解析を始める準備を行うことができます．"
+":demeter:`athena` は Matt Newville による :demeter:`ifeffit` ライブラリの視覚的なフロントエンドです．"
+"すべて Perl で書かれており，データの表示には :program:`Gnuplot` を利用しています．"
+"Linux 上で開発されており，いくつかのバージョンの Windows でテストされていますが，"
+"ほとんどの Unix-like，Windows あるいは Mac OS 上で動作するはずです．"
+
+#: ../../intro.rst:55
+msgid ""
+":demeter:`athena` is intended to provide high quality analysis with a "
+"highly usable interface. It allows very fine grained control over the "
+"processing and plotting of individual data sets while still enabling the "
+"processing and visualization of large quantities of data."
+msgstr ""
+":demeter:`athena` は使いやすいインターフェイスで高度な解析が行えるように作られています．"
+"大量のデータ処理や視覚化を可能にしながら，データ処理やプロットについて"
+"きめ細かな設定が可能です． "
+
+#: ../../intro.rst:60
+msgid "Among :demeter:`athena`'s many, many features, you will find:"
+msgstr ":demeter:`athena` の持つ多彩な機能の中には，以下のようなものがあります．: "
+
+#: ../../intro.rst:62
+msgid "Convert raw data to |mu| (E)"
+msgstr "生データの |mu| (E) への変換"
+
+#: ../../intro.rst:64
+msgid "File import plugins for reading arbitrary data files"
+msgstr "任意のデータファイルを読み込むためのファイル読み込みプラグイン"
+
+#: ../../intro.rst:66
+msgid "Process and plot multiple data scans simultaneously"
+msgstr "複数のデータの同時処理やプロット"
+
+#: ../../intro.rst:68
+msgid "Merge data as |mu| (E), normalized |mu| (E), or |chi| (k)"
+msgstr "|mu| (E) や規格化された |mu| (E)，あるいは |chi| (k) のマージ"
+
+#: ../../intro.rst:70
+msgid "Energy calibration"
+msgstr "エネルギー較正"
+
+#: ../../intro.rst:72
+msgid "Align data scans with or without a reference channel"
+msgstr "参照スペクトルを利用した，あるいは利用しないデータの補正"
+
+#: ../../intro.rst:74
+msgid "Deglitch, truncate, convolve, or smooth |mu| (E) data"
+msgstr "|mu| (E) のデグリッチ，データの切り捨て，たたみ込み，あるいはスムージング"
+
+#: ../../intro.rst:76
+msgid "Self-absorption corrections for fluorescence spectra"
+msgstr "蛍光スペクトルに対する自己吸収補正"
+
+#: ../../intro.rst:78
+msgid "Compute difference spectra"
+msgstr "差スペクトルの計算"
+
+#: ../../intro.rst:80
+msgid ""
+"Fit linear combinations of standards to |mu| (E), derivative of |mu| (E),"
+" or |chi| (k) data"
+msgstr ""
+"|mu| (E) や |mu| (E) の一次微分, あるいは |chi| (k) データに対する"
+"標準スペクトルを使った線形結合フィッティング"
+
+#: ../../intro.rst:83
+msgid "Fit peak functions to XANES data"
+msgstr "XANES スペクトルに対するピークフィッティング"
+
+#: ../../intro.rst:85
+msgid "Log-ratio/phase-difference analysis"
+msgstr "対数比/位相差分析"
+
+#: ../../intro.rst:87
+msgid "Background removal using the :demeter:`autobk` algorithm"
+msgstr ":demeter:`autobk` アルゴリズムを利用したバックグラウンド除去"
+
+#: ../../intro.rst:89
+msgid "Forward and backward Fourier transforms"
+msgstr "フーリエ変換および逆フーリエ変換"
+
+#: ../../intro.rst:91
+msgid ""
+"Save data as |mu| (E), normalized |mu| (E), |chi| (k), |chi| (R), or "
+"back-transformed |chi| (k)"
+msgstr ""
+"|mu| (E), 規格化された |mu| (E), |chi| (k), |chi| (R), あるいは"
+"逆フーリエ変換した |chi| (k) のファイル出力"
+
+#: ../../intro.rst:94
+msgid "Save project files, allowing you to return to your analysis later"
+msgstr "プロジェクトファイルへの保存"
+
+#: ../../intro.rst:96
+msgid "... and much, MUCH more!"
+msgstr "などなど，他にもたくさん！"
+
+#: ../../intro.rst:101
+msgid "First Look at ATHENA"
+msgstr "ATHENA 起動時の画面"
+
+#: ../../intro.rst:103
+msgid ""
+"When :demeter:`athena` first starts, something like the picture below "
+"appears on your computer screen. The :demeter:`athena` window is divided "
+"into several parts.  We will discuss each of these parts and give each a "
+"name."
+msgstr ""
+":demeter:`athena` を起動すると，最初に以下のようなウィンドウが現れます．"
+":demeter:`athena` のウィンドウはいくつかの部分に分かれています．"
+"ここでは，各部分とその名前について説明していきます．"
+
+#: ../../intro.rst:112
+msgid "The parts of ATHENA."
+msgstr "Athena の各部分"
+
+#: ../../intro.rst:114
+msgid ""
+"At the top of the window is a menu bar. This works much like the menu bar"
+" in any program. Much of the functionality in :demeter:`athena` is "
+"accessed through those menus."
+msgstr ""
+"ウィンドウの最上部にはメニューバーがあります．"
+"これは他のプログラムのメニューバーと同じように動作します．"
+":demeter:`athena` におけるほとんどの機能はこれらのメニューから利用することができます．"
+
+#: ../../intro.rst:118
+#, python-format
+msgid ""
+"The largest part is the main window, the region with all the controls "
+"greyed out in :numref:`Fig. %s <fig-athenamain>`. The main window is "
+"divided into six parts. The top box identifies the file name of the "
+"current `project file <output/project.html>`__. Below that, are various "
+"parameters identifying the current data group."
+msgstr ""
+"一番大きな部分はメインウィンドウであり，:numref:`Fig. %s <fig-athenamain>` "
+"でグレーになっているところすべてです．メインウィンドウは6つの部分に分かれています．"
+"一番上のボックスには，今開いている `プロジェクトファイル <output/project.html>`__ "
+"のファイル名が表示されます．その下には，現在のデータに関する様々なパラメータが表示されます．"
+
+#: ../../intro.rst:124
+msgid ""
+"The next three boxes are used to define the parameters associated with "
+"normalization and background removal, forward Fourier transforms, and "
+"reverse Fourier transforms. At the bottom of the main window are a couple"
+" of parameters associated with plotting."
+msgstr ""
+"その下にある3つのエリアは，規格化及びバックグラウンド除去，フーリエ変換，"
+"そして逆フーリエ変換に関するパラメータです．メインウィンドウ右下部には，"
+"プロットに関するパラメータが表示されます．"
+
+#: ../../intro.rst:129
+msgid ""
+"At the bottom of the screen is the echo area. This very important space "
+"is used by :demeter:`athena` to communicate with you, the user. This "
+"space is used to display informational messages while :demeter:`athena` "
+"is working on your data, error messages when it runs into trouble, and "
+"other kinds of messages."
+msgstr ""
+"ウィンドウの最下部は「エコー」エリアです．これは :demeter:`athena` からの"
+"通知を表示する重要なエリアです．この場所は :demeter:`athena` があなたの"
+"データ処理に関するメッセージ，問題が起きた場合にはエラーメッセージ，"
+"あるいはその他のメッセージを表示するために使われます．"
+
+#: ../../intro.rst:135
+msgid ""
+"The large blank area on the right is `the group list area "
+"<ui/glist.html>`__. As data are imported into :demeter:`athena`, they "
+"will be listed in this space. Access to the data already imported is made"
+" by clicking in this space."
+msgstr ""
+"右側の広い空白のエリアは `グループリストエリア <ui/glist.html>`__ です．"
+"（訳注： :demeter:`athena` ではひとまとまりのデータという意味で「グループ」と"
+"いう言葉を使います．通常は1つのスペクトルを指していると考えて問題ありません．） "
+" :demeter:`athena` でデータを読み込むと，ここに表示されます．"
+"既に読み込まれたデータは，このエリアでクリックすることで選択することができます．"
+
+#: ../../intro.rst:140
+msgid ""
+"Adjacent to the top of the group list area are `the mark buttons "
+"<ui/mark.html>`__, which are used to plot multiple data sets and for many"
+" other chores in :demeter:`athena`."
+msgstr ""
+"グループリストエリアの横には `マークボタン <ui/mark.html>`__ があります．"
+"このボタンは，複数データをプロットするときに使われたり， :demeter:`athena` を"
+"利用する細の様々場面で利用されます．"
+
+#: ../../intro.rst:144
+msgid ""
+"Below the group list area are the plot buttons. Below that are the "
+"buttons used to set the k-weighting for use when plotting in k-space or "
+"when making a forward Fourier transform. Below that are various other "
+"`plotting controls <ui/mark.html>`__ in the plotting options section."
+msgstr ""
+"グループリストエリアの下にはプロットボタンがあります．その下には k 空間での"
+"プロットあるいはフーリエ変換を行うときに k の重みを設定するためのボタンが"
+"あります．更にその下のプロットオプションエリアには，様々な"
+" `プロット制御オプション <ui/mark.html>`__ が並んでいます． "
+
+#: ../../intro.rst:153
+msgid "After importing data."
+msgstr "データ読み込み後"
+
+#: ../../intro.rst:155
+msgid ""
+"After importing several data files, each is made into a *data group* and "
+"listed in the group list. The label and the check button next to it are "
+"the main controls for interacting with data in :demeter:`athena`."
+msgstr ""
+"複数のデータファイルを読み込むと，それらは，データグループとして読み込まれ，"
+"グループリストに追加されます．ファイル名とその横のチェックボックスは，"
+" :demeter:`athena` においてデータを扱うために利用されます．"
+
+#: ../../intro.rst:161
+msgid "Getting help"
+msgstr "ヘルプの使い方"
+
+#: ../../intro.rst:163
+msgid ""
+"There is quite a bit of help built right into :demeter:`athena`. Typing "
+":button:`Control`-:button:`m` or selecting :menuselection:`Help --> "
+"Document` will display :demeter:`athena`'s document in a web browser or "
+"in the built-in document viewer.  Many parts of the program have a button"
+" which will take you directly to the part of the document that describes "
+"that part of the program."
+msgstr ""
+":demeter:`athena` にはヘルプが組み込まれています．:button:`Control`-:button:`m` "
+"と入力するか， :menuselection:`Help --> Document` を選択すると，:demeter:`athena` "
+"のドキュメントが Web ブラウザ上に表示されるか，あるいは内部のドキュメントビューワに"
+"表示されます．プログラムの多くの箇所でその機能に関するドキュメントを直接参照する"
+"ためのボタンがついています．"
+
+#: ../../intro.rst:173
+msgid "Folders and log files"
+msgstr "フォルダとログファイル"
+
+#: ../../intro.rst:176
+msgid ""
+"Many of :demeter:`athena`'s chores involve writing temporary files. Many "
+"file type plugins write temporary files after performing some "
+"transformation on the original data.  :program:`gnuplot` writes temporary"
+" files as part of its plot creation."
+msgstr ""
+":demeter:`athena` の多くの機能では，一時ファイルを書き出します．"
+"多くのファイル読み込みプラグインは，元のデータに対して適当な変換を行った"
+"一時ファイルを書き出します．:program:`gnuplot` はプロット行う際に一時的なファイルを書き出します．"
+
+#: ../../intro.rst:185
+msgid "**working folder**"
+msgstr "**作業フォルダ**"
+
+#: ../../intro.rst:182
+msgid ""
+"These files are stored in the :quoted:`stash folder`. On linux (and other"
+" unixes) this is ``$HOME/.horae/stash/``. On Windows this is "
+"``%APPDATA%\\\\demeter\\\\stash``."
+msgstr ""
+"これらのファイルは :quoted:`stash folder` に保存されます．"
+"Linux （や他の Unix）では ``$HOME/.horae/stash/`` です．"
+"Windows の場合は，``%APPDATA%\\\\demeter\\\\stash`` です．"
+
+#: ../../intro.rst:187
+msgid ""
+":demeter:`athena` writes information to screen or to disk during its "
+"operations.  This information is essential when making a bug report. "
+"While the content of this operations log may be inscrutable to you, it "
+"contains information that is invaluable for troubleshooting a bug report."
+"  If you make a bug report and ask a question about the operation of the "
+"program, it is essential that you include this information.  If you post "
+"a message to the `mailing list "
+"<http://cars9.uchicago.edu/mailman/listinfo/ifeffit/>`_ reporting some "
+"kind of problem and you do not include this information, it will be the "
+"first thing Bruce asks for."
+msgstr ""
+":demeter:`athena` は実行中にスクリーンやディスクに情報を書き出します．"
+"この情報はバグ報告の際に必須です．"
+"この実行ログの中身があなたにとってよくわからないものであったとしても，"
+"バグ報告を解決するためにとても貴重な情報を含んでいます．"
+"もし，バグ報告を行う際やプログラムの実行に関する質問を行う場合は，"
+"この情報を必ず含めてください．"
+"`メーリングリスト <http://cars9.uchicago.edu/mailman/listinfo/ifeffit/>`_ に"
+"何か問題が起きた際にメッセージを送ったとしても，この情報が無ければ，Bruce が"
+"最初にお願いすることになるでしょう．"
+
+#: ../../intro.rst:214
+msgid "**log files**"
+msgstr "**ログファイル**"
+
+#: ../../intro.rst:200
+msgid ""
+"When :demeter:`athena` runs into problems, it attempts to write enough "
+"information to the screen that the problem can be addressed. This screen "
+"information is what Bruce needs to troubleshoot bugs. On a linux (or "
+"other unix) machine, simply run :demeter:`athena` from the command line "
+"and the informative screen messages will be written to the screen. You "
+"can cut-n-paste that text or capture the output by running "
+":demeter:`athena` through `tee "
+"<http://www.gnu.org/software/coreutils/manual/html_node/tee-"
+"invocation.html>`__ ::"
+msgstr ""
+":demeter:`athena` が問題に遭遇した時，その問題の対処するために十分な情報をスクリーンに"
+"出力しようとします．この情報は，Bruce (作者) がバグを解決するために必要と"
+"するものです．Linux (又は他の Unix ) PCにおいては，コマンドラインから"
+" :demeter:`athena` を実行すると，有用なスクリーンメッセージがスクリーンに表示されます"
+"そのテキストをカットアンドペーストするか，あるいは :demeter:`athena` を "
+" `tee <http://www.gnu.org/software/coreutils/manual/html_node/tee-invocation.html>`__ "
+"コマンドを介して実行して，出力を捕捉してください． ::"
+
+#: ../../intro.rst:211
+msgid ""
+"On a Windows machine, it is uncommon to run the software from the command"
+" line, so :demeter:`athena` has been instrumented to write a run-time log"
+" file. This log file is called :file:`dathena.log` and can be found in "
+"the ``%APPDATA%\\\\demeter`` folder."
+msgstr ""
+"Windows PC ではコマンドラインからソフトを実行することが一般的ではないため，"
+":demeter:`athena` は実行中にログファイルを記録します．このログファイルは"
+" :file:`dathena.log` と呼ばれ， ``%APPDATA%\\\\demeter`` フォルダに保存されます．"
+
+#: ../../intro.rst:216
+msgid ""
+"``%APPDATA%`` is usually "
+"``C:\\\\Users\\\\<username>\\\\AppDataRoaming\\\\`` on Windows 7, 8, and "
+"10."
+msgstr ""
+"``%APPDATA%`` は Windows 7, 8 あるいは 10 の場合，たいてい，"
+" ``C:\\\\Users\\\\<username>\\\\AppDataRoaming\\\\`` です．"
+
+#: ../../intro.rst:219
+msgid ""
+"It is usually ``C:\\\\Documents and Settings\\\\<username>\\\\Application"
+" Data\\\\`` on Windows XP and Vista."
+msgstr ""
+"Windows XP や Vista では，たいてい，"
+" ``C:\\\\Documents and Settings\\\\<username>\\\\Application Data\\\\`` にあります．"
+
+#: ../../intro.rst:222
+msgid "In either case, ``<username>`` is your log-in name."
+msgstr "いずれの場合も，``<username>`` はあなたのログイン名です．"
+
+#: ../../intro.rst:233
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../intro.rst:238
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../intro.rst:242
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

@@ -1,0 +1,621 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../forward.rst:43
+msgid "Forward"
+msgstr "前書き"
+
+#: ../../forward.rst:45
+msgid ""
+"The best way to learn how to use :demeter:`athena` is to **use** "
+":demeter:`athena`. Poke at the buttons, poke at the menus, try things "
+"just to see what happens. And above all, remember the physical and "
+"mathematical meanings of your data and of the data analysis techniques "
+"and think about how actions in :demeter:`athena` relate to those "
+"meanings."
+msgstr ""
+":demeter:`athena` の使い方を学ぶ最もよい方法は，:demeter:`athena` を"
+" **使って** みることです．"
+"ボタンを押したり，メニューを押したりして、何が起こるか見てみて下さい．"
+"そして，あなたのデータや解析手法についての物理的、数学的意味を"
+"思い出しながら，:demeter:`athena` の動作との関連について考えてみて下さい．"
+
+#: ../../forward.rst:52
+msgid ""
+":demeter:`athena` is a powerful and versatile program capable of "
+"supporting almost all of your common (and many not-so-common!) XAS data "
+"processing chores. It is not, however, a particularly intuitive program. "
+"I doubt that any XAS program could be intuitive. On top of that, "
+":demeter:`athena` has accumulated lots of features over the years. Many "
+"of these features are necessary for high-quality data processing, others "
+"are bells and whistles intended to make data processing more convenient "
+"or more fun."
+msgstr ""
+":demeter:`athena` は強力かつ汎用性の高いプログラムであり，ほとんどすべての一般的な"
+"（あるいは一般的でない）XAS データの解析に利用することができます．"
+"しかしながら，それほど直感的なプログラムとは言えません．"
+"直感的な XAS 解析プログラムというものが存在するかどうかには懐疑的です．"
+"それに加えて，:demeter:`athena` は長年にわたり様々な機能を付加してきました．"
+"ほとんどの機能は高品質なデータ解析に必要ですが，一部の機能はデータ解析を"
+"より便利かつ興味深い方法で行うためのオプションといえます．"
+
+#: ../../forward.rst:61
+msgid ""
+"This document attempts to be a comprehensive overview of all of the "
+"features of :demeter:`athena`. There are lots of words, but also lots of "
+"pictures. Feel free to jump around and to focus on the parts most "
+"directly relevant to your immediate needs. I hope you find this document "
+"and the program helpful."
+msgstr ""
+"このマニュアルは :demeter:`athena` の機能を包括的に説明することを目的にしています．"
+"たくさんの文章と共に多くの図も掲載しています．"
+"マニュアルを最初から通して読んでも，必要な章だけ読むのでも、ご自由にどうぞ．"
+"このマニュアルとソフトがあなたの役に立つよう願っています．"
+
+#: ../../forward.rst:69
+msgid "Layout and typesetting conventions"
+msgstr "レイアウトと文字の決まり"
+
+#: ../../forward.rst:71
+msgid ""
+"Here is a summary of fonts, colors, and symbols used to denote different "
+"kinds of text. Note that some of these may appear the same in certain "
+"presentation media."
+msgstr ""
+"ここでは，テキストに使われるフォントや色，シンボルについて紹介します．"
+"ブラウザによっては，フォントや色が同じように表示されることがあります．"
+
+#: ../../forward.rst:75
+msgid "File names look ``C:\\\\like\\\\this``"
+msgstr "ファイル名は ``C:\\\\like\\\\this`` というふうに表示されます"
+
+#: ../../forward.rst:77
+msgid "The names of parameters for data processing look :procparam:`like this`"
+msgstr "データ処理のための変数名は :procparam:`このように` 表示されます"
+
+#: ../../forward.rst:80
+msgid "Emphasized text looks *like this*"
+msgstr "重要な部分は *このように* 表示されます"
+
+#: ../../forward.rst:82
+msgid "Bold text looks **like this**"
+msgstr "太字のテキストは **このように** 表示されます"
+
+#: ../../forward.rst:84
+msgid "Links to web sites look `like this <http://www.google.com>`__"
+msgstr "Web サイトへのリンクは `このように <http://www.google.com>`__ 表示されます"
+
+#: ../../forward.rst:86
+msgid ""
+"Internal links look `like this <forward.html#layout-and-typesetting-"
+"conventions>`__"
+msgstr ""
+"内部リンクは `このように <forward.html#layout-and-typesetting-conventions>`__ "
+"表示されます"
+
+#: ../../forward.rst:89
+msgid "Menu selections look like this: :menuselection:`File --> Import data`"
+msgstr "メニューの選択は :menuselection:`File --> Import data` というふうに表示されます"
+
+#: ../../forward.rst:91
+msgid ""
+"Keyboard shortcuts look like this: :button:`Control,dark`-:button:`q`, "
+"which means to hit the :button:`q` key while holding the "
+":button:`Control` (or :button:`Ctrl`) key"
+msgstr ""
+"キーボードショートカットは次のように表示されます :button:`Control,dark`-:button:`q` ．"
+"これは，:button:`Control` (あるいは :button:`Ctrl`) キーを押しながら，:button:`q` "
+"を押すことを意味しています．"
+
+#: ../../forward.rst:95
+msgid ""
+"Program names from the :demeter:`demeter`'s extended family look like "
+"this: :demeter:`athena`"
+msgstr ""
+":demeter:`demeter` 関連のプログラム名は :demeter:`athena` のように表示されます"
+
+#: ../../forward.rst:98
+msgid ""
+"References to :demeter:`athena`'s preferences are written like this: "
+":configparam:`Bkg,fraction`.  To modify this preferences, open the "
+":guilabel:`bkg` section of the `preferences tool <other/prefs.html>`__ "
+"and then click on :guilabel:`fraction`"
+msgstr ""
+":demeter:`athena` の環境設定パラメータは :configparam:`Bkg,fraction` のように表示されます．"
+"この設定値を変更するには，`preferences tool <other/prefs.html>`__ の"
+" :guilabel:`bkg` セクションを開き， :guilabel:`fraction` をクリックしてください．"
+
+#: ../../forward.rst:103
+msgid ""
+"A click of the left mouse button is often indicated with this icon: "
+":mark:`leftclick,.`.  A click of the right mouse button is indicated by "
+"this icon: :mark:`rightclick,.`."
+msgstr ""
+"左クリックは，たいていの場合，:mark:`leftclick,.` というアイコンで示されます．"
+"右クリックは :mark:`rightclick,.` というアイコンで示されます．"
+
+#: ../../forward.rst:108
+msgid "Points that require special attention are indicated like this."
+msgstr "特に注意が必要な点については，このように表示されます．"
+
+#: ../../forward.rst
+msgid "Todo"
+msgstr ""
+
+#: ../../forward.rst:112
+msgid "Notes about features missing from the document are indicated like this."
+msgstr "マニュアルに記載されていない機能についてのメモはこのように表示されます．"
+
+#: ../../forward.rst:115
+msgid ""
+"Features that have been recently added to :demeter:`athena` are indicated"
+" like this if they have not yet been properly documented. Usually this is"
+" because I have been too lazy to make screenshots."
+msgstr ""
+":demeter:`athena` に最近追加された機能について，マニュアルが未整備の場合はこのように表示されます．"
+"これは，たいていの場合，スクリーンショットを作るのが面倒だからです．"
+
+#: ../../forward.rst:120
+msgid ""
+":mark:`lightning,.` This symbol indicates a section describing one of "
+":demeter:`athena`'s features that I consider especially powerful and "
+"central to the effective use of the program."
+msgstr ""
+":mark:`lightning,.` このシンボルは，私（訳注：作者の Bruce）が"
+" :demeter:`athena` の機能の中でもプログラムをうまく利用するために特に重要な"
+"機能だと考えていることを示しています．"
+
+#: ../../forward.rst:126
+msgid ""
+":mark:`bend,.` This symbol indicates a section with difficult information"
+" that newcomers to :demeter:`athena` might pass over on their first "
+"reading of this document."
+msgstr ""
+":mark:`bend,.` このシンボルは，:demeter:`athena` の初心者には難しいセクションを示しています．"
+"初めてマニュアルを読む際には，飛ばしてもよいかもしれません．"
+
+#: ../../forward.rst:132
+msgid ""
+"The html version of this document makes use of Unicode characters (mostly"
+" Greek, math, superscript, and subscript symbols) and may not display "
+"correctly in very old browsers."
+msgstr ""
+"このマニュアルでは，ギリシャ文字，数学記号，上付き，下付き記号などの"
+"Unicode 文字が含まれており，非常に古いブラウザではうまく表示されない可能性があります．"
+
+#: ../../forward.rst:139
+msgid "Acknowledgments"
+msgstr "謝辞"
+
+#: ../../forward.rst:141
+msgid ""
+"I have to thank Matt Newville, of course. Without :demeter:`ifeffit` "
+"there wouldn't be an :demeter:`athena`. One afternoon over coffee, Julie "
+"Cross and Shelly Kelly lit the spark that eventually lead to the first "
+"version of this document. Some content of this document was inspired by a"
+" recent XAS review article by Shelly Kelly and Dean Hesterberg, the first"
+" draft of which I had the pleasure of editing and the final draft of "
+"which I ended up on the author list. I have a huge debt of gratitude to "
+"all the folks on the :demeter:`ifeffit` mailing list. Without the "
+"incredible support and wonderful feedback that I've received over the "
+"years, :demeter:`athena` would be a shadow of what it is today."
+msgstr ""
+"もちろん，Matt Newville に感謝します．:demeter:`ifeffit` が無ければ，"
+":demeter:`athena` は 存在しなかったでしょう．"
+"コーヒーを飲んでいたある午後に，Julie Cross と Shelly Kelly は"
+"このマニュアルを作るひらめきを与えてくれました．"
+"このマニュアルの一部は，私が編集した Shelly Kelly と Dean Hesterberg"
+"による XAS の 総説に刺激を受けたものです．総説の最終版に関わり，最終的には"
+"著者のに一人になりました．"
+"また，:demeter:`ifeffit` メーリングリストの参加者にも大変感謝しています．"
+"メーリングリストで長年受けた大きなサポートや素晴らしいフィードバックが無かったら，"
+"今日の :demeter:`athena` はなかったでしょう．"
+
+#: ../../forward.rst:157
+msgid ""
+"An excellent review of the fundamental principles of X-ray absorption "
+"spectroscopy is"
+msgstr ""
+"X 線吸収分光法の基礎原理に関するすばらしい総説には，"
+
+#: ../../forward.rst:164
+msgid ""
+"Scott Calvin has written an excellent XAFS text book which covers a lot "
+"of the material covered by :demeter:`athena`:"
+msgstr ""
+"Scott Calvin は :demeter:`athena` でカバーされている様々な点についての"
+"記述を含むすばらしい X 線吸収分光法の教科書を書いています．"
+
+#: ../../forward.rst:171
+msgid "The following great software tools were used to create this document:"
+msgstr "このマニュアルの作成には以下のすばらしいソフトウェアを利用しました:"
+
+#: ../../forward.rst:173
+msgid ""
+"`The Sphinx Documentation Generator <http://sphinx-doc.org/>`_ and "
+"`reStructuredText <http://sphinx-doc.org/rest.html>`_"
+msgstr ""
+"`Sphinx Documentation Generator <http://sphinx-doc.org/>`_ と "
+"`reStructuredText <http://sphinx-doc.org/rest.html>`_"
+
+#: ../../forward.rst:176
+msgid ""
+"The `Sphinx nature theme <http://www.sphinx-"
+"doc.org/en/stable/theming.html>`_, which I have modified slightly."
+msgstr ""
+"`Sphinx nature theme <http://www.sphinx-doc.org/en/stable/theming.html>`_,"
+" （少し編集しました）"
+
+#: ../../forward.rst:180
+msgid ""
+"The `Emacs <http://www.gnu.org/software/emacs/>`__ text editor along with"
+" `rst-mode <http://docutils.sourceforge.net/docs/user/emacs.html>`__ and "
+"the simply wonderful `Emacs Code Browser <http://ecb.sourceforge.net/>`__"
+msgstr ""
+"`Emacs <http://www.gnu.org/software/emacs/>`__ テキストエディタ，"
+" `rst-mode <http://docutils.sourceforge.net/docs/user/emacs.html>`__ と"
+"単純ですばらしい `Emacs Code Browser <http://ecb.sourceforge.net/>`__"
+
+#: ../../forward.rst:186 ../../forward.rst:351
+msgid "The `pybtex <http://pybtex.org/>`_ bibliography processor for python."
+msgstr "`pybtex <http://pybtex.org/>`_ python のための文献情報プロセッサ"
+
+#: ../../forward.rst:189
+msgid ""
+"The `sphinxcontrib-bibtex <https://sphinxcontrib-"
+"bibtex.readthedocs.org/en/latest/>`_ package, which is a Sphinx extension"
+" for BibTeX style citations."
+msgstr ""
+"`sphinxcontrib-bibtex <https://sphinxcontrib-bibtex.readthedocs.org/en/latest/>`_ "
+" パッケージ（BibTeX 用の Sphinx 拡張）"
+
+#: ../../forward.rst:193
+msgid ""
+"The `sphinxtr <https://github.com/jterrace/sphinxtr>`_ package, which is "
+"a Sphinx extension for supporting a few LaTeX environments. Currently, "
+"the ``subfig`` package is used for grouping figures, but the ``numfig`` "
+"package is not used for figure numbering."
+msgstr ""
+"`sphinxtr <https://github.com/jterrace/sphinxtr>`_ パッケージ，"
+"LaTeX 環境をサポートするための Sphinx 拡張．"
+"現在は，``subfig`` パッケージが図のグループ化に利用されていますが，"
+"``numfig`` パッケージは図の通し番号をつけるのには使われていません．"
+
+#: ../../forward.rst:198
+msgid ""
+"The `keys.css stylesheet <https://github.com/michaelhue/keyscss>`_, which"
+" I modified to add options for purple and orange stylings."
+msgstr ""
+"`keys.css stylesheet <https://github.com/michaelhue/keyscss>`_ に，"
+"私が紫色とオレンジを追加したもの"
+
+#: ../../forward.rst:201
+msgid ""
+"The left-click :mark:`leftclick,.` and right-click :mark:`rightclick,.` "
+"mouse icons were made by `Freepik <http://www.freepik.com>`_ from "
+"http://www.flaticon.com and are available under `the Creative Commons "
+"Attribution License 3.0 <http://creativecommons.org/licenses/by/3.0/>`_."
+msgstr ""
+"左クリック :mark:`leftclick,.` と右クリック :mark:`rightclick,.` "
+"のアイコンは `Freepik <http://www.freepik.com>`_ によるもので，"
+"http://www.flaticon.com からダウンロードしたものです．"
+" `Creative Commons Attribution License 3.0 <http://creativecommons.org/licenses/by/3.0/>`_ "
+"で利用することができます．"
+
+#: ../../forward.rst:207
+#, python-format
+msgid ""
+"Almost all screenshots were made of either :demeter:`athena` or the "
+"`Gnuplot <http://gnuplot.info/>`__ window on my `KDE desktop "
+"<http://www.kde.org>`__. The screenshots of spreadsheets made from a "
+"report (:numref:`Fig. %s <fig-exportexcel>`) and an LCF fit report "
+"(:numref:`Fig. %s <fig-auclexcel>`) are displayed in `LibreOffice "
+"<http://www.libreoffice.org>`__."
+msgstr ""
+":demeter:`athena` と `Gnuplot <http://gnuplot.info/>`__ のウィンドウの"
+"ほぼすべてのスクリーンショットは `KDE desktop <http://www.kde.org>`__ "
+"上でとられました．レポート (:numref:`Fig. %s <fig-exportexcel>`) や "
+"LCF フィッティングレポート (:numref:`Fig. %s <fig-auclexcel>`) から"
+"作られたスプレッドシートのスクリーンショットは"
+" `LibreOffice <http://www.libreoffice.org>`__ 上でとらえました．"
+
+#: ../../forward.rst:215
+msgid ""
+"The images of the `Tholos temple "
+"<https://en.wikipedia.org/wiki/Delphi#Tholos>`_ on the front page and the"
+" `Klimt painting Pallas Athena <http://www.wikiart.org/en/gustav-klimt"
+"/minerva-or-pallas-athena>`_ in the navigation box of the html document "
+"are from http://www.artchive.com."
+msgstr ""
+"フロントページの `Tholos temple <https://en.wikipedia.org/wiki/Delphi#Tholos>`_ の写真や"
+" `Klimt painting Pallas Athena <http://www.wikiart.org/en/gustav-klimt/minerva-or-pallas-athena>`_ "
+"のナビゲーションは http://www.artchive.com からとられました．"
+
+#: ../../forward.rst:222
+msgid ""
+"The image used as the :demeter:`athena` program icon is from a "
+":quoted:`Terracotta lekythos depicting Athena holding a spear and "
+"aphlaston`. The image is licensed as `Creative Commons Attribution-Share "
+"Alike 3.0 <http://creativecommons.org/licenses/by-sa/3.0>`_ and can be "
+"found at `Wikimedia Commons "
+"<http://commons.wikimedia.org/wiki/File:Brygos_Painter_lekythos_Athena_holding_spear_MET.jpg>`__."
+msgstr ""
+":demeter:`athena` プログラムのアイコンとして使われている画像は"
+" :quoted:`Terracotta lekythos depicting Athena holding a spear and aphlaston` からとられました．"
+"この画像は `Creative Commons Attribution-Share Alike 3.0 <http://creativecommons.org/licenses/by-sa/3.0>`_ "
+"でライセンスされており，"
+" `Wikimedia Commons <http://commons.wikimedia.org/wiki/File:Brygos_Painter_lekythos_Athena_holding_spear_MET.jpg>`__ "
+"で見つけることができます．"
+
+#: ../../forward.rst:232
+msgid "Data citations"
+msgstr "データの原点"
+
+#: ../../forward.rst:234
+msgid ""
+"The copper foil data shown here and there are the data that Matt "
+"Newville, Yanjun Zhang, and I measured one day back in 1992 that has, "
+"inscrutably, become *the* copper foil data shown and referenced often in "
+"the XAS theory literature."
+msgstr ""
+"多くの箇所で使われている銅箔のデータは 1992 年に Matt Newville, "
+"Yanjun Zhang と私が測定したもので，多くのX線吸収分光の文献で使われています．"
+
+#: ../../forward.rst:239
+msgid ""
+"The platinum catalyst data shown in `the difference spectrum section "
+"<analysis/diff.html>`__ were donated by Simon Bare."
+msgstr ""
+"`差スペクトルのセクション <analysis/diff.html>`__ にある"
+"白金触媒のデータは Simon Bare から寄贈されたものです．"
+
+#: ../../forward.rst:242
+msgid ""
+"The gold edge data shown in many places throughout this document are "
+"taken from measurements published as"
+msgstr ""
+"このマニュアルの多くのところで出てくる金のデータは以下の文献の測定結果からとられています．"
+
+#: ../../forward.rst:249
+msgid ""
+"The gold oxide data shown in `the smoothing section "
+"<process/smooth.html>`__ were donated by Norbert Weiher."
+msgstr ""
+"`スムージングセクション <process/smooth.html>`__ に出てくる酸化金のデータは"
+" Norbert Weiher により寄贈されたものです．"
+
+#: ../../forward.rst:252
+msgid ""
+"The iron foil data shown in `the convolution section "
+"<process/conv.html>`__ and elsewhere were measured by me while I was "
+"commissioning NSLS beamline X11B in 2004."
+msgstr ""
+"`たたみ込みのセクション <process/conv.html>`__ などに出てくる鉄箔のデータは私が2004年に NSLS ビームライン X11B を立ち上げた時に測定したものです．"
+
+#: ../../forward.rst:256
+msgid ""
+"The sulphate data shown in `the self-absorption section "
+"<process/sa.html>`__ were donated by Zhang Ghong and come with Daniel "
+"Haskel's `Fluo program "
+"<http://www.aps.anl.gov/xfd/people/haskel/fluo.html>`__. The copper data "
+"shown in `the same section <process/sa.html>`__ come with Corwin Booth's "
+"`RSXAP program <http://lise.lbl.gov/RSXAP/>`__."
+msgstr ""
+"`自己吸収のセクション <process/sa.html>`__ に出てくる硫酸塩のデータは"
+" Zhang Ghong によって寄贈され，Daniel Haskel の"
+" `Fluo program <http://www.aps.anl.gov/xfd/people/haskel/fluo.html>`__ "
+"によって補正されたものです． `同じセクション <process/sa.html>`__ "
+"に出てくる銅のデータは，Corwin Booth の"
+" `RSXAP program <http://lise.lbl.gov/RSXAP/>`__ によって補正されたものです．"
+
+#: ../../forward.rst:263
+msgid ""
+"Data on a hydrated uranyl phosphate that appear in several places are the"
+" U L\\ :sub:`III` standard used by `my former research group "
+"<http://www.mesg.anl.gov/>`__. Spectra from this standard have appeared "
+"in many publications from that group. The U\\ :sub:`3`\\ O\\ :sub:`8` "
+"sample shown in the `the deglitching section <process/deg.html>`__ are "
+"from the group's standards library."
+msgstr ""
+"水和リン酸ウランのデータは，"
+" `前に私がいた研究グループ <http://www.mesg.anl.gov/>`__ が使っていた"
+" U L\\ :sub:`III` の標準試料です．このスペクトルは、そのグループの多くの文献に使われています．"
+"`デグリッチのセクション <process/deg.html>`__ に出てくる U\\ :sub:`3`\\ O\\ :sub:`8` も"
+"そのグループの標準試料です．
+
+#: ../../forward.rst:270
+msgid "Tin edge data which appear in several places are from"
+msgstr "いくつかのページで出てくるスズのデータは以下の文献によるものです．"
+
+#: ../../forward.rst:276
+msgid ""
+"Data on PbTiO\\ :sub:`3`, BaTiO\\ :sub:`3`, and EuTiO\\ :sub:`3` are "
+"taken from my own PhD thesis."
+msgstr ""
+"PbTiO\\ :sub:`3`, BaTiO\\ :sub:`3`, と EuTiO\\ :sub:`3` のデータは"
+"私自身の博士論文から取ってきたものです．"
+
+#: ../../forward.rst:282
+msgid "Installing :demeter:`athena` on your computer"
+msgstr ""
+
+#: ../../forward.rst:289
+msgid "**Linux, BSD, and other unixes**"
+msgstr ""
+
+#: ../../forward.rst:285
+msgid ""
+"It is not especially hard to build :demeter:`athena` from source code. "
+"The procedure is `explained in detail here "
+"<http://bruceravel.github.io/demeter/documents/SinglePage/packages.html>`_."
+" An excellent addendum to those instructions is `found here "
+"<https://gist.github.com/3959252>`_."
+msgstr ""
+
+#: ../../forward.rst:294
+msgid "**Windows**"
+msgstr ""
+
+#: ../../forward.rst:292
+msgid ""
+"Follow the links to `the Windows instructions on the Demeter homepage "
+"<http://bruceravel.github.io/demeter/#windows>`__ to download the "
+"installer and updater packages. Just download, double-click, and answer "
+"the questions."
+msgstr ""
+
+#: ../../forward.rst:298
+msgid "**Macintosh**"
+msgstr ""
+
+#: ../../forward.rst:297
+msgid ""
+"Follow the links to `the Macintosh instructions on the Demeter homepage "
+"<http://bruceravel.github.io/demeter/#mac>`__ and carefully follow the "
+"instructions you find there."
+msgstr ""
+
+#: ../../forward.rst:303
+msgid "**Debian and debian-based Linux**"
+msgstr ""
+
+#: ../../forward.rst:301
+msgid ""
+"There are no packages for Debian of any other Linux distribution at this "
+"time."
+msgstr ""
+
+#: ../../forward.rst:306
+msgid "Building this document from source"
+msgstr ""
+
+#: ../../forward.rst:308
+msgid ""
+"The source files and all images files for this document can be downloaded"
+" using Git. To grab the source, you will need a `Git client <http://git-"
+"scm.com/>`__ on your computer. This command checks a copy of the source "
+"out and downloads it onto your computer:"
+msgstr ""
+
+#: ../../forward.rst:317
+msgid "The document is found in the :file:`documentation/` folder."
+msgstr ""
+
+#: ../../forward.rst:319
+msgid ""
+"Contributions to the document are extremely welcome. The very best sort "
+"of contribution would be to directly edit the `sphinx <http://sphinx-"
+"doc.org>`_ source files and make a pull request to the `git repository "
+"<https://github.com/bruceravel/demeter>`_. The second best sort would be "
+"a patch file against the templates in the repository. If sphinx is more "
+"than you want to deal with, but you have corrections to suggest, I'd "
+"cheerfully accept almost any other format for the contribution.  "
+"(Although I have to discourage using an html editing tool to edit the "
+"html directly. Tools like that tend to insert lots of additional html "
+"tags into the text, making it more difficult for me to incorporate your "
+"changes into the source.)"
+msgstr ""
+
+#: ../../forward.rst:333
+msgid "Building the html document"
+msgstr ""
+
+#: ../../forward.rst:335
+msgid ""
+"Building the :demeter:`athena` document requires at least version 1.3 of "
+":program:`Sphinx`.  Note that Ubuntu 15.04 comes with version 1.2, so you"
+" may need to upgrade by doing"
+msgstr ""
+
+#: ../../forward.rst:343
+msgid "You can check the version of :program:`Sphinx` with this command"
+msgstr ""
+
+#: ../../forward.rst:349
+msgid "You will also need to install the following python packages"
+msgstr ""
+
+#: ../../forward.rst:354
+msgid ""
+"The `sphinxcontrib-bibtex <https://sphinxcontrib-"
+"bibtex.readthedocs.org/en/latest/>`_ package, which is Sphinx extension "
+"for BibTeX style citations."
+msgstr ""
+
+#: ../../forward.rst:358
+msgid "These can be installed at the command line by"
+msgstr ""
+
+#: ../../forward.rst:365
+msgid "To build the html document, do the following"
+msgstr ""
+
+#: ../../forward.rst:373
+msgid ""
+"This will use :program:`sphinx-build` to convert the source code into "
+"html pages.  The html pages will be placed in :file:`_build/html/`. This "
+"folder is a self-contained package.  The :file:`html/` folder can be "
+"copied and placed somewhere else.  The web pages can be accessed with "
+"full functionality in any location."
+msgstr ""
+
+#: ../../forward.rst:379
+msgid "Provide the equivalent conda commands"
+msgstr ""
+
+#: ../../forward.rst:383
+msgid "Building the LaTeX document"
+msgstr ""
+
+#: ../../forward.rst:385
+msgid ":mark:`soon,.`"
+msgstr ""
+
+#: ../../forward.rst:391
+msgid "Using the document with :demeter:`athena`"
+msgstr ""
+
+#: ../../forward.rst:393
+msgid ""
+"The html document files can be used by :demeter:`athena`.  They are "
+"installed at the time that :demeter:`demeter` is installed.  If the html "
+"pages cannot be found, :demeter:`athena` will try to use your internet "
+"connection to fetch them from `the Demeter homepage "
+"<http://bruceravel.github.io/demeter/>`__."
+msgstr ""
+
+#: ../../forward.rst:408
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../forward.rst:413
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../forward.rst:417
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

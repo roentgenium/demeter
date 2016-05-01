@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../ui/pluck.rst:44
+msgid "Pluck buttons"
+msgstr "Pluck ボタン"
+
+#: ../../ui/pluck.rst:46
+msgid ""
+"Almost every text entry box that takes an energy or wavenumber value as "
+"its parameter has a little button next to it which is decorated with a "
+"small blue X, one of which is highlighted in the figure below. These are "
+"the *pluck* buttons and their purpose is to grab a value directly from "
+"the plot. When you click one of these buttons, a message in the echo area"
+" prompts you to select a point from the plot, demonstrated in the next "
+"figure. When you click on the plot, the x-axis value of the point you "
+"clicked on gets inserted in the associated entry box."
+msgstr ""
+"エネルギーや波数をパラメータにとるテキストボックスの隣には，下図で"
+"強調されているような青い丸ボタンがあります．これは *プラック* ボタンで，"
+"プロットされたグラフから直接値を選ぶためのものです．これらのボタンを"
+"クリックすると，次の図に示すようにエコーエリアにプロットウィンドウから"
+点を選ぶように促されます．プロットウィンドウでクリックすると，クリックした"
+"点の X 軸の値が対応するテキストボックスに挿入されます．"
+
+#: ../../ui/pluck.rst:55
+msgid ""
+"Along with the pluck buttons in the main window, several data processing "
+"and data analysis tools use pluck buttons, as does the `indicator "
+"<../plot/indic.html>`__ plot options tab."
+msgstr ""
+"メインウィンドウのプラックボタンの他にも，"
+"`インジケータ <../plot/indic.html>`__ プロットオブションタブのように"
+"いくつかのデータ処理あるいはデータ解析ツールでプラックボタンを使うことできます．"
+
+#: ../../ui/pluck.rst:64
+msgid "Using the pluck button for the upper edge of the normalization range."
+msgstr "プラックボタンを使った規格化範囲上限値の設定"
+
+#: ../../ui/pluck.rst:74
+msgid ""
+"After clicking on the pluck button, the program waits for you to click on"
+" the plot, which shows |mu| (E) for BaTiO\\ :sub:`3`. Only the x-axis "
+"value of the click on the plot is used by the pluck button."
+msgstr ""
+"プラックボタンをクリックすると，:demeter:`athena` は BaTiO\\ :sub:`3` の"
+"|mu| (E) スペクトルがプロットされたグラフのクリック待ちになります．"
+"プロット画面でクリックした点の X 軸の値がテキストボックスに入力されます．"
+
+#: ../../ui/pluck.rst:84
+msgid ""
+"After clicking on the point shown in the previous figure, the value of "
+"about 243 is inserted as the value of the upper edge of the normalization"
+" range |nd| clearly a better value for that parameter."
+msgstr ""
+"上図で点をクリックすると，おおよそ 243 という値が規格化範囲の上限値として"
+"入力されます |nd| より良いパラメーター値です．"
+
+#: ../../ui/pluck.rst:103
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../ui/pluck.rst:108
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../ui/pluck.rst:112
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

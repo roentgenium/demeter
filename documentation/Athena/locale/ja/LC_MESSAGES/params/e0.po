@@ -1,0 +1,232 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../params/e0.rst:43
+msgid "Setting E0"
+msgstr "E0 (吸収端) の設定"
+
+#: ../../params/e0.rst:45
+msgid ""
+"The :procparam:`e0` is central to many of the chores that "
+":demeter:`athena` performs.  Understanding how :procparam:`e0` is used "
+"and how it is set is essential to understanding how :demeter:`athena` "
+"operates and essential to using :demeter:`athena` well."
+msgstr ""
+":procparam:`e0` は :demeter:`athena` による多くの処理の中心的な役割を果たします．:procparam:`e0` が"
+"どのように設定され，どのように使われているかを理解することは，"
+":demeter:`athena` がどのように動作するかを理解する上で重要であり，また，"
+":demeter:`athena` をうまく使うためにも重要です．"
+
+#: ../../params/e0.rst:50
+msgid ""
+"By default, :demeter:`athena` has :demeter:`ifeffit` determine "
+":procparam:`e0` and uses the value that :demeter:`ifeffit` finds. "
+":demeter:`ifeffit`'s algorithm is to find the first peak of the first "
+"derivative of |mu| (E). To avoid settling on a spot in a noisy pre-edge, "
+":demeter:`ifeffit` makes a series of checks to verify that its guess for "
+":procparam:`e0` comes after several points in the derivative of |mu| (E) "
+"that are increasing in energy and is followed by several points that are "
+"decreasing. The details of this implementation are such that "
+":demeter:`ifeffit` often chooses a point that is slightly to the high "
+"energy side of peak that a person would choose, but it typically is a "
+"very good guess."
+msgstr ""
+"デフォルトでは，:demeter:`athena` は :demeter:`ifeffit` が決定した :procparam:`e0` を使います．"
+":demeter:`ifeffit` のアルゴリズムは，|mu| (E) の一次微分の最初のピークを探索します．"
+"ノイズの多いプレエッジで勘違いしないように，:demeter:`ifeffit` は :procparam:`e0` の"
+"推定値が前の何点かについて，エネルギーに対して |mu| (E) の微分が"
+"増加しつつあるか，あるいは後ろの何点かについて |mu| (E) の微分が"
+"減少しつつあるかを確認します．この実装では，:demeter:`ifeffit` はしばしば人間が"
+"選択するよりもわずかに高エネルギー側の点を選ぶことが多いですが，"
+"たいていの場合とてもよい推測値となっています．"
+
+#: ../../params/e0.rst:62
+msgid ""
+"The actual  value of :procparam:`e0`  is used  for many things.  It is "
+"compared to  a table of  edge energies to  determine the value  of the "
+":procparam:`Z`  and :procparam:`edge`  parameters.  It  is the  energy "
+"reference for  the values of  the normalization, pre-edge,  and spline "
+"range parameters. And  it is the edge energy  in the :demeter:`autobk` "
+"algorithm."
+msgstr ""
+":procparam:`e0` の値は多くのことに用いられます．例えば，原子番号 :procparam:`Z` と"
+" :procparam:`edge` を決めるために吸収端エネルギーの表と比較されます．また，規格化，"
+"プレエッジ，スプライン範囲の基準エネルギーでもあり，:demeter:`autobk` アルゴリズムに"
+"よって吸収端エネルギーとしても利用されます．"
+
+#: ../../params/e0.rst:69
+msgid ""
+"The `calibration <../process/cal.html>`__ and `alignment "
+"<../process/align.html>`__ tools can be used to refine the values for "
+":procparam:`e0`. You can also edit its value directly by typing in its "
+"entry box. The :mark:`rightclick,..` right-click context menu for "
+":procparam:`e0` and the :guilabel:`Energy` menu have several options for "
+"other ways of setting :procparam:`e0`."
+msgstr ""
+"`較正 <../process/cal.html>`__ や `整列 <../process/align.html>`__ "
+"ツールは :procparam:`e0` の値を再設定するのに使われます．また，対応するテキスト"
+"ボックスを直接編集することもできます．:procparam:`e0` の右クリックコンテキスト"
+"メニューや Energy メニューは :procparam:`e0` を設定するためのいくつかの選択肢を"
+"提供しています．"
+
+#: ../../params/e0.rst:76
+msgid ""
+"There are a few situations where the default algorithm will fail. Very "
+"noisy data can result in a spurious identification of :procparam:`e0`. "
+"Materials which have two inflections in the edge, such as zero-valent "
+"zirconium, might have the wrong inflection chosen. Materials with huge "
+"edge peaks, such as K\\ :sub:`2`\\ CrO\\ :sub:`4`, will have a point in "
+"the leading edge of the peak chosen rather than a point in the main edge."
+msgstr ""
+"デフォルトのアルゴリズムでうまくいかない場合もあります．非常にノイズの"
+"大きなデータでは :procparam:`e0` の探索がおかしくなってしまうでしょうし，0 価の"
+"ジルコニウムのように吸収端に2つの変曲点が存在する場合には，変曲点の"
+"選択を間違ってしまうかもしれません．K\\ :sub:`2`\\ CrO\\ :sub:`4` "
+"のように吸収端付近に非常に大きなピークを持つ試料についても，メインの"
+"吸収端ではなく，それより前にあるピークを吸収端と認識してしまうかも"
+"しれません．"
+
+#: ../../params/e0.rst:84
+msgid ""
+"features related to E\\ :sub:`0` moved from the :guilabel:`Group` menu to"
+" the :guilabel:`Energy` menu."
+msgstr ""
+"E\\ :sub:`0` に関する機能は :guilabel:`Group` メニューから"
+" :guilabel:`Energy` メニューに移動されました． "
+
+#: ../../params/e0.rst:88
+msgid ""
+"Aside from the default method described above, :demeter:`athena` offers a"
+" few other algorithms for setting :procparam:`E0`."
+msgstr ""
+"上記のデフォルトの方法以外にも，:demeter:`athena` では，:procparam:`E0` を設定するための"
+"他のいくつかのアルゴリズムを提供しています．"
+
+#: ../../params/e0.rst:96
+msgid "**Tabulated atomic value**"
+msgstr "**既知の原子ごとの値の利用**"
+
+#: ../../params/e0.rst:92
+msgid ""
+"The tabulated value of the edge energy of the zero-valent element will be"
+" used. To determine the element, a transitory value for e0 will be found "
+"using :demeter:`ifeffit`. Once :procparam:`Z` and :procparam:`Edge` are "
+"found, :procparam:`E0` is set to the tabulated value."
+msgstr ""
+"0 価の元素の吸収端エネルギーの表の値が使われます．元素を決定するために，"
+":demeter:`ifeffit` を使って，一時的な e0 の値が設定されます．一旦，:procparam:`Z` と :procparam:`Edge` が"
+"見つかると，:procparam:`E0` が表の値に設定されます．"
+
+#: ../../params/e0.rst:105
+msgid "**Fraction of edge step**"
+msgstr ""
+
+#: ../../params/e0.rst:99
+msgid ""
+"In this algorithm, a transitory value for E\\ :sub:`0` will be found "
+"using :demeter:`ifeffit`. The data are normalized and the point on the "
+"edge which has a height equal to a specified fraction of the edge step is"
+" chosen as :procparam:`E0`. This normalization is iterated up to 5 times "
+"to settle on a stable value. The value of the fraction is set by the "
+":configparam:`Bkg,fraction` preference, which is 0.5 by default."
+msgstr ""
+"このアルゴリズムでは，:demeter:`ifeffit` を使って，E\\ :sub:`0` の一時的な値が設定されます．"
+"データは規格化され，吸収端の設定された吸収端のジャンプの値に割合に"
+"対応するところが :procparam:`E0` として選択されます．この規格化は安定した値に"
+"落ち着くまで，最大で5回繰り返されます．割合の値は :configparam:`Bkg,fraction` の"
+"設定で変更することができ，デフォルトの値は 0.5 です．"
+
+#: ../../params/e0.rst:112
+msgid "**Zero crossing**"
+msgstr "**ゼロ点の交差**"
+
+#: ../../params/e0.rst:108
+msgid ""
+"Again, a transitory value for E\\ :sub:`0` will be found using "
+":demeter:`ifeffit`. The second derivative of |mu| (E) is computed and "
+":demeter:`athena` searches in both directions in energy for the nearest "
+"zero-crossing of the second derivative, which is then used for "
+":procparam:`e0`."
+msgstr ""
+"この場合も :demeter:`ifeffit` を使って，E\\ :sub:`0` の一時的な値が設定されます．"
+"|mu| (E) の二次微分が計算され，:demeter:`athena` は両方向から二次微分で 0 と"
+"交差している点に最も近い点を探索して，:procparam:`e0` に設定します．"
+
+#: ../../params/e0.rst:118
+msgid "**Peak of L edge white line**"
+msgstr "**L-edge ホワイトラインのピーク**"
+
+#: ../../params/e0.rst:115
+msgid ""
+"A transitory value for E\\ :sub:`0` will be found using "
+":demeter:`ifeffit`. The peak of the white line is then found as the zero "
+"crossing of the first derivative of |mu| (E) after the initial value of "
+"E\\ :sub:`0` and is used as :procparam:`e0`."
+msgstr ""
+"この場合も :demeter:`ifeffit` を使って，E\\ :sub:`0` の一時的な値が設定されます．"
+"ホワイトラインのピークは E\\ :sub:`0` の初期値の後の |mu| (E) の一次微分が"
+" 0 と交わる点とされ，:procparam:`e0` に設定されます．"
+
+#: ../../params/e0.rst:120
+msgid ""
+"Since all of these additional algorithms rely on :demeter:`ifeffit`'s "
+"initial guess of :procparam:`E0`, each is subject to the same caveats "
+"given for the default algorithm."
+msgstr ""
+"これらの追加的なアルゴリズムは，:demeter:`ifeffit` による :procparam:`E0` の初期推定値に"
+"依存しているため，デフォルトアルゴリズムと同じ問題点を抱えています．
+
+#: ../../params/e0.rst:124
+msgid ""
+"The :configparam:`Bkg,e0` `configuration parameter "
+"<../other/prefs.html>`__ can be set to one of these options, setting the "
+"default algorithm for determining :procparam:`E0`."
+msgstr ""
+":configparam:`Bkg,e0` `環境設定 <../other/prefs.html>`__ では，"
+"これらの選択肢から1つを選ぶことができ，:procparam:`E0` を求めるデフォルトの"
+"アルゴリズムを変更することができます．"
+
+#: ../../params/e0.rst:128
+msgid ""
+"Submenus under the :guilabel:`Group` menu can be used to set "
+":procparam:`E0` using one of these algorithms for all groups, or the set "
+"of marked groups."
+msgstr ""
+":guilabel:`Group` メニューのサブメニューでこれらのアルゴリズムすべて"
+"あるいはマークのついたグループに適用することができます．"
+
+#: ../../params/e0.rst:141
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../params/e0.rst:146
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../params/e0.rst:150
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

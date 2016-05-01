@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../import/multiple.rst:45
+msgid "Multiple data set import"
+msgstr "複数データセットの読み込み"
+
+#: ../../import/multiple.rst:47
+msgid ""
+"You can import multiple data sets in the same manner that was explained "
+"in the last section. Select :menuselection:`File --> Import data` or type"
+" :button:`Control`-:button:`o`. When the file selection dialog opens, you"
+" can select more than one data file by :mark:`leftclick,..` clicking on "
+"file names while holding down the :button:`Control` key. On my Linux "
+"computer, it looks like this."
+msgstr ""
+"前節で説明したのと同じ方法で，複数のデータセットを読み込むことができます．"
+":menuselection:`File --> Import data` を選択するか :button:`Control`-:button:`o` "
+"とタイプすると，ファイル選択ダイアログが開き，:button:`Control` キーを"
+"押しながら，1つ以上のファイルを選択することができます．"
+"私の Linux PC の場合では以下の様に見えます．"
+
+#: ../../import/multiple.rst:59
+msgid "Importing multiple data sets with the file selection dialog."
+msgstr "ファイル選択ダイアログにおける複数データセットの読み込み"
+
+#: ../../import/multiple.rst:61
+msgid ""
+"Note that three files are highlighted in the file listing and that those "
+"three files are listed below in the :guilabel:`File name` box.  Another "
+"way of selecting multiple files is to :mark:`leftclick,..` click on a "
+"file in the listing then :mark:`leftclick,..` click on another file while"
+" holding down the :button:`Shift` key.  When you do this, all files "
+"between the two you clicked on will be selected."
+msgstr ""
+"ファイルリストのうち，9つのファイルがハイライトされており，以下の"
+" :guilabel:`File name` ボックスにリストされています．複数ファイルを選択する"
+"もう1つの方法は，リストの中からファイルを1つ :mark:`leftclick,..` クリックし，"
+" :button:`Shift` キーを押しながら他のファイルを :mark:`leftclick,..` "
+"クリックします．こうすると，選ばれているファイルと、:button:`Shift` キーを"
+"押しながら選んだファイルの間にあるファイルが全て選択されます．"
+
+#: ../../import/multiple.rst:69
+msgid ""
+"When you click the :button:`Open,light` button, all of the selected files"
+" will be imported. If all of the files are of the same type, "
+":demeter:`athena` will import them all with only one interaction of the "
+"column selection dialog. Thus, if you select several files that were "
+"measured one after the other, they will all be imported using the same "
+"column selections as well as the same parameters for the reference "
+"channel, rebinning, and preprocessing (all of which will be described in "
+"the following sections). If, however, a file is found that appears to be "
+"of a different format, the column selection dialog will reappear as "
+"needed. :demeter:`athena` considers two files to be the same if they have"
+" the same number of columns and those columns have the same labels."
+msgstr ""
+":button:`Open,light` ボタンを押すと，選択されたすべてのファイルが"
+"読み込まれます．全てのファイルが同じ型なら，:demeter:`athena` は列選択"
+"ダイアログを1回表示するだけで，すべてのファイルを読み込みます．"
+"すなわち，同じように測定したファイルを選択すると，それらは全て同じデータ選択，"
+"参照データ，データの間引き，前処理（この後説明します）のパラメータで"
+"読み込まれます．形式の異なるファイルが含まれていたら，列選択ダイアログが"
+"必要に応じて現れます．:demeter:`athena` は列の数が同じかつ項目名が同じときに"
+"同じ形式のファイルと見なします．"
+
+#: ../../import/multiple.rst:82
+msgid ""
+"Each file imported in this way will be listed in the group list, shown "
+"here"
+msgstr "このように読み込んだファイルは下図のように表示されます．"
+
+#: ../../import/multiple.rst:90
+msgid "After importing multiple data sets."
+msgstr "複数のデータセット読み込み後"
+
+#: ../../import/multiple.rst:92
+msgid ""
+"When you import multiple project files, the `project selection dialog "
+"<../import/projsel.html>`__ will appear for the first one in the list. If"
+" you import the entire contents of the project file, then the entire "
+"contents of all remaining project files will also be imported. If, "
+"however, you import only a subset, the project selection dialog will "
+"appear for the next project file. As soon as you import an entire "
+"project, all subsequent projects will be imported without having to "
+"interact with the dialog."
+msgstr ""
+"複数のプロジェクトファイルを読み込むと，リストの最初にあるファイルの"
+" `プロジェクト選択ダイアログ <../import/projsel.html>`__ が現れます．"
+"そのプロジェクトファイル全体を読み込むと、その他のプロジェクトファイルも"
+"全て読み込まれます．一部だけを読み込んだ場合は，次のプロジェクトファイルの"
+"プロジェクト選択ダイアログが表示されます．いずれかのプロジェクトファイルの"
+"データを全てを読み込むと，後のプロジェクトはダイアログ操作無しで全て"
+"読み込まれます．"
+
+#: ../../import/multiple.rst:109
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../import/multiple.rst:114
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../import/multiple.rst:118
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

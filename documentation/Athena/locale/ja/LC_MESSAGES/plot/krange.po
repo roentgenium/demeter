@@ -1,0 +1,85 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../plot/krange.rst:43
+msgid "Spectral resolution and k-range"
+msgstr "スペクトルの分解能と k の範囲"
+
+#: ../../plot/krange.rst:45
+msgid ""
+"The first and second coordination shells in iron metal are at 2.49 and "
+"2.87 |AA|. These closely spaced shells overlap considerably when the "
+"Fourier transform of the |chi| (k) data are plotted. Consequently, the "
+"iron foil data can be used to demonstrate the relationship between the "
+"Fourier transform k-range and spectral resolution."
+msgstr ""
+"金属の鉄の1つめと2つめの配位圏は 2.49 と 2.87 |AA| です．これらの密に"
+"並んだ配位圏は |chi| (k) データをフーリエ変換した際に，かなり重なります．"
+"すなわち，鉄箔データはフーリエ変換する k 範囲とスペクトル分解能の関係を
+"示すのに使うことができます．"
+
+#: ../../plot/krange.rst:51
+msgid ""
+"We see the iron foil data plotted in the figure below using three "
+"different values for :procparam:`kmax`. The data are three identical "
+"copies of the 60K iron foil data and have had the background function "
+"removed in the same way."
+msgstr ""
+"下図には異なる3つの :procparam:`kmax` を取ったときの鉄箔のデータを
+"示しています．データは 60 K で測定した鉄箔データをコピーしたものであり，"
+"同じようにバックグラウンド関数を除去したものです．"
+
+#: ../../plot/krange.rst:56
+msgid ""
+"For the smallest value of :procparam:`kmax`, 10 |AA| :sup:`-1`, the "
+"second shell appears only as a shoulder at about 2.5 |AA|. The shoulder "
+"becomes more pronounced when :procparam:`kmax` is increased to 16 |AA| "
+":sup:`-1`. Only when :procparam:`kmax` is set to 22 |AA| :sup:`-1`, the "
+"entire measured data range, is the second coordination visible as a "
+"resolved peak."
+msgstr ""
+":procparam:`kmax` の値として最も小さな 10 |AA| :sup:`-1` を取ると，"
+"2つめの配位圏は 2.5 |AA| あたりに肩ピークとしてしか現れません．"
+" :procparam:`kmax` を 16 |AA| :sup:`-1` まで増やすと，肩ピークはより"
+"はっきりしてきます．:procparam:`kmax` を 22 |AA| :sup:`-1`，つまり測定範囲"
+"全体にしたときにのみ，2つめの配位圏が分離されたピークとして見えるようになります．"
+
+#: ../../plot/krange.rst:67
+msgid "Iron foil data, plotted with three different k-ranges."
+msgstr "異なる3つの k の範囲でプロットした鉄箔データ"
+
+#: ../../plot/krange.rst:78
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../plot/krange.rst:83
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../plot/krange.rst:87
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

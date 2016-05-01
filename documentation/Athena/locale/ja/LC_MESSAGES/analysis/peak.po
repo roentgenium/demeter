@@ -1,0 +1,479 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../analysis/peak.rst:45
+msgid "Peak fitting"
+msgstr "ピークフィッティング"
+
+#: ../../analysis/peak.rst:48
+msgid "Interpreting data as a sum of line shapes"
+msgstr "データを関数の和として解釈する"
+
+#: ../../analysis/peak.rst:50
+msgid ""
+"Peak fitting involves fitting a number of analytical line shapes to XANES"
+" data. The typical approach is to simulate the XANES data using one or "
+"two step-like functions and several peak functions for the peaks in the "
+"data. The centroids, amplitudes, and widths of the various line shapes "
+"are either fixed or varied to best fit the data. In :demeter:`athena`'s "
+"implementation of peak fitting, a Levenberg-Marquardt non-linear least-"
+"squares minimization is used. (To be specific, :demeter:`ifeffit`'s "
+"``minimize`` command is used after constructing an array with a sum of "
+"line shapes or :demeter:`larch`'s ``minimize`` function is using an "
+"objective function which contructs an array with a sum of the line "
+"shapes.)"
+msgstr ""
+"ピークフィッティングは XANES データをいくつかの解析的な関数でフィッティング"
+"することを指します．典型的なアプローチは1つあるいは2つの階段状の関数と"
+"データに見られるピークに対して，いくつかのピーク関数を使って， XANES を"
+"再現するというものです．様々な関数の中心，高さ，そして幅は固定されていたり，"
+"うまくフィットするように変数として扱われたりします．:demeter:`athena` のピーク"
+"フィッティングでは，Levenberg-Marquardt 非線形最小二乗法が使われます．"
+"（より具体的に言うと，関数の和の配列を構成した後で，:demeter:`ifeffit` の"
+" ``minimize`` コマンドが使われるか，関数の和の配列をもつ関数オブジェクトを"
+"使って，:demeter:`larch` の ``minimize`` 関数が使われます．）"
+
+#: ../../analysis/peak.rst:62
+msgid ""
+"Peak fitting is an inherently empirical analysis technique. By "
+"themselves, the line shapes used have little physical meaning. The "
+"utility of peak fitting is in quantifying the variation of certain "
+"spectral features in a sequence of data. As an example, consider the "
+"small peak that appears just before the main rising part of the edge in "
+"the perovskite PbTiO\\ :sub:`3`. In the plot below, this is the peak "
+"around 4967 eV. This peak varies as a function of temperature as you "
+"approach then exceed the crystallographic phase transition. The size of "
+"the peak can be related to the amount of displacement of the Ti atom from"
+" the near-by postition of centrosymmetry. Peak fitting is a useful tool "
+"in this temperature-dependent study as it can quantify the relationship "
+"between a spectral feature and an extrinsic parameter."
+msgstr ""
+"ピークフィッティングは本質的に経験的な解析手法です．よって，関数の形"
+"そのものに物理的な意味はほとんどありません．ピークフィッティングの"
+"有用性は一連のデータにおけるあるスペクトルの特徴の変化を定量することに"
+"あります．例えば，ペロブスカイト構造を持つ PbTiO\\ :sub:`3` の吸収端で"
+"主な吸収端の立ち上がりのちょうど前に現れる小さなピークについて考えて"
+"みましょう．プロットしてみると，このピークは 4967 eV に現れています．"
+"このピークは温度の関数として変化し，結晶学的な相変化に伴い変化します．"
+"ピークの大きさは Ti 原子が中心対称の位置から外れていく量に関係しています．"
+"ピークフィッティングはこの温度変化について，スペクトルの特徴と"
+"外乱パラメータを定量的に解析できるという点で有用です．"
+
+#: ../../analysis/peak.rst:80
+msgid "The peak fitting tool."
+msgstr "ピークフィッティングツール"
+
+#: ../../analysis/peak.rst:82
+msgid ""
+"The screenshot above shows the peak fitting tool. The available line "
+"shapes when useing :demeter:`ifeffit` include"
+msgstr ""
+"上のスクリーンショットにはピークフィッティングツールが示されています．"
+":demeter:`ifeffit` を使っている場合に利用できる関数には以下のものがあります．"
+
+#: ../../analysis/peak.rst:85
+msgid "arc tangent (step-like)"
+msgstr "アークタンジェント (階段状)"
+
+#: ../../analysis/peak.rst:87
+msgid "error function (step-like)"
+msgstr "誤差関数 (階段状)"
+
+#: ../../analysis/peak.rst:89
+msgid "Gaussian (peak)"
+msgstr "ガウス関数 (ピーク)"
+
+#: ../../analysis/peak.rst:91
+msgid "Lorentzian (peak)"
+msgstr "ローレンツ関数 (ピーク)"
+
+#: ../../analysis/peak.rst:93
+msgid "pseudo-Voigt (peak)"
+msgstr "擬フォークト関数 (ピーク)"
+
+#: ../../analysis/peak.rst:95
+msgid ":demeter:`larch` adds one step-like function and several peak functions:"
+msgstr ":demeter:`larch` を使っている場合には更に以下の1つの階段状関数といくつかのピークを持つ関数を使うことができます．"
+
+#: ../../analysis/peak.rst:97
+msgid "logistic (step-like)"
+msgstr "ロジスティック関数 (階段状)"
+
+#: ../../analysis/peak.rst:99
+msgid "Voigt (step-like)"
+msgstr "フォークト関数 (階段状)"
+
+#: ../../analysis/peak.rst:101
+msgid "Pearson7 (peak)"
+msgstr "第7ピアソン関数 (ピーク)"
+
+#: ../../analysis/peak.rst:103
+msgid "Student's T (peak)"
+msgstr "Student の T 関数 (ピーク)"
+
+#: ../../analysis/peak.rst:105
+msgid ""
+"An obviously useful function are not available in the current version of "
+":demeter:`athena` is a broadened Cromer-Lieberman calculation of the bare"
+" atomic edge step (which might better approximate the shape of the XANES "
+"data)."
+msgstr ""
+"現在のバージョンの :demeter:`athena` で利用できませんが，明らかに有用な関数としては，"
+"単原子に関する吸収端ジャンプのブロード化された Cromer-Lieberman 関数が"
+"挙げられます．（これは XANES の形をよりうまく近似するかもしれません） "
+
+#: ../../analysis/peak.rst:109
+msgid ""
+"Each line shape has an independent centroid, amplitude, and width. A few "
+"line shapes have a fourth parameter. For instance, the pseudo-Voigt "
+"function has a parameter for mixing Gaussian and Lorentzian content. By "
+"default, the centroids are fixed and the other parameters are varied in "
+"the fit."
+msgstr ""
+"それぞれの関数は独立な中心，高さと幅を持ちます．いくつかの関数については"
+"4つめのパラメータを持っています．例えば，擬フォークト関数はガウス関数と"
+"ローレンツ関数の混ざり具合に関するパラメータを持っています．デフォルトでは，"
+"中心は固定されており，他のパラメータはフィッティング中に変化します．"
+
+#: ../../analysis/peak.rst:115
+msgid ""
+"The peak shapes are unit normalized. This means that the amplitude **is**"
+" the area under the peak."
+msgstr ""
+"ピークの形は規格化されたものです．すなわち，強度 **は** ピークの面積を"
+"示しています．"
+
+#: ../../analysis/peak.rst:118
+msgid ""
+"Here is the result of a fit to the PbTiO\\ :sub:`3` after slightly "
+"tweaking the centroids of the three lineshapes from the values shown "
+"above."
+msgstr ""
+"これは PbTiO\\ :sub:`3` のフィッティングについて，上で示した値のうち，"
+"3つの関数の中心を少し変更した後の結果です．"
+
+#: ../../analysis/peak.rst:127
+msgid ""
+"Fit to PbTiO\\ :sub:`3` data measured at room temperature using an arc-"
+"tangent, a Lorentzian, and a Gaussian."
+msgstr ""
+"室温で測定された PbTiO\\ :sub:`3` のデータに対して，アークタンジェント関数，"
+"ローレンツ関数そしてガウス関数でフィッティングした結果"
+
+#: ../../analysis/peak.rst:133
+msgid "Fitting a single data group"
+msgstr "1つのデータグループに対するフィッティング"
+
+#: ../../analysis/peak.rst:140
+msgid "Choosing the lineshape to add to the model."
+msgstr "モデルに利用する関数の選択"
+
+#: ../../analysis/peak.rst:142
+msgid ""
+"Line shapes are added to the fitting model by clicking the buttons "
+"labeled :button:`Add step,light` or :button:`Add peak,light`. The "
+"functional form of the lineshape is chosen by selection from the menu to "
+"the left of those buttons."
+msgstr ""
+":button:`Add step,light` あるいは :button:`Add peak,light` とラベル"
+"されているボタンをクリックすることで関数をモデルに追加することができます．"
+"関数の形はそれらのボタンの左にあるメニューから選択することができます．"
+
+#: ../../analysis/peak.rst:147
+msgid ""
+"Clicking one of the :guilabel:`Add` buttons inserts a field for that "
+"lineshape in the area below the buttons. In the screenshot above, three "
+"lineshapes have been added: one arc-tangent to model the main edge step, "
+"a pseudo-Voigt function to model the first pre-edge peak, and a Gaussian "
+"to model the second pre-edge peak."
+msgstr ""
+":guilabel:`Add` ボタンのうちの1つをクリックすると，ボタンの下に関数の"
+"ための欄が追加されます．上のスクリーンショットでは，主な吸収端の"
+"モデルであるアークタンジェント関数，1つめのプレエッジピークのモデルである"
+"擬フォークト関数，そして2つめのプレエッジピークのモデルであるガウス関数の"
+"3つの関数が追加されています．"
+
+#: ../../analysis/peak.rst:153
+msgid ""
+":demeter:`athena` cannot know what feature in the data each line shape is"
+" intended to model. You **must** select the centroid of each line shape. "
+"This can be done by typing an energy value into the box labeled either "
+":guilabel:`Center` or E\\ :sub:`0`. Alternately, you can use the pluck "
+"button to take the energy value from the plot using the mouse."
+msgstr ""
+":demeter:`athena` からはデータのどの特徴にたいしてどの関数がモデルに使われているかは"
+"認識していません．よって，**必ず** 関数の中心位置を選択しなければなりません．"
+"これは，:guilabel:`Center` あるいは E\\ :sub:`0` とラベルされているボックスに"
+"エネルギー値を入力することでできます．あるいは，プラックボタンを使って，"
+"マウスでプロットウィンドウからエネルギーの値を取ってくることもできます．"
+
+#: ../../analysis/peak.rst:159
+msgid ""
+"When the pluck button is used, :demeter:`athena` will make a guess for "
+"the initial value of the height of the lineshape. This is the value of "
+"the data at the position plucked for the centroid. The initial guess for "
+"the width of the line shape is 0.5 eV for peak shapes and the core-hole "
+"lifetime in eV units for the absorbing element of the data being fitted."
+msgstr ""
+"プラックボタンを使うと，:demeter:`athena` は関数の高さの初期値を推定しようとします．"
+"これは，プラックボタンで指定された中心位置でのデータの値です．ピークを持つ"
+"関数の幅の広がりの初期推定値は 0.5 eV であり，吸収元素（の階段関数）に
+"ついては core-hole の寿命幅が使われます．"
+
+#: ../../analysis/peak.rst:165
+msgid ""
+"Which parameters are fixed and which are varied are controlled by the "
+"check buttons labeled :guilabel:`Fix` next to each parameter value. By "
+"default, the centroid is fixed and the other two (or three) parameters "
+"are floated in the fit. In my experience, the fits are fairly unstable "
+"when the centroids are varied, particularly with peak functions placed "
+"close together. I typically leave the centroid values fixed, adjusting "
+"them by hand and rerunning the fits if necessary."
+msgstr ""
+"どのパラメータを固定するかについては，それぞれのパラメータの隣にある"
+" :guilabel:`Fix` とラベルされたチェックボタンで制御することができます．"
+"デフォルトでは中心位置は固定されており，他の2つ（あるいは3つ）の"
+"パラメータはフィッティング変数として扱われます．私の経験では，中心位置を"
+"浮動させるとフィッティングは非常に不安定になり，特にピーク関数が近くにある"
+"場合にはそれが顕著です．私の場合はたいていの場合中心位置を固定し，
+"手動でこれを調節して，必要に応じてフィッティングを繰り返します．"
+
+#: ../../analysis/peak.rst:173
+msgid ""
+"The :button:`Reset,light` button (which becomes enabled only after a fit "
+"is performed) is used to restore parameters for each lineshape to their "
+"default values. This is handy if a fit results in strange values due to "
+"some numerical instability of the fitting model, which might happen, for "
+"example, if centroids are floated."
+msgstr ""
+":button:`Reset,light` ボタン（フィッティングを行った後だけ有効化されます）は，"
+"それぞれの関数のパラメータをデフォルトの値に戻すため使われます．"
+"これは，もしフィッティング結果がモデルの数値的な不安定性によって"
+"変な値になってしまった場合に便利です．こういったことは例えば中心位置を"
+"変動させた場合に起こるかもしれません．"
+
+#: ../../analysis/peak.rst:179
+msgid ""
+"If you wish to try a different lineshape at the same energy position, you"
+" can click on the :guilabel:`change function` hot text to post a menu of "
+"other choices for line shape."
+msgstr ""
+"もし，同じエネルギー位置で異なる関数を使いたければ，関数名の横にある"
+" :guilabel:`change function` をクリックすることで変更することができます．"
+
+#: ../../analysis/peak.rst:188 ../../analysis/peak.rst:214
+msgid "The peak fitting results tab."
+msgstr "ピークフィッティング結果タブ"
+
+#: ../../analysis/peak.rst:190
+msgid ""
+"With :demeter:`ifeffit`, there are only two step-like shapes. So for "
+"changing the shape of a step-like function, the hot text simply toggles "
+"between the two."
+msgstr ""
+":demeter:`ifeffit` を使うと，たった2つの階段状関数しか使えません．よって，階段状関数の"
+"形状を変える場合には，change funciton をクリックすると相互に切り替えることになります．"
+
+#: ../../analysis/peak.rst:194
+msgid ""
+"Once you have set all the parameters of the fitting model, the fit is "
+"performed by clicking the :button:`Fit,light` button in the "
+":guilabel:`Actions` section at the top of the page. Alternately, you can "
+"examine the current state of the model without running the fit by "
+"clicking the :button:`Plot sum,light` button."
+msgstr ""
+"フィッティングモデルのすべてのパラメータを設定し，ウィンドウの上部にある"
+" :button:`Actions,light` セクションの :button:`Fit,light` ボタンを"
+"クリックすることでフィッティングが実行されます．あるいは，"
+" :button:`Plot sum,light` ボタンをクリックすることでフィッティングを"
+"行わずに現在のモデルについて確認することができます．"
+
+#: ../../analysis/peak.rst:203
+msgid "The fit results tab"
+msgstr "フィッティング結果タブ"
+
+#: ../../analysis/peak.rst:205
+msgid ""
+"After a fit finishes, the remaining buttons in the :guilabel:`Actions` "
+"section are enabled and the text box on the results tab is filled in with"
+" the outcome of the fit."
+msgstr ""
+"フィッティングが終わると，:guilabel:`Actions` セクションにある残りの"
+"ボタンが有効化され，結果タブにあるテキストボックスにフィッティングに"
+"よって得られた結果が表示されます．"
+
+#: ../../analysis/peak.rst:216
+msgid ""
+"The :button:`Plot data and fit,light` button at the bottom of the results"
+" tab makes the same plot as the :button:`Plot sum,light` button on the "
+"main tab. The plot can be modified to include traces for each individual "
+"line shape and for the residual of the fit by toggling the checkbuttons "
+"above the note tabs."
+msgstr ""
+"結果タブの下部にある :button:`Plot data and fit,light` ボタンは，メインタブに"
+"ある :button:`Plot sum,light` ボタンと同じプロットを行います．ノートタブの上に"
+"あるチェックボタンを使うことで，それぞれの関数の形状やフィッティングの残差を"
+"表示することもできます．"
+
+#: ../../analysis/peak.rst:222
+msgid ""
+"The result of the fit can be saved to a column data file by clicking that"
+" button at the bottom of the results tab. (The same thing happens with "
+"the :button:`Save fit,light` button on the main tab.) The output file "
+"contains the fit results in the header and has columns of"
+msgstr ""
+"フィッティング結果は，結果タブ下部のボタンをクリックすることで，列データ"
+"ファイルとして保存することもできます．（メインタブの :button:`Save fit,light` "
+"ボタンを使っても同様です．）出力ファイルにはフィッティング結果がヘッダーに"
+"含まれると共に，以下のデータを含みます．"
+
+#: ../../analysis/peak.rst:227
+msgid "energy"
+msgstr "エネルギー"
+
+#: ../../analysis/peak.rst:229
+msgid "the data"
+msgstr "データ"
+
+#: ../../analysis/peak.rst:231
+msgid "the fit"
+msgstr "フィッティング結果"
+
+#: ../../analysis/peak.rst:233
+msgid "the residual"
+msgstr "残差"
+
+#: ../../analysis/peak.rst:235
+msgid "one column for each component"
+msgstr "それぞれの構成要素の列"
+
+#: ../../analysis/peak.rst:239
+msgid "Fitting multiple groups and the sequence tab"
+msgstr "複数のデータグループのフィッティングとシーケンスタブ"
+
+#: ../../analysis/peak.rst:241
+msgid ""
+"Once you have found a fitting model that works for a representative data "
+"set, :demeter:`athena` offers soem automation for examining an ensemble "
+"of data.  The button on the main tab labeled :button:`Fit marked,light` "
+"will apply the current fitting model to every marked group in the data "
+"list in sequence. For example, in the case of the temperature dependent "
+"PbTiO\\ :sub:`3` data measured at the Ti K edge, we see the first pre-"
+"edge peak reduces in size in the measured data as the temperature rises. "
+"Consequently, we would expect to see measured height of that peak get "
+"smaller with temperature."
+msgstr ""
+"代表的なデータについてうまくいくフィッティングモデルを見つければ，:demeter:`athena` は"
+"まとまったデータの分析についてちょっとした自動化を提供します．メインタブに"
+"ある :button:`Fit marked,light` とあるボタンはデータリストにあるマークの"
+"ついたすべてのデータに対して，順番に現在のフィッティングモデルを適用します．例えば，"
+"PbTiO\\ :sub:`3` Ti K-edge の温度変化の場合，1つめのプレエッジピークの大きさが"
+"温度が上がるにつれて，小さくなっていくことがわかります．よって，このピークの"
+"高さは温度と共に小さくなっていくと予想されます．"
+
+#: ../../analysis/peak.rst:251
+msgid ""
+"The results of the sequence of fits using the fitting model are shown in "
+"the :guilabel:`Sequence` tab. You can have each fit plotted during the "
+"sequence by setting the :configparam:`Peakfit,plot\\_during` parameter."
+msgstr ""
+"このフィッティングモデルを使って一連のフィッティングを行った結果は"
+" :guilabel:`Sequence` タブに現れます．:configparam:`Peakfit,plot\\_during` "
+"パラメータを設定すると，一連のフィッティング中にそれぞれプロットされる"
+"ようになります．"
+
+#: ../../analysis/peak.rst:261
+msgid "The peak fitting sequence tab."
+msgstr "ピークフィッティングシーケンスタブ"
+
+#: ../../analysis/peak.rst:263
+msgid ""
+"The table at the top shows the R-factor and reduced |chi|\\ :sup:`2` for "
+"each fit in the sequence. Selecting a row of this table by "
+":mark:`leftclick,..` clicking on it will display the detailed results "
+"from that fit in the text box and will plot the result of that fit."
+msgstr ""
+"上の表にはシーケンス中のそれぞれのフィッティングの R 因子と |chi|\\ :sup:`2` "
+"が表示されます．この表の列を選択する :mark:`leftclick,..` と，"
+"フィッティングの詳細な結果がテキストボックスに表示され，グラフがプロットされます．"
+
+#: ../../analysis/peak.rst:268
+msgid ""
+":demeter:`athena` provides a couple of ways of examining the results of "
+"the fit sequence. The list of parameters that were varied in the fit are "
+"loaded into the menu just below the text box. Selecting a parameter then "
+"clicking on the adjacent plot button will show the evolution of that "
+"parameter over the ensemble of data."
+msgstr ""
+":demeter:`athena` は一連のフィッティング結果を確認するための 2，3 の方法を提供して"
+"います．フィッティング中に動いたパラメータのリストはテキストボックスの"
+"下のメニューに読み込まれます．パラメータを選択し，隣のプロットボタンを"
+"クリックすると，データの集合に対してそのパラメータが変化していく様子が"
+"プロットされます．"
+
+#: ../../analysis/peak.rst:274
+msgid ""
+"Here we see the example of the height of the pseudo-Voigt line shape as a"
+" function of temperature. As expected, the value trends downward."
+msgstr ""
+"ここでは，温度の関数として擬フォークト関数の高さが変化していく例を示します．"
+"予想されたように値は下がっていきます．"
+
+#: ../../analysis/peak.rst:282
+msgid ""
+"The results for peak height for the feature 4967 eV as measured over the "
+"entire data ensemble."
+msgstr "データ集合全体の 4967 eV にあるピークの高さの結果"
+
+#: ../../analysis/peak.rst:285
+msgid ""
+"Finally, the results of the fitting sequence can be exported to a "
+"spreadsheet file for easy viewing and manipulation in a spreadsheet "
+"program, such as Excel, LibreOffice Calc, or Google Docs. This "
+"spreadsheet contains the statistics for each fit along with all the "
+"parameter values and their uncertainties."
+msgstr ""
+"最後に，一連のフィッティング結果を，Excel，LibraOffice Calc，あるいは"
+" Google Docs などの表計算ソフトで簡単に見たり処理したりするために"
+"表状のファイルに出力することもできます．この表には，それぞれの"
+"フィッティングの統計とすべてのパラメータおよびその不確かさを含みます．"
+
+#: ../../analysis/peak.rst:296
+msgid "The results for of a fit sequence exported as a spreadsheet."
+msgstr "一連のフィッティング結果を表として出力"
+
+#: ../../analysis/peak.rst:307
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../analysis/peak.rst:312
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../analysis/peak.rst:316
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

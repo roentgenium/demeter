@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../params/index.rst:43
+msgid "Setting parameters"
+msgstr "パラメータの設定"
+
+#: ../../params/index.rst:45
+msgid ""
+"The interface for setting parameter values in the main window is quite "
+"straight forward. For most parameters, you simply type values into the "
+"appropriate text entry box. For others, you select a value from a menu.  "
+"That's all fine and dandy, but imagine the situation where you have "
+"several dozen data groups imported into :demeter:`athena` and you decide "
+"that you need to change the value of the :procparam:`rbkg` parameter for "
+"every group. It would be extremely tedious to manually change the "
+"parameter value for each data group one by one. Fortunately there is a "
+"better way."
+msgstr ""
+"メインウィンドウのパラメータ設定のインターフェイスは見たままです．"
+"多くのパラメータでは，単に値を適当なテキスト入力ボックスに入れればいいだけです．"
+"他にはメニューから選択するものもあります．わかりにくいところはないと"
+"思いますが，:demeter:`athena` にたくさんのデータを読み込み，すべての"
+"データグループに対して，:procparam:`rbkg` パラメータを変更する必要が"
+"ある場合を考えてください．これらの値を1つずつ手が変更していくのは大変"
+"煩雑です．幸運にももっとよい方法があります．"
+
+#: ../../params/index.rst:55
+msgid ""
+"In this chapter, we will see the various tools :demeter:`athena` provides"
+" for constraining parameter values across data groups. We will also look "
+"in detail at how the :procparam:`e0` parameter is determined and how "
+"parameter defaults are set."
+msgstr ""
+"この章では，:demeter:`athena` が複数のデータにまたがってパラメータを"
+"拘束するために持っている様々な方法について説明します．また，"
+":procparam:`e0` パラメータどのように決定され，デフォルトのパラメータが"
+"どのように決定されるのかについても詳しく説明します．"
+
+#: ../../params/index.rst:79
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../params/index.rst:84
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../params/index.rst:88
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

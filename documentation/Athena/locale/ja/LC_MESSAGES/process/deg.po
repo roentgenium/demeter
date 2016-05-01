@@ -1,0 +1,340 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../process/deg.rst:44
+msgid "Deglitching and truncating data"
+msgstr "データのデグリッチと切り捨て"
+
+#: ../../process/deg.rst:47
+msgid "Deglitching"
+msgstr "デグリッチ（異常点除去）"
+
+#: ../../process/deg.rst:49
+msgid ""
+"Occasionally your data has spurious points that are obviously different "
+"from the surrounding points. These so-called glitches can be caused by a "
+"variety of issues involving the monochromator, the electronics, or the "
+"sample itself. In principle, it should not be necessary to do anything at"
+" all about glitches. A feature in the data that is only one or two points"
+" wide necessarily contributes a high frequency signal to the data. Since "
+"the data are treated using Fourier techniques, these high frequency "
+"additions to the data should have scant impact on the data."
+msgstr ""
+"データの中に周囲の点とは明らかに異なる異常点が見られることがあります．"
+"これらはいわゆる「グリッチ」であり分光器，電気系統あるいは試料自体などの"
+"様々な問題によって引き起こされます．原理的には，グリッチに対しては何も"
+"する必要はありません．（データ中に1点や2点の異常点があったとしても，"
+"データの高周波信号に寄与するだけです．）データに対してはフーリエ変換処理が"
+"行われるため，これらの高周波成分はデータに対してほとんど影響を与えません．"
+
+#: ../../process/deg.rst:58
+msgid ""
+"In practice, there are a variety of ways that glitches like those shown "
+"on the right in the figure below can impact the processing of the data. "
+"Certainly, large glitches are unsightly and have an aesthetic impact on "
+"the presentation of your data."
+msgstr ""
+"実際には，下図の右側に示したような様々なグリッチはデータ処理に影響を与える"
+"可能性があります．確かに大きなグリッチは見苦しいですし，データを示すときには"
+"見栄えを損ないます．"
+
+#: ../../process/deg.rst:63
+msgid ""
+"The process by which glitchy points are removed from the data is called "
+"deglitching. Yes, I also think that's a funny sounding word."
+msgstr ""
+"データからのグリッチの除去処理はデグリッチと呼ばれます．"
+"ええ，私もちょっとおもしろい言葉だと思います． 
+
+#: ../../process/deg.rst:71
+msgid "The deglitching tool."
+msgstr "デグリッチツール"
+
+#: ../../process/deg.rst:73
+msgid ""
+":demeter:`athena`'s approach to deglitching involves simply removing the "
+"points from the data. No effort is made to interpolate from the "
+"surrounding points in an effort to replace that point with a presumably "
+"more appropriate value. The reason that no interpolation is done is that "
+"EXAFS data are typically measured on a grid that is oversampled. When the"
+" data are converted from |mu| (E) to |chi| (k) as part of the background "
+"removal, the data are rebinned onto the standard k-grid. Since a "
+"rebinning is performed later in the data processing, there is no reason "
+"to interpolate at the time of deglitching."
+msgstr ""
+"デグリッチに対する :demeter:`athena` のアプローチは単純にデータからこれらの点を"
+"除去するということです．周囲の点を内挿して，何とかおそらくもっと適切な値と"
+"思われる点に置き換えるということはしません．内挿を行わない理由は EXAFS の"
+"データは通常，必要な点数よりも多くの点数について測定されているものだからです．"
+"バックグラウンド除去の過程で，|mu| (E) から |chi| (k) にデータを変換する際，"
+"データは標準的な k グリッドに変換されます．この変換はデータ処理の後の方で"
+"行われるため，デグリッチの際に内挿する理由はありません．"
+
+#: ../../process/deg.rst:84
+msgid ""
+"Deglitching only removes points from the data in :demeter:`athena`'s "
+"memory. The data on disk are never altered."
+msgstr ""
+"デグリッチは :demeter:`athena` に読み込まれたデータ上の点を除去するだけで，ディスク上の"
+"データを変更することはありません．"
+
+#: ../../process/deg.rst:87
+msgid ""
+"There are two methods of deglitching offered by :demeter:`athena`'s "
+"deglitching tool, shown above. The first involves selecting and removing "
+"the glitches one by one. The points are selected by clicking the "
+":button:`Choose a point,light` button then :mark:`leftclick,..` double-"
+"clicking on the glitch in the plot. After :mark:`leftclick,..` double-"
+"clicking on the plot window, the selected point is indicated with an "
+"orange circle, as on the left of the next figure. Clicking the "
+":button:`Remove point,light` button removes that point from the data, "
+"shown in the bottom panel."
+msgstr ""
+"上に示したように :demeter:`athena` のデグリッチツールは，デグリッチを行うために"
+"2つの方法を提供しています．1つめはグリッチを1つ1つ選択，除去すると"
+"いうものです．:button:`Choose a point,light` ボタンをクリックし，その後プロット"
+"ウィンドウのグリッチをダブルクリック :mark:`leftclick,..` します．"
+"プロットウィンドウをダブルクリック :mark:`leftclick,..` すると，"
+"次の図の左側にあるように選択された点はオレンジ色の丸で示されます．"
+":button:`Remove point,light` ボタンをクリックすると，下のパネルに"
+"示したようにデータからその点が除去されます．"
+
+#: ../../process/deg.rst:104
+msgid ""
+"This is an example of data the needs deglitching. In this case, there was"
+" a problem with data channels not arriving at the measurement computer in"
+" the proper sequence. This timing problem resulted in occasionally spikes"
+" in the data."
+msgstr ""
+"デグリッチを必要とするデータの例．この場合，データチャンネルにおいて測定用の"
+"コンピュータにデータが適切な順番で来なかったという問題があります．"
+"このタイミングの問題はデータの突如としたスパイクとなって現れます．"
+
+#: ../../process/deg.rst:114
+msgid ""
+"A point has been selected for removal. The point flagged for removal is "
+"indicated with a little orange circle."
+msgstr ""
+"1点が除去のために選ばれた様子．除去のために選択された点は小さな"
+"オレンジ色の丸で示されます．"
+
+#: ../../process/deg.rst:122
+msgid ""
+"The selected point has been removed from the data. The deglitching "
+"margins are displayed along with the data."
+msgstr ""
+"選択された点がデータから除去された様子．デグリッチのマージンが"
+"データに沿って表示されています．"
+
+#: ../../process/deg.rst:130
+msgid ""
+"The second method for removing glitches is more automated. In the figure "
+"above, the deglitching margins are shown by the pink lines. Those margins"
+" are drawn between the specified minimum and maximum energy values. The "
+"lines are drawn a set amount above and below the post-edge line used to "
+"normalize the data. The separation between the post-edge line and the "
+"margins is given by the value in the tolerance box."
+msgstr ""
+"グリッチを除去するための2つめの方法はより自動化されたものです．上の図で，"
+"デグリッチのマージンがピンクの線で示されています．このマージンは"
+"設定された最小および最大のエネルギーの範囲において描かれています．"
+"線はデータを規格化するために使われたポストエッジの線の上下に描かれています．"
+"ポストエッジの線とマージンの間隔は tolerance box の値で決まっています．"
+
+#: ../../process/deg.rst:137
+msgid ""
+"When you click the :button:`Remove glitches,light` button, and points "
+"that within the energy range of the margins but which lie above the upper"
+" margin or below the lower margin are removed from the data. These "
+"margins can also be drawn in the pre-edge region using the pre-edge line."
+" There is no way to use margins in an energy region that includes the "
+"edge."
+msgstr ""
+":button:`Remove glitches,light` ボタンをクリックすると，マージンの"
+"エネルギー範囲において，マージンの上限より上あるいは下限より下の点が"
+"データから除去されます．これらのマージンはプレエッジの線を使って，"
+"プレエッジの範囲についても利用することができます．吸収端を含む"
+"エネルギー領域においてマージンを利用することはできません．"
+
+#: ../../process/deg.rst:144
+msgid ""
+"This technique is handy in that it quickly removes many glitches in a "
+"situation like the one shown. It is very dangerous, however, if not used "
+"with care. If the margins extend into the white line region or are so "
+"tight around the post-edge line that the oscillatory structure crosses "
+"the margins, this technique will happily remove good points from the "
+"data. Set your margins well!"
+msgstr ""
+"この方法は，上に示したような状況において多数のグリッチを素早く除去する"
+"のに便利です．しかし，注意して使わないと大変危険な場合があります．"
+"もし，マージンをホワイトラインの領域まで延びてきており．ポストエッジの
+"線に対してぎりぎりまで範囲を狭めたりすると，振動構造がマージンと"
+"交差してしまうかも知れませんが，この方法を使ってしまうと，これらの"
+"問題のない点までデータから除去してしまいます．マージンを設定する際には"
+"気をつけて下さい．"
+
+#: ../../process/deg.rst:151
+msgid ""
+"A useful variation of the point-by-point technique involves plotting the "
+"|chi| (E) data. This can only be done for glitches above the edge, but it"
+" can be a very useful technique for removing small glitches from the "
+"data. In this figure we see |mu| (E) data for U\\ :sub:`3`\\ O\\ :sub:`8`"
+" that appear fine."
+msgstr ""
+"1点1点異常点を除去するのに，|chi| (E) データでプロットするという便利なやり方も"
+"あります．これは吸収端より後ろのグリッチの除去にしか使えませんが，データ"
+"から小さなグリッチを除去するのには非常に役に立ちます．この図では，"
+"U\\ :sub:`3`\\ O\\ :sub:`8` の |mu| (E) のデータには問題がないように見えます．"
+
+#: ../../process/deg.rst:164
+msgid ""
+"|mu| (E) data for U\\ :sub:`3`\\ O\\ :sub:`8` that have a tiny glitch "
+"hidden in the high energy region."
+msgstr ""
+"高エネルギー領域に小さなグリッチが隠れている U\\ :sub:`3`\\ O\\ :sub:`8` "
+"の |mu| (E) のデータ．"
+
+#: ../../process/deg.rst:172
+msgid ""
+"Plotted as |chi| (k), the glitch at about 12 |AA|\\ :sup:`-1` in these "
+"|chi| (k) data is clearly seen."
+msgstr ""
+" |chi| (k) についてプロットすると，|chi| (k) データの 12 |AA|\\ :sup:`-1` 付近に"
+"グリッチがはっきりと見えます．"
+
+#: ../../process/deg.rst:180
+msgid ""
+"With potting as |chi| (E) selected. The spurious point at about 12 |AA|\\"
+" :sup:`-1` has been chosen."
+msgstr ""
+"|chi| (E) を選択してプロットしたところ．12 |AA|\\ :sup:`-1` 付近の異常点が選択されています．"
+
+#: ../../process/deg.rst:188
+msgid ""
+"When the |chi| (E) is displayed, the k-weight value specified by the "
+"k-weight controls is used. From there, the point-by-point technique is "
+"identical to how it used with |mu| (E) data. The advantage is that small "
+"glitches might be easier to see and to pluck from the data when the data "
+"is plotted as |chi| (E). The point-by-point deglitching algorithm works "
+"on the |chi| (E) data in the same manner as for |mu| (E) data. Points are"
+" selected by :mark:`leftclick,..` double-clicking on the plot, then "
+"removed by clicking the :button:`Remove point,light` button."
+msgstr ""
+"|chi| (E) で表示している場合，k の重みの設定で指定されている値が使われます．"
+"ここからの，1点毎の異常点除去は |mu| (E) データの場合と同じです．|chi| (E) に"
+"ついてデータをプロットしたときの利点は，小さなグリッチがより識別しやすく，"
+"また選択しやすくなっているということです．1点毎のデグリッチは |mu| (E) "
+"データの場合と同じよう，|chi| (E) データについても実行することができます．"
+"プロット上でクリックして点を選択し，:button:`Remove point,light` ボタンを"
+"クリックして下さい．"
+
+#: ../../process/deg.rst:201
+msgid "Truncation"
+msgstr "データの切り捨て"
+
+#: ../../process/deg.rst:203
+msgid ""
+"If your data does something odd at one end of the scan, the easiest "
+"solution might be to simply trim it away. The truncation tool allows you "
+"to chop data before or after a selected value."
+msgstr ""
+"もし，スキャンの終わり頃のデータにおかしいところがあれば，最も簡単な"
+"解決策はそれを取り除いてしまうことでしょう．切り捨てツールは選択された値から"
+"前あるいは後ろのデータを切り捨てることができます．"
+
+#: ../../process/deg.rst:207
+msgid ""
+"The radiobox is used to tell :demeter:`athena` whether points should be "
+"trimmed from before or after the selected point. The point can be chosen "
+"by typing in the box or by using `the pluck button <../ui/pluck.html>`__."
+msgstr ""
+"選択された点の前あるいは後ろのどちらを切り捨てるのかは :demeter:`athena` 上の"
+"ラジオボタンで決まります．基準となるエネルギーはボックスに値を打ち込むか，"
+"あるいは `プラックボタン <../ui/pluck.html>`__ を使うことで設定できます．"
+
+#: ../../process/deg.rst:217
+msgid "Tin oxide data with some spurious points near the end of the scan."
+msgstr "スキャンの終わり頃に異常点が存在する酸化スズのデータ"
+
+#: ../../process/deg.rst:219
+msgid ""
+"When you select a point, it is indicated with a vertical line, as shown "
+"in the plot above. To remove the data before or after that line, click "
+"the :button:`Truncate data,light` button."
+msgstr ""
+"点を選択すると，その位置は上のプロットウィンドウに示しているように垂直の"
+"線で示されます．その線の前あるいは後ろのデータを削除するには，"
+":button:`Truncate data,light` ボタンをクリックして下さい． 
+
+#: ../../process/deg.rst:223
+msgid ""
+"Sometimes the issue is not simply that the data are unreliable after a "
+"certain point. Sometimes your sample has elements with nearby edges, thus"
+" limiting the range over which you can actually measure the data. An "
+"example is shown in the next plot, the Ti K edge is at 4966 eV and the Ba"
+" L\\ :sub:`III` edge is at 5247 eV. A careless choice of spline and "
+"normalization range will lead to a data processing disaster."
+msgstr ""
+"時には，ある点以降のデータがめちゃくちゃという場合もあります．時には，"
+"試料の中に非常に近い吸収端を持つ複数の元素が含まれており，実際に"
+"測定することができる範囲よりもデータ範囲が限られることもあります．"
+"次のプロットウィンドウに示しているのはその一例であり，Ti K edge が"
+" 4966 eV に存在するのに対して，Ba L\\ :sub:`III` edge が 5247 eV に"
+"存在します．スプライン関数や規格化の範囲をあまり注意せずに選んでしまうと，"
+"データ処理がめちゃくちゃになってしまいます．"
+
+#: ../../process/deg.rst:235
+msgid "The Ti K and Ba L\\ :sub:`III` edges of BaTiO\\ :sub:`3`."
+msgstr "BaTiO\\ :sub:`3` の Ti K および Ba L\\ :sub:`III` 端"
+
+#: ../../process/deg.rst:237
+msgid ""
+"Of course, truncation is not the only way of dealing with this issue. A "
+"careful choice of the spline, pre-edge, and normalization ranges is "
+"usually sufficient to treat any strange features at the beginning or end "
+"of the data set. So which is better? I think it's a matter of preference."
+" As long as you understand what you are doing and process all your data "
+"in a consistent, defensible manner, you can use either approach."
+msgstr ""
+"もちろん，切り捨てはこの問題を解決するための唯一の方法ではありません．"
+"スプライン関数，プレエッジ，規格化の範囲を注意深く選択すれば，大抵の場合，"
+"データの始めや終わりにあるおかしなデータに対しても問題なく対処できます．"
+"それではどちらがよいのでしょうか．私はこれは好みの問題だと思います．"
+"自分が何をしているか理解しており，全てのデータを統一された，"
+"受け入れられやすい形で処理する限り，どちらの方法をとることもできます．"
+
+#: ../../process/deg.rst:254
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../process/deg.rst:259
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../process/deg.rst:263
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

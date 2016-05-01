@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../examples/index.rst:43
+msgid "Worked examples"
+msgstr "解析済みの例"
+
+#: ../../examples/index.rst:45
+msgid ""
+"This chapter presents two fleshed-out examples of performing specific "
+"chores with :demeter:`athena`.  Here is a `zip file with all the example "
+"data <https://s3.amazonaws.com/XAS-Education/Examples.zip>`_."
+msgstr ""
+"この章では，:demeter:`athena` の特定の機能を使った2つの解析済みの例について紹介します．"
+"`すべてのデータ <https://s3.amazonaws.com/XAS-Education/Examples.zip>`_ はこちらにあります．"
+
+#: ../../examples/index.rst:51
+msgid "**Basic data processing**"
+msgstr "**基本的なデータ処理**"
+
+#: ../../examples/index.rst:50
+msgid ""
+"This example walks through the import and processing of several data "
+"files measured on an iron foil. Data calibration and alignment, parameter"
+" constraint, and merging are demonstrated in this example."
+msgstr ""
+"この例では，鉄箔について測定されたいくつかのデータファイルの読み込みと"
+"処理を行います．ここでは，データの較正，整列，パラメータの束縛，"
+"そしてデータのマージの例が示されます．"
+
+#: ../../examples/index.rst:56
+msgid "**Linear combination analysis**"
+msgstr "**線形結合解析**"
+
+#: ../../examples/index.rst:54
+msgid ""
+"Using data measured on a variety of gold standards and a sequence of data"
+" measured on a system of cyanobacteria chemically reducing gold chloride "
+"to metallic gold."
+msgstr ""
+"様々な金化合物の標準について測定されたデータとシアノバクテリアが化学的に"
+"塩化金を金属金に還元する系について測定された一連のデータを使います．"
+
+#: ../../examples/index.rst:75
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../examples/index.rst:80
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../examples/index.rst:84
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

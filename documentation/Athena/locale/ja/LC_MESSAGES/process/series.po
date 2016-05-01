@@ -1,0 +1,87 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../process/series.rst:44
+msgid "Copy series"
+msgstr "一連のコピー"
+
+#: ../../process/series.rst:47
+msgid ""
+"This tool allows you to examine systemic trends in a measurement by "
+"varying a single processing parameter over a specified range. The "
+":guilabel:`Parameter` menu contains many of the parameters on the main "
+"window. You give an initial value, an increment, and a number of copies, "
+"thus specifying the range over which the parameter is examine."
+msgstr ""
+"このツールでは，特定の範囲におけるパラメータのうちの1つを変化させて"
+"いくことで，測定における系統的な変化を検討することができます．"
+":guilabel:`Parameter` メニューにはメインウィンドウにある多くのパラメータが"
+"含まれています．初期値，増分とコピーの数，そしてどのパラメータについて"
+"どのような範囲で変化させるかを指定することができます．"
+
+#: ../../process/series.rst:53
+msgid ""
+"Clicking the :button:`Make series,light` button creates copies of the "
+"current data group with the examined parameter set incrementally. The set"
+" of copied groups are marked and plotted in the space most appropriate "
+"for the examined parameter."
+msgstr ""
+":button:`Make series,light` ボタンをクリックすると，現在選択されている"
+"データのコピーが設定された分だけ作成されます．一連のコピーされたデータには"
+"マークがつけられ，指定されたパラメータに対して最も適切な空間でプロットされます．"
+
+#: ../../process/series.rst:58
+msgid ""
+"For parameters, line the pre- and post-edge line parameter, which affect "
+"the edge step, the average edge step value and its standard deviation are"
+" calculated and displayed in the text control that is nortmally disabled."
+msgstr ""
+"吸収端ジャンプ量に影響するプレエッジおよびポストエッジに関するパラメータに"
+"ついては，平均の吸収端ジャンプ量とその標準偏差が計算され，テキスト制御に"
+"表示されますが，通常は無効化されています．"
+
+#: ../../process/series.rst:68
+msgid "The copy series tool."
+msgstr "コピーツール"
+
+#: ../../process/series.rst:75
+msgid ""
+"The plot made from the series of :procparam:`Rbkg` values with the Fe "
+"foil data."
+msgstr "一連の :procparam:`Rbkg` パラメータを使った場合の鉄箔データのプロット "
+
+#: ../../process/series.rst:86
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../process/series.rst:91
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../process/series.rst:95
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

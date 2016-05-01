@@ -1,0 +1,271 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../other/meta.rst:43
+msgid "File metadata"
+msgstr "ファイルのメタデータ"
+
+#: ../../other/meta.rst:46
+msgid "Tracking the data about your data"
+msgstr "データに関するデータ（メタデータ）を追跡する"
+
+#: ../../other/meta.rst:48
+msgid ""
+":demeter:`athena` has supported import and export of metadata using the "
+"`XAS Data Interchange (XDI) specification "
+"<https://github.com/XraySpectroscopy/XAS-Data-Interchange>`__."
+msgstr ""
+":demeter:`athena` は"
+" `XAS Data Interchange (XDI) specification <https://github.com/XraySpectroscopy/XAS-Data-Interchange>`__ "
+"を使ったメタデータの読み込みと書き出しをサポートしています．"
+
+#: ../../other/meta.rst:53
+msgid ""
+"When metadata can be gleaned from the file you import, it will be stored "
+"in the :demeter:`athena` project file and used to make the header portion"
+" of any output files written by :demeter:`athena`."
+msgstr ""
+"読み込んだファイルからメタデータが得られる場合は，:demeter:`athena` "
+"プロジェクトファイルに保存され，:demeter:`athena` からのすべての出力"
+"ファイルのヘッダーに使われることになります．"
+
+#: ../../other/meta.rst:57
+msgid ""
+"There are three categories of information displayed in "
+":demeter:`athena`'s metadata display tool. At the top is versioning "
+"information about the XDI specification as well versioning information "
+"for any data acquisition or analysis software that has touched the data."
+msgstr ""
+":demeter:`athena` のメタデータ表示ツールには，3種類の情報が表示されます．"
+"XDI の仕様についてのバージョン情報，データ取得および解析ソフトに関する"
+"バージョン情報です．"
+
+#: ../../other/meta.rst:63
+msgid ""
+"Below that is a tree of metadata grouped into families of sensible, "
+"widely understood, semantic groupings of data. Some of these items are "
+"defined in the XDI dictionary, while others are associated with the "
+"software that has touched the data."
+msgstr ""
+"以下には，わかりやすく，意味論に基づいてグループ化されたデータのとして"
+"表示されているメタデータのツリーを示しています．"
+"これらの項目は，XDI の辞書に定義されたものですが，他はデータの解析を行った"
+"ソフトウェアに関するものです．"
+
+#: ../../other/meta.rst:68
+msgid ""
+"Finally, there is a section of user comments. This is any information "
+"associated with the file that has meaning to the user but which does not "
+"fit neatly into semantic groupings."
+msgstr ""
+"最後にユーザコメントがあります．これは，ファイルに関連付けられたユーザ向けの"
+"どんな情報でも構いませんが，意味論的なグループ分けには適していないものです．"
+
+#: ../../other/meta.rst:77
+msgid "The metadata display tool."
+msgstr "メタデータ表示ツール"
+
+#: ../../other/meta.rst:79
+msgid ""
+"If the input data file is in the XDI format, all metadata and all user "
+"comments will be stored by :demeter:`athena` and displayed in this tool."
+msgstr ""
+"もし，入力ファイルが XDI 形式であった場合，すべてのメタデータとユーザコメントは"
+" :demeter:`athena` によって保存され，このツールで表示されます．"
+
+#: ../../other/meta.rst:82
+msgid ""
+"Because XDI is a new standard that has not yet been widely adopted, "
+":demeter:`athena` provides a plugin mechanism whereby an input data file "
+"can be parsed for metadata as it is imported. This parsing is a beamline-"
+"specific chore, thus plugins are written which are tailored to the data "
+"files written as particular beamlines. The selection of beamline plugins "
+"is limited at this time. :demeter:`demeter` ships with one plugin for "
+"several XAS beamlines at NSLS (many of the XAS beamlines at NSLS use the "
+"same data acquisition software) and another for the beamlines at Sector "
+"10 at the APS."
+msgstr ""
+"XDI は新しくできた形式であり，まだ広く受け入れられているわけではないため，"
+":demeter:`athena` は入力データファイルを読み込む際にメタデータを認識する"
+"ためのプラグイン機構を有しています．このパーサーには，ビームライン特有の"
+"事柄を含むため，特定のビームラインで書かれたデータに応じて書かれています．"
+"ビームラインプラグインの項は，現時点では限られたものです．:demeter:`demeter` "
+"は NSLS のいくつかの XAS ビームライン（NSLS の多くの XAS ビームラインでは，"
+"同じデータ取得ソフトが使われています．）のためのプラグインおよび APS の"
+"Sector 10 のビームラインのためのプラグインとともに提供されています．"
+
+#: ../../other/meta.rst:92
+msgid ""
+"The image above shows an example of the NSLS beamline plugin. The data "
+"displayed in that image are from NSLS beamline X23A2. The metadata was "
+"either gleaned from the data file or from a small database of facility "
+"and beamline metadata that comes with :demeter:`demeter`."
+msgstr ""
+"上の画像は，NSLS ビームラインのプラグインを例を示しています．データは，"
+"NSLS ビームライン X23A2 のものです．メタデータは，データファイルから読み"
+"込まれるか，あるいは，:demeter:`demeter` についてくる放射光施設および"
+"ビームラインの小さなメタデータデータベースから読み込まれます．"
+
+#: ../../other/meta.rst:97
+msgid ""
+"Two pieces of metadata will always be displayed in the metadata viwewer, "
+"``Element.symbol`` and ``Element.edge``. These are two pieces of metadata"
+" that are required elements of the XDI specification. The periodic table "
+"is replete with examples of atoms that have absorption edges with very "
+"similar edge energies. For example, the tabulated values of the Cr K edge"
+" and the Ba L\\ :sub:`I` edge are both 5989 eV. Without identification of"
+" the species of the absorbing atom and of the absorption edge measured, "
+"some data cannot cannot be unambiguously identified."
+msgstr ""
+"メタデータ表示ツールには，常に2つのメタデータが表示されます．それは，"
+"``Element.symbol`` と ``Element.edge`` です．これら2つのメタデータは，"
+"XDI 仕様で必須要素とされています．周期表には吸収端エネルギーが非常に近い"
+"元素がたくさんあります．例えば，Cr K-edge と Ba L\\ :sub:`I`-edge の表に"
+"なっている値はともに 5989 eV です．吸収元素の吸収端が明確でないと，"
+"ある種のデータは，曖昧さをもってしまいます．"
+
+#: ../../other/meta.rst:107
+msgid ""
+"Since :demeter:`athena` always attempts to determine those two pieces of "
+"information for any data, those two are always available for display in "
+"the viewer."
+msgstr ""
+":demeter:`athena` はすべてのデータに対して，これら2つの情報を決定しようと"
+"試みます．このため，この2つの情報は常に表示されます．"
+
+#: ../../other/meta.rst:114
+msgid "Interacting with the metadata"
+msgstr "メタデータの扱い"
+
+#: ../../other/meta.rst:116
+msgid ""
+"This tool is not particularly interactive. Metadata is typically inserted"
+" into a file by a data acquisition or analysis program and is not "
+"intended to be altered by the user. The one exception is the user "
+"comments area. In :demeter:`athena`, this is a normal text editing "
+"control into which you can type whatever you want. The contents of this "
+"control will be saved as user comments when the :button:`Save "
+"comments,light` button is pressed."
+msgstr ""
+"このツールは，特にインタラクティブなものではありません．典型的に，"
+"メタデータは，データ取得ソフトあるいは解析ソフトによって挿入される"
+"ものであって，ユーザが意図的に変更するようなものではありません．"
+"唯一の例外は，ユーザコメントです．:demeter:`athena` では，これはふつうの"
+"テキストエリアであって，好きなように書き込むことができます．"
+"この内容は，:button:`Save comments,light` ボタンをクリックすることで"
+"保存されます．"
+
+#: ../../other/meta.rst:127
+msgid "Beamline plugins"
+msgstr "ビームラインプラグイン"
+
+#: ../../other/meta.rst:129
+msgid ""
+"Metadata can extracted from any data file so long as a beamline plugin "
+"has been written. The plugin is contained in a :file:`.pm` file in the "
+":file:`Plugins/Beamlines/` folder of the :demeter:`demeter` installation."
+" This is a piece of perl code which performs the following chores:"
+msgstr ""
+"ビームラインプラグインがそのように書かれている限り，メタデータはどんな"
+"データファイルからでも抽出することができます．プラグインは，:demeter:`demeter` を"
+"インストールした :file:`Plugins/Beamlines/` フォルダに :file:`.pm` "
+"ファイルとして含まれています．これは以下のことを行うちょっとした perl の"
+"コードです．"
+
+#: ../../other/meta.rst:135
+msgid ""
+"Very quickly recognize whether a file comes from the beamline. Speed is "
+"essential as every file will be checked sequentially against every "
+"beamline plugin. If a beamline plugin is slow to determine this, then the"
+" use of :demeter:`athena` or other applications will be noticeably "
+"affected."
+msgstr ""
+"そのデータがどのビームラインで測定されたものかを認識します．すべての"
+"ビームラインプラグインに対して，読み込もうとするすべてのファイルが"
+"チェックされるため，速度が重要です．もしビームラインプラグインが遅ければ "
+":demeter:`athena` やその他のアプリケーションに影響が出てしまうでしょう．"
+
+#: ../../other/meta.rst:141
+msgid ""
+"Recognize semantic content from the file header. Where possible, map this"
+" content onto defined XDI headers. Other semantic content is placed into "
+"extension headers. In the example above, metadata from the XDAC data "
+"acquisition program is placed into the XDAC family, which other metadata "
+"is placed into families defined in the XDI specification."
+msgstr ""
+"ファイルヘッダーから意味論的な内容を認識します．可能であれば，この内容を"
+"XDI ヘッダーで定義された形でアサインします．他の意味のある内容は，"
+"拡張ヘッダーに保存されます．上の例では， XDAC データ取得プログラムからの"
+"データのメタデータは XDAC グループとして記録され，他のメタデータは，"
+"XDI 仕様で定義されたところに記録されます．"
+
+#: ../../other/meta.rst:148
+msgid ""
+"Add versioning information for the data acquisition program into the "
+"``XDI extra_version`` attribute. In the example above, the data file was "
+"collected using version 1.4 of XDAC, so the string :quoted:`XDAC/1.4` is "
+"placed among the applications."
+msgstr ""
+"データ取得ソフトのバージョン情報を ``XDI extra_version`` 要素に加えます．"
+"上の例では，データファイルは，XDAC のバージョン 1.4 で取得されました．"
+"よって，:quoted:`XDAC/1.4` という文字列が記録されます．"
+
+#: ../../other/meta.rst:153
+msgid ""
+":demeter:`demeter` also has a small database of metadata related to "
+"specific beamlines. This is found in the :file:`share/xdi/` folder of the"
+" :demeter:`demeter` installation. Each of the files in that folder is a "
+"short .ini file containined common information about facilities and "
+"beamlines. Much of the metadata shown above actually came from the .ini "
+"file for NSLS beamline X23A2."
+msgstr ""
+":demeter:`demeter` は，特定のビームラインに関するメタデータの小さな"
+"データベースをもっています．これは，:demeter:`demeter` をインストールした "
+":file:`share/xdi/` フォルダにあります．このフォルダにあるファイルは，"
+"短い .ini ファイルであって，施設やビームラインに関する共通の情報を"
+"含んでいます．上で示されたたくさんのメタデータは，実際のところ，"
+"NSLS ビームライン X23A2 に関する .ini ファイルから来ています．"
+
+#: ../../other/meta.rst:160
+msgid ""
+"To add new beamlines to this part of :demeter:`athena`, it is necessary "
+"to write the plugin and the corresponding .ini file."
+msgstr ""
+":demeter:`athena` のここに新しいビームラインを追加するには，プラグインと"
+"対応する .ini ファイルを書く必要があります．"
+
+#: ../../other/meta.rst:172
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../other/meta.rst:177
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../other/meta.rst:181
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

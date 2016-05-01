@@ -1,0 +1,175 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../import/ref.rst:45
+msgid "Reference channel"
+msgstr "参照スペクトル (Reference channel) "
+
+#: ../../import/ref.rst:47
+msgid ""
+"A reference spectrum is used by :demeter:`athena` as a data alignment "
+"standard.  It is common to place a third ionization chamber in line after"
+" the transmission chamber and to place a good transmission standard "
+"between the two. The point of measuring the standard is that it is "
+"measured in parallel with your real sample. This standard can then be "
+"used to align the actual data using the `data alignment tool "
+"<../process/align.html>`__."
+msgstr ""
+":demeter:`athena` において，参照スペクトルはデータ整列の標準として扱われます．"
+"透過法において，試料透過後のX線量を測定するためのイオンチャンバの後ろに"
+"3つ目のイオンチャンバを置き，その間によい参照試料を置くことは一般的になされています．"
+"標準試料を測定する上でのポイントは，実試料と同時に測定するということです．"
+"この標準試料は，`データ整列ツール <../process/align.html>`__ を使って，"
+"実データを整列するのに使うことできます．"
+
+#: ../../import/ref.rst:55
+msgid ""
+"The standard often is a zero-valent foil, but the most important thing is"
+" that it is an excellent standard which will yield consistently high-"
+"quality data. The other most important thing is that you always use the "
+"same sample as your reference standard for every experiment you make at a"
+" particular edge. To this end, it is wise to make a library of reference "
+"standards and carry them with you to the synchrotron. By using the same "
+"standard for every experiment at an edge, you can align any data, even "
+"data measured years apart or at different synchrotrons."
+msgstr ""
+"参照試料として良く使われるのは0価の箔ですが，大事なことは，安定して質の良い"
+"データを出す試料ということです．もう1つ大事なことは，吸収端ごとに，また"
+"実験の都度に参照用の標準物質として常に同じ試料を使うことです．放射光施設に"
+"実験に行く時は、常に試料の標準試料ライブラリを持って行くのがよいでしょう．"
+"ある吸収端においてすべての実験で同じ標準試料を使用していれば，何年も前に"
+"測定したデータや異なる放射光施設で測定したデータでも基準をそろえることができます．"
+
+#: ../../import/ref.rst:70
+msgid "Importing a reference channel with the column selection dialog."
+msgstr "列選択ダイアログでの参照スペクトルの読み込み"
+
+#: ../../import/ref.rst:72
+msgid ""
+"The reference channel selection works almost the same as column selection"
+" for the data except that you don't need to specify the energy column "
+"again |nd| the same column is used. When a reference channel after the "
+"transmission channel is used, you should use the transmission channel as "
+"the numerator and the reference channel as the denominator.  Another "
+"common solution to measuring a reference channel is measure elastically "
+"scattered radiation through the standard with a PIN diode.  In that case,"
+" I\\ :sub:`0` is the numerator and the diode is the denominator."
+msgstr ""
+"参照チャンネル選択は，同じ軸が使われるためにエネルギー列を改めて選択する"
+"必要が無いという点以外は，通常の列選択とほとんど同じです．透過X線量のイオンチャンバの"
+"後に参照試料を置いた場合は，参照用チャンネルを分母，透過用チャンネルを"
+"分子に選択する必要があります．参照チャンネルの測定のために良く行われる"
+"方法として，PIN ダイオードを使って弾性散乱の測定があります．その場合は，"
+" I\\ :sub:`0` が分子で，PIN ダイオードによる検出量が分母です．"
+
+#: ../../import/ref.rst:82
+msgid ""
+"You can plot the reference channel to make sure that you have selected "
+"the correct channels with the :guilabel:`Plot reference` check button. If"
+" your reference standard is of an element with a nearby edge energy, "
+"uncheck the button labeled :guilabel:`Same element`. If you use some "
+"other kind of reference measurement that is not a transmission "
+"measurement, you can uncheck the :guilabel:`Natural log` button."
+msgstr ""
+"正しいチャンネルが選ばれているかを確認するために，:guilabel:`Plot reference` "
+"ボタンを使って，参照試料のスペクトルをプロットすることができます．"
+"もし，参照用の標準試料が実試料とは異なる吸収端をもつ元素のときは，"
+" :guilabel:`Same element` のチェックを外して下さい．参照スペクトルを"
+"透過法以外で測った時は，:guilabel:`Natural log` のチェックを外して下さい． "
+
+#: ../../import/ref.rst:89
+msgid ""
+"When you click the :button:`OK,light` button, the data are imported and "
+"inserted into the group list. The reference channel is placed in the "
+"group list below its data. The reference channel is just like any other "
+"group, with one distinction. The data and its reference channel are "
+"*tied* together in the sense that the values for their :procparam:`energy"
+" shift` parameters will always be the same."
+msgstr ""
+":button:`OK,light` ボタンをクリックすると，データが読み込まれグループリストに"
+"追加されます．参照スペクトルはそれぞれのデータの下に置かれます．参照スペクトルは，"
+"1点を除いて他のデータと同じです．データと参照スペクトルは :procparam:`energy shift` "
+"パラメータで結びついているので，常に同じエネルギー値を取ります．"
+
+#: ../../import/ref.rst:96
+msgid ""
+"This relationship is shown visually by the change in color of the text in"
+" the box for :procparam:`energy shift`, as seen in this screenshot."
+msgstr ""
+"この関係は，以下のスクリーンショットで赤丸で囲んだ :procparam:`energy shift` "
+"ボックスの色が変わっていることで視覚的に表現されています．"
+
+#: ../../import/ref.rst:104
+msgid "Data imported with a reference channel."
+msgstr "参照試料と共に読み込まれたデータ "
+
+#: ../../import/ref.rst:106
+msgid ""
+"When you change the value of :procparam:`energy shift` for the reference,"
+" the value of :procparam:`energy shift` for the data changes as well. "
+"(And vice versa!) This feature of reference channels is put to good use "
+"`in data alignment <../process/align.html>`__."
+msgstr ""
+"参照スペクトルの :procparam:`energy shift` の値を変えると，対応するデータの"
+" :procparam:`energy shift` の値も変更されます．（逆も同じです．）"
+"参照スペクトルのこの機能は， `データ整列 <../process/align.html>`__ の時にうまく働きます．"
+
+#: ../../import/ref.rst:111
+msgid ""
+"Occasionally, it is useful to tie two data groups together in this way.  "
+"This can be done by marking the two groups you want to tie together as "
+"data and reference, then selecting :menuselection:`Group --> Tie "
+"reference channel`."
+msgstr ""
+"時々，このように2つのデータグループを関連付けた方がよいことがあります．"
+"これは，関連付けたい2つのデータグループにマークを付けてから，"
+" :menuselection:`Group --> Tie "reference channel` を選択することでできます．"
+
+#: ../../import/ref.rst
+msgid "Todo"
+msgstr ""
+
+#: ../../import/ref.rst:116
+msgid ""
+":demeter:`athena` is missing the ability to tie together three or more "
+"data groups in a reference relationship |nd| that would be useful for "
+"multi-element detector data and some other situations."
+msgstr ""
+":demeter:`athena` は3つかそれ以上のデータグループを関連付ける機能を持っていません．"
+"そのような機能は多素子検出器を使ったデータなどに有用かもしれません．"
+
+#: ../../import/ref.rst:129
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../import/ref.rst:134
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../import/ref.rst:138
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

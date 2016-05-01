@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../plot/params.rst:44
+msgid "Group specific plot parameters"
+msgstr "グループ特有のプロットに関するパラメータ"
+
+#: ../../plot/params.rst:46
+msgid ""
+"At the bottom of the main window are a pair of parameters which affect "
+"how that group is plotted. The :procparam:`plot multiplier` parameter is "
+"a multiplicative factor for the group when it gets plotted. The "
+":procparam:`y-axis offset` is a number added to the group when it is "
+"plotted so that it is offset in the vertical direction. Both of these are"
+" parameters that are set for each group individually."
+msgstr ""
+"メインウィンドウの下部には，グループがどのようにプロットされるかについて"
+"影響する一組のパラメータがあります．:procparam:`plot multiplier` パラメータは"
+"プロットされるときにデータに対してかけられる値です．:procparam:`y-axis offset` は"
+"プロットの際にデータに対して加算される垂直方向のオフセット値です．これらのパラメータは"
+"共にそれぞれのデータに対して独立に設定することができます．"
+
+#: ../../plot/params.rst:53
+msgid ""
+"`Stacked plots <../plot/stack.html>`__ are made by setting the "
+":procparam:`y-axis offset` parameters for many groups."
+msgstr ""
+"`積み重ねプロット <../plot/stack.html>`__ は多くのデータに対して，"
+":procparam:`y-axis offset` パラメータを設定することで可能になります．"
+
+#: ../../plot/params.rst:56
+msgid ""
+"Like most other parameters in the main window, `context menus "
+"<../params/constrain.html>`__ accessed by right clicking on the labels "
+"can be used to constrain these parameters across data groups."
+msgstr ""
+"メインウィンドウ中の多くの他のパラメータのように，ラベルを右クリックする"
+"ことで出てくる `コンテキストメニュー <../params/constrain.html>`__ を使って，"
+"データ間のパラメータを拘束することができます．"
+
+#: ../../plot/params.rst:65
+msgid "The plot parameters group in the main window."
+msgstr "メインウィンドウ中のプロットパラメータグループ"
+
+#: ../../plot/params.rst:76
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../plot/params.rst:81
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../plot/params.rst:85
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

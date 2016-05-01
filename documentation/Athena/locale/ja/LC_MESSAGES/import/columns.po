@@ -1,0 +1,388 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../import/columns.rst:45
+msgid "Column selection dialog"
+msgstr "列選択ダイアログ"
+
+#: ../../import/columns.rst:48
+msgid "Converting raw data to mu(E)"
+msgstr "生データから mu(E) への変換 "
+
+#: ../../import/columns.rst:50
+msgid ""
+"To import a data file, select :menuselection:`File --> Import data` or "
+"type :button:`Control`-:button:`o`. Alternately, you can drag one or more"
+" data files from your computer's file manager and drop them onto the "
+"group list. A file selection dialog opens. On my Linux computer, it looks"
+" like this:"
+msgstr ""
+"データを読み込むためには，:menuselection:`File --> Import data` を選択するか，"
+":button:`Control`-:button:`o` とタイプしてください．あるいは，エクスプローラ"
+などからグループリストにデータファイルをドラックアンドドロップしてください．"
+"ファイル選択ダイアログが開きます．私の Linux PC では以下のように表示されます．"
+
+#: ../../import/columns.rst:61
+msgid "The file selection dialog on a Linux computer."
+msgstr "Linux 上でのファイル選択ダイアログ "
+
+#: ../../import/columns.rst:63
+msgid ""
+"It looks somewhat different on Windows, but behaves the same. It allows "
+"you to navigate your disk to find the file you want to import. Once you "
+"find that file, click on it then click on the :button:`Open,light` "
+"button."
+msgstr ""
+"Windows 上では見た目が多少異なりますが，同じように動作します．読み込みたい"
+"ファイルを選んで :button:`Open,light` ボタンを押して下さい．"
+
+#: ../../import/columns.rst:67
+msgid ""
+"Once you have selected a file to import the column selection dialog, "
+"shown below, appears."
+msgstr ""
+"読み込もうとするファイルを選択すると，以下のような列選択ダイアログが現れます．"
+"（訳注：「列選択ダイアログ」は，データファイルの列方向のデータを選択するための"
+"column selection dialog の直訳です．ややわかりづらい表現ですが，以下では，"
+"「列選択ダイアログ」という言葉を使用します．）"
+
+#: ../../import/columns.rst:70
+msgid ""
+"On the right side of this dialog, the contents of the data file are "
+"displayed. This allows you to examine the file to help you figure out "
+"which columns should be imported to turn into the |mu| (E) data."
+msgstr ""
+"このダイアログの右側には，データファイルの中身が表示されます．"
+"これによって，どの列を読み込んで |mu| (E) データに変換すればよいか"
+"確認することができます．"
+
+#: ../../import/columns.rst:74
+msgid ""
+"On the left are various control for specifying which columns contain the "
+"energy values and which contain the signals from the various detectors. "
+"Typically, the signals from the detectors are saved to disk as columns of"
+" numbers. These columns need to be combined depending on the nature of "
+"the experiment. For a transmission experiment, the incident channel is "
+"divided by transmission channel and the natural log is taken at each "
+"point. For fluorescence data, the fluorescence channel is divided by the "
+"incidence channel. Electron yield data is like fluorescence data |nd| the"
+" yield channel is divided by the incident channel."
+msgstr ""
+"左上には，どの列がエネルギー値を，あるいは様々な検出器からの信号を含んでいるのか"
+"指定するためのコントロールが並んでいます．典型的には，検出器からの信号は"
+"数値の列として記録されます．これらの列は実験の性質に応じてまとめられる必要が"
+"あります．透過法では入射X線量を透過後のX線量で割り，各点でその自然対数をとります．"
+"蛍光法でのデータは，蛍光X線量を入射X線量で割ります．電子収量法でのデータは"
+"蛍光法の様に，電子収量を入射X線量で割ります．"
+
+#: ../../import/columns.rst:84
+msgid ""
+"The controls in the tabs at the bottom left are the discussed in later "
+"sections."
+msgstr ""
+"左下にあるタブの操作方法は後で説明します． "
+
+#: ../../import/columns.rst:92
+msgid "The column selection dialog."
+msgstr "列選択ダイアログ"
+
+#: ../../import/columns.rst:94
+msgid ""
+"In the example shown, the incident channel is, for some reason, called "
+":guilabel:`mcs3`. Since this is transmission data, I have checked the "
+":guilabel:`mcs3` button for the numerator. The transmission channel is "
+"called :guilabel:`mcs4` and its button is checked for the denominator."
+msgstr ""
+"今示している例では，入射X線量は :guilabel:`mcs3` と呼ばれています．"
+"このデータは透過法で測定したデータなので， :guilabel:`mcs3` を分子に選びます．"
+"透過X線量は :guilabel:`mcs4` と呼ばれており，このボタンを分母に選びます．"
+
+#: ../../import/columns.rst:99
+msgid ""
+"As you check the buttons, some helpful things happen. The first is that "
+"equation for how the columns combine to form |mu| (E) is displayed in the"
+" box below the column selection buttons. Also as you check buttons, the "
+"data are plotted. If you have selected the correct columns and chosen the"
+" numerator and denominator correctly, the plot will look like XAS data. "
+"If the plot is upside-down, then you need to switch the numerator and "
+"denominator. If the plot doesn't look like XAS at all, you need to try "
+"some of the other channels."
+msgstr ""
+"ボタンにチェックを入れると，ある種の助けが表示されます．1つ目は，列データから"
+" |mu| (E) を求めるための式が列選択ボタンの下のボックスに表示されます．"
+"また，ボタンを選び変えるとグラフが更新されます．分子と分母を正しく選択していれば，"
+"グラフは XAS スペクトルらしく見えるでしょう．グラフが上下逆さまの時は，"
+"分子と分母を入れ替えて下さい．スペクトルが XAS らしく見えない場合は，"
+"他のデータ系列を選択してみてください．"
+
+#: ../../import/columns.rst:108
+msgid ""
+"I chose this example because the columns are labeled somewhat "
+"confusingly. Often the columns will be labeled in the file more obviously"
+" with names like :quoted:`I0` or :quoted:`It`. In this case, we either "
+"need to know what the columns mean or patiently click through the buttons"
+" to figure it out. As a last resort, you may need to ask the beamline "
+"scientist!"
+msgstr ""
+"列の項目名が少し紛らわしいので，あえてこのファイルを例に選びました，"
+"ほとんどの場合，列は :quoted:`I0` や :quoted:`It` といったもっとはっきりと"
+"した項目名がついているでしょう．今回の場合は，どの列が何を意味しているか"
+"知る必要があったり，ボタンをクリックしながら何を意味しているか理解する"
+"必要がありました．困ったときには，ビームライン担当者に聞いてみる必要が"
+"あるかもしれません．"
+
+#: ../../import/columns.rst:118
+msgid "Data types and energy units"
+msgstr "データ型とエネルギーの単位"
+
+#: ../../import/columns.rst:120
+msgid ""
+"Occasionally, :demeter:`athena` needs a bit more information to interpret"
+" your data correctly. The data types menu is shown in the figure below. "
+"The default is for data to be imported as |mu| (E)."
+msgstr ""
+"時に :demeter:`athena` はデータを正確に解釈するため，もう少し多くの情報を"
+"必要とします．データ型のメニューが以下のように表示されています．"
+"初期設定ではデータは |mu| (E) として読み込まれます．"
+
+#: ../../import/columns.rst:124
+msgid "The other choices are:"
+msgstr "他の選択肢は以下の通りです"
+
+#: ../../import/columns.rst:126
+msgid ""
+"xanes(E) : |mu| (E) data measured over a limited data range and for which"
+" you do not need to look at the |chi| (k)"
+msgstr ""
+"xanes(E): |mu| (E) のデータが吸収端付近の狭い範囲で測定された場合や
+" |chi| (k) の必要がない場合．"
+
+#: ../../import/columns.rst:129
+msgid ""
+"norm(E) : |mu| (E) data that have already been normalized in some other "
+"way. These data will not be normalized by :demeter:`athena`"
+msgstr ""
+"norm(E): |mu| (E) のデータが既に規格化されている場合．このデータの種類を"
+"選択すると，:demeter:`athena` 上で規格化されることはありません．"
+
+#: ../../import/columns.rst:132
+msgid ""
+"chi(k) : |chi| (k) data, that is data that have already been background "
+"subtracted from |mu| (E)"
+msgstr ""
+"chi(k): すでに |mu| (E) からバックグラウンド除去された |chi| (k) データを読み込む場合．"
+
+#: ../../import/columns.rst:135
+msgid "xmu.dat : the xmu.dat file from :demeter:`feff`"
+msgstr "xmu.dat: :demeter:`feff` から出力された xmu.dat ファイルを読み込む場合．"
+
+#: ../../import/columns.rst:142
+msgid "Data types in the column selection dialog."
+msgstr "列選択ダイアログにおけるデータ型"
+
+#: ../../import/columns.rst:144
+msgid ""
+"If you make a mistake and import your data as the wrong data type, you "
+"can change between any of the energy-valued (|mu| (E), normalized |mu| "
+"(E), XANES, or detector) record types at any time by select "
+":menuselection:`Group --> Change data type` and selecting the correct "
+"choice from the popup dialog, shown here. This dialog cannot, however, be"
+" used to change |chi| (k) data to an energy-value type or vice-versa, nor"
+" to change one of the :demeter:`feff` types to a non-:demeter:`feff` "
+"type."
+msgstr ""
+"もし，間違ったデータ型でデータを読み込んでしまったとしても，エネルギー軸を"
+"持ったデータ型 ( |mu| (E), normalized |mu| (E), XANES, or detector) 同士であれば，"
+":menuselection:`Group --> Change data type` を選択するか，ポップアップダイアログ"
+"から正しいものを選ぶことで変更することができます．しかしながら，このダイアログを"
+"使って |chi| (k) データをエネルギー軸を持ったデータ型に変更，あるいはその逆は"
+"できず，また， :demeter:`feff` データを :demeter:`feff` 以外のデータに"
+"変えることもできません．"
+
+#: ../../import/columns.rst:158
+msgid "The dialog for changing data type of a group."
+msgstr "あるグループ（データ）のデータ型を変更するダイアログ"
+
+#: ../../import/columns.rst:160
+msgid ""
+":demeter:`athena` uses electron volts as its energy unit. It uses a "
+"simple heuristic to figure out if an input file is in eV or keV. In case "
+":demeter:`athena` gets it wrong, you can specify the energy unit with the"
+" :guilabel:`Energy units` menu. `Dispersive XAS "
+"<../process/pixel.html>`__, i.e. data which is a function of pixel index,"
+" requires special treatment."
+msgstr ""
+":demeter:`athena` はエネルギーの単位として eV を使用します．"
+"読み込んだファイルが eV か keV のどちらを利用しているかは簡単な基準で"
+"自動判別されます．:demeter:`athena` が間違っている時は，:guilabel:`Energy units` "
+"メニューでエネルギーの単位を設定することができます．"
+" `Dispersive XAS <../process/pixel.html>`__ データで，ピクセル位置の関数と"
+"なっているような場合は，別の操作が必要です．"
+
+#: ../../import/columns.rst:167
+msgid ""
+"There is now a label on the main page right next to the "
+":guilabel:`Freeze` check button which identifies the file type of the "
+"data. You can toggle between xanes and xmu data by "
+":button:`Control`-:button:`Alt`-:mark:`leftclick,..` on that label."
+msgstr ""
+":guilabel:`Freeze` チェックボタンの右隣にラベルができました．"
+"これは，データ型を示すためのラベルです．このラベルの上で，"
+" :button:`Control`-:button:`Alt`-:mark:`leftclick,..` をクリックすると，"
+"xanes 型と xmu 型を入れ替えることができます．"
+
+#: ../../import/columns.rst:174
+msgid "Multi-element detector data"
+msgstr "多素子検出器のデータ"
+
+#: ../../import/columns.rst:176
+msgid ""
+":demeter:`athena`'s column selection dialog has some special features for"
+" dealing with multi-element detectors. You can select all the channels of"
+" the MED as elements of the numerator, as shown in this example of the "
+"column selection dialog."
+msgstr ""
+":demeter:`athena` の列選択ダイアログは，多素子検出器を扱うための特別な"
+"機能を持っています．この列選択ダイアログの例で示すように，多素子検出器の"
+"全素子を分子として選択することができます．"
+
+#: ../../import/columns.rst:186
+msgid "Importing multi-element data in the column selection dialog."
+msgstr "列選択ダイアログにおける多素子データ読み込み "
+
+#: ../../import/columns.rst:188
+msgid ""
+"Importing the data will then add up the channels on the fly and put a "
+"group containing the summation of the channels in the group list."
+msgstr ""
+"データを読み込むと，すべてのチャンネルがその場で足し合わされ，"
+"グループリストにすべてのチャンネルが足しあわされた1つのグループが表示されます．"
+
+#: ../../import/columns.rst:191
+msgid ""
+"You have the option of clicking the check button that says "
+":guilabel:`Save each channel as its own group`, as shown here."
+msgstr ""
+"下図に示すように，:guilabel:`Save each channel as its own group` と"
+"書かれたボタンをクリックすることができます．"
+
+#: ../../import/columns.rst:199
+msgid ""
+"Importing multi-element data in the column selection dialog and saving "
+"each channel as a group."
+msgstr ""
+"列選択ダイアログにおける多素子データ読み込みと"
+"それぞれのチャンネルのグループとしての読み込み"
+
+#: ../../import/columns.rst:202
+msgid ""
+"Then, instead of adding the channels to make one group, each channel will"
+" be imported as an individual group and given its own entry in the group "
+"list. This is handy for examining the channels and discarding any that "
+"are not of usable quality."
+msgstr ""
+"この場合，選択した素子を合計して1つのデータを作るかわりに，それぞれの素子が"
+"別々のグループとして読み込まれてグループリストに表示されます．"
+"これを利用すれば各素子ごとに確認して，データの質が低い素子を取り除くことができます．"
+
+#: ../../import/columns.rst:212
+msgid "After importing the channels of multi-element data as individual groups."
+msgstr "多素子データを素子ごとに読み込んだ画面（上図では4素子） "
+
+#: ../../import/columns.rst:215
+msgid "Other controls"
+msgstr "その他の制御"
+
+#: ../../import/columns.rst:217
+msgid ""
+"At the top of the page are three buttons for refining how the column "
+"selection dialog interacts with your data.  The :button:`Select "
+"range,light` button pops open a dialog which allows you to specify a "
+"range of numerator buttons to click all at once."
+msgstr ""
+"ページのはじめに，データに対して列選択ダイアログをどのように使うかに関する"
+"3つのボタンを示しました．:button:`Select range,light` ボタンをクリックすると，"
+"どのボタンをクリックするかを一度に設定することができるダイアログが表示されます．"
+
+#: ../../import/columns.rst:227
+msgid "The dialog for selecting a range of columns."
+msgstr "列の範囲選択ダイアログ"
+
+#: ../../import/columns.rst:229
+msgid ""
+"This expects column *numbers* not labels.  The main purpose of this "
+"dialog is to deal with MED data with a large number of columns.  It would"
+" be tedious and error prone to click through a lot of columns. This "
+"dialog is a way of quickly accomplishing that."
+msgstr ""
+"このダイアログでは，列のラベルではなく *番号* を入力する必要があります．"
+"このダイアログの主な目的は，たくさんの列がある多素子検出器のデータを扱うことです．"
+"このような場合，すべての列をクリックするのは，面倒であったり，間違いの元です．"
+"このダイアログを使うことで素早く確実に選択することができます．"
+
+#: ../../import/columns.rst:234
+#, python-format
+msgid ""
+"You can specify a list of comma-separated column numbers or indicate a "
+"range using a dash.  In the first example in the text in :numref:`Fig. %s"
+" <fig-importcolumnrange>`, columns 8 through 20 would be selected.  In "
+"the second, column 7 and column 9 along with columns 12, 13, 14, and 15 "
+"would be selected."
+msgstr ""
+"カンマで区切られた数字やハイフンを使って範囲を指定することができます．"
+":numref:`Fig. %s <fig-importcolumnrange>` のはじめの例では，8列目から20列目が選択されます．"
+"2つ目の例では，7列目と9列目，12列目から15列目が選択されます．"
+
+#: ../../import/columns.rst:240
+msgid ""
+"The :button:`Clear numerator,light` button unselects all the numerator "
+"check button."
+msgstr ""
+":button:`Clear numerator,light` ボタンをクリックすると，すべての分子のチェックが外れます．"
+
+#: ../../import/columns.rst:243
+msgid ""
+"The :button:`Pause plotting,light` button will suppress the re-display of"
+" the plots as you select check buttons in the column selection dialog.  "
+"This is handy if, for some reason, the re-display of the plot is slow or "
+"otherwise undesirable."
+msgstr ""
+":button:`Pause plotting,light` ボタンをクリックすると，列選択ダイアログで
+"チェックボタンを選択するたびにプロットされるのを中断することができます．"
+"何らかの理由でプロットの再表示が遅かったり，不要である場合には便利でしょう．"
+
+#: ../../import/columns.rst:256
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../import/columns.rst:261
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../import/columns.rst:265
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

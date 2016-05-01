@@ -1,0 +1,225 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../import/preproc.rst:45
+msgid "Preprocessing data"
+msgstr "データの前処理"
+
+#: ../../import/preproc.rst:48
+msgid ""
+"There are a number of other operations that :demeter:`athena` can perform"
+" on your data as it is imported. These are found in the other tabs on the"
+" bottom left of the column selection dialog. Note that all of the pre-"
+"processing chores discussed here can also be performed on data after it "
+"has been imported. See the `data processing chapter "
+"<../process/index.html>`__.  for more details."
+msgstr ""
+":demeter:`athena` では，データを読み込むときに様々な処理を行うことができます．"
+"この前処理には列選択ダイアログの左下にあるタブを使います．ここで紹介する"
+"前処理は全て，データを読み込んだ後にも行えます．詳しくは"
+" `データ処理の章 <../process/index.html>`__ を参照してください．"
+
+#: ../../import/preproc.rst:56
+msgid "Rebinning quick scan data"
+msgstr "クイックスキャンデータの間引き"
+
+#: ../../import/preproc.rst:58
+msgid ""
+"Some beamlines offer the option of collecting data as a quick scan. In "
+"that scanning mode, the monochromator is slewed continuous from the "
+"beginning of the scan to the end. The detectors are read continuously and"
+" integrations of the detector signals are stored in intervals. The length"
+" of these intervals and the slewing speed of the monochromator determine "
+"the energy width of each measurement bin. Typically these measurement "
+"parameters are chosen to provide adequate resolution through the edge "
+"|nd| typically a third or a half of an electron volt. This results in "
+"data that are vastly over-sampled in the EXAFS region. To improve the "
+"statistics in the EXAFS region and to make the data arrays smaller, it is"
+" useful to rebin the data. This process uses a boxcar averaging to place "
+"the evenly spaced quick scan data onto a typical EXAFS grid. That grid is"
+" usually something like 10 eV in the pre-edge, 0.5 eV through the edge, "
+"and 0.05 |AA| :sup:`-1` in the EXAFS region."
+msgstr ""
+"いくつかのビームラインでは Quick scan 測定が可能です．Quick scan 測定では，"
+"分光器が始点から終点まで連続して動作します．検出器も連続的に測定し，"
+"一定間隔でデータを出力します．データ間隔と分光器の速度から，測定する"
+"エネルギー間隔が決まります．一般的には，吸収端付近で十分な分解能が得られる"
+"ように測定パラメータを設定します．間隔は，0.3 - 0.5 eV にすることが多いです．"
+"そうすると，EXAFS 領域での測定点が多くなり過ぎてしまいます．EXAFS での"
+"統計性を改善したり，データ数を減らしたりするため，データの間引きを行うと"
+"良いでしょう．この操作では，boxcar 平均を使うことで，等間隔の Quick scan "
+"のデータを一般的な EXAFS の間隔に合わせます．この間隔はたいていの場合，"
+"プレエッジ領域では 10 eV 程度，吸収端付近では 0.5 eV 程度，EXAFS 領域では"
+" 0.05 |AA| :sup:`-1` 程度です．"
+
+#: ../../import/preproc.rst:73
+msgid ""
+"In this screenshot, I have imported some data on a uranyl compound "
+"measured in quick scan mode:"
+msgstr ""
+"下図は，Quick scan で測定したウラン化合物のデータの読み込み画面です．"
+
+#: ../../import/preproc.rst:81
+msgid ""
+"Rebinning data on the fly as it is imported using the column selection "
+"dialog."
+msgstr "列選択ダイアログを使った，データ読み込み中におけるその場でのデータ間引き"
+
+#: ../../import/preproc.rst:84
+msgid ""
+"At this stage, :demeter:`athena` has not examined the data closely enough"
+" to have guessed what edge you are measuring, so you must specify the "
+"element symbol of the absorbing atom. The remaining numeric parameters "
+"define the grid onto which these data will be rebinned. The first two "
+"numbers define the boundaries of the edge region in energy, the third "
+"defines the size of the grid in the pre-edge, the fourth defines the size"
+" of the grid through the edge, and the last defines the grid in "
+"wavenumber in the EXAFS region."
+msgstr ""
+"この段階では，:demeter:`athena` は測定した吸収端を判別できないため，"
+"あなた自身が対象元素を指定する必要があります．その他の数値パラメータが，"
+"これらのデータをどのように間引くか決定します．最初の2つの数字は，XANES "
+"領域の範囲を，3つ目の数字はプレエッジ領域でのエネルギー間隔を，"
+"4つ目の数字は XANES 領域でのエネルギー間隔を，最後の数字は，EXAFS 領域での"
+"エネルギー間隔を波数で指定します．"
+
+#: ../../import/preproc.rst:93
+msgid ""
+":demeter:`athena` will remember the values of these parameters between "
+"data sets.  However, the default is to turn off rebinning for each new "
+"data set.  Therefore you must click to the rebinning tab for every data "
+"set you import, and click on the :guilabel:`Perform rebinning` check "
+"button. When you import multiple data sets, though, rebinning will be "
+"performed on each one without intervention according to the normal rules "
+"of multiple data set import."
+msgstr ""
+":demeter:`athena` は，一度設定したパラメータを記憶します．しかし，初期"
+"設定では新しいデータが読み込まれるごとに間引きはオフになります．データを"
+"読み込む度に :guilabel:`Perform rebinning` ボタンをチェックして下さい．"
+"複数のデータセットを読み込む際には，他の複数データ読み込みと同じように，"
+"同じ形式のデータなら同じ設定が適用されます．"
+
+#: ../../import/preproc.rst:103
+msgid "Other pre-processing chores"
+msgstr "他のデータ前処理手順"
+
+#: ../../import/preproc.rst:105
+msgid ""
+":mark:`lightning,..` This tab provides controls for a number of other "
+"things that can be done with your data as it is imported. The first one "
+"|nd| marking |nd| can be performed even on the first data set imported. "
+"The other two require that a standard be specified. The menu at the top "
+"of the tab contains every item from the group list. The one specified in "
+"that menu is the standard."
+msgstr ""
+":mark:`lightning,..` Preprocess のタブでは，データ読み込みの際に実行可能な"
+"他のいくつかの前処理について制御することができます． 1番目の項目は |nd| "
+"マーク（チェック） |nd| に関するもので，データを読み込んだ際にチェックを"
+"つけるかどうかを選べます．他の2つは標準試料の指定が必要です．タブ上部の"
+"メニューからグループリストにあるすべてのグループが選択可能です．"
+"その中で選択されているものが標準試料として設定されます．"
+
+#: ../../import/preproc.rst:117
+msgid "Pre-processing data as it is imported using the file selection dialog."
+msgstr "ファイル選択ダイアログによるデータ読み込み時の前処理"
+
+#: ../../import/preproc.rst:119
+msgid ""
+"Here are descriptions of each of the pre-processing chores, seen in the "
+"image above:"
+msgstr "上記のデータ前処理操作について紹介します．"
+
+#: ../../import/preproc.rst:126
+msgid "**Mark each data set**"
+msgstr "**データにチェックを付ける**"
+
+#: ../../import/preproc.rst:123
+msgid ""
+"If this is selected, each data set will be `marked <../ui/mark.html>`__ "
+"as it is imported. Note that the reference spectrum is not marked. Also "
+"note that, unlike the other four pre-processing options, this one is "
+"always deselected when new data is imported."
+msgstr ""
+"これが選択されていると，読み込まれたデータの全てに `チェック <../ui/mark.html>`__ "
+"が付きます．ただし，参照試料のデータにはチェックが付きません．また，この"
+"項目は他の前処理オプションとは異なり，新しいデータを読み込む度にチェックが外れます．"
+
+#: ../../import/preproc.rst:131
+msgid "**Align to the standard**"
+msgstr "**標準試料に対する整列**"
+
+#: ../../import/preproc.rst:129
+msgid ""
+"If this is selected, the data are aligned to the specified standard using"
+" `the auto-alignment algorithm <../process/align.html>`__. If both the "
+"data and standard have reference channels, those are used in the auto-"
+"alignment."
+msgstr ""
+"これが選択されていると，データは設定された標準試料に対して，"
+" `自動整列アルゴリズム <../process/align.html>`__ により整列されます．"
+"もし，データと標準試料が共に参照試料に関連づけられていれば，"
+"これらが自動整列に利用されます．"
+
+#: ../../import/preproc.rst:135
+msgid "**Set parameters to the standard**"
+msgstr "**標準試料のパラメータ適用**"
+
+#: ../../import/preproc.rst:134
+msgid ""
+"If this is selected, all parameters (except for :procparam:`eshift`) will"
+" be `set to the values of the standard <../params/constrain.html>`__."
+msgstr ""
+"これが選択されていると，:procparam:`eshift` 以外のすべてのパラメータに"
+" `標準試料の値が適用 <../params/constrain.html>`__ されます．"
+
+#: ../../import/preproc.rst:137
+msgid ""
+"The pre-processing tab is one of :demeter:`athena`'s genuine power "
+"features. With a bit of forethought, most of your data processing can be "
+"performed automatically. I typically import one data file and carefully "
+"calibrate it and set its various parameters. Having done that, the "
+"remaining data gets well processed simply by reading it in. This kind of "
+"time saver is of particular value at the beam line."
+msgstr ""
+"前処理タブは :demeter:`athena` において真に強力な機能の内の1つです．"
+"前もって少し考えておくだけで，ほとんどのデータ処理を自動的に行うことが"
+"できます．私の場合は，1つのデータを読み込んで，注意深く較正を行い，"
+"様々なパラメータを決定します．それから，残りのデータを同じパラメータを"
+"適用して読み込みます．データ処理にかける時間を小さくすることができ，"
+"特にビームラインにおいてとても役に立っています．"
+
+#: ../../import/preproc.rst:153
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../import/preproc.rst:158
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../import/preproc.rst:162
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

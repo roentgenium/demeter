@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../process/cal.rst:44
+msgid "Calibrating data groups"
+msgstr "データグループの較正"
+
+#: ../../process/cal.rst:46
+msgid ""
+"Data calibration is the process of selecting a point in your data as the "
+"edge energy and applying an energy shift to your measured data so that "
+"the selected point is at a specified value. Thus, it is intended to put "
+"your data onto an absolute energy grid.  For metals, that value is "
+"usually the tabulated edge energy."
+msgstr ""
+"データ較正はデータのある点を吸収端として選択し，選択した点がある特定の"
+"値になるように測定データに対して適当な量のエネルギーシフトを行うことを"
+"指します．金属においては，大抵の場合，この値として表にまとめられた"
+"（既知の）吸収端エネルギーを利用します．"
+
+#: ../../process/cal.rst:57
+msgid "This is the calibration tool."
+msgstr ""
+
+#: ../../process/cal.rst:59
+msgid ""
+"When this tool above starts, the current group is plotted as the "
+"derivative of |mu| (E). The menu allows you plot the data as |mu| (E), "
+"normalized |mu| (E), derivative of |mu| (E), or second derivative of |mu|"
+" (E). If your data are noisy, you may find it helpful to apply smoothing."
+"  :demeter:`ifeffit`'s simple three-point smoothing algorithm is applied "
+"the number of times indicated, then the data are replotted."
+msgstr ""
+"上のツールは，現在選択されているグループの |mu| (E) の一次微分がプロット"
+"されています．メニューからは |mu| (E)，規格化された |mu| (E)，|mu| (E) の一次微分，"
+"あるいは |mu| (E) の二次微分が選択できます．データのノイズが大きければ，"
+"スムージングをかける方が便利かも知れません．:demeter:`ifeffit` の単純の三点"
+"スムージングアルゴリズムは示されている回数だけ適用され，データは再び"
+"プロットされます．"
+
+#: ../../process/cal.rst:67
+msgid ""
+"The selected point is shown in the plot with the orange circle, as shown "
+"in the plot below. You can type in a new value in the "
+":guilabel:`Reference` box or click the :button:`Select a point,light` "
+"button then :mark:`leftclick,..` double-click on a point in the plot. By "
+"default, the :guilabel:`Calibrate to` box contains the tabulated edge "
+"energy of the absorber measured for these data, but that too can be "
+"edited."
+msgstr ""
+"選択された点は，以下のようにプロット中でオレンジ色の丸で表示されます．"
+"この点は，:guilabel:`Reference` に新たな値を入力したり，:button:`Select a point,light` "
+"ボタンをクリックしてから，プロット中の点をクリックすることで変更することが"
+"できます．デフォルトで，:guilabel:`Calibrate to` には，吸収元素の表に"
+"まとまっている吸収端エネルギーが入っていますが，編集することもできます．"
+
+#: ../../process/cal.rst:80
+msgid ""
+"As you work on calibrating your data, the current reference point is "
+"indicated by a small orange circle."
+msgstr "データ較正を行う際には，現在の参照点が小さなオレンジ色の丸で示される．"
+
+#: ../../process/cal.rst:83
+msgid ""
+"When you plot the second derivative, the :button:`Find zero "
+"crossing,light` button becomes enabled. This finds the zero crossing of "
+"the second derivative that is nearest to the current value of the "
+"reference point. When plotting the second derivative, smoothing helps, "
+"even for fairly clean data."
+msgstr ""
+"二次微分でプロットした場合には，:button:`Find zero crossing,light` "
+"ボタンが有効になります．これは，現在の参照点に最も近い二次微分が"
+"ゼロ点と交わるところを見つけるものです．二次微分でプロットする際には，"
+"十分質の高いデータにおいてもスムージングが役に立つでしょう．"
+
+#: ../../process/cal.rst:89
+msgid ""
+"When you click the :button:`Calibrate,light` button, the values of "
+":procparam:`E0` and :procparam:`Energy shift` are set for the current "
+"group such that the selected point in the data takes the calibration "
+"value."
+msgstr ""
+":button:`Calibrate,light` ボタンをクリックすると，:procparam:`E0` と"
+" :procparam:`Energy shift` の値が現在選択されているグループのものに"
+"設定されます．すなわち，データで選択されている点に較正された値が"
+"使われるようになります．"
+
+#: ../../process/cal.rst:102
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../process/cal.rst:107
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../process/cal.rst:111
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

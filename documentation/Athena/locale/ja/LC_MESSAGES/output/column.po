@@ -1,0 +1,320 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../output/column.rst:43
+msgid "Column output files"
+msgstr "列データの出力"
+
+#: ../../output/column.rst:45
+msgid ""
+"After doing a lot of analysis, you will eventually need to make beautiful"
+" pictures for publication. As a glance at any of the screenshots in this "
+"document will attest, the graphical output of :demeter:`athena` is "
+"adequate but far from beautiful. Fortunately, :demeter:`athena` can "
+"export your data in a variety of ways and in a format that can be "
+"imported easily into almost any other program, such as a spreadsheet or a"
+" graphics package such as Origin or Kaleidegraph."
+msgstr ""
+"たくさんの分析を行った後には，出版向けにきれいなグラフが必要になることも"
+"あるでしょう．このマニュアルのスクリーンショットをちょっとご覧いただければ"
+"おわかりいただけるように，:demeter:`athena` が出力するグラフは十分かも"
+"知れませんがきれいとはほど遠いものです．幸運にも :demeter:`athena` は"
+"データを様々な組み合わせ，また様々な形式で出力することができ，例えば，"
+"表計算ソフトや Origin, Kaleidegraph などのプロット用パッケージといった"
+"ほとんどどんなプログラムにも簡単に読み込むことができます．"
+
+#: ../../output/column.rst:53
+msgid ""
+"The current data set |nd| the one marked in red in the group list and the"
+" one whose parameters are displayed in the main window |nd| can be saved "
+"in a number of ways. The various choices are listed under the "
+":guilabel:`File` menu, as seen in the figure below. Note that |chi| (k) "
+"data can be saved with various k-weightings using the entries in the "
+"submenu."
+msgstr ""
+"現在のデータ，すなわち，グループリストで赤色でマークがついているあるいは"
+"メインウィンドウにパラメータが表示されているデータ，は非常に多くの方法で"
+"保存することができます．下図で示すように，File メニューの下には様々な"
+"選択肢が表示されています．|chi| (k) データはサブメニューにあるように"
+"いろいろな k の重みで保存できることに注意して下さい．"
+
+#: ../../output/column.rst:65
+msgid "Exporting a column data file for a group."
+msgstr "1つのグループについて列データを出力する"
+
+#: ../../output/column.rst:67
+msgid "The columns in the |mu| (E) output file are:"
+msgstr "|mu| (E) の出力ファイルの列は:"
+
+#: ../../output/column.rst:69 ../../output/column.rst:90
+msgid "energy"
+msgstr "エネルギー"
+
+#: ../../output/column.rst:71
+msgid "|mu| (E)"
+msgstr ""
+
+#: ../../output/column.rst:73
+msgid "background"
+msgstr "バックグラウンド"
+
+#: ../../output/column.rst:75
+msgid "pre-edge line"
+msgstr "プレエッジ"
+
+#: ../../output/column.rst:77
+msgid "post-edge line"
+msgstr "ポストエッジ"
+
+#: ../../output/column.rst:79
+msgid "derivative of |mu| (E)"
+msgstr "|mu| (E) の一次微分"
+
+#: ../../output/column.rst:81
+msgid "second derivative of |mu| (E)"
+msgstr "|mu| (E) の二次微分"
+
+#: ../../output/column.rst:83
+msgid "I0"
+msgstr ""
+
+#: ../../output/column.rst:85
+msgid ""
+"If the data group is marked as being XANES data, then the background "
+"column will be all zeros."
+msgstr "もし，データファイルが XANES データ型であれば，バックグラウンドはすべて0になります．"
+
+#: ../../output/column.rst:88
+msgid "The columns in the :guilabel:`norm(E)` output file are:"
+msgstr ":guilabel:`norm(E)` の出力ファイルの列は: "
+
+#: ../../output/column.rst:92
+msgid "normalized |mu| (E)"
+msgstr "規格化された |mu| (E)"
+
+#: ../../output/column.rst:94
+msgid "normalized background"
+msgstr "規格化されたバックグラウンド"
+
+#: ../../output/column.rst:96
+msgid "flattened |mu| (E)"
+msgstr "「平滑化された」 |mu| (E)"
+
+#: ../../output/column.rst:98
+msgid "flattened background"
+msgstr "「平滑化された」バックグラウンド"
+
+#: ../../output/column.rst:100
+msgid "derivative of normalized |mu| (E)"
+msgstr "規格化された |mu| (E) の一次微分"
+
+#: ../../output/column.rst:102
+msgid "second derivative of normalized |mu| (E)"
+msgstr "規格化された |mu| (E) の二次微分"
+
+#: ../../output/column.rst:104
+msgid ""
+"If the data group is marked as being XANES data, then the normalized and "
+"flattened background columns will be all zeros."
+msgstr ""
+"もし，データファイルが XANES データ型であれば，規格化されたあるいは"
+"「平滑化された」バックグラウンドはすべて0になります．"
+
+#: ../../output/column.rst:107
+msgid "The columns in the |chi| (k) output files are:"
+msgstr "|chi| (k) の出力ファイルの列は:"
+
+#: ../../output/column.rst:109
+msgid "k"
+msgstr "波数 k"
+
+#: ../../output/column.rst:111
+msgid "unweighted |chi| (k)"
+msgstr "k の重みをかけていない |chi| (k)"
+
+#: ../../output/column.rst:113
+msgid "k-weighted |chi| (k)"
+msgstr "k :sup:`1` の重みをかけた |chi| (k)"
+
+#: ../../output/column.rst:115
+msgid "k-squared-weighted |chi| (k)"
+msgstr "k :sup:`2` の重みをかけた |chi| (k)"
+
+#: ../../output/column.rst:117
+msgid "k-cubed-weighted |chi| (k)"
+msgstr "k :sup:`3` の重みをかけた |chi| (k)"
+
+#: ../../output/column.rst:119 ../../output/column.rst:153
+msgid "Fourier transform window"
+msgstr "フーリエ変換窓関数"
+
+#: ../../output/column.rst:121
+msgid "Energy in absolute units"
+msgstr "絶対値でのエネルギー"
+
+#: ../../output/column.rst:123
+msgid ""
+"The |chi| (R) output file contains both parts of the complex Fourier "
+"transform, as well as the magnitude and phase. That is, of course, "
+"redundant, but it's also convenient. The columns are:"
+msgstr ""
+"|chi| (R) 出力ファイルは，複素フーリエ変換の実数部と虚数部の両方"
+"および「大きさ」(magnitude) と位相を含みます．もちろん，これは"
+"冗長ではありますが，便利でもあります．列は:
+
+#: ../../output/column.rst:127
+msgid "R"
+msgstr ""
+
+#: ../../output/column.rst:129
+msgid "real part of |chi| (R)"
+msgstr "|chi| (R) の実部"
+
+#: ../../output/column.rst:131
+msgid "imaginary part of |chi| (R)"
+msgstr "|chi| (R) の虚部"
+
+#: ../../output/column.rst:133
+msgid "magnitude of |chi| (R)"
+msgstr "|chi| (R) の大きさ (magnitude)"
+
+#: ../../output/column.rst:135
+msgid "phase of |chi| (R)"
+msgstr "|chi| (R) の位相"
+
+#: ../../output/column.rst:137
+msgid "back transform window"
+msgstr "逆フーリエ変換窓関数"
+
+#: ../../output/column.rst:139
+msgid ""
+"For the sake of clarity, we use the letter :quoted:`q` to represent "
+"Fourier filtered wavenumber. The |chi| (q) output file also contains both"
+" parts of the complex back transform, as well as the magnitude and phase."
+msgstr ""
+"わかりやすさのために，逆フーリエ変換後の波数については，:quoted:`q` という"
+"文字を使っています． |chi| (q) の出力ファイルも複素フーリエ変換の実数部と"
+"虚数部の両方および「大きさ」(magnitude) と位相を含みます．"
+
+#: ../../output/column.rst:143
+msgid "q"
+msgstr "波数 q"
+
+#: ../../output/column.rst:145
+msgid "real part of |chi| (q)"
+msgstr "|chi| (q) の実部"
+
+#: ../../output/column.rst:147
+msgid "imaginary part of |chi| (q)"
+msgstr "|chi| (q) の虚部"
+
+#: ../../output/column.rst:149
+msgid "magnitude of |chi| (q)"
+msgstr "|chi| (q) の大きさ (magnitude)"
+
+#: ../../output/column.rst:151
+msgid "phase of |chi| (q)"
+msgstr "|chi| (q) の位相"
+
+#: ../../output/column.rst:155
+msgid "|chi| (k) with the k-weighting used in the FT"
+msgstr "フーリエ変換で使われた k の重みをかけた |chi| (k)"
+
+#: ../../output/column.rst:157
+msgid ""
+"In certain situations, it is much more convenient to write column data "
+"files containing data from many groups. This is done with the help of the"
+" mark buttons. The data from each of the marked groups can be saved in a "
+"variety of forms using the :guilabel:`Save marked groups` submenu, as "
+"shown below."
+msgstr ""
+"特定の状況においては，複数のスペクトルのデータを含む列データファイルを"
+"書き出す方が遙かに便利なこともあります．これは，マークボタンの助けを"
+"借りて行うことができます．マークのついたそれぞれのグループのデータは，"
+"以下に示す :guilabel:`Save marked groups` を使って，様々な形式で"
+"保存することができます．"
+
+#: ../../output/column.rst:168
+msgid "Exporting column data files for the set of marked groups."
+msgstr "マークのついたグループセットの列データの出力"
+
+#: ../../output/column.rst:170
+msgid ""
+"The output file will contain the x-axis value (i.e. energy, k, R, or q) "
+"in the first column. The remaining columns will contain each of the "
+"marked data groups, in the order they appear in the group list."
+msgstr ""
+"出力ファイルはエネルギー，k, R, あるいは q といった x 軸にあたる値を"
+"1列目に含みます．残りの列は，グループリストに現れている順番で印に"
+"ついたデータグループについてのデータを含みます．"
+
+#: ../../output/column.rst:174
+msgid ""
+"The final column output option is to export each of the marked groups as "
+"a single data column file of the sort described above. When you select "
+"one of the output file types shown below you are prompted to select a "
+"directory. Each marked group will be exported to a file in that directory"
+" with a file name formed from the group label."
+msgstr ""
+"最後の列出力オプションは， マークのついたそれぞれのグループについて，"
+"個別のファイルに出力するというものです．以下に示された出力ファイル形式の"
+"うちの1つを選択すると，ディレクトリ選択ウィンドウが表示されます．"
+"それぞれマークのついたグループは選択したディレクトリにグループラベルの"
+"ファイル名で出力されます．"
+
+#: ../../output/column.rst:185
+msgid "Exporting column data files for each of the marked groups."
+msgstr "マークのついたそれぞれのグループの列データファイルの出力"
+
+#: ../../output/column.rst:187
+msgid ""
+"The standard folder selection dialog is used for exporting each marked "
+"group. Select a folder and each file will be recorded there."
+msgstr ""
+"標準フォルダ選択ダイアログはマークのついたそれぞれのグループのエクスポートに"
+"使われます．フォルダを選択すると，それぞれのファイルはそこに記録されます．"
+
+#: ../../output/column.rst:190
+msgid ""
+"The output files discussed on this page have a header of the form shown "
+"below. The first line identifies the version of :demeter:`athena` used to"
+" write the file."
+msgstr ""
+"このページで説明した出力フィルには以下のようなヘッダーが付属します．"
+"最初の行は，:demeter:`athena` のバージョンを示しています．"
+
+#: ../../output/column.rst:245
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../output/column.rst:250
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../output/column.rst:254
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

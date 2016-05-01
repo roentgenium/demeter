@@ -1,0 +1,172 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../ui/monitor.rst:43
+msgid "The Monitor menu"
+msgstr "モニターメニュー"
+
+#: ../../ui/monitor.rst:45
+msgid ""
+"The :guilabel:`Monitor` menu has several features that allow you to "
+"examine the current state of :demeter:`athena`."
+msgstr ""
+":guilabel:`Monitor` メニューは，:demeter:`athena` の現在の状態を"
+"調べるためのいくつかの機能を提供しています．"
+
+#: ../../ui/monitor.rst:48
+#, python-format
+msgid ""
+":demeter:`athena` is, at heart, a code generator.  When you press "
+"buttons, this triggers the creation of commands that tells "
+":demeter:`ifeffit` (or :demeter:`larch`) what sequence of actions are "
+"necessary to process the data using the set of parameters currently "
+"displayed in the program.  These commands are sent off to "
+":demeter:`ifeffit` (or :demeter:`larch`).  The same commands are also "
+"copied into the command buffer, which is the top part of Figure "
+":numref:`Fig. %s <fig-monitorcommand>`."
+msgstr ""
+":demeter:`athena` は，本質的にはコードジェネレータです．ボタンをクリックすると，"
+":demeter:`ifeffit` (あるいは :demeter:`larch`) に送られるコマンドが作成されます．"
+"データを処理するために，どんな動作を行えばよいかが書かれたものがプログラムに"
+"表示されているパラメータを使って設定されます．"
+"これらのコマンドは，:demeter:`ifeffit` (あるいは :demeter:`larch`) に送られます．"
+"同じコマンドは，:numref:`Fig. %s <fig-monitorcommand>` の最初にある"
+"コマンドバッファにコピーされます．"
+
+#: ../../ui/monitor.rst:57
+msgid ""
+"The command buffer serves a few purposes.  It is used extensively "
+"whenever new features are added to :demeter:`athena` to make sure that "
+"the correct command are being generated when buttons are pressed.  It is "
+"also useful to teach you, the user, the syntax of :demeter:`ifeffit` (or "
+":demeter:`larch`), which can be useful if you would like to learn to use "
+"those tools for other purposes."
+msgstr ""
+"コマンドバッファはいくつかの目的で提供されています．:demeter:`athena` "
+"に新しい機能が追加されたときに，正しいコマンドが生成されているか確認するために"
+"使われます．また，ユーザに対して，:demeter:`ifeffit` (あるいは :demeter:`larch`)"
+"の記法を教えるためにも使うことでき，これらのツールを他のも目的で作成するために"
+"学ぶのに便利です．"
+
+#: ../../ui/monitor.rst:64
+#, python-format
+msgid ""
+"Plotting is handled slightly differently.  The commands for actually "
+"making plots on screen are sent to the :program:`gnuplot` program. The "
+"syntax of :program:`gnuplot` is different, so the nature of the commands "
+"generated is different.  These plot-related commands are copied into the "
+"bottom part of Figure :numref:`Fig. %s <fig-monitorcommand>`."
+msgstr ""
+"プロットは少し違う方法で行われます．実際に画面のプロットを行うコマンドは"
+":program:`gnuplot` に送られます．:program:`gnuplot` の記法は異なっており，"
+"コマンド生成のやり方も違っています．プロットに関係しているコマンドは"
+" :numref:`Fig. %s <fig-monitorcommand>` の下部にコピーされます．"
+
+#: ../../ui/monitor.rst:77
+msgid "The processing and plotting command buffers"
+msgstr "処理とプロットコマンドのバッファ"
+
+#: ../../ui/monitor.rst:79
+msgid ""
+"At the bottom of the windows containing the command and plot buffer is a "
+"sort of command line, which can be used to send hand-typed commands "
+"directly to underlying :demeter:`ifeffit` (or :demeter:`larch`) engine."
+msgstr ""
+"ウィンドウの下部にはコマンドとプロットバッファが表示されており，これは，"
+":demeter:`ifeffit` (あるいは :demeter:`larch`) エンジンに直接手で入力できる"
+"コマンドラインとして利用することもできます．"
+
+#: ../../ui/monitor.rst:85
+msgid ""
+"The messages that are printed into the echo area at the bottom of the "
+":demeter:`athena` window are copied into the status bar buffer.  This "
+"serves as a loose record of the actions taken during this session with "
+":demeter:`athena`."
+msgstr ""
+":demeter:`athena` ウィンドウ下部のエコーエリアに表示されるメッセージは，"
+"ステータスバーバッファにコピーされます．これは，:demeter:`athena` の"
+"このセッションで実行された動作の簡単な記録として働きます．"
+
+#: ../../ui/monitor.rst:95
+msgid "The status bar buffer"
+msgstr "ステータスバーバッファ"
+
+#: ../../ui/monitor.rst:98
+msgid ""
+"When using the :demeter:`ifeffit` backend, the :guilabel:`Monitor` menu "
+"has a couple items that facilitate certain interactions with "
+":demeter:`ifeffit`.  The items in the submenu will display certain useful"
+" things in the command buffer.  The menu entry for estimating the memory "
+"use in :demeter:`ifeffit` may be helpful to avoid over-running its memory"
+" capacity.  However, the method for estimating memory use is not "
+"especially reliable."
+msgstr ""
+":demeter:`ifeffit` バックエンドを使っている場合，the :guilabel:`Monitor` "
+"メニューは，:demeter:`ifeffit` との特定のやりとりを行ういくつかの項目を"
+"もっています．このサブメニューの項目には，コマンドバッファで便利なものが"
+"あります．:demeter:`ifeffit` のメモリ消費量を見積れば，メモリ容量を"
+"使い果たしてしまうのを避けることができるかもしれません．"
+"しかし，このメモリ消費量の見積方法はそれほど信頼性のあるものではありません．"
+
+#: ../../ui/monitor.rst:106
+msgid ""
+"Finally, there is a submenu that displays a variety of data structures "
+"that give information about the current state of :demeter:`demeter`. Most"
+" of these present some kind of serialization of :demeter:`demeter` data "
+"structures n a way that is very helpful to Bruce when adding new features"
+" or debugging problems.  A :quoted:`yaml` is a way of `serializing data "
+"<http://www.yaml.org/>`_ into readable text."
+msgstr ""
+"サブメニューには，:demeter:`demeter` の現在の状態についての情報を与える"
+"様々なデータ構造を表示する機能があります．この種の :demeter:`demeter` の"
+"現在状態をシリアライズしたデータ構造は，新機能を付けたり，デバッグする際に"
+"Bruce にとってとても便利なものです．"
+":quoted:`yaml` は `データを可読テキストにシリアライズするための手法の1つです <http://www.yaml.org/>`_ ．"
+
+#: ../../ui/monitor.rst:118
+msgid "The debugging submenu"
+msgstr "デバッグサブメニュー"
+
+#: ../../ui/monitor.rst:121
+msgid ""
+"If you set the :configparam:`Athena,debug_menus` `configuration parameter"
+" <../other/prefs.html>`_ to false, the debug menu will not be shown."
+msgstr ""
+"もし，`環境設定 <../other/prefs.html>`_ の :configparam:`Athena,debug_menus` "
+"を false に設定したのであれば，デバッグメニューが表示されます．"
+
+#: ../../ui/monitor.rst:134
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../ui/monitor.rst:139
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../ui/monitor.rst:143
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

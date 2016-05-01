@@ -1,0 +1,938 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../hephaestus.rst:43
+msgid "Hephaestus"
+msgstr ""
+
+#: ../../hephaestus.rst:55
+msgid ""
+":demeter:`hephaestus` is a program for making small calculations useful "
+"to the XAS experimentalist using a periodic table, tables of X-ray "
+"absorption coefficients, and other elemental data."
+msgstr ""
+
+#: ../../hephaestus.rst:59
+msgid ""
+"On the left of the :demeter:`hephaestus` window is a stack of icon "
+"buttons which are used to select the different tools.  Clicking on one of"
+" the icon buttons enables that tool."
+msgstr ""
+
+#: ../../hephaestus.rst:63
+msgid ""
+"At the bottom of the :demeter:`hephaestus` window is a status bar which "
+":demeter:`hephaestus` uses to convey information during the course of "
+"operation.  Along with information about the most recently completed "
+"calculation, the status bar shows topical information. As the mouse "
+"passes over an element in the periodic table, the element name, symbol, "
+"and Z number are displayed.  In the Absorption tool, :mark:`leftclick,.` "
+"clicking on an edge or line energy will display that energy in wavelength"
+" units in the status bar.  In the Standards tool, some information about "
+"the plotted data is displayed in the status bar."
+msgstr ""
+
+#: ../../hephaestus.rst:74
+msgid ""
+"The :guilabel:`Hephaestus` menu in the menu bar provides another way of "
+"navigating between the tools. The mouse can be used, as can the keyboard."
+" :button:`Alt`-:button:`e`, :button:`Alt`-:button:`p` and "
+":button:`Alt`-:button:`h` post the :guilabel:`Hephaestus`, "
+":guilabel:`Plot`, or :guilabel:`Help` menus. "
+":button:`Control`-:button:`1` through :button:`Control`-:button:`9` "
+"change the display the various tools. :button:`Control`-:button:`m` "
+"displays the document in a web browser, while "
+":button:`Control`-:button:`c` changes the display to the configuration "
+"tool."
+msgstr ""
+
+#: ../../hephaestus.rst:87
+msgid "Absorption"
+msgstr ""
+
+#: ../../hephaestus.rst:89
+msgid ""
+"This is the start page for :demeter:`hephaestus` and is used to display "
+"information about edge and line energies for the elements."
+msgstr ""
+
+#: ../../hephaestus.rst:92
+msgid ""
+"A periodic table is displayed atop three lists that will be filled in "
+"with data associated with an element. Clicking on an element in the "
+"periodic table displays data about that element."
+msgstr ""
+
+#: ../../hephaestus.rst:96
+msgid ""
+"The data table will be filled with some basic information about the "
+"element, including its name and Z number, its atomic weight, and bulk "
+"density under standard temperature and pressure. Beneath this table are "
+"two controls for determining the appropriate Z-1 or Z-2 filter to use in "
+"a fluorescence experiment. The :guilabel:`Filter` text box will be filled"
+" with the likeliest candidate for the element selected from the periodic "
+"table.  This can be edited by hand. Clicking the :button:`Plot "
+"filter,light` button will display a plot showing the relative locations "
+"of the edge energy, the dominant fluorescence lines, and the filter edge "
+"energy."
+msgstr ""
+
+#: ../../hephaestus.rst:107
+msgid ""
+"The :guilabel:`Absorption edges` table shows the value in eV of each edge"
+" associated with the element selected from the periodic table and the "
+"core-hole lifetime in eV of each edge.  :mark:`leftclick,.` Clicking on a"
+" line in this table will display a message in the status bar giving the "
+"edge energy expressed in wavelength units and the core-hole lifetime "
+"expressed in approximate time units. :mark:`leftclick,.` Double-clicking "
+"on a line will highlight all fluorescence lines associated with that edge"
+" in the :guilabel:`Fluorescence lines` table."
+msgstr ""
+
+#: ../../hephaestus.rst:117
+msgid ""
+"The :guilabel:`Fluorescence lines` table shows the transitions and "
+"emission energies in eV of every line associated with the element "
+"selected from the periodic table.  Also shown is the approximate "
+"strength, or branching ratio, of each line.  The strengths for all lines "
+"associated with a particular edge will sum to 1. :mark:`leftclick,.` "
+"Clicking on a line in this table will display a message in the status bar"
+" giving the emission energy expressed in wavelength units."
+msgstr ""
+
+#: ../../hephaestus.rst:131
+msgid "The absorption tool."
+msgstr ""
+
+#: ../../hephaestus.rst:137
+msgid "Filters"
+msgstr ""
+
+#: ../../hephaestus.rst:139
+msgid "The rules for the selection of the filter elements are:"
+msgstr ""
+
+#: ../../hephaestus.rst:141
+msgid ""
+"For elements below Z=38, assume the K edge is being measured and use the "
+"Z-1 element."
+msgstr ""
+
+#: ../../hephaestus.rst:144
+msgid ""
+"For elements between Z=39 and Z=57, assume the K edge is being measured "
+"and use the Z-2 element."
+msgstr ""
+
+#: ../../hephaestus.rst:147
+msgid "Use Br for a Rb absorber because Kr is a silly filter material."
+msgstr ""
+
+#: ../../hephaestus.rst:149
+msgid "Use Rh for a Ru absorber because nobody wants a Tc filter!"
+msgstr ""
+
+#: ../../hephaestus.rst:151
+msgid "Use I for a Ba absorber because Xe is also a silly filter material."
+msgstr ""
+
+#: ../../hephaestus.rst:153
+msgid ""
+"For elements above Z=57, assume the L\\ :sub:`III` edge is being "
+"measured. Use the first element whose K edge is more than 90 eV above the"
+" L\\ |alpha|\\ :sub:`1` line of the absorber."
+msgstr ""
+
+#: ../../hephaestus.rst:157
+msgid "Use Rb for a U or Np absorber because Kr is still a silly filter material."
+msgstr ""
+
+#: ../../hephaestus.rst:160
+msgid ""
+"For elements below Z=24 (chromium), no filter choice is given. Filters "
+"for lower-Z elements are not used because no element exists with a K-edge"
+" between the line and absorption energies of the absorber."
+msgstr ""
+
+#: ../../hephaestus.rst:170
+msgid ""
+"A filter plot showing why manganese is a good choice for an iron absorber"
+" |nd| it passes the fluorescence, which is below the Mn K edge, but "
+"preferentially absorbes the elastically scattered radiation."
+msgstr ""
+
+#: ../../hephaestus.rst:176
+msgid "Beamline customization"
+msgstr ""
+
+#: ../../hephaestus.rst:178
+msgid ""
+"When beamline customization is enabled, the two buttons labeled "
+":button:`Show K edges,light` and :button:`Show L edges,light` will be "
+"visible. These are both toggle buttons. When pressed, they will disable "
+"all elements that cannot be measured by that edge at the beamline."
+msgstr ""
+
+#: ../../hephaestus.rst:189
+msgid ""
+"The absorption tool with beamline customization for the NSLS-II BMM (6BM)"
+" beamline showing the elements whose K edges can be measured at the "
+"beamline."
+msgstr ""
+
+#: ../../hephaestus.rst:193
+msgid ""
+"To enable beamline customization, set the "
+":configparam:`Hephaestus,enable\\_beamline` `configuration parameter "
+"<other/prefs.html>`__ to true."
+msgstr ""
+
+#: ../../hephaestus.rst:197
+msgid ""
+"You will want to set the :configparam:`Hephaestus,beamline\\_name` "
+"parameter to the name of your beamline. Keep it short |nd| it needs to "
+"fit on the button!  Finally, set the "
+":configparam:`Hephaestus,beamline\\_emin` and "
+":configparam:`Hephaestus,beamline\\_emax` parameters to the lower and "
+"upper energy bounds of your beamline."
+msgstr ""
+
+#: ../../hephaestus.rst:206
+msgid "Formulas"
+msgstr ""
+
+#: ../../hephaestus.rst:208
+msgid ""
+"This tool is used to compute approximate absorption lengths for common or"
+" user-specified materials.  To the left is a list of materials commonly "
+"found at synchrotron beamlines.  :mark:`leftclick,.` Clicking one of "
+"those items inserts its stoichiometric formula into the "
+":guilabel:`Formula` box and the density into the :guilabel:`Density` box."
+msgstr ""
+
+#: ../../hephaestus.rst:215
+msgid ""
+"At the top of the right hand part of this tool are controls for entering "
+"the parameters of the absorption length calculation. The formula must be "
+"a stoichiometric formula using a few simple rules."
+msgstr ""
+
+#: ../../hephaestus.rst:219
+msgid "Element symbols must be first letter capitalized."
+msgstr ""
+
+#: ../../hephaestus.rst:221
+msgid ""
+"White space is unimportant |nd| it will be removed from the string. So "
+"will dollar signs, underscores, and curly braces (in an attempt to handle"
+" TeX). Also a sequence like this: :quoted:`/sub 3/` will be converted to "
+":quoted:`3` (in an attempt to handle INSPEC)."
+msgstr ""
+
+#: ../../hephaestus.rst:226
+msgid ""
+"Numbers can be integers or floating point numbers. Things like ``5``, "
+"``0.5``, ``12.87``, and ``.5`` are all acceptable, as is exponential "
+"notation like 1e-2. Note that exponential notation must use a leading "
+"number to avoid confusion with element symbols. That is, ``1e-2`` is OK, "
+"but ``e-2`` is not."
+msgstr ""
+
+#: ../../hephaestus.rst:232
+msgid "Uncapitalized symbols or unrecognized symbols will flag an error."
+msgstr ""
+
+#: ../../hephaestus.rst:234
+msgid ""
+"An error will be flagged if the number of open parentheses is different "
+"from the number of close parentheses."
+msgstr ""
+
+#: ../../hephaestus.rst:237
+msgid "An error will be flagged if any unusual symbols are found in the string."
+msgstr ""
+
+#: ../../hephaestus.rst:240
+msgid ""
+"The density is entered in units of specific gravity or grams per cubic "
+"centimeter. Alternately, units of molarity can be used by selecting that "
+"from the choice menu."
+msgstr ""
+
+#: ../../hephaestus.rst:244
+msgid "Finally, an energy in eV is required at which to make the calculation."
+msgstr ""
+
+#: ../../hephaestus.rst:252
+msgid "The formulas tool."
+msgstr ""
+
+#: ../../hephaestus.rst:254
+msgid ""
+"At the bottom of the page is a tool for computing transmitted fraction "
+"from the material just computed.  You can enter a sample thickness and "
+"choose from |mu| m, m, and cm units.  Pressing the :button:`Compute "
+"transmitted fraction,light` button will use the cross section reported "
+"above to display the transmitted fraction of X-rays at the current energy"
+" through the sample.  This is presented as a percentage of the incident "
+"intensity transmitted through the sample."
+msgstr ""
+
+#: ../../hephaestus.rst:263
+msgid "Detailed explanation"
+msgstr ""
+
+#: ../../hephaestus.rst:265
+msgid ""
+"Here is an example of the results printed for BN, with a specific gravity"
+" of 2.29 and at energy of 7800 eV:"
+msgstr ""
+
+#: ../../hephaestus.rst:285
+msgid ""
+"This reports on an important physical parameter, the :quoted:`absorption "
+"length`. This is defined as the length of sample over which the intensity"
+" of the incident beam will be attenuated by 1/e, or about 63%, at the "
+"specified energy. Note that absorption length is an energy dependent "
+"parameter and that it changes significantly across an absorption edge."
+msgstr ""
+
+#: ../../hephaestus.rst:292
+msgid ""
+"Here we see that 9000 eV photons will be e-fold attenuated in just over 1"
+" millimeter of packed BN. To make a sample with an area of 1 square "
+"centimeter facing the beam and which has an absorption length of 1, one "
+"must weigh out about 175 milligrams of BN. In practice, this is quite a "
+"lot of BN and will make a rather thick pellet. One might weigh out a "
+"fraction of the 175 milligrams for a real sample, giving the matrix that "
+"much less than 1 absorption length."
+msgstr ""
+
+#: ../../hephaestus.rst:300
+msgid ""
+"As another example, here is the calculation on cobalt ferrite, CoFe\\ "
+":sub:`2`\\ O\\ :sub:`4`, which has a specific gravity of about 5. "
+"Computing the cross section at 7800 eV will trigger a calculation of the "
+"sample depth corresponding to a unit edge step at the Co K edge. This "
+"additional calculation is triggered because the calculation energy, 7800 "
+"eV, is within 100 eV of the Co K edge energy of 7709 eV."
+msgstr ""
+
+#: ../../hephaestus.rst:329
+msgid ""
+"Here we introduce a second important physical parameter, the "
+":quoted:`unit edge step length`. This is defined as the length over which"
+" the total absorption will change by a factor of 1/e as the incident beam"
+" energy is scanned over the absorption edge. To say that another way, the"
+" absorption will be e-fold greater just above the edge than just below "
+"the edge. With that length of sample, the edge step of a transmission XAS"
+" scan will be 1."
+msgstr ""
+
+#: ../../hephaestus.rst:337
+msgid ""
+"Suppose you wanted to mix some cobalt ferrite with 35 milligrams (i.e. an"
+" amount that will contribute 0.2 to the total absorption of the sample) "
+"of boron nitride measured above in order to make a good transmission XAS "
+"sample. That amount of BN contributes 0.2 absorption lengths to the total"
+" thickness of the sample at this energy. Weighing out 4 milligrams of "
+"ferrite, then, gives the sample a total absorption of 1.2. That is, the "
+"beam passing through the sample will attenuate to the level of exp(-1.2),"
+" or about 30%, of the intensity of the incident beam."
+msgstr ""
+
+#: ../../hephaestus.rst:347
+msgid ""
+"Note that this sample has more Fe than Co and that the calculation energy"
+" is above the Fe K edge energy. The Fe part of the sample is rather "
+"absorbing at this energy. As a result, a relatively small mass of sample "
+"constitutes an absorption length."
+msgstr ""
+
+#: ../../hephaestus.rst:352
+msgid ""
+"The 4 milligrams of sample required for one absorption length is "
+"distributed over 8.2 microns. The unit edge step calculation tells us "
+"that the edge step will be one with 28.3 microns of sample. Thus, the "
+"sample with one absorption length of ferrite will have an edge step of "
+"8.2/28.3 = 0.34."
+msgstr ""
+
+#: ../../hephaestus.rst:358
+msgid ""
+"A sample with an edge step of 1 is made by mixing 28.3 milligrams of "
+"ferrite with the BN. This sample, however, will be rather thick around "
+"the Co K edge. 28.3 milligrams represents 2.9 (= 1/0.34) absorption "
+"lengths of ferrite. The ferrite in BN will, therefore, attenuate the beam"
+" passing through the sample to the level of exp(-3.1), or about 4.5%."
+msgstr ""
+
+#: ../../hephaestus.rst:365
+msgid ""
+"In an early XAS paper by Stern and Kim, it was shown that the edge step "
+"of a sample should not exceed 1.5. Using a simple statistical argument "
+"that presumes that measurement uncertainty is dominated by shot noise, "
+"the authors show that a sample is optimized when the total absorption is "
+"2.6. In this case, the sample of ferrite in BN can be made such that both"
+" total absorption and edge step are close to optimal. For instance, "
+"making the sample with 2 absorption lengths (i.e. 8 milligrams or 16.4 "
+"microns) of ferrite will result in an edge step of 0.68 |nd| an excellent"
+" sample! Not all materials |nd| particularly those for which a minority "
+"dopant is the target of the XAS experiment |nd| work out so well. In "
+"practice, sample preparation is an exercise in compromise between total "
+"absorption and size of edge step."
+msgstr ""
+
+#: ../../hephaestus.rst:384
+msgid "Two final notes:"
+msgstr ""
+
+#: ../../hephaestus.rst:386
+msgid ""
+"The calculation of absorption length in units of length, in this case 8.2"
+" microns, is another useful metric for high quality sample preparation. "
+"To mix ferrite powder with BN to obtain a nicely homogeneous sample, it "
+"is necessary that the ferrite powder be composed of grains that are small"
+" compared to the absorption length. In this, you would want micron-sized "
+"or smaller grains. Note that a stack of laboratory metal meshes are not "
+"adequate for separating out powders for this sample. A 400 mesh |nd| "
+"usually the finest one in a common stack of sieves |nd| has openings of "
+"37 microns. That is vastly too large for your ferrite XAS samples!"
+msgstr ""
+
+#: ../../hephaestus.rst:397
+msgid ""
+"Transmission XAS samples are often made with 10s of milligrams of "
+"material. That is true for the example given above and, indeed, for many "
+"materials science problems. 10s of milligrams of sample is a very small "
+"quantity. That material must be distributed in the beam uniformly and "
+"packaged in a manner that can be readily handled. What's more, the sample"
+" may need to survive placement in a cryostat, a furnace, or some other in"
+" situ environment. In the example given above, reference is made to boron"
+" nitride. BN is often used a sample matrix by mixing the sample "
+"thoroughly in the BN and pressing the mixed powders into a pellet using a"
+" hydrolic press. This results in a sample which is thick enough to manage"
+" by hand and sturdy enough for a cryostat or furnace. Other materials are"
+" commonly used for this purpose, such as graphite, polyethylene glycol, "
+"and sucrose."
+msgstr ""
+
+#: ../../hephaestus.rst:412
+msgid "Ion Chambers"
+msgstr ""
+
+#: ../../hephaestus.rst:414
+msgid ""
+"This tool is used to determine appropriate contents of ion chambers at a "
+"given energy. The calculation requires several parameters, including"
+msgstr ""
+
+#: ../../hephaestus.rst:417
+msgid ""
+"The length in centimeters of the ion chamber. This can be selected from a"
+" list of common lengths or supplied by the user."
+msgstr ""
+
+#: ../../hephaestus.rst:420
+msgid ""
+"The relative fractions of two gasses mixed together in the ion chambers. "
+"Each can be selected from a list which includes :guilabel:`H2`, "
+":guilabel:`N2`, :guilabel:`Ar`, :guilabel:`Ne`, :guilabel:`Kr`, and "
+":guilabel:`Xe`."
+msgstr ""
+
+#: ../../hephaestus.rst:425
+msgid ""
+"The pressure of the gas inside the ion chamber, in Torr. Atmospheric "
+"pressure is 760 Torr."
+msgstr ""
+
+#: ../../hephaestus.rst:428
+msgid ""
+"The percentage absorbed by the ion chamber will usually auto-update as "
+"you change the parameters. Clicking the :button:`Compute,light` button "
+"forces an update. Clicking the :button:`Reset,light` button returns all "
+"the parameters to their initial values."
+msgstr ""
+
+#: ../../hephaestus.rst:433
+#, python-format
+msgid ""
+"As a rule of thumb, 10% is a good amount of absorption for the I\\ "
+":sub:`0` chamber. This will allow for a good measurement of incidence "
+"flux while leaving most photons for the rest of the measurement. 66 "
+"percent is a good amount for the I\\ :sub:`t`, I\\ :sub:`r`, and I\\ "
+":sub:`f` chambers. This distributes the absorption over the entire length"
+" of the ion chamber. In the case of I\\ :sub:`t`, this leaves enough "
+"photons passing through to the reference chamber to allow for a "
+"reasonable measurement on I\\ :sub:`r`."
+msgstr ""
+
+#: ../../hephaestus.rst:442
+msgid ""
+"If you know the amplifier gain and voltage signal coming from your "
+"current-to-voltage amplifier (such as a Keithley 427 or 428), specifying "
+"these will compute a crude calculation of photon flux incident upon the "
+"chamber."
+msgstr ""
+
+#: ../../hephaestus.rst:453
+msgid ""
+"The ionization energy is about 32 volts for most gasses and the electron "
+"charge ``e`` is about 1.6 |times| 10\\ :sup:`-19` Coulombs."
+msgstr ""
+
+#: ../../hephaestus.rst:461
+msgid "The ion chambers tool."
+msgstr ""
+
+#: ../../hephaestus.rst:465
+msgid "Data"
+msgstr ""
+
+#: ../../hephaestus.rst:467
+msgid ""
+"This tool is used to display a number of useful physical and chemical "
+"properties of the elements. Selecting an element from the periodic table "
+"will fill in a table with the data for that element."
+msgstr ""
+
+#: ../../hephaestus.rst:471
+msgid ""
+"Beneath the periodic table is a tabbed notebook. Each tab contains a "
+"different data table. The :guilabel:`Elemental data` tab contains a "
+"variety of general information. The :guilabel:`Ionic radii` tab contains "
+"the Shannon ionic radii. The :guilabel:`Neutron data` tab contains data "
+"on thermal neutron scattering lengths and cross sections for the major "
+"isotopes."
+msgstr ""
+
+#: ../../hephaestus.rst:483
+msgid "The data tool."
+msgstr ""
+
+#: ../../hephaestus.rst:486
+msgid "**General data**"
+msgstr ""
+
+#: ../../hephaestus.rst:487
+msgid "Swiped from http://edu.kde.org/kalzium/"
+msgstr ""
+
+#: ../../hephaestus.rst:493
+msgid "**Mossbauer data**"
+msgstr ""
+
+#: ../../hephaestus.rst:489
+msgid ""
+"List of Mossbauer active isotopes is from http://mossbauer.org, which "
+"used to be a site about Mossbauer spectroscopy but now seems to be a "
+"unmaintained science news site.  `Wikipedia "
+"<https://en.wikipedia.org/wiki/M%C3%B6ssbauer_spectroscopy>`_ has a nice "
+"periodic table of Mossbauer active elements and Darby Dyer keeps `a "
+"lovely page about Mossbauer "
+"<http://serc.carleton.edu/research_education/geochemsheets/techniques/mossbauer.html>`_."
+msgstr ""
+
+#: ../../hephaestus.rst:501
+msgid "**Ionic radii**"
+msgstr ""
+
+#: ../../hephaestus.rst:500
+msgid ""
+"Conversion of data to JSON at `Electronic Table of Shannon Ionic Radii, "
+"J. David Van Horn, 2001, downloaded 10/13/2015. "
+"<http://v.web.umkc.edu/vanhornj/shannonradii.htm>`__"
+msgstr ""
+
+#: ../../hephaestus.rst:513
+msgid "**Neutron data**"
+msgstr ""
+
+#: ../../hephaestus.rst:508
+msgid ""
+"See also https://www.ncnr.nist.gov/resources/n-lengths/list.html "
+"Scattering lengths are in femtometers, cross sections are in barns "
+"(10E-24 cm), scattering lengths and cross sections in parenthesis are "
+"uncertainties, and for radioisotopes the half-life is given instead of "
+"the natural abundance."
+msgstr ""
+
+#: ../../hephaestus.rst:516
+msgid "Transitions"
+msgstr ""
+
+#: ../../hephaestus.rst:518
+msgid ""
+"This tool displays a non-interactive chart explaining the transitions for"
+" each of the emission lines. The initial and final states for each named "
+"K and L transition is shown. The chart follows Figure 1.1 in the `Center "
+"for X-Ray Optics X-Ray Data Booklet <http://cxro.lbl.gov/x-ray-data-"
+"booklet>`_ ."
+msgstr ""
+
+#: ../../hephaestus.rst:529
+msgid "The transitions tool."
+msgstr ""
+
+#: ../../hephaestus.rst:534
+msgid "Edge Finder"
+msgstr ""
+
+#: ../../hephaestus.rst:536
+msgid ""
+"This tool displays a table, ordered by increasing edge energy, of all "
+"edge energies on the periodic table. The table also shows the edge "
+"energies in wavelength units and the core-hole lifetimes."
+msgstr ""
+
+#: ../../hephaestus.rst:540
+msgid ""
+"The purpose of this tool is to aid in identifying edges observed during "
+"measurements. To search the list, enter an energy in the text box on the "
+"right and click :button:`Search,light` (or hit :button:`Return`). The "
+"list will be recentered around that energy. Hopefully this will help you "
+"identify the mysterious feature in your measured data!"
+msgstr ""
+
+#: ../../hephaestus.rst:547
+msgid ""
+"You can also search for edges at the second or third harmonic of the "
+"energy. This can be useful in the case of poor harmonic rejection in the "
+"incident beam and the excitation of a much higher energy edge."
+msgstr ""
+
+#: ../../hephaestus.rst:556
+msgid "The edge finder tool."
+msgstr ""
+
+#: ../../hephaestus.rst:561
+msgid "Line Finder"
+msgstr ""
+
+#: ../../hephaestus.rst:563
+msgid ""
+"This tool displays a table, ordered by increasing emission energy, of all"
+" emission line energies on the periodic table. The table also shows the "
+"emission energies in wavelength units and the strength (or branching "
+"ratio) of each line relative to the other lines arising from the same "
+"absorption edge."
+msgstr ""
+
+#: ../../hephaestus.rst:569
+msgid ""
+"The purpose of this tool is to aid in identifying emission lines observed"
+" during measurements. To search the list, enter an energy in the text box"
+" on the right and click :button:`Search,light` (or hit :button:`Return`)."
+" The list will be recentered around that energy. Hopefully this will help"
+" you identify the mysterious line in your fluorescence data!"
+msgstr ""
+
+#: ../../hephaestus.rst:581
+msgid "The line finder tool."
+msgstr ""
+
+#: ../../hephaestus.rst:586
+msgid "Standards"
+msgstr ""
+
+#: ../../hephaestus.rst:588
+msgid ""
+"Demeter is distributed with a small library of data on standard "
+"materials. These XANES spectra can be access via this tool. You will find"
+" that this library is quite tiny at this time. The hope is that a future "
+"effort in an XAS standards library will take off. When that happens, this"
+" will be :demeter:`hephaestus`'s interface to that effort."
+msgstr ""
+
+#: ../../hephaestus.rst:594
+msgid ""
+"Clicking on an element in the periodic table displays a list of all the "
+"standards in the library measured for that element. The disabled elements"
+" in the periodic table are ones for which the library has no entries."
+msgstr ""
+
+#: ../../hephaestus.rst:599
+msgid ""
+"The XANES data can be plotted as normalized |mu| (E) or as the derivative"
+" of |mu| (E). The data present have all been annotated so that "
+"interesting points are marked on the plots."
+msgstr ""
+
+#: ../../hephaestus.rst:603
+msgid ""
+"The :button:`Save,light` button will prompt for a file name and save the "
+"|mu| (E) data to a file."
+msgstr ""
+
+#: ../../hephaestus.rst:606
+msgid ""
+"One point of this tool is to make obsolete the :quoted:`Reference "
+"Spectra` printout from EXAFS Materials that is found at many beamlines. "
+"http://exafsmaterials.com/Ref_Spectra_0.4MB.pdf"
+msgstr ""
+
+#: ../../hephaestus.rst:615
+msgid "The standards tool."
+msgstr ""
+
+#: ../../hephaestus.rst:622
+msgid "An anotated standards plot for manganese oxalate."
+msgstr ""
+
+#: ../../hephaestus.rst:624
+msgid ""
+"The plotting range can be controlled using the "
+":configparam:`Hephaestus,standards_emin` and "
+":configparam:`Hephaestus,standards_emax` parameters."
+msgstr ""
+
+#: ../../hephaestus.rst:630
+msgid "F' and F\""
+msgstr ""
+
+#: ../../hephaestus.rst:632
+msgid ""
+"This tool plots the complex anomalous scattering data from the Cromer-"
+"Liberman tables as a function of energy. The start and end energies for "
+"the plot are entered, as well as the energy grid spacing. When an element"
+" is selected from the periodic table, it's f' and f\" values are plotted."
+msgstr ""
+
+#: ../../hephaestus.rst:638
+msgid ""
+"Anomalous scattering for elements can be plotted alone or over-plotted "
+"with other elements. You can also select to plot either f', f\", or both."
+msgstr ""
+
+#: ../../hephaestus.rst:641
+msgid "The f' and f\" data can be saved to a file."
+msgstr ""
+
+#: ../../hephaestus.rst:649
+msgid "The f' and f\" tool."
+msgstr ""
+
+#: ../../hephaestus.rst:656
+msgid "An f' and f\" plot for vanadium."
+msgstr ""
+
+#: ../../hephaestus.rst:658
+msgid ""
+"The plotting range can be controlled using the "
+":configparam:`Hephaestus,f1f2_emin` and "
+":configparam:`Hephaestus,f1f2_emax` parameters.  The energy grid of the "
+"calculation is set using :configparam:`Hephaestus,f1f2_grid`."
+msgstr ""
+
+#: ../../hephaestus.rst:665
+msgid "Preferences"
+msgstr ""
+
+#: ../../hephaestus.rst:667
+msgid ""
+"The behavior of :demeter:`hephaestus` can be configured via the "
+"preferences tool.  This uses the same preferences tool as "
+":demeter:`athena` and :demeter:`artemis`, although only those preference "
+"groups relevant to :demeter:`hephaestus` and to plotting are presented."
+msgstr ""
+
+#: ../../hephaestus.rst:673
+msgid ""
+":mark:`leftclick,.` Click on a group in the :guilabel:`Parameters` list "
+"to open a group.  :mark:`leftclick,.` Click on a parameter to display it "
+"in the controls on the right.  You will be given controls appropriate to "
+"each parameter's data type for setting the parameter value.  The "
+":button:`Your value,light` and :button:`Demeter's value,light` buttons "
+"can be used to restore a parameter's value.  A description of the "
+"displayed parameter will be written in the large text box."
+msgstr ""
+
+#: ../../hephaestus.rst:682
+msgid ""
+"Parameters can be applied for the current session or applied and saved to"
+" your configuration file."
+msgstr ""
+
+#: ../../hephaestus.rst:687
+msgid "Credits"
+msgstr ""
+
+#: ../../hephaestus.rst:689
+msgid ""
+"The layout of :demeter:`hephaestus` |nd| with its button bar on the left "
+"side which changes the mode of the main part of the program |nd| was "
+"inspired by the personal information management program I use on my KDE "
+"systems, Kontact. I found it effective so I swiped it for this program."
+msgstr ""
+
+#: ../../hephaestus.rst:695
+msgid ""
+"The pictures used on the buttons were cropped from images I found using "
+"Google. The picture of the ion chamber is from the Advanced Designed "
+"Consulting web site. Their ion chambers are quite nice. The edge finder "
+"icon was swiped from the find.png icon in the kid's icon theme for KDE. "
+"The line finder icon is from a web page by the Alberta Synchrotron "
+"Institute and depicts a fluorescence map of some rock.  The documentation"
+" icon was found under a Creative Commons license at "
+"http://battellemedia.com/archives/001952.php"
+msgstr ""
+
+#: ../../hephaestus.rst:704
+msgid ""
+"The formulas utility owes much to Gerry Roe, who pointed out a bug, and "
+"Erik Gullikson, whose similar utility on the web set me straight."
+msgstr ""
+
+#: ../../hephaestus.rst:708
+msgid ""
+"The ion chamber and edge finder utilities were inspired by the similar "
+"utilities in the data acquisition program by Lars Fuerenlid and Johnny "
+"Kirkland that was widely used at NSLS. Lars and Johnny seem to have a "
+"deeper love of pastel than do I."
+msgstr ""
+
+#: ../../hephaestus.rst:713
+msgid ""
+"The electronic transitions chart was created from scratch but slavishly "
+"following Figure 1.1 in the `Center for X-Ray Optics X-Ray Data Booklet "
+"<http://cxro.lbl.gov/x-ray-data-booklet>`_ ."
+msgstr ""
+
+#: ../../hephaestus.rst:718
+msgid ":demeter:`hephaestus` makes use of several things from http://www.cpan.org"
+msgstr ""
+
+#: ../../hephaestus.rst:721
+msgid ""
+"And, of course, the users of my various software efforts deserve all the "
+"credit for kind praise and useful feedback over these many years."
+msgstr ""
+
+#: ../../hephaestus.rst:725
+msgid "The absorption data resources all have literature references."
+msgstr ""
+
+#: ../../hephaestus.rst:733
+msgid "**The Elam tables**"
+msgstr ""
+
+#: ../../hephaestus.rst:732
+msgid ""
+"This is the source of data for the edge and line finders and for the "
+"filter plot."
+msgstr ""
+
+#: ../../hephaestus.rst:741
+msgid "**The McMaster tables**"
+msgstr ""
+
+#: ../../hephaestus.rst:740
+msgid ""
+"These data were originally compiled in machine readable form by Pathikrit"
+" Bandyopadhyay."
+msgstr ""
+
+#: ../../hephaestus.rst:749
+msgid "**The Henke tables**"
+msgstr ""
+
+#: ../../hephaestus.rst:748
+msgid "The data is available at http://www-cxro.lbl.gov/optical_constants."
+msgstr ""
+
+#: ../../hephaestus.rst:757
+msgid "**The Chantler tables**"
+msgstr ""
+
+#: ../../hephaestus.rst:756
+msgid ""
+"The data files can be found at "
+"http://physics.nist.gov/PhysRefData/FFast/html/form.html"
+msgstr ""
+
+#: ../../hephaestus.rst:762
+msgid "**The Cromer-Liberman tables**"
+msgstr ""
+
+#: ../../hephaestus.rst:769
+msgid "**The Shaltout tables**"
+msgstr ""
+
+#: ../../hephaestus.rst:772
+msgid "Bugs and limitations"
+msgstr ""
+
+#: ../../hephaestus.rst:774
+msgid ""
+"Every calculation at high energy is inaccurate in :demeter:`hephaestus`. "
+"Xray::Absorption does not correctly handle the mass-energy absorption "
+"coefficients at high energy, although the ion chamber utility does "
+"attempt a (very) crude correction."
+msgstr ""
+
+#: ../../hephaestus.rst:779
+msgid ""
+"More types of information can be added to the chemical data utility. If "
+"there is something you would like to see, you should send the data in an "
+"easily readable format (i.e. plain text is lovely). Merely suggesting new"
+" data types is unlikely to have any effect. Supplying the data is highly "
+"likely to have an effect."
+msgstr ""
+
+#: ../../hephaestus.rst:785
+msgid "My wish list includes:"
+msgstr ""
+
+#: ../../hephaestus.rst:787
+msgid "auger/fluorescence branching ratios in the Data utility"
+msgstr ""
+
+#: ../../hephaestus.rst:788
+msgid ""
+"a tool for approximating the energy response of a flat mirror, like `this"
+" <http://henke.lbl.gov/optical_constants/layer2.html>`_ or `that "
+"<http://henke.lbl.gov/optical_constants/bilayer.html>`_"
+msgstr ""
+
+#: ../../hephaestus.rst:791
+msgid ""
+"providing the Berger/Hubble XCOM tables and :demeter:`feff`'s optical "
+"calculations as data resources."
+msgstr ""
+
+#: ../../hephaestus.rst:806
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../hephaestus.rst:811
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../hephaestus.rst:815
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

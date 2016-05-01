@@ -1,0 +1,197 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../analysis/pca.rst:45
+msgid "Principle components analysis"
+msgstr "主成分分析"
+
+#: ../../analysis/pca.rst:47
+msgid ""
+"Principle components analysis (PCA) is an abstract decomposition of a "
+"data sequence...."
+msgstr ""
+"主成分分析，Principle components analysis (PCA)，はデータの組を抽象的に分解する手法です．"
+
+#: ../../analysis/pca.rst:50
+msgid "This chapter is incomplete."
+msgstr "この章は未完成です．"
+
+#: ../../analysis/pca.rst:53
+msgid ""
+"Here, I have imported a project file containing well-processed data on a "
+"time series of samples in which gold chloride is being reduced to gold "
+"metal. The project file includes 8 time steps and 9 standards. I cannot "
+"stress strongly enough the importance of doing a good job of aligning and"
+" normalizing your data before embarking on PCA. This is truly a case of "
+"garbage-in/garbage-out."
+msgstr ""
+"ここでは，塩化金が金属状態の金に還元されていく時系列変化の試料について"
+"正しく処理されたデータを含むプロジェクトファイルを読み込みます．"
+"このプロジェクトファイルには8つの異なる時間についてのデータと9つの標準"
+"スペクトルを含んでいます．主成分分析 (PCA) を実行する前にデータの整列"
+"および規格化について正しく行うことは強調してもしすぎることはありません．"
+"データが正しく処理されていなければ，主成分分析を行ったとしても何の役にも"
+"立たない結果が出てくることに注意してください．(訳注: データ処理に関する"
+"定型句とも言える This is truly a case of garbage-in/garbage-out. の訳）"
+
+#: ../../analysis/pca.rst:60
+msgid "I then select the PCA tool from the main menu."
+msgstr "それでは，メインメニューから PCA ツールを選択してください．"
+
+#: ../../analysis/pca.rst:67
+msgid "The PCA tool."
+msgstr "PCA ツール"
+
+#: ../../analysis/pca.rst:69
+msgid ""
+"The operational concept for the PCA tool makes use of the standard "
+":demeter:`athena` group selection tools. The ensemble of marked groups "
+"are used as the data on which the PCA will be performed. The selected "
+"group (i.e.  the one highlighted in the group list) can be either "
+"reconstructed or target transformed. The relevant controls will be "
+"enabled or disabled depending on whether the selected group is marked "
+"(and therefore one of the data sets in the PCA) or not (and therefore a "
+"subject for target transformation)."
+msgstr ""
+"PCA ツールの操作コンセプトは標準の ATHENA グループ選択ツールを利用すると"
+"いうものです．マークのついたグループのまとまりが PCA が実行されるデータと"
+"して利用されます．選択されたグループ（すなわちグループリストで強調されている"
+"もの）は再構成することも，ターゲット変換することもできます．関連する制御項目は"
+"選択されたグループがマークされているか（つまり，PCA で使われるデータの1つか"
+"どうか）あるいはそうでないか（つまり，ターゲット変換の対象であるか）によって，"
+"実行可能になったり不可能になったりします．"
+
+#: ../../analysis/pca.rst:78
+msgid ""
+"Clicking the :button:`Perform PCA,light` button will perform "
+"normalization on all the data as needed, then perform the components "
+"analysis. Upon completion, some results are printed to the text box and "
+"several buttons become enabled."
+msgstr ""
+":button:`Perform PCA,light` ボタンをクリックすると，必要に応じて"
+"データの規格化が行われ，成分分析が実行されます．終わると，結果の一部が"
+"テキストボックスに表示され，いくつかのボタンが有効化されます．"
+
+#: ../../analysis/pca.rst:83
+msgid ""
+"After the PCA completes, a plot is made of the extracted components. This"
+" plot can be recovered by clicking the :guilabel:`Components` button "
+"under the :guilabel:`Plots` heading. The number spinner is used to "
+"restrict which components are plotted. Because the first component is "
+"often so much bigger than the rest, it is often useful to set that number"
+" to 2, in which case the first (and largest) component is left off the "
+"plot."
+msgstr ""
+"PCA が完了すると，抽出された成分がプロットされます．このプロットは，"
+":guilabel:`Plots` とあるところの下の :guilabel:`Components` ボタンを"
+"クリックすることで再び表示することができます．近くのスピンボックスで"
+"いくつの成分を表示するか変更することができます．1つめの成分は，多くの"
+"場合，他のものよりも遥かに大きいので，1つめの（最も大きな）成分を表示"
+"から除外するために数字を2に設定するとよい場合が多いでしょう．"
+
+#: ../../analysis/pca.rst:91
+msgid ""
+"Other plotting options include a plot of the data stack, as interpolated "
+"into the analysis range, a scree plot (i.e. the eigenvalues of the PCA) "
+"or its log, and the cumulative variance (i.e. the running sum of the "
+"eigenvalues, divided by the size of the eigenvector space). The cluster "
+"analysis plot is not yet implemented."
+msgstr ""
+"他のプロットオプションには，分析範囲でのデータの積み上げ，scree プロット"
+"（すなわち，PCA の固有値）あるいはその対数プロット，そして累積寄与率"
+"（すなわち，固有値の和を固有ベクトル空間の大きさで割り算したもの）が"
+"あります．クラスター分析のプロットについてはまだ実装されていません．"
+
+#: ../../analysis/pca.rst:97
+msgid ""
+"Once the PCA has been performed, you can reconstruct your data using 1 or"
+" more of the principle components. Here, for example, is the "
+"reconstruction of an intermeidate time point using the top 3 components."
+msgstr ""
+"PCA が実行されると，データを1つあるいはそれ以上の主成分を使って再構成する"
+"ことができます．ここでは，例えば，最初の3つの成分を使って，中間の"
+"スペクトルの再構成を行います．"
+
+#: ../../analysis/pca.rst:110
+msgid "The principle components of this data ensemble."
+msgstr "このデータ集合の主成分"
+
+#: ../../analysis/pca.rst:119
+msgid "PCA reconstruction"
+msgstr "PCA 再構成"
+
+#: ../../analysis/pca.rst:125
+msgid ""
+"Selecting one of the standards in the group list enables the "
+":button:`Target transform,light` button. Clicking it shows the result of "
+"the transform and displays the coefficients of the transform in the "
+"smaller text box."
+msgstr ""
+"グループリストの標準のうちの1つを選択すると，:button:`Target transform,light` "
+"ボタンが有効化されます．これをクリックすると，変換の結果が表示され，"
+"小さなテキストボックスに変換の係数が表示されます．"
+
+#: ../../analysis/pca.rst:135
+msgid "Performing a target transform against a data standard"
+msgstr "標準データに対するターゲット変換"
+
+#: ../../analysis/pca.rst:147
+msgid ""
+"A successful target transform on Au foil. Au foil is certainly a "
+"constituent of the data ensemble used in the PCA."
+msgstr ""
+"金箔に対するターゲット変換がうまくいった例．実際のところ，金箔は"
+" PCA に使われたデータ集合の一部です．"
+
+#: ../../analysis/pca.rst:157
+msgid ""
+"An unsuccessful target transform on Au cyanide. Au cyanide is certainly "
+"not a constituent of the data ensemble used in the PCA."
+msgstr ""
+"金シアニドに対するターゲット変換がうまくいかない例．確かに，金シアニドは"
+" PCA に使われたデータ集合の構成要素ではありません．"
+
+#: ../../analysis/pca.rst:165
+msgid ""
+"The list of chores still undone for the PCA tool can be found at `my "
+"Github site "
+"<https://github.com/bruceravel/demeter/blob/master/todo.org>`__."
+msgstr ""
+"PCA ツールで実装されていない事柄については，"
+"`私の Github サイト <https://github.com/bruceravel/demeter/blob/master/todo.org>`__ にあります．"
+
+#: ../../analysis/pca.rst:178
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../analysis/pca.rst:183
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../analysis/pca.rst:187
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

@@ -1,0 +1,498 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../examples/data.rst:43
+msgid "Basic data processing"
+msgstr "基本的なデータ処理"
+
+#: ../../examples/data.rst:45
+msgid ""
+"This worked example will walk you through data import, demonstrate "
+"calibration, alignment, and merging of data, and consider well chosen "
+"parameter values for background removal and Fourier transform. This "
+"example uses data collected on an iron foil at three temperatures."
+msgstr ""
+"この処理済みの例ではデータの読み込み，較正，整列，マージとバック"
+"グラウンド除去とフーリエ変換について適切なパラメータの選び方を"
+"説明します．また，この例では3つの温度で測定した鉄箔のデータを扱います．"
+
+#: ../../examples/data.rst:50
+#, python-format
+msgid ""
+"The data used in this example can be found `at my Github site "
+"<https://github.com/bruceravel/XAS-"
+"Education/tree/master/Examples/Fe%20foil>`__. They include three scans on"
+" an iron foil measured at 60K, and two each at 150K and 300K."
+msgstr ""
+"この例で使われているデータは，"
+"`私の GitHub サイト <https://github.com/bruceravel/XAS-Education/tree/master/Examples/Fe%20foil>`__ "
+"で見つかります．ここには 60 K, 150 K, 300 K で測定した3種類の鉄箔のデータがあります．"
+
+#: ../../examples/data.rst:55
+msgid ""
+"To begin, `import <../import/columns.html>`__ the first scan at 60K, "
+":file:`fe.060`. This is a relatively simple data file containing columns "
+"for energy and the signals on the I\\ :sub:`0` and I\\ :sub:`t` "
+"detectors. Select columns to form |mu| (E) data as shown in the image "
+"below."
+msgstr ""
+"初めに，60 K で測定された :file:`fe.060` を `読み込んで <../import/columns.html>`__ ください．"
+"これは比較的単純なデータファイルであり，エネルギーと I\\ :sub:`0` と I\\ :sub:`t` "
+"の検出器の信号を含んでいます．|mu| (E) データを得るために以下のように列を選択してください．"
+
+#: ../../examples/data.rst:66
+msgid ""
+"The column selection dialog with columns chosen correctly for the iron "
+"foil data."
+msgstr "鉄箔について正しく選択された列選択ダイアログ"
+
+#: ../../examples/data.rst:69
+msgid ""
+"When I collected these data, I purposefully miscalibrated the "
+"monochromator so that I would have a data set for explaining the use of "
+":demeter:`athena`'s calibration tool. The first thing to do, then, is to "
+"correctly calibrate these data."
+msgstr ""
+"これらのデータを測定した際，:demeter:`athena` の較正ツールの使い方を説明するための"
+"データを得るために，意図的に分光器の較正を外しておきました．"
+"初めにしないといけないことは，つまり，これらのデータを正しく較正することです．"
+
+#: ../../examples/data.rst:74
+msgid ""
+"Open the `calibration tool <../process/cal.html>`__ by selecting "
+":guilabel:`Calibrate energies` from the main menu. The derivative of |mu|"
+" (E) for these data will be plotted, shown below on the left. The choice "
+"of edge position, denoted by the little orange circle, is reasonable in "
+"that it is close to the first peak of the first derivative, as one "
+"expects. The monochromator calibration is obviously wrong as the orange "
+"circle is at 7105.5 eV, while the tabulated value for the iron K edge is "
+"7112 eV."
+msgstr ""
+"メインメニューから :guilabel:`Calibrate energies` を選択し，"
+"`calibration tool <../process/cal.html>`__ を開いてください．"
+"下図の左に示すようにこれらのデータの |mu| (E) の一次微分がプロットされます．"
+"吸収端位置の選択は，小さなオレンジ色の丸で示されており，予想されるように"
+"一次微分の最初のピークの近いところにありリーズナブルなものです．"
+"分光器の較正は明らかに間違っており，オレンジ色の丸は 7105.5 eV に"
+"ありますが，Fe K-edge の表の値は 7112 eV です．"
+
+#: ../../examples/data.rst:90
+msgid ""
+"The iron foil data, as plotted in the calibration tool. Derivative of "
+"|mu| (E)."
+msgstr "較正ツールでプロットされている鉄箔データ．|mu| (E) の一次微分"
+
+#: ../../examples/data.rst:98
+msgid "Second derivative of |mu| (E)."
+msgstr "|mu| (E) の二次微分"
+
+#: ../../examples/data.rst:105
+msgid ""
+"We want to select the peak of the first derivative and set that point to "
+"7112 eV. We can simply use the currently selected point |nd| it is quite "
+"close to the peak. Alternately, we can click the :button:`Select a "
+"point,light` button and try to :mark:`leftclick,..` double-click on the "
+"plot, selecting point even closer to the peak.  To do that, it would be "
+"helpful to change the value of emin and emax in the `energy plot tab "
+"<../plot/tabs.html>`__ the replot the data such that a tighter region "
+"around the peak is displayed."
+msgstr ""
+"一次微分のピークの点を 7112 eV に設定したいところです．単純に現在選択"
+"されている点 |nd| つまり，ピークにかなり近い点を利用することができます．"
+"代わりに，:button:`Select a point,light` ボタンをクリックして，"
+"プロットからピークにより近い点を選択することもできます．これを行うには，"
+"`エネルギープロットタブ <../plot/tabs.html>`__ にある emin と emax の値を"
+"変更，再プロットしてピーク周辺のより狭い領域を表示するとよいでしょう．"
+
+#: ../../examples/data.rst:114
+msgid ""
+"A third, highly accurate way of finding the exact peak of the first "
+"derivative is to plot the second derivative of the data by selecting "
+":guilabel:`second deriv` from the :guilabel:`display` menu. The second "
+"derivative of the data along with the currently selected value of edge "
+"position are shown on the right of the figure above."
+msgstr ""
+"3つめの一次微分の厳密なピークを高い確度で見つける方法は，:guilabel:`display` "
+"メニューから :guilabel:`second deriv` を選択して，二次微分をプロットすることです．"
+"データの二次微分を現在選択している吸収端位置と共にプロットしたものが"
+"上図の右に表示されています．"
+
+#: ../../examples/data.rst:120
+msgid ""
+"With the second derivative selected for display, the :button:`Find zero-"
+"crossing,light` button becomes activated. clicking that button will cause"
+" :demeter:`athena` to search in both directions for the nearest energy "
+"value that hits the y=0 axis and select that as the new edge position. "
+"The value should be about 7105.3 eV. Click the :button:`Calibrate,light` "
+"button and return to the main window."
+msgstr ""
+"二次微分を表示すると，:button:`Find zero-crossing,light` ボタンが"
+"有効化されます．このボタンをクリックすると，:demeter:`athena` は現在の吸収端位置近傍で"
+"双方向に y=0 となる点を探し，その点を新しい吸収端位置に設定します．"
+"この値はおおよそ 7105.3 eV です．:button:`Calibrate,light` ボタンを"
+"クリックして，メインウィンドウに戻ってください．"
+
+#: ../../examples/data.rst:127
+msgid ""
+"You will notice two things once the main window is displayed again: the "
+"value of :procparam:`E0` is now 7112 and the value of the "
+":procparam:`eshift` parameter is now about 6.7. In :demeter:`athena`, "
+"calibration works by simultaneously setting those two parameters such "
+"that the selected point has the chosen energy value."
+msgstr ""
+"再び表示されたメインウィンドウでは，2つのことに気づくと思います．"
+":procparam:`E0` の値は 7112 になっており，:procparam:`eshift` の値は"
+"おおよそ 6.7 になっていると思います．:demeter:`athena` では，較正はこれら2つの"
+"パラメータを同時に設定することで動作し，選択された点が選択された"
+"エネルギー値になります．"
+
+#: ../../examples/data.rst:133
+msgid ""
+"Now, import the second scan at 60K, :file:`fe.061`. `Mark "
+"<../ui/mark.html>`__ both groups by clicking on their mark buttons and "
+"plot them in energy by clicking on the :button:`E,purple` button."
+msgstr ""
+"さて，60 K で測定された2つめのデータ :file:`fe.061` を読み込んでください．"
+"両方のグループにその小さな紫色のボタンをクリックすることで `マーク <../ui/mark.html>`__ "
+"をつけ，:button:`E,purple` ボタンをクリックしてエネルギーに対してプロットしてください．"
+
+#: ../../examples/data.rst:145
+msgid "Misaligned iron foil |mu| (E) data."
+msgstr "整列されていない鉄箔の μ(E) データ "
+
+#: ../../examples/data.rst:152
+msgid "The derivatives of the misaligned data, as plotted in the alignment tool."
+msgstr "整列されていないデータの一次微分を整列ツールでプロットしたところ"
+
+#: ../../examples/data.rst:160
+msgid "Aligned data plotted in k, but with :procparam:`E0` unconstrained."
+msgstr "整列されていないデータを k についてプロットしたところ，:procparam:`E0` は束縛されていない"
+
+#: ../../examples/data.rst:167
+msgid ""
+"Aligned data plotted in k after constraining :procparam:`E0`. Once "
+"aligned and constrained in :procparam:`E0`, these successive scans are "
+"quite consistent."
+msgstr ""
+":procparam:`E0` について束縛した後で k についてプロットしたところ．"
+"一旦，整列し，:procparam:`E0` について束縛すると，これらの連続測定は"
+"十分つじつまが合っています．"
+
+#: ../../examples/data.rst:176
+msgid ""
+"The upper left of the image above shows that these data are not aligned. "
+"Since they are successive scans on the same iron foil under the same "
+"experimental conditions, we expect these data to be identical within "
+"statistical noise. The reason that they are different is that the second "
+"scan has not yet been calibrated."
+msgstr ""
+"上の図の左上には，整列されていないデータを示しています．同じ実験条件に"
+"おける同じ鉄箔に対する連続測定であるため，これらのデータは統計ノイズの"
+"範囲内で一致すると考えられます．これらが異なっているのは，2つめのデータが"
+"まだ較正されていないためです．"
+
+#: ../../examples/data.rst:182
+msgid ""
+"Fixing this requires two steps. First, open the `alignment tool "
+"<../process/align.html>`__ by selecting :guilabel:`Align scans` from the "
+"main menu. The two scans are plotted as the derivative of |mu| (E). The "
+"first scan in the list, :file:`fe.060`, is automatically selected in the "
+":guilabel:`Standard` menu. The second scan is highlighted in the groups "
+"list and is displayed as the :guilabel:`Other`."
+msgstr ""
+"これを修正するには2つのステップが必要です．まず，メインメニューから "
+" :guilabel:`Align scans` を選択して `整列ツール <../process/align.html>`__ "
+"を開きます．2つのデータが μ(E) の一次微分でプロットされます．"
+"リスト中の1つめのデータ，:file:`fe.060` は自動的に :guilabel:`Standard` "
+"メニューで選択されます．2つ目のデータはグループリストでオレンジ色に"
+"強調されており，:guilabel:`Other` として表示されています．"
+
+#: ../../examples/data.rst:189
+msgid ""
+"These are very clean data, so the automatic alignment algorithm should "
+"work well. Click the :button:`Auto align,light` button. If you data is "
+"noisy, the automated alignment might not work well, in which case you can"
+" use the other buttons to adjust the energy shift until you are satisfied"
+" that the data are well aligned."
+msgstr ""
+"これらは非常にきれいなデータなので，自動整列アルゴリズムはうまく働くはず"
+"です．:button:`Auto align,light` ボタンをクリックしてください．もしあなたの"
+"データにノイズが多ければ，自動整列はうまくいかないかもしれません．"
+"その場合にはデータがうまく整列されたと考えられるところまで他のボタンを"
+"使ってエネルギーシフトを調整することができます．"
+
+#: ../../examples/data.rst:195
+msgid ""
+"Returning to the main window, we find that the :procparam:`eshift` "
+"parameter for :file:`fe.061` is now about 6.7 eV. When plotted together "
+"in energy, the data are well aligned. However when plotted together in "
+"k-space by pressing the :button:`k,purple` button, there remains a "
+"problem, as we see in the lower left of the figure above."
+msgstr ""
+"メインメニューに戻ると，:file:`fe.061` の :procparam:`eshift` パラメータが"
+"おおよそ 6.7 eV になっていることがわかります．エネルギーに対してプロットすると，"
+"データはうまく整列されていることがわかります．但し，:button:`k,purple` ボタンを押して"
+" k についてプロットすると，上の図の左下のように問題が残っていることがわかります．"
+
+#: ../../examples/data.rst:201
+msgid ""
+"The :file:`fe.061` data have been aligned, but not calibrated. That is, "
+"its :procparam:`E0` parameter has not been set to the same value as for "
+"the :file:`fe.060` data.  Consequently, the position in the data where "
+"k=0 is different for the two spectra and the |chi| (k) data from the "
+"background removal are different."
+msgstr ""
+":file:`fe.061` データは整列されていますが，較正されていません．つまり，"
+":procparam:`E0` パラメータがまだ :file:`fe.060` と同じ値に設定されていないと"
+"いうことです．結果的に，データにおける2つのスペクトルの k=0 の位置が"
+"異なり，バックグラウンド除去後の |chi| (k) データが異なっています．"
+
+#: ../../examples/data.rst:207
+msgid ""
+"To correct this, you can either enter the value for :procparam:`E0` from "
+":file:`fe.060` |nd| 7112 eV |nd| into the :procparam:`E0` text entry box "
+"after :mark:`leftclick,..` clicking on :file:`fe.061` in the group list. "
+"Alternately, you can select :file:`fe.060` in the group list, then "
+":mark:`rightclick,..` right click on the :procparam:`E0` parameter to "
+"raise its `context menu <../params/constrain.html#constraining-"
+"individual-parameters>`__ and select :guilabel:`Set all groups to this "
+"value of E0`. Once the :procparam:`E0` parameters are set the same for "
+"these data sets, we see above in the lower right that the data are quite "
+"consistent between these two scans."
+msgstr ""
+"これを直すために，:file:`fe.060` の :procparam:`E0` の値 |nd| 7112 eV |nd| を"
+"グループリストの :file:`fe.061` を :mark:`leftclick,..` クリックした後にその :procparam:`E0` "
+"テキスト入力ボックスに入力することができます． あるいは，グループリストの"
+" :file:`fe.060` を選択し，:procparam:`E0` パラメータを :mark:`rightclick,..` 右クリックして"
+" `コンテキストメニュー <../params/constrain.html#constraining-individual-parameters>`__ "
+"を表示し，:guilabel:`Set all groups to this value of E0` "
+"を選択することもできます．一旦，:procparam:`E0` パラメータがこれらのデータ"
+"セットで同じ値に設定されれば，上の右下の図にあるように2つの測定間で"
+"一致した結果が得られるようになります．"
+
+#: ../../examples/data.rst:219
+msgid ""
+"Now we need to import the remaining data measured on the iron foil. Using"
+" the file selection dialog, select the remaining data files as described "
+"in `the section on multiple file import <../import/multiple.html>`__ and "
+"shown below."
+msgstr ""
+"次に，鉄箔について測定された残りのデータを読み込む必要があります．"
+"ファイル選択ダイアログを使って，`複数ファイル読み込みの節 <../import/multiple.html>`__ "
+"に書かれたとおりに残りのファイルを選択すると，以下のようになります．"
+
+#: ../../examples/data.rst:229
+msgid "Importing the remaining iron foil data."
+msgstr "残りの鉄箔のデータの読み込み"
+
+#: ../../examples/data.rst:231
+msgid ""
+"Clicking the :button:`Open button,light` will import all those data files"
+" and list them in the group list. Once they are imported, `mark "
+"<../ui/mark.html>`__ all of the groups either by typing "
+":button:`Alt`-:button:`a` or by clicking the :button:`A,light` mark "
+"button above the group list. Finally select the :file:`fe.060` group by "
+":mark:`leftclick,..` clicking on it in the group list. Once you have done"
+" all of that, :demeter:`athena` will look like this."
+msgstr ""
+":button:`Open button,light` をクリックすると，これらすべてのデータが"
+"読み込まれ，グループリストに並びます．読み込んだあと，:button:`Alt`-:button:`a` と"
+"打つか，グループリストの上にある :button:`A,light` マークボタンをクリックすると，"
+"すべてのグループにマークが付きます．最後に，グループリストから :file:`fe.060` を"
+"クリックして選択します．ここまで行うと，:demeter:`athena` は以下のように見えるはずです．"
+
+#: ../../examples/data.rst:244
+msgid "All of the iron foil data have been imported and marked."
+msgstr "すべての鉄箔のデータが読み込まれ，マークが付けられたところ"
+
+#: ../../examples/data.rst:246
+msgid ""
+"At this point, only :file:`fe.061` has been aligned to :file:`fe.060` and"
+" had its value of :procparam:`E0` properly constrained. We need to do so "
+"for the remaining data groups."
+msgstr ""
+"この時点では，:file:`fe.061` のみが :file:`fe.0601` に対して整列されており，"
+":procparam:`E0` の値が適切に束縛されています．残りのデータに対しても同様に"
+"する必要があります．"
+
+#: ../../examples/data.rst:250
+msgid ""
+"Processing all 5 of the remaining data groups would be quite tedious if "
+"we had to handle each one individually. Fortunately :demeter:`athena` has"
+" lots of tools to help process large quantities of data. To `align "
+"<../process/align.html#align>`__ the remaining data to :file:`fe.060`, "
+"choose :guilabel:`Align data` from the main menu. :demeter:`athena` "
+"chooses the first item in the group list as the data alignment standard "
+"and selects the second group as the one to align. These selections are "
+"shown at the top of this."
+msgstr ""
+"残りの5つのデータの処理は，もしそれらを個別に行うとすれば大変面倒なものです．"
+"幸運なことに，:demeter:`athena` には大量のデータを扱う際に便利な多くのツールがあります．"
+"残りのデータを :file:`fe.060` に対して整列するためには，メインメニューから"
+" :guilabel:`Align data` を選びます．:demeter:`athena` はグループリストの最初のデータを"
+"整列の基準として選び，2つめを整列するためのデータとして選びます．"
+"これらの選択状況は上に示されています．"
+
+#: ../../examples/data.rst:259
+msgid ""
+"Of course, :file:`fe.061` has already be aligned. If you select any other"
+" group by :mark:`leftclick,..` clicking on it in the group list, you will"
+" see that it it is not yet aligned. You can align the remaining groups by"
+" selecting each on in turn and clicking the :button:`Auto align,light` "
+"button |nd| but that seems tedious. Much better to click the "
+":button:`Align marked groups,light` button. Since all the groups are "
+"aligned, the automated alignment algorithm will be applied to each one in"
+" turn."
+msgstr ""
+"もちろん，:file:`fe.061` はすでに整列されています．グループリストの他の"
+"データをクリックすると，まだ整列されていないことがわかるでしょう．残りの"
+"グループについて，それぞれを選択しては :button:`Auto align,light` ボタンを"
+"クリックすることで整列することができますが，ちょっと面倒です．"
+"遙かによいのは，:button:`Align marked groups,light` ボタンをクリックする"
+"ことです．すべてのグループはよくそろっており，自動整列アルゴリズムが"
+"それぞれに実行されます．"
+
+#: ../../examples/data.rst:273
+msgid "All of the iron foil data are marked and waiting to be aligned."
+msgstr "すべての鉄箔データにマークがつけられ，整列されようとしているところ"
+
+#: ../../examples/data.rst:275
+msgid ""
+"Once finished, you can :mark:`leftclick,..` click on groups to check on "
+"the quality of the alignment. Since these are very good data, the "
+"automated alignment should have worked well.  Click on the "
+":button:`Return to the main window,light` button to continue with the "
+"data processing."
+msgstr ""
+"整列が終わると，グループをそれぞれを :mark:`leftclick,..` クリックして"
+"整列の質を確認することができます．これらはとてもよいデータであるため，"
+"自動整列アルゴリズムはうまく働くはずです．:button:`Return to the main window,light` "
+"ボタンをクリックして，データ処理を進めてください．"
+
+#: ../../examples/data.rst:281
+msgid ""
+"Each of the data groups has now been aligned, but only :file:`fe.061` has"
+" the same value of :procparam:`E0` as :file:`fe.060`. Again, "
+":mark:`leftclick,..` clicking through the groups list and editing the "
+":procparam:`E0` values seems horribly tedious. Here we see the true value"
+" of the :guilabel:`Set all groups to this value of E0` in the "
+":procparam:`E0` `context menu <../params/constrain.html#constraining-"
+"individual-parameters>`__."
+msgstr ""
+"それぞれのデータは整列されましたが，:file:`fe.061` だけが :file:`fe.060` "
+"と同じ値の :procparam:`E0` を取っています．同様に，グループリストを"
+"クリックしながら，:procparam:`E0` の値を編集するのはとても面倒に思われます．"
+"ここでは，:procparam:`E0` コンテキストメニュー の"
+" :guilabel:`Set all groups to this value of E0` の真の価値が発揮されます．"
+
+#: ../../examples/data.rst:289
+msgid "The |chi| (k) data for the aligned and constrained data are shown below."
+msgstr "整列され，束縛されたデータの |chi| (k) を以下に示します． "
+
+#: ../../examples/data.rst:296
+msgid "The |chi| (k) spectra for all the iron foil data."
+msgstr "すべての鉄箔データの |chi| (k) スペクトル"
+
+#: ../../examples/data.rst:298
+msgid ""
+"There is another, perhaps quicker, way of doing everything that is "
+"described above. To start, import the :file:`fe.060` data and calibrate "
+"it as explained at the start of this section.  Then use the file "
+"selection dialog to select all of the remaining data.  Click to the "
+":guilabel:`Preprocess` tab, select the :file:`fe.060` data as the "
+"standard, then click the :guilabel:`Mark`, :guilabel:`Align`, and "
+":guilabel:`Set parameters` checkbuttons."
+msgstr ""
+"上で書いたことすべてを行う，別の，おそらくもっと速い方法があります．"
+"手始めに，:file:`fe.060` を読み込み，この節の始めに説明したように較正を"
+"行います．次にファイル選択ダイアログを使って，残りすべてのデータを選択します．"
+":guilabel:`Preprocess` タブをクリックして，:file:`fe.060` を基準に選択し，"
+":guilabel:`Mark`, :guilabel:`Align`, そして :guilabel:`Set parameters`ボタンをチェックします．"
+
+#: ../../examples/data.rst:311
+msgid ""
+"Using the preprocessing features of the column selection dialog to align "
+"and constrain data on the fly as it is imported."
+msgstr "列選択ダイアログの前処理機能を使って，読み込みの際にデータの整列と束縛を行う"
+
+#: ../../examples/data.rst:314
+msgid ""
+"Now click the :button:`Open,light` button. As the remaining data are "
+"imported, the alignment and :procparam:`E0` constraint will happen on the"
+" fly and the new group will be marked. Once the file selection dialog "
+"using these preprocessing features is finished, :demeter:`athena` should "
+"look just like it did in the screenshot above."
+msgstr ""
+"そして，:button:`Open,light` ボタンをクリックしてください．残りのデータが"
+"読み込まれると，整列と :procparam:`E0` の束縛がその場で行われ，新しいグループに"
+"マークがつきます．この前処理機能を使い，ファイル選択ダイアログが閉じると，"
+":demeter:`athena` は上のスクリーンショットの様に見えるはずです．"
+
+#: ../../examples/data.rst:321
+msgid ""
+"As a final chore in this section, we will `merge "
+"<../process/merge.html>`__ the data measured at each temperature. Since "
+"the data are properly aligned and calibrated, this is a fine time to "
+"perform the merge. First mark each data group that should be merged "
+"together. As we see in the screenshot below, the two groups measured at "
+"300K are marked. Select :menuselection:`Merge --> Merge mu(E)`. This will"
+" perform the merge then insert a new group in the group list. Then select"
+" :menuselection:`Group --> Rename current group`, type "
+":button:`Alt`-:button:`l`, or :mark:`leftclick,..` double-click on the "
+"group list entry to give the merged group a more suggestive name. Repeat "
+"this process for the data at each temperature."
+msgstr ""
+"この節の最後では，それぞれの温度で測定されたデータを `マージ <../process/merge.html>`__ "
+"します．データは適切に整列および較正されているので，マージできる段階にあります．"
+"まず，マージしたいそれぞれのデータに印をつけます．以下のスクリーンショットで"
+"示しているように，300 K で測定された2つのグループにマークがついています．"
+" :menuselection:`Merge --> Merge mu(E)` を選んでください．"
+"マージが実行され，グループリストに新しいグループが現れます．"
+" :menuselection:`Group --> Rename current group` を選択するか，"
+":button:`Alt`-:button:`l` と打つ，あるいは，グループリストの項目を :mark:`leftclick,..` "
+"ダブルクリックして，意味のある名前をつけてください．この処理をそれぞれの温度の"
+"データに対して行ってください．"
+
+#: ../../examples/data.rst:333
+msgid "Now you are ready to begin analysis on the iron foil data!"
+msgstr "ついに，鉄箔のデータを解析し始める準備ができました！"
+
+#: ../../examples/data.rst:340
+msgid "Merging the data at each temperature and renaming the merged groups."
+msgstr "各温度で測定されたデータのマージとマージされたグループの名前の変更"
+
+#: ../../examples/data.rst:350
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../examples/data.rst:355
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../examples/data.rst:359
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

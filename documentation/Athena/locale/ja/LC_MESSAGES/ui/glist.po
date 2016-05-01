@@ -1,0 +1,353 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../ui/glist.rst:44
+msgid "Using the group list"
+msgstr "グループリストの使い方"
+
+#: ../../ui/glist.rst:46
+msgid ""
+"The group list is the primary mechanism for accessing and interacting "
+"with your data. As data files are imported in :demeter:`athena`, each "
+"gets an entry in the group list. Data generated during the course of "
+"using :demeter:`athena`, such as copied or merged groups, also get placed"
+" in the group list."
+msgstr ""
+"グループリストは，データにアクセスするための第一の機構です．データファイルは"
+" :demeter:`athena` に読み込まれると，それぞれグループリストの項目になります．"
+"コピーあるいはマージされたグループなど， :demeter:`athena` を使っている間に"
+"生成されたデータもまたグループリストに登録されます．"
+"（訳注: :demeter:`athena` では，ある1つのスペクトルを生データ，抽出された"
+" EXAFS スペクトル等々のデータの集合として扱うため，あるスペクトルのことを"
+" 'Group' と呼びます．他のページで group をデータあるいはファイルなどと"
+"訳しているところがありますが，わかりやすさを重視した場合と表記揺れの両方が"
+"あります．） "
+
+#: ../../ui/glist.rst:52
+msgid ""
+"Each group list entry consists of two parts, the label and the check "
+"button. The label contains text identifying the group. The default is for"
+" the label to be the same as the file name. Clicking with the left mouse "
+"button on a label makes that group the *current* group. The current "
+"group's label is highlighted with a light red color and its parameters "
+"are displayed in the main window. The current group is the one that gets "
+"plotted when the red plotting buttons are pressed."
+msgstr ""
+"それぞれのグループはラベルとチェックボックスからなっており，ラベルは"
+"グループを識別するための文字列を含んでいます．デフォルトで，ファイル名が"
+"ラベルとして利用されます．マウスでラベルを左クリックすると，そのグループが"
+"現在 *選択中* のグループになります．選択中のグループのラベルは表示が"
+"強調され，そのパラメータがメインウィンドウに表示されます．また，"
+"グループリストの下にあるオレンジ色のプロットボタンを押すと，"
+"選択中のグループののグラフが表示されます．"
+
+#: ../../ui/glist.rst:60
+msgid ""
+"The check button is used to mark the group. Marking, explained in detail "
+"`in the next section <../ui/mark.html>`__, is one of the fundamental user"
+" interface features in :demeter:`athena`. Any feature of "
+":demeter:`athena` that involves more than one group uses the mark "
+"buttons."
+msgstr ""
+"チェックボックスを使って，グループにマークをつけることができます．"
+"`次節で <../ui/mark.html>`__ 詳しく説明しますが，マークは :demeter:`athena` に"
+"おいて基本的なインターフェイスの1つです．:demeter:`athena` の様々な機能を，"
+"複数のグループに適用する場合はマークボタンが利用されます．"
+
+#: ../../ui/glist.rst:66
+msgid ""
+"File can be dragged from your computers file manager (e.g. Windows File "
+"Explorer, KDE Dolphin, or GNOME Nautilus) and dropped onto the group "
+"list. These files, which can be `data <../import/columns.html>`__ or "
+"`project <../import/projsel.html>`__ files will be appended to the group "
+"list. You cannot drop folders onto the group list."
+msgstr ""
+"ファイルマネージャ（例：Windows エクスプローラ，KDE Dolphin，GNOME Nautilus）"
+"からグループリストに対して，ファイルをドラッグアンドドロップすることができます．"
+"これらのファイルは，`データ <../import/columns.html>`__ あるいは "
+"`プロジェクト <../import/projsel.html>`__ ファイルのどちらでも構いません．"
+"但し，フォルダをドロップすることはできません．"
+
+#: ../../ui/glist.rst:76
+msgid "Copying groups"
+msgstr "グループのコピー"
+
+#: ../../ui/glist.rst:78
+msgid ""
+"You can copy a group by hitting :button:`Alt`-:button:`y` or by selecting"
+" :menuselection:`Group --> Copy group`. This makes an identical copy of "
+"the current group and places it at the end of the groups list. All "
+"parameters are identical and the data arrays in :demeter:`ifeffit` are "
+"all copied |nd| only the :demeter:`ifeffit` group name in different."
+msgstr ""
+":button:`Alt`-:button:`y` と打ったり，:menuselection:`Group --> Copy group` "
+"を選ぶことでグループをコピーすることができます．これにより，現在選択中の"
+"グループのコピーが作成され，グループリストの一番下に追加されます．"
+"パラメータも完全にコピーされ，:demeter:`ifeffit` のデータ配列もすべてコピーされます．"
+":demeter:`ifeffit` のグループ名（内部的な固有 ID）のみが異なっています．"
+
+#: ../../ui/glist.rst:84
+msgid ""
+"Copying is very useful for examining how changes in parameter values "
+"propagate through the data processing. You can make one or more copies, "
+"change particular data values, and overplot the results."
+msgstr ""
+"コピーは，パラメータ値の変化によって，データ処理がどのような影響を"
+"受けるか確認するために非常に有用です． 1つあるいはたくさんのコピーを"
+"作って，特定のパラメータを変更してから，結果を重ね書きしてみて下さい．"
+
+#: ../../ui/glist.rst:88
+msgid ""
+"The process of comparing parameter values can be automated using the "
+"`copy series tool <../process/series.html>`__."
+msgstr ""
+"パラメータ値を変えて比較する処理は，`copy series tool <../process/series.html>`__ "
+"を使って自動化することができます．"
+
+#: ../../ui/glist.rst:94
+msgid "Reorganizing the group list"
+msgstr "グループリストの再編成"
+
+#: ../../ui/glist.rst:96
+msgid ""
+"When a file is imported into :demeter:`athena`, the name of the file is "
+"used as the label in the group list. That's fine, but you can change the "
+"label by selecting :menuselection:`Group --> Rename current group`, "
+"typing :button:`Alt`-:button:`l`, or double :mark:`leftclick,..` clicking"
+" on an item in the group list. This posts a dialog for entering the new "
+"label for the group, shown here."
+msgstr ""
+":demeter:`athena` でファイルを読み込むと，ファイル名がグループリストにおけるラベルと"
+"して利用されます． :menuselection:`Group --> Rename current group` を"
+"選んだり， :button:`Alt`-:button:`l` とタイプしたり，あるいは"
+"グループリストの項目を :mark:`leftclick,..` ダブル クリックしたりすると，"
+"ラベルを変更することができます．この時，以下のようにグループに対して"
+"新たなラベルを入力するためのダイアログが現れます．"
+
+#: ../../ui/glist.rst:108
+msgid "Renaming a group list entry."
+msgstr "ラベルの変更"
+
+#: ../../ui/glist.rst:110
+msgid ""
+"Hitting :button:`Return` or clicking the :button:`OK,light` button "
+"renames the group, shown here."
+msgstr ""
+":button:`Enter` を押すか，:button:`OK,light` ボタンをクリックすると"
+"ラベルが変更されます．"
+
+#: ../../ui/glist.rst:118
+msgid "After renaming a group list entry."
+msgstr "グループリストの項目の名前を変更後"
+
+#: ../../ui/glist.rst:120
+msgid ""
+"We have `already seen <../bkg/rbkg.html>`__ how groups can be copied. "
+"Making one or more copies is an excellent tool for exploring the effects "
+"of the various parameters in the main window."
+msgstr ""
+"グループのコピーの方法については，`すでに見てきました <../bkg/rbkg.html>`__ ．"
+"いくつかのコピーを作ることは，メインウィンドウにある様々なパラメーターの"
+"影響を調べるための優れた方法です．"
+
+#: ../../ui/glist.rst:124
+msgid ""
+"There are several other useful tools for modifying the contents of the "
+"group list. You can reorder the items in the groups list using "
+":button:`Alt`-:button:`k` or :button:`Alt`-:button:`j` to move the "
+"current group up or down in the list."
+msgstr ""
+"グループリストの内容を編集するために役立つ方法をいくつか紹介します．"
+"グループリスト中の項目を並び替えるには，:button:`Alt`-:button:`k` "
+"あるいは :button:`Alt`-:button:`j` によって，選択中のグループを"
+"リストの上あるいは下に移動することができます．"
+
+#: ../../ui/glist.rst:129
+msgid ""
+"Hitting :button:`Control`-:button:`k` or :button:`Control`-:button:`j` "
+"changes the current group to the one above or below."
+msgstr ""
+":button:`Ctrl`-:button:`k` あるいは :button:`Ctrl`-:button:`j` と打つと，"
+"選択中のグループの一つ上あるいは下のグループが選択されます．"
+
+#: ../../ui/glist.rst:132
+msgid ""
+"As of version 0.9.20, :button:`Control`-drag-and-drop is no longer "
+"available for reorganizing group list items. That feature has been "
+"discontinued in favor of file drag and drop."
+msgstr ""
+"バージョン 0.9.20 より，:button:`Ctrl` キーを押しながら，ドラッグ"
+"アンドドロップする機能は使えなくなりました．これは，ファイルの"
+"ドラックアップドロップ機能を有効にしたためです．"
+
+#: ../../ui/glist.rst:136
+msgid ""
+"Items can be removed from the list. The current group or the marked "
+"groups can be removed from the project by selecting :menuselection:`Group"
+" --> Remove current group` or :menuselection:`Group --> Remove marked "
+"groups`. You can remove all the groups from the list by selecting "
+":menuselection:`File --> Close` or :menuselection:`Group --> Close` or by"
+" hitting :button:`Control`-:button:`w`."
+msgstr ""
+"各項目をリストから削除することもできます． 現在選択中のグループあるいは"
+"マークされたグループは :menuselection:`Group --> Remove current group` "
+"あるいは :menuselection:`Group --> Remove marked groups` を選択することで"
+"削除されます．:menuselection:`File --> Close` あるいは"
+" :menuselection:`Group --> Close` あるいは :button:`Control`-:button:`w` "
+"とタイプするとすべてのグループが削除されます．"
+
+#: ../../ui/glist.rst:146
+msgid "Information about items in the group list"
+msgstr "グループリストの項目に関する情報"
+
+#: ../../ui/glist.rst:148
+msgid ""
+"Selecting :menuselection:`Group --> Show yaml for current group` displays"
+" the dialog shown here."
+msgstr ""
+":menuselection:`Group --> Show yaml for current group` を選択すると，"
+"以下のようなダイアログが現れます．"
+
+#: ../../ui/glist.rst:156
+msgid "The dialog containing information about the data group."
+msgstr "データグループに関する情報を示すダイアログ"
+
+#: ../../ui/glist.rst:158
+msgid ""
+"This presents all of the parameter values of the current group as well as"
+" the contents of the data arrays associated with the group. This way of "
+"presenting the information is, admittedly, rather cryptic. But it is very"
+" useful for developing and debugging the software."
+msgstr ""
+"このダイアログは，選択中のグループのすべてのパラメータ値とグループに"
+"関連づけられたデータ配列の中身を示しています．このように情報を示しても，"
+"暗号のようにわかりにくいことでしょう．しかし，この情報はソフトウェア開発や"
+"デバッグする時にとても役立ちます．"
+
+#: ../../ui/glist.rst:163
+msgid ""
+"If you mistakenly import a data group as the wrong record type, you can "
+"change it by selecting :menuselection:`Group --> Change record type`.  "
+"You can only change between the various record types in energy, though. "
+"If you import a |chi| (k) file as |mu| (E) by accident, you will have to "
+"remove the group and re-import it."
+msgstr ""
+"もし，データを間違ったデータ型として読み込んでしまっても，"
+":menuselection:`Group --> Change record type` からデータ型を変更することが"
+"できます． しかし，これはエネルギーに対するデータ型の間しか変更することが"
+"できません． もし間違って，|chi| (k) ファイルを |mu| (E) として読み込んでしまった"
+"場合は，グループを削除してもう一度読み込む必要があります．"
+
+#: ../../ui/glist.rst:174
+msgid "Change type dialog"
+msgstr "データ型変更ダイアログ"
+
+#: ../../ui/glist.rst:177
+msgid ""
+"there is a label on the main window displaying the data type. You can "
+"toggle between |mu| (E) and XANES data by "
+":button:`Control`-:button:`Alt`-:mark:`leftclick,..` clicking on that "
+"label."
+msgstr ""
+"メインウィンドウにはデータ型が表示されます．"
+"ラベルを :button:`Ctrl`-:button:`Alt`-:mark:`leftclick,..` クリックすると，"
+"|mu| (E) データ型と XANES データ型の間で変更することができます．"
+
+#: ../../ui/glist.rst:185
+msgid "Using the mouse in the group list"
+msgstr "グループリストにおけるマウス操作"
+
+#: ../../ui/glist.rst:187
+msgid ""
+"You can turn on automated replotting when you select a new group by "
+"clicking on it in the group list. This is done by setting "
+":configparam:`Athena,select\\_replot` with the `preferences tool "
+"<../other/prefs.html>`__."
+msgstr ""
+"グループリストの中で新しいグループを選択した際に自動的に再プロット"
+"されるようにすることもできます．これは， `環境設定 <../other/prefs.html>`__ "
+"の :configparam:`Athena,select\\_replot` から設定することができます．"
+
+#: ../../ui/glist.rst:192
+msgid ""
+"If you right click on any item in the group list, a context menu is "
+"posted, as shown below, displaying the :guilabel:`Group` menu."
+msgstr ""
+"リスト中のファイルを右クリックすると，下に示すようなコンテキスト"
+"メニューが表れ，:guilabel:`Group` メニューが表示されます．"
+
+#: ../../ui/glist.rst:201
+msgid ""
+"Clicking the right mouse button on a group list entry pops up this "
+"context menu."
+msgstr ""
+"リスト中の項目を右クリックすると，コンテキストメニューが現れる．"
+
+#: ../../ui/glist.rst:204
+msgid ""
+"As mentioned above, double :mark:`leftclick,..` clicking on a group list "
+"item will post the dialog for renaming that group."
+msgstr ""
+"すでに述べたように，リスト中のグループをダブル :mark:`leftclick,..` "
+"クリックすると，ファイル名の変更ダイアログが現れます． 
+
+#: ../../ui/glist.rst:209
+msgid "Shrinking and expanding the group list"
+msgstr "グループリスト欄の縮小と拡大"
+
+#: ../../ui/glist.rst:211
+msgid ""
+"The last item in the plotting options tabs, labeled :guilabel:`Shrink`, "
+"causes the k-weight buttons and plot options tabs to be hidden, causing "
+"the group list to expand, and allowing the display of more data groups. "
+"When the plot options tabs is shrunk, it is replaced by a button labeled "
+":button:`Restore plot options,light`. Clicking this will return the "
+"k-weight buttons and the group list to their original places and the "
+"group list to its original original size."
+msgstr ""
+"プロットオプションタブの最後の項目は，:guilabel:`Shrink` ボタンです．"
+"このボタンをクリックすると， k-weight ボタンやプロットオプションタブが"
+"隠れ，グループリストが拡大されてより多くのデータを表示することができます．"
+"プロットオプションタブが縮小された状態だと，:button:`Restore plot options,light` "
+"ボタンに置き換えられます．このボタンをクリックすると，k-weight ボタンが"
+"元に戻り，グループリストが元に戻ります．"
+
+#: ../../ui/glist.rst:224
+msgid "Restore the shrunken k-weight buttons and plot options tabs."
+msgstr "縮小された k-weight ボタンやプロットオプションタブを元に戻す"
+
+#: ../../ui/glist.rst:235
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../ui/glist.rst:240
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../ui/glist.rst:244
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

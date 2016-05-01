@@ -1,0 +1,318 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../import/index.rst:43
+msgid "Data import"
+msgstr "データの読み込み "
+
+#: ../../import/index.rst:45
+msgid ""
+":demeter:`athena` is very versatile in how she reads in data files. "
+"Pretty much any data in the form of columns of numbers can be "
+"successfully read. With a few exceptions, :demeter:`athena` relies upon "
+":demeter:`ifeffit`'s ``read_data()`` command to handle the details of "
+"data import. :demeter:`ifeffit` is clever about recognizing which part of"
+" a file is columns of numbers and which part is not. In the following, "
+"I'll explain how the ``read_data()`` command interprets files, explain "
+"the limits on its and :demeter:`athena`'s abilities to interpret a data "
+"file, and discuss the kinds of manipulations of data that can and cannot "
+"be performed by :demeter:`athena` as data are imported."
+msgstr ""
+":demeter:`athena` は様々な方法でデータを読み込むことができます．"
+"数字の列からなるほとんどどんなテキストデータでも読むことができます．"
+"いくつかの例外を除いて， :demeter:`athena` はデータ読み込みの細かな処理を"
+" :demeter:`ifeffit` の ``read_data()`` というコマンドに任せています．"
+" :demeter:`ifeffit` はファイルの中のどの部分が数字の列のデータでどの部分がそうでないかを"
+"認識することができます．以下では， ``read_data()`` コマンドがどのようにファイルを"
+"認識するか，次に，このコマンドおよび :demeter:`athena` のファイル認識機能の制限について"
+"説明します．また，データ読み込みの際に， :demeter:`athena` により実行可能なデータ操作の"
+"種類についても説明します． 
+
+#: ../../import/index.rst:57
+msgid ""
+":demeter:`athena` expects data of one of a few types. Column data in "
+"which the columns represent such things as the energy grid and the "
+"scalars measured during the experiment are the most common sort of data "
+"that most people use import into :demeter:`athena`. :demeter:`athena`'s "
+"column selection dialog is used to convert the raw scalars into |mu| (E) "
+"data. Other common kinds of data files that might be read into "
+":demeter:`athena` are files that contain |mu| (E) or |chi| (k) data in "
+"columns or the output files from :demeter:`feff`, :file:`xmu.dat` and "
+":file:`chi.dat`."
+msgstr ""
+":demeter:`athena` は読み込まれるファイルの形式がいくつかあるうちの1つで"
+"あることを期待しています．"ほとんどの人が :demeter:`athena` に読み込もうとする"
+"データは，エネルギー軸と実験中に測定されたスカラー値の列から成り立っているもの"
+"でしょう．:demeter:`athena` のデータ選択画面は生データを |mu| (E) に変換する"
+"ために使用されます． :demeter:`athena` はこの他にも，列に |mu| (E) あるいは"
+" |chi| (k) データを含んだものや :file:`xmu.dat` あるいは :file:`chi.dat` "
+"といった :demeter:`feff` からの出力ファイルなどを読み込める場合があります． "
+
+#: ../../import/index.rst:67
+msgid ""
+"Here is an example of a data file that will make :demeter:`athena` quite "
+"happy. There are some header lines, followed by a line of dashes, "
+"followed by a line of column labels, followed by lines containing columns"
+" of data."
+msgstr ""
+":demeter:`athena` で読み込むことができるデータの例を以下に示します．"
+"上から順にヘッダー行，ハイフンだけの行，データ列の項目名を含む行，"
+"そしてデータ列を含む行が続いています． "
+
+#: ../../import/index.rst:85
+msgid ""
+"In this example of a well formatted file, the header lines, the line of "
+"dashes, and the column labels line are all preceded by a hash (``#``) "
+"mark. :demeter:`ifeffit` is thus able to recognize these as header lines."
+" Since :demeter:`ifeffit` recognizes them as such, :demeter:`athena` will"
+" store them in the project along with the data. Because there is a line "
+"of dashes and because it is followed immediately by column labels, "
+":demeter:`athena` is able to use these labels in the column selection "
+"dialog. A few other common US keyboard symbols, such as ``%`` or ``\\*``,"
+" will also be understood as marking header lines."
+msgstr ""
+"この完璧に整ったファイルの例では，ヘッダー行，ハイフンの行，そして列の"
+"項目名の行の始めすべてにシャープ(``#``)が付きます．これにより，:demeter:`ifeffit` は"
+"これらをヘッダー行として認識することができます．:demeter:`ifeffit` が"
+"ヘッダー行を認識することで，:demeter:`athena` はデータと一緒にヘッダー行も"
+"プロジェクトの中に取り込みます．ハイフンの行の次にデータ列の項目名があるので，"
+":demeter:`athena` はこれらの項目名をを列選択ダイアログで利用します．"
+"``%`` や ``*`` のようないくつかの他の記号もヘッダー行のマークと見なされます． "
+
+#: ../../import/index.rst:96
+msgid ""
+"The numbers in the columns can be integers, floats (such as ``1.234``, "
+"``-1.234``, .\\ ``1234`` or ``-.1234``), or exponentials (such as "
+"``1.23e45`` or ``-1.23E-45``). Anything interpretable as a number in the "
+"C programming language will be interpretable in this context. The columns"
+" of numbers go to the end of the file. There is no text following the "
+"data."
+msgstr ""
+"列の数値としては整数，小数 (``1.234``, ``-1.234``, .\\ ``1234`` あるいは"
+" ``-.1234``)，指数 (``1.23e45`` あるいは ``-1.23E-45``) を使うことができます．"
+"C 言語で数字として認識できるすべてのものは数字として扱われます．"
+"データ列は最下行まで続きます．その後に続くテキストはありません．"
+
+#: ../../import/index.rst:103
+msgid ""
+"When data is recorded as described above, it will be fully utilized by "
+":demeter:`athena`. The headers will be recorded, the column labels will "
+"be used, the data will be interpreted. :demeter:`athena` can, however, "
+"accommodate significant deviation from the format described above."
+msgstr ""
+"データが上記のような形式で記録されていれば，:demeter:`athena` によって，"
+"ヘッダー，データ列の項目名，およびデータはそれぞれ正しく，記録，表示，"
+"解釈されて読み込まれます．但し，:demeter:`athena` では，上記の形式とは異なる形式の"
+"データを扱うこともできます．"
+
+#: ../../import/index.rst:108
+msgid ""
+"If the header lines are not marked by a # or some other recognizable "
+"marking character, :demeter:`ifeffit` will not be able to recognize "
+"headers or column labels. As long as no text follows the data, the "
+"columns will still be understood as columns of data and the data can be "
+"imported by :demeter:`athena`."
+msgstr ""
+"ヘッダー行の最初に ``#`` や他の記号が付いていない場合，:demeter:`ifeffit` は"
+"ヘッダーやデータ列の項目名を認識できません．但し，データの後にテキストが"
+"ない限り，列はデータの列として認識され，:demeter:`athena` で読み込むことができます． "
+
+#: ../../import/index.rst:114
+msgid ""
+"If the line of dashes is missing, again the headers and column labels "
+"will not be recognized, but the columns of data will be."
+msgstr ""
+"ハイフンの列が無い場合，ヘッダーとデータ列の名称が認識されませんが，データ列は認識されます．"
+
+#: ../../import/index.rst:117
+msgid ""
+"If no headers are in the file, the columns of data will still be "
+"understood as data."
+msgstr ""
+"ファイルにヘッダーが無ければ，データ列は単にデータとして認識されます． "
+
+#: ../../import/index.rst:120
+msgid ""
+":demeter:`athena` expects that the data are recorded as a function of "
+"energy and that one of the columns contains energy values. The assumption"
+" is that the first column is the energy column, but that can be changed "
+"in the column selection dialog. :demeter:`athena` works in eV. If data "
+"are recorded in keV, there is a menu in the column selection dialog that "
+"must be set accordingly."
+msgstr ""
+":demeter:`athena` では，データがエネルギーの関数として記録されており，"
+"列の1つがエネルギー値を含むことを期待しています．基本的には最初の列を"
+"エネルギーの列と見なしますが，列選択ダイアログで変更することもできます．"
+":demeter:`athena` におけるエネルギーの標準の単位は eV です．データが keV で"
+"記録されている場合，列選択ダイアログのメニューの Energy units から適切な"
+"単位を選んで下さい．"
+
+#: ../../import/index.rst:127
+msgid "Here are some operations that can be performed as data is imported."
+msgstr "データ読み込み時に，以下の操作を行うことができます．"
+
+#: ../../import/index.rst:129
+msgid "Data from a multi-element detector can be summed on the fly."
+msgstr "多素子検出器からのデータをその場で合計することができます．"
+
+#: ../../import/index.rst:131
+msgid ""
+"Data from a multi-element detector can be imported such that each "
+"detector channel is imported into its own data group."
+msgstr ""
+"多素子検出器からのデータを検出器の各チャンネルごとの"
+"データグループとして読み込むことができます．"
+
+#: ../../import/index.rst:134
+msgid ""
+"Data can be negated, i.e. multiplied by -1, or multiplied by an arbitrary"
+" constant"
+msgstr ""
+"データは負の値であっても構いません．"
+"すなわち，-1 をかけたり，任意の定数を掛けることができます． "
+
+#: ../../import/index.rst:137
+msgid "A reference channel can be read from the the same file."
+msgstr "参照スペクトルも同じファイルから読み込むことができます．"
+
+#: ../../import/index.rst:139
+msgid ""
+"Data can be preprocessed. That is, data can be truncated, deglitched, "
+"aligned to a standard, and have its parameters constrained to a standard"
+msgstr ""
+"データに対して前処理を行うこともできます．すなわち，データの一部を"
+"切り取ったり，グリッチを除去したり，標準に対して整列させたり，"
+"パラメータを標準に対して束縛することもできます．"
+
+#: ../../import/index.rst:143
+msgid ""
+"Here are some operations that can be handled using `the Plugin "
+"architecture <../other/plugin.html>`__."
+msgstr ""
+"`プラグイン機構 <../other/plugin.html>`__ を使うと，以下の様な操作もできます．"
+
+#: ../../import/index.rst:146
+msgid ""
+"Data can be imported as a function of pixel position on an area or linear"
+" detector."
+msgstr ""
+"データを2次元あるいは1次元検出器のピクセル位置の関数として読み込めます． "
+
+#: ../../import/index.rst:149
+msgid "Conversion from wavelength to energy."
+msgstr "波長からエネルギーへの変換． "
+
+#: ../../import/index.rst:151
+msgid "Conversion from encoder reading or motor steps to energy."
+msgstr "エンコーダの読み値やモーターステップからエネルギーへの変換．"
+
+#: ../../import/index.rst:153
+msgid "Conversion of data in a binary format"
+msgstr "バイナリデータの変換．"
+
+#: ../../import/index.rst:155
+msgid "Dead-time corrections using columns from the data file."
+msgstr "ファイルの測定値を用いた数え落とし補正． "
+
+#: ../../import/index.rst:157
+msgid ""
+"Any math expression more complicated than sums of columns in the "
+"numerator and denominator, e.g. plugins allow you to multiply the I\\ "
+":sub:`f` column by 7 and divide by the sine of the I\\ :sub:`0` column, "
+"if that's what you really want."
+msgstr ""
+"分子，分母におけるデータ列の足し算だけでない，より複雑な数学的処理．"
+"例えば，もし本当に必要ならば I\\ :sub:`f` 列を 7 倍したものを"
+" I\\ :sub:`0` 列を引数とする正弦関数で割るということができる．"
+
+#: ../../import/index.rst:162
+msgid ""
+"If some of the criteria for the data file format are not met, for example"
+" if there is text following the data columns or if you need to perform "
+"one of the operations not yet supported, you will need to process you "
+"data before trying to import into :demeter:`athena`."
+msgstr ""
+"データファイル形式の基準に合っていない場合，例えば，データ列の後に"
+"テキストが続いたり，まだサポートされていない処理を行ったりしたい場合には，"
+" :demeter:`athena` で読み込もうとする前に，何らかの処理が必要になります．"
+
+#: ../../import/index.rst:167
+msgid ""
+"There are examples of data files that :demeter:`athena` will process "
+"before sending off to :demeter:`ifeffit` for import. An example is the "
+"data file format from beamline X10C at NSLS. Files from that beamline "
+"cannot be imported as written by :demeter:`ifeffit`'s ``read_data()`` "
+"command. :demeter:`athena` will recognize such a file and process it as "
+"needed before importing it. This can be done with other beamlines. You "
+"should contact Bruce if you are the beamline scientist or a frequent user"
+" of some beamline which writes data in a way that ``read_data()`` cannot "
+"import."
+msgstr ""
+":demeter:`ifeffit` で読み込みを行う前に，:demeter:`athena` がデータの"
+"加工を行う例を示します．例として挙げるのは，アメリカにある放射光施設 NSLS の"
+"ビームライン X10C でのファイル形式です．このビームラインで得たファイルを"
+" :demeter:`ifeffit` の ``read_data()`` コマンドで読み込むことはできません．"
+" :demeter:`athena` はそのようなファイルでも認識し，読み込む前に必要な"
+"処理を行います．他のビームラインで得られたデータでも同様の処理を行うことが"
+"できます．もし，あなたがビームライン技術者やあるビームラインをよく使う方で，"
+"そのビームラインのデータファイル形式が read_data() で読み込めない場合は，"
+"ぜひ作者の Bruce まで連絡してください．"
+
+#: ../../import/index.rst:177
+msgid ""
+"As a final comment, I would encourage beamline scientists and the authors"
+" of data acquisition software to consider their users when designing data"
+" file formats. While I certainly will not say that beamlines should be "
+"required to accommodate :demeter:`athena` or even that beamline staff "
+"have any obligation to recommend :demeter:`athena` to their users, the "
+"truth is that :demeter:`athena` is widely used in the XAS community.  A "
+"format that serves :demeter:`athena` well is likely a fine format that "
+"can be imported by a very wide variety of XAS software, plotting "
+"software, spreadsheets, and other programs. Your users would be well "
+"served by your adopting it."
+msgstr ""
+"最後になりますが，ビームライン技術者やデータ取得ソフトを作成している方には，"
+"ユーザーのことを考えてデータファイル形式をデザインしていただけるようお願い"
+"したいと思います．もちろん，ビームラインが :demeter:`athena` を利用する必要は"
+"ありませんし，ましてやユーザーに対して :demeter:`athena` をお勧めする必要は"
+"ありませんが， :demeter:`athena` は，XAS コミュニティにおいて，一般的な"
+"ツールになりつつあります．:demeter:`athena` で読み込むことができる形式は，"
+"その他の様々な XAS 用ソフトウェア，グラフソフト，表計算ソフト，その他の"
+"ソフトで読み込むことができます．この形式に従っていただければ，"
+"ユーザーにとってもメリットがあると考えています．"
+
+#: ../../import/index.rst:207
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../import/index.rst:212
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../import/index.rst:216
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../output/report.rst:43
+msgid "Parameter report files"
+msgstr "パラメータ出力ファイル"
+
+#: ../../output/report.rst:46
+msgid ""
+"The final kind of output file is a parameter report.  Many of these take "
+"the form of a file that can be imported into a spreadsheet program.   In "
+"the :guilabel:`Edit` menu, you will find a submenu labeled "
+":guilabel:`Export`, shown below. The various options in that submenu "
+"write out files containing the parameters from the main window."
+msgstr ""
+"最後の種類の出力ファイルはパラメータリポートです．:guilabel:`Edit` メニューには"
+"以下に示すように :guilabel:`Export` というサブメニューがあります．"
+"サブメニューにある様々な選択肢からメインウィンドウにあるパラメータを含む"
+"ファイルを書き出すことができます．"
+
+#: ../../output/report.rst:58
+msgid "Writing a report on data groups."
+msgstr "データグループに関するレポートの出力"
+
+#: ../../output/report.rst:60
+msgid ""
+"The first two options in that submenu write all the parameters to an "
+"Excel file. You can choose to save parameters from all groups or only the"
+" marked groups."
+msgstr ""
+"サブメニューにあるはじめの2つの選択肢は，全てのパラメータを1つの Excel ファイルに"
+"書き込むというものです．全てのデータについて書き込むか，マークのついたグループ"
+"だけにするかを選ぶことができます．"
+
+#: ../../output/report.rst:69
+msgid "An example of the Excel spreadsheet output displayed in Libre Office."
+msgstr "Libre Office で表示された Excel 形式のファイルの例"
+
+#: ../../output/report.rst:71
+msgid ""
+"The final option in that submenu exports a file that can be used by "
+":demeter:`artemis` as an empirical fitting standard.  See the "
+":demeter:`artemis` manual for more information."
+msgstr ""
+"サブメニューの最後の項目では，:demeter:`artemis` で経験的フィッティングの"
+"標準とするためのファイルを出力します．詳しくは，:demeter:`artemis` のマニュアルを見てください．"
+
+#: ../../output/report.rst:83
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../output/report.rst:88
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../output/report.rst:92
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

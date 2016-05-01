@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../params/defaults.rst:43
+msgid "Default parameter values"
+msgstr "デフォルトパラメータの値"
+
+#: ../../params/defaults.rst:45
+msgid ""
+"When data is imported in :demeter:`athena`, all parameters are set to "
+"their default values. For most data, these defaults are reasonable in the"
+" sense that using them will result in a decent first stab at background "
+"removal and Fourier transform. The sequence of choices :demeter:`athena` "
+"makes in setting those defaults is somewhat complicated and highly "
+"configurable. By understanding how the defaults are chosen, you can tune "
+":demeter:`athena` to do a good job processing your more of your data "
+"without your intervention."
+msgstr ""
+":demeter:`athena` にデータが読み込まれると，すべてのパラメータはデフォルト値に"
+"設定されます．多くのデータにおいては，これらのデフォルト値は十分であり，"
+"とりあえずのバックグラウンド除去，フーリエ変換パラメータとして使えます．"
+":demeter:`athena` がデフォルト値の設定する一連の選択はいくらか複雑ですが，"
+"カスタマイズ性の高いものになっています．デフォルト値がどのように"
+"選択されるかを理解すれば，:demeter:`athena` がほとんど自動的にうまくデータを"
+"解析してくれるように変更することもできます．"
+
+#: ../../params/defaults.rst:54
+msgid ""
+"The choices of default values for each parameter is made by walking "
+"through a hierarchy of decisions, each subsequent level overriding the "
+"previous level. The first decision is made by consulting `the program "
+"preferences <../other/prefs.html>`__. The program preferences are read "
+"from two initialization files when :demeter:`athena` starts. The first "
+"initialization file is a system-wide file that always contains "
+":demeter:`athena`'s fresh-out-of-the-box parameter defaults. The second "
+"initialization file is your own personal collection of preferences. These"
+" personal preferences are typically set using the preferences tool, which"
+" is found in :guilabel:`Settings` menu. The values found among the "
+"personal preferences will always override the system-wide set."
+msgstr ""
+"それぞれのパラメータのデフォルト値の決定は，それぞれのアルゴリズムに"
+"よる決定の連鎖で行われます．最初の決定は，プログラムの `環境設定 <../other/prefs.html>`__ "
+"で設定されている項目からなされます．設定項目は :demeter:`athena` が起動した際に，"
+"2つの初期化ファイルから読み込まれます．1つめの初期化ファイルは"
+" :demeter:`athena` をインストールした際のデフォルトパラメータであるシステム全体の"
+"ファイルです．2つめの初期化ファイルはユーザ個別の設定です．これらの"
+"個人設定はたいていの場合，:guilabel:`Settings` メニューにある preference"
+" から設定されます．個人設定中にある値は常にシステム全体のものを上書きします．"
+
+#: ../../params/defaults.rst:67
+msgid ""
+"Many of the parameter defaults which can be set in the preferences tool "
+"have the option of being set to relative values rather than absolute "
+"values. For example, the :configparam:`Fft,kmax` parameter can be set to "
+"a value such as :quoted:`12`. It can also be set to a value like "
+":quoted:`-1`, which tells :demeter:`athena` to select the value 1 "
+"wavenumber from the end of the data as the value for "
+":configparam:`Fft,kmax`. All of the range parameters can be set to values"
+" which are relative to the extent of the actual measured data. These "
+"options are explained in the parameter description in `the preferences "
+"tool <../other/prefs.html>`__."
+msgstr ""
+"プログラムの設定で設定できる多くのパラメータのデフォルト値は，"
+"絶対値だけでなく，相対値でも設定することができます．例えば，"
+":configparam:`Fft,kmax` パラメータは :quoted:`12` といった値に設定することが"
+"でき，あるいは，:quoted:`-1` という風に :demeter:`athena` に対して，:configparam:`Fft,kmax` "
+"の値として、データの末端から 1 波数分手前の値を取るように設定することも"
+"できます．すべての範囲パラメータは，実際に測定されたデータの範囲に対して，"
+"相対的な値として設定することができます．これらの選択肢については，"
+"設定画面のパラメータの項で説明されています．"
+
+#: ../../params/defaults.rst:86
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../params/defaults.rst:91
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../params/defaults.rst:95
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

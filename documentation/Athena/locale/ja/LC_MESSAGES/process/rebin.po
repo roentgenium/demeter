@@ -1,0 +1,141 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../process/rebin.rst:44
+msgid "Rebinning data groups"
+msgstr "データの間引き"
+
+#: ../../process/rebin.rst:46
+msgid ""
+"Some beamlines offer the option of slewing the monochromator continuously"
+" from the beginning of the scan to the end. A typical implementation of "
+"this works by driving the mono at a given speed and reading the "
+"measurement channels continuously. The signal is integrated for bins of "
+"time. After each time interval, the integrated signals are stored in a "
+"buffer. At the end of the scan, the buffer is dumped to disk.  When I was"
+" at my old beamline (`MRCAT, Sector 10 at the APS "
+"<http://mrcat.iit.edu>`__), a typical EXAFS scan measured in this mode "
+"took 3 minutes or less back in those days."
+msgstr ""
+"いくつかのビームラインでは，スキャンのはじめから終わりまで分光器を連続的に"
+"回転するという測定方法を提供しています．この典型的な実装としては，"
+"設定されたスピードで分光器を駆動し，測定チャンネルの値を連続的に読み出すと"
+"いう方法です．信号は決まった時間だけ積算されます．それぞれのインターバルの後で，"
+"積算された信号はバッファに蓄積されます．スキャンの終わりに，バッファの値が"
+"ディスクに読み出されます．私が昔いたビームライン "
+"(`MRCAT, Sector 10 at the APS <http://mrcat.iit.edu>`__) ではこのモードで"
+"測定された典型的な EXAFS のスキャンはおおよそ3分以下の時間を必要とします．"
+
+#: ../../process/rebin.rst:56
+msgid ""
+"The drawback of this measurement mode (other than the generation of tons "
+"of data that needs to be analyzed!) is that the data are vastly over "
+"sampled. The energy grid is typically 0.3 to 0.5 eV. That is fine in the "
+"edge region, but much too fine for the EXAFS region."
+msgstr ""
+"この測定モードの欠点は（解析しなければならないたくさんのデータが生成される"
+"ということを除けば！），広い範囲で測定点が多すぎるということです．"
+"エネルギーグリッドは典型的には 0.3 から 0.5 eV です．これは吸収端の領域では"
+"よいですが，EXAFS領域では多すぎます．"
+
+#: ../../process/rebin.rst:66
+msgid "The rebinning tool."
+msgstr "「再サンプリング」ツール"
+
+#: ../../process/rebin.rst:68
+msgid ""
+"The tool shown above allows you to specify a simple three-region grid. "
+"Typically, the pre-edge region is sparse in energy, the edge region is "
+"fine in energy, and the EXAFS region is uniform in wavenumber. The grid "
+"sizes and the energies of the boundaries are entered into their entry "
+"boxes. You can view the results of the rebinning by pressing the "
+":button:`Plot data and rebinned data,light` button. The :button:`Plot "
+"data and rebinned data in k,light` button displays the two spectra as "
+"|chi| (k) using the background removal parameters of the unbinned data. "
+"Clicking the :button:`Make rebinned data group,light` button performs the"
+" rebinning and makes a new group. This group gets placed in the group "
+"list and can be interacted with just like any other group."
+msgstr ""
+"上に示したツールでは，単純に3つの領域に分けたグリッドを設定することが"
+"できます．典型的には，プレエッジ領域ではエネルギー軸に対して荒く，"
+"吸収端の領域では細かく，そして，EXAFS 領域では波数に対して均一に設定します．"
+"グリッドのサイズとエネルギー範囲の境界値をそれぞれのボックスに入力します．"
+":button:`Plot data and rebinned data,light` ボタンをクリックすることで，"
+"再サンプリングの結果を見ることができます．:button:`Plot data and rebinned data,light` "
+"ボタンをクリックすると，再サンプリング前のバックグラウンド除去パラメータを"
+"用いた最サンプリング前後の |chi| (k) が表示されます．"
+":button:`Make rebinned data group,light` ボタンをクリックすると，"
+"データの間引き（再サンプリング）が行われ，その結果が新しいグループとして"
+"保存されます．このグループはグループリストに配置され，他のグループと"
+"同様に扱うことができます．"
+
+#: ../../process/rebin.rst:81
+msgid ""
+"You can bulk process data by marking a number of groups and clicking the "
+":button:`Rebin marked data and make groups,light` button. This may take a"
+" while, depending on how many groups are being processed."
+msgstr ""
+"一連のデータに対してマークをつけておけば，"
+":button:`Rebin marked data and make groups,light` ボタンをクリックすることで"
+"この処理をまとめて行うことができます．データをいくつ選択したかにも"
+"よりますが，少し時間がかかります．"
+
+#: ../../process/rebin.rst:85
+msgid ""
+"This deglitching algorithm is the same as the one used by `the rebinning "
+"feature <../import/preproc.html#rebinning-quick-scan-data>`__ of the "
+"column selection dialog."
+msgstr ""
+"グリッチ除去アルゴリズムは，列選択ダイアログに出てくる "
+"`データ間引き機能 <../import/preproc.html#rebinning-quick-scan-data>`__ "
+"と同じものです．"
+
+#: ../../process/rebin.rst:94
+msgid "Quick scan data that have been rebinned onto a normal EXAFS energy grid."
+msgstr "通常の EXAFS エネルギーグリッドに再サンプリングされた QXAFS データ"
+
+#: ../../process/rebin.rst:96
+msgid ""
+"This uses a boxcar averaging to put the measured data on the chosen grid."
+" This has the happy effect of cleaning up fairly noisy data, as you can "
+"see in the plot above."
+msgstr ""
+"設定されたエネルギー間隔に対して測定データを内挿する際には，boxcar 平均が"
+"使われます．このため，上図に示すようにかなりノイズの多いデータに対しても"
+"よい効果を及ぼします．"
+
+#: ../../process/rebin.rst:109
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../process/rebin.rst:114
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../process/rebin.rst:118
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

@@ -1,0 +1,188 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../bkg/ednorm.rst:45
+msgid "Energy-dependent normalization"
+msgstr "エネルギーに依存した規格化"
+
+#: ../../bkg/ednorm.rst:47
+msgid ""
+"When measuring fluorescence data at low energy, the data might have an "
+"unusual overall shape as shown in the S K-edge data in the figure below. "
+"This behavior is due to the energy dependence of the signal on the gas-"
+"filled I\\ :sub:`0` chamber."
+msgstr ""
+"低エネルギー領域で蛍光法による測定を行うと，データは下図の S K-edge のデータに"
+"示すように変わった形を示す場合があります．この振る舞いは I\\ :sub:`0` イオンチャンバの"
+"信号のエネルギー依存性によるものです．"
+
+#: ../../bkg/ednorm.rst:52
+msgid ""
+"As the energy of the incident beam increases, the absorption of the "
+"gasses in I\\ :sub:`0` significantly decreases. Since the fluorescence "
+"signal if I\\ :sub:`f`/I\\ :sub:`0`, the |mu| (E) grows with energy. "
+"Since the edge-step normalization of the data is made by dividing out a "
+"constant edge-step value, the energy-dependence of I\\ :sub:`0` results "
+"in a |chi| (k) signal that is somewhat amplified."
+msgstr ""
+"入射 X 線のエネルギーが高くなっていくと，I\\ :sub:`0` のガスによる吸収は"
+"有意に小さくなってきます．蛍光 X 線のシグナルは I\\ :sub:`f`/I\\ :sub:`0` "
+"であるため，エネルギーに対して |mu| (E) が大きくなってきます．"
+"吸収端のジャンプ量を使った規格化では，一定のジャンプ量で割り算して規格化して"
+"しまうため，I\\ :sub:`0` のエネルギー依存性により，|chi| (k) のシグナルが"
+"いくらか増幅されてしまうことになります．"
+
+#: ../../bkg/ednorm.rst:67
+msgid "Sulfur K edge spectrum measured in fluorescence."
+msgstr "蛍光法で測定した S K-edge スペクトル"
+
+#: ../../bkg/ednorm.rst:75
+msgid ""
+"The blue trace is the |chi| (k) data extracted directly from the |mu| (E)"
+" data to the right. The red trace is the same data, but with the energy-"
+"dependent normalization applied."
+msgstr ""
+"青線で示された |chi| (k) データは |mu| (E) から直接抽出されたものです．"
+"赤線で示されたデータは，同じデータをエネルギーに依存した規格化を適用したものです．"
+
+#: ../../bkg/ednorm.rst:84
+msgid ""
+"This amplification effect can be approximately corrected by an energy-"
+"dependent normalization. This is implemented using the pre- and post-edge"
+" lines. A function is computed as the difference between the post-edge "
+"and pre-edge lines. This difference function, which will be positive "
+"definite so long as the pre- and post-edge lines are well-behaved, is "
+"multiplied by |mu| (E) before performing the background removal."
+msgstr ""
+"この増幅効果は，エネルギー依存性の規格化によりほぼ正しく補正することができます．"
+"これは，プレエッジおよびポストエッジの線を使うことで実行されています．"
+"ポストエッジとプレエッジの差を計算し，その正の数を取る差分関数を"
+"バックグラウンド除去を行う前に，|mu| (E) とかけます．"
+
+#: ../../bkg/ednorm.rst:92
+msgid ""
+"The resulting corrected |chi| (k) is shown as the red trace in the right-"
+"hand figure above. The correction is small, but might contribute to the "
+"accuracy of an EXAFS analysis."
+msgstr ""
+"このように補正された |chi| (k) が右図の赤線で示されています．"
+"補正は小さなものですが，EXAFS 解析の精度に影響を与えるかもしれません．"
+
+#: ../../bkg/ednorm.rst:97
+msgid ""
+"This sort of correction is only valid for low-energy EXAFS data measured "
+"in fluorescence. Using this tool incorrectly can damage your |chi| (k) "
+"data in a way that is difficult to understand after the fact.  Also, "
+"using this tool with poorly chosen pre- or post-edge lines will damage "
+"the data. It is up to **you** to be sure those lines are chosen sensibly."
+msgstr ""
+"この種の補正は，低エネルギー領域で蛍光法により測定された EXAFS スペクトルに"
+"のみ適用可能です．この手法を正しく使わないと，|chi| (k) をゆがめてしまい，"
+"解釈が困難になってしまいます．また，この手法を不適切なプレエッジおよび"
+"ポストエッジの線と使うと，やはりデータをゆがめてしまいます．"
+"すなわち，これらが正しく選択できているかどうかは **自己責任** ということです．"
+
+#: ../../bkg/ednorm.rst:104
+msgid ""
+"The control for this energy-dependent normalization is the checkbutton "
+"near the bottom of the background removal section of controls, as seen in"
+" the following screenshot."
+msgstr ""
+"このエネルギー依存規格化は次のスクリーンショットに示すように，バック"
+"グラウンド除去のセクションの下のチェック"ボタンでコントロールすることができます．"
+
+#: ../../bkg/ednorm.rst:113
+msgid ""
+"S K-edge EXAFS data measured in fluorescence. Note that the control for "
+"turning on the energy-dependent normalization is enabled."
+msgstr ""
+"蛍光法で測定した S K-edge スペクトル．エネルギー依存規格化が適用"
+"されていることに注意"
+"
+
+#: ../../bkg/ednorm.rst:116
+msgid ""
+"This control is normally disabled. To enable it, you must toggle on the "
+":configparam:`Athena,show\\_funnorm` `configuration parameter "
+"<../other/prefs.html>`__. If you import a project file which has one or "
+"more groups using the energy-dependent normalization, then the control "
+"will be turned on automatically."
+msgstr ""
+"このチェックボックスは，通常無効化されています．もし，有効化したければ，"
+"`環境設定 <../other/prefs.html>`__ の :configparam:`Athena,show\\_funnorm` "
+"を有効化する必要があります．そうすれば，このチェックボックスは自動的に"
+"有効化されます．"
+
+#: ../../bkg/ednorm.rst:122
+msgid ""
+"Enabling this feature makes project files for both :demeter:`athena` and "
+":demeter:`artemis` incompatible with versions before 0.9.23. If you want "
+"to use this feature and share your project files with others who are "
+"using older version of the software, they will not be able to import your"
+" project files."
+msgstr ""
+"この機能を使うと，バージョン 0.9.23 以前の :demeter:`athena` および"
+" :demeter:`artemis` との互換性がなくなってしまいます．"
+"もし，この機能を使うと，古いバージョンのソフトを使っている人とプロジェクト"
+"ファイルを共有しようとしても，プロジェクトファイルを開くことができません．"
+
+#: ../../bkg/ednorm.rst:128
+msgid ""
+"Another word of caution about using this feature of :demeter:`athena`.  "
+"When you make a plot in energy, the function that gets plotted is |mu| (E) "
+"and it's background, **not** the corrected |mu| (E) and *it's* background.  "
+"However, |chi| (k), |chi| (R), and |chi| (q) are made from the corrected "
+"|mu| (E). It is possible, paticularly for especially noisy data, that the"
+" background removal displayed for the raw |mu| (E) will be substantively "
+"different from the background calculated for the corrected |mu| (E). Thus it "
+"is possible that a plot in energy might look sensible, but the plot in k "
+"will be garbage. Or vice-versa. Again, use this feature of "
+":demeter:`athena` with caution and foreknowledge."
+msgstr ""
+":demeter:`athena` のこの機能を使う場合には，他にも注意点があります．"
+"もし，エネルギーに対してプロットしたとすると，プロットされる関数は，"
+" |mu| (E) とそのバックグラウンド関数であって，補正された |mu| (E) とその"
+"バックグラウンド関数ではありません．しかしながら， |chi| (k), |chi| (R), "
+"そして，|chi| (q) は補正された |mu| (E) によるものです．特にノイズの強い"
+"データについては，生の |mu| (E) に対して表示されるバックグラウンド関数が"
+" |mu| (E) に対して計算されるバックグラウンド関数とは本質的に異なる可能性が"
+"あります．すなわち，エネルギーに対するプロットが有意なものに見えていても，"
+"k についてプロットすると，ゴミに見えることがあります．逆もまた然りです．"
+"繰り返しになりますが，:demeter:`athena` のこの機能を使う場合はよく注意して"
+"ください．"
+
+#: ../../bkg/ednorm.rst:149
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../bkg/ednorm.rst:154
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../bkg/ednorm.rst:158
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

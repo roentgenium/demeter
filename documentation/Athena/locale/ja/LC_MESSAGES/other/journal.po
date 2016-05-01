@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../other/journal.rst:43
+msgid "Project journal"
+msgstr "プロジェクトジャーナル（メモ）"
+
+#: ../../other/journal.rst:46
+msgid ""
+":demeter:`athena` provides a simple yet powerful way of documenting your "
+"work. The project journal tool provides a blank text box in which you can"
+" write whatever you want. The text from this box is saved to `the project"
+" file <../output/project.html>`__. When a project file is imported into "
+":demeter:`athena`, any journal text will be restored to this text box."
+msgstr ""
+":demeter:`athena` はあなたの解析内容にメモを残すための単純ですが強力な方法を"
+"提供しています．プロジェクトのジャーナルツールは何でも書き込むことが"
+"できる空白のテキストボックスを表示します．このボックスのテキストは"
+"プロジェクトファイルに保存されます．プロジェクトファイルを :demeter:`athena` に"
+"読み込むと，ジャーナルのテキストもこのテキストボックスに元通りです．"
+
+#: ../../other/journal.rst:58
+msgid "The journal tool."
+msgstr "ジャーナルツール"
+
+#: ../../other/journal.rst:60
+msgid ""
+"This is a good way to document your progress through a data processing or"
+" analysis chore. It is also useful for documenting the nature of your "
+"samples in a way that stays with the data. Finally, it is a way to "
+"communicate with a collaborator or boss when exchanging data via a "
+"project file."
+msgstr ""
+"データ処理や解析の進捗についてメモを取っておくのによい方法です．"
+"また，試料の詳細についてそのデータと共に記録しておくためにも役立つ"
+"でしょう．あるいは，プロジェクトファイルを通して共同研究者やボスと"
+"データを交換する際にもよいかもしれません．"
+
+#: ../../other/journal.rst:74
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../other/journal.rst:79
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../other/journal.rst:83
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

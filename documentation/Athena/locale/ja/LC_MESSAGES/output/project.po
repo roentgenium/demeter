@@ -1,0 +1,2076 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../output/project.rst:45
+msgid "Project files"
+msgstr "プロジェクトファイル"
+
+#: ../../output/project.rst:47
+msgid ""
+"The most important type of output file is the project file. A project "
+"file contains all of the data you have imported, all of the parameters "
+"associated with each data file, the content of the journal, and several "
+"other collections of important data. All of this gets saved in a single, "
+"easily transportable file."
+msgstr ""
+"出力ファイルのうちで最も重要なのはプロジェクトファイルです．プロジェクト"
+"ファイルは，読み込んだデータ全て，それぞれのデータに関連づけられた全ての"
+"パラメータ，ジャーナルの内容，そしていくつかのその他の重要なデータを含みます．"
+"これらすべては単一の簡単に受け渡しできるファイルに書き込まれます．"
+
+#: ../../output/project.rst:53
+msgid ""
+"The primary purpose of the project file is to save you work. When you "
+"open a saved project file, all of the data and all of their parameters "
+"are imported into :demeter:`athena`, returning :demeter:`athena` to the "
+"state it was in when saved the project file. :demeter:`artemis` "
+"(:demeter:`athena`'s sister program intended for analysis of EXAFS data) "
+"can read these project files. Thus the project file is the best way of "
+"moving your data between the two programs."
+msgstr ""
+"プロジェクトファイルの第一の目的は作業中のデータを保存することです．"
+"保存されたプロジェクトファイルを開くと，すべてのデータとそのパラメータが"
+" :demeter:`athena` に読み込まれ，:demeter:`athena` はそのデータが保存"
+"された際の状態に戻ります．:demeter:`artemis` (EXAFS データ解析を行うための"
+" :demeter:`athena` の姉妹プログラム) はこれらのプロジェクトファイルを"
+"読み込むことができます．よって，プロジェクトファイルは，データを2つの"
+"プログラム間で受け渡すためのベストな方法と言えます．"
+
+#: ../../output/project.rst:61
+msgid ""
+"Even better, the project file is a form of collaboration. The format of "
+"the file is platform independent. A project file written on one computer "
+"can read on another computer, even if those computers use different "
+"operating systems. A project file can be burned to a CD, placed on a web "
+"site, or sent to a collaborator by email."
+msgstr ""
+"さらにすばらしいことに，プロジェクトファイルは共同作業のための形式でも"
+"あります．ファイル形式はプラットフォームから独立しています．ある"
+"コンピュータ上で書き出されたプロジェクトファイルは他のコンピュータでも"
+"読むことでき，例え，これらのコンピュータが別の OS を利用していても問題は"
+"ありません．プロジェクトファイルは CD に書き込んだり，web サイトに置いたり，"
+"共同研究者にメールで送ることもできます．"
+
+#: ../../output/project.rst:67
+msgid ""
+"To save a project file, simply select one of the :guilabel:`File` menu "
+"options highlighted in this figure."
+msgstr ""
+"プロジェクトファイルを保存するには，以下に示すように :guilabel:`File` "
+"メニューの選択肢の1つを選択すればよいだけです．"
+
+#: ../../output/project.rst:75
+msgid "Saving a project file."
+msgstr "プロジェクトファイルの保存"
+
+#: ../../output/project.rst:77
+msgid ""
+"The first two options saves the entire current state of "
+":demeter:`athena`.  If the project has already been saved, the "
+":guilabel:`Save project` option overwrites the previous file with the new"
+" state of your project.  Hitting :button:`Control`-:button:`s` does the "
+"same thing.  Alternately, you can select :guilabel:`Save project as...` "
+"and you will be prompted for a new file name for the project."
+msgstr ""
+"最初の2つの選択肢は，:demeter:`athena` の現在の状態を保存するものです．"
+"プロジェクトがすでに保存されていれば，:guilabel:`Save project` は現在の"
+"状態で以前のファイルを上書きします．:button:`Ctrl`-:button:`s` と打つと"
+"同じ効果があります．もう1つは，:guilabel:`Save project as...` を選択すると，"
+"プロジェクトファイルの新しい保存名を入力するように促されます．"
+
+#: ../../output/project.rst:85
+msgid ""
+"The final option will write only the marked groups to a project file. You"
+" can think of this as a sort of :quoted:`sub-project` file. This is "
+"another of the many ways that the group markings are used by "
+":demeter:`athena`."
+msgstr ""
+"最後の選択肢はマークをつけたグループだけをプロジェクトファイルに保存します．"
+"これは，ある種の :quoted:`sub-project` ファイルと考えることができます．"
+"これも :demeter:`athena` でマークが利用される場合の1つです．"
+
+#: ../../output/project.rst:89
+msgid ""
+"The :button:`Save,light` button at the top of the screen is another way "
+"to save the current project, prompting for a file name if needed. As you "
+"work with :demeter:`athena`.  this button turns increasingly red, "
+"reminding you of the need to save your work early and often."
+msgstr ""
+"スクリーンの上部の :button:`Save,light` ボタンは現在のプロジェクトを保存し，"
+"必要であればファイル名を入れるように促されます．:demeter:`athena` を使って"
+"いると，このボタンは赤色に変わり，保存が必要なことを伝えます．"
+
+#: ../../output/project.rst:95
+msgid ""
+"As with any software, you should save your work early and often. "
+":demeter:`athena` and :demeter:`ifeffit` have their flaws. It would be a "
+"shame to discover one of them after having done a lot of unsaved work."
+msgstr ""
+"どんなソフトウェアであっても，できるだけ頻繁に保存することが重要です．"
+":demeter:`athena` と :demeter:`ifeffit` にも弱点（バグ？）があります．"
+"多くの保存されていない作業を終えた後で，バグの1つを踏んでしまうことは"
+"残念なことです．"
+
+#: ../../output/project.rst:102
+msgid "The nagging button"
+msgstr "さらなるボタン"
+
+#: ../../output/project.rst:104
+msgid ""
+"At the top of the main window is a :button:`Save` button that serves the "
+"same purpose as selecting :menuselection:`File --> Save project`. As you "
+"work with :demeter:`athena`, this button will slowly change color, "
+"becoming a brighter and brighter shade of red.  This is a reminder that "
+"you should save your project file.  Once you save the project, the button"
+" is restored to its original color."
+msgstr ""
+"メインウィンドウの上部には，:button:`Save` ボタンがあり，"
+":menuselection:`File --> Save project` を選択するのと同じ効果があります．"
+":demeter:`athena` を使っていて，このボタンの色が変われば，保存した方が"
+"よいという目安です．プロジェクトを一度保存すると，ボタンは元の色に戻ります．"
+
+#: ../../output/project.rst:111
+msgid ""
+"The pace at which the :button:`Save` button turns red is controlled by "
+"the :configparam:`Athena,save_alert` `configuration parameter "
+"<../other/prefs.html>`__.  Setting this to a smaller number will make the"
+" button turn red faster, larger will make it turn slower.  Setting it to "
+"0 will turn the nagging feature off entirely."
+msgstr ""
+":button:`Save` ボタンの色が変わる頻度は，`環境設定 <../other/prefs.html>`__ "
+" の :configparam:`Athena,save_alert` で変更することができます．"
+"これを小さな値に変えると，ボタンの色が早く変わり，大きくすると，ゆっくり"
+"変わります．0 にすると，このオプションはオフになります．"
+
+#: ../../output/project.rst:119
+msgid "The project file format and compatibility with older versions"
+msgstr "プロジェクトファイル形式と古いバージョンとの互換性"
+
+#: ../../output/project.rst:121
+msgid ""
+"The :demeter:`athena` project file is designed to be quick and easy for "
+":demeter:`athena` to read. Unfortunately, the file format is not "
+"particularly human-friendly.  Most of the lines of the project file are "
+"in the form written out by perl's `Data::Dumper "
+"<http://cpan.uwinnipeg.ca/dist/Data-Dumper>`__ module. This freezes "
+":demeter:`athena`'s internal data structures into perl code.  When the "
+"project file is imported, these lines of perl code are evaluated. (This "
+"evaluation is performed in a `Safe <https://metacpan.org/module/Safe>`__ "
+"compartment, i.e. a memory space with restricted access to perl's system "
+"functionality. This provides a certain level of protection against "
+"project files constructed with malicious intent.)"
+msgstr ""
+":demeter:`athena` プロジェクトファイルは :demeter:`athena` が素早く簡単に"
+"読み込めるように設計された物です．残念ながら，ファイル形式は特に人間に"
+"読みやすいものではありません．プロジェクトファイルの多くの行は，perl "
+"の `Data::Dumper <http://cpan.uwinnipeg.ca/dist/Data-Dumper>`__ モジュールで"
+"書き出された形式です．これは，:demeter:`athena` の内部データ構造を perl の"
+"コードに固めたものです．プロジェクトファイルが読み込まれると，これらの"
+" perl コードが評価されます．（この評価は `Safe <https://metacpan.org/module/Safe>`__ "
+" compartment，すなわち，perl の"
+"機能へのアクセスについては制限されたメモリ空間で行われます．つまり，悪意の"
+"あるコードがプロジェクトファイルに対して，あるレベルの保護を提供します．）"
+
+#: ../../output/project.rst:134
+msgid ""
+"The project file is written using compression in the format of the "
+"popular `gzip <http://www.gzip.org/>`__ program using the highest level "
+"of compression, albeit without the common ``.gz`` file extension. Both "
+":demeter:`athena` and :demeter:`artemis` use these files."
+msgstr ""
+"プロジェクトファイルはポピュラーな `gzip <http://www.gzip.org/>`__ を使って"
+"最高レベルの圧縮率で圧縮されています．但し，一般的な ``.gz`` という拡張子は"
+"使っていません．:demeter:`athena` と :demeter:`artemis` ともにこれらの"
+"ファイルを使います．"
+
+#: ../../output/project.rst:141
+msgid "The new JSON-style project file"
+msgstr ""
+
+#: ../../output/project.rst:143
+msgid ""
+"A new feature in :demeter:`athena` allows one to write project files in "
+"the form of a compressed `JSON <http://www.json.org/>`_ file.  That is, "
+"the data that are compressed can be interpreted by any JSON parser.  "
+"Thus, if you want to use some other language to handle data processed by "
+":demeter:`athena` and you want a good pipeline from :demeter:`athena` "
+"into your code, you could save your project file in the new, JSON format."
+"  See the :configparam:`Athena,project_format` `configuration parameter "
+"<../other/prefs.html>`__."
+msgstr ""
+
+#: ../../output/project.rst:154
+msgid ""
+"Note, however, that this project file format is entirely incompatible "
+"with earlier versions of :demeter:`athena`.  Versions since 0.9.21 will "
+"recognize and read the JSON-style project file regardless of the value of"
+" :configparam:`Athena,project_format`."
+msgstr ""
+
+#: ../../output/project.rst:161
+msgid "Summary"
+msgstr ""
+
+#: ../../output/project.rst:163
+msgid "JSON-style project file is valid JSON, possibly gzipped"
+msgstr ""
+
+#: ../../output/project.rst:165
+msgid "File contains a single dictionary"
+msgstr ""
+
+#: ../../output/project.rst:167
+msgid ""
+"An entry with the key ``_____header1`` contains the string and is in the "
+"first four lines of the file. This is used by :demeter:`Demeter` to "
+"recognize the project file."
+msgstr ""
+
+#: ../../output/project.rst:171
+msgid ""
+"An entry with the key ``_____order`` takes a list of strings as its "
+"value. This is used to presevre the order of presentation of the data "
+"regardless of how a JSON parser orders the keys in the dictionary."
+msgstr ""
+
+#: ../../output/project.rst:176
+msgid ""
+"Data groups use a group name as the key and take a dictionary as the "
+"value. This dictionary contains a key called ``args`` which takes a "
+"dictionary of attributes and values, a key ``x`` called with a vlue of a "
+"list containing the abscissa array, and a key ``y`` called with a value "
+"of a list containing the abscissa array. Other optional arrays are "
+"possible."
+msgstr ""
+
+#: ../../output/project.rst:183
+msgid "Every data group has a unique group name used as its dictionary key."
+msgstr ""
+
+#: ../../output/project.rst:185
+msgid ""
+"The ``args`` dictionary has several required attributes, including "
+"``datatype``, which is used to interpret the content of ``x`` and ``y``."
+msgstr ""
+
+#: ../../output/project.rst:189
+msgid ""
+"Other data processing attributes can be specified in ``args`` or "
+":demeter:`athena` can be relied upon to set sensible defaults."
+msgstr ""
+
+#: ../../output/project.rst:192
+msgid ""
+"A project journal is optionally specified with the key ``_____journal`` "
+"and a list of strings containing the jounral text."
+msgstr ""
+
+#: ../../output/project.rst:196
+msgid "Fields in the JSON file"
+msgstr ""
+
+#: ../../output/project.rst:198
+msgid ""
+"The JSON-style project file is typically saved as a gzipped file with a "
+"``.prj`` extension. :demeter:`athena`/:demeter:`artemis` are able to read"
+" the file gzipped or as plain text. That is, an external application can "
+"save an :demeter:`athena` project file with or without compression."
+msgstr ""
+
+#: ../../output/project.rst:204
+msgid ""
+"The project file is a single serialized dictionary. (I'll use pythonic "
+"language in this document. By dictionary, I mean what another language "
+"might call a hash or an associative array.) Each entry has a key and a "
+"value. The value is typically a dictionary or a list."
+msgstr ""
+
+#: ../../output/project.rst:209
+msgid ""
+"There are several special fields that the JSON-style project file must "
+"contain so that :demeter:`athena` can properly process the file and "
+"preserve the order of display of the data contained in the file."
+msgstr ""
+
+#: ../../output/project.rst:213
+msgid ""
+"Special fields all begin with 5 underscores. That's a bit wacky, but 5 "
+"preceeding underscores is unlikely to carry special meaning in any "
+"programming language, yet underscores are likely to be valid characters "
+"for variable or dictionary key names in most languages."
+msgstr ""
+
+#: ../../output/project.rst:220
+msgid "Headers"
+msgstr ""
+
+#: ../../output/project.rst:222
+msgid ""
+"Standard JSON does not have comments, so special headers are used to "
+"carry material that might have gone into comments."
+msgstr ""
+
+#: ../../output/project.rst:225
+msgid "The first several lines should look something like this"
+msgstr ""
+
+#: ../../output/project.rst:234
+msgid ""
+"The ``_____emacs_mode`` line is a convenience for Bruce. That will cause "
+"the file to display in a helpful way in Emacs, which will help him "
+"troubleshoot problems.  That line is **not required**, but Bruce will be "
+"grateful if you include it."
+msgstr ""
+
+#: ../../output/project.rst:239
+msgid ""
+"The ``_____headerN`` lines identify the file as an :demeter:`athena` "
+"project file, identify the moment of creation, and identify the program "
+"that and computing environment that did the creating."
+msgstr ""
+
+#: ../../output/project.rst:243
+msgid ""
+"The ``_____header1`` line is **required** and it **must** appear in the "
+"first four lines of the file or :demeter:`athena`/:demeter:`artemis` will"
+" not recognize the file as a project file. In fact, :demeter:`demeter` "
+"tries to match this regexp in the first four lines:"
+msgstr ""
+
+#: ../../output/project.rst:253
+msgid ""
+"This regexp is insensitive to the type of quote or the amount of "
+"whitespace. The index N in ``_____headerN`` is not important. But one of "
+"the header fields **must** contain the string ``Athena project file`` and"
+" **must** show up in the first four lines of the file."
+msgstr ""
+
+#: ../../output/project.rst:258
+msgid ""
+"The ``_____header2`` and ``_____header3`` lines are **recommended**, "
+"including them is good form and may help with troubleshooting. It is "
+"**recommended** that ``_____header2`` use an `ISO 8601 "
+"<https://en.wikipedia.org/wiki/ISO_8601#Combined_date_and_time_representations>`_"
+" combined date and time timestamp. It is **recommended** that "
+"``_____header3`` clearly identify the tool that wrote the file. That "
+"said, those two headers are not used in any way by :demeter:`athena` or "
+":demeter:`artemis`."
+msgstr ""
+
+#: ../../output/project.rst:268
+msgid "Other fields"
+msgstr ""
+
+#: ../../output/project.rst:270
+msgid ""
+"There **must** be a field called ``_____order`` which is a list of group "
+"names in the order of display. Because the decoded JSON file is a "
+"dictionary, the order of entries cannot be guaranteed once decoded. The "
+":demeter:`athena` user expects to see the data in the same order when a "
+"project file is re-opened. , then, is used to specify the order."
+msgstr ""
+
+#: ../../output/project.rst:277
+msgid "Here is an example from a project file with two data groups:"
+msgstr ""
+
+#: ../../output/project.rst:283
+msgid ""
+"A field called ``_____journal`` is optional. If provided, it is a list of"
+" strings that together are user-supplied commentary on the project file. "
+"In the context of :demeter:`athena`, this is the content of the `project "
+"journal <../other/journal.html>`__."
+msgstr ""
+
+#: ../../output/project.rst:289
+msgid "Data fields"
+msgstr ""
+
+#: ../../output/project.rst:291
+msgid ""
+"A data field has a key which is used as the :demeter:`Demeter` group "
+"attribute, the :demeter:`ifeffit` group name, and the :demeter:`larch` "
+"group name. In the :demeter:`larch` context, a data group might be "
+"defined like so:"
+msgstr ""
+
+#: ../../output/project.rst:300
+msgid "while in the :demeter:`ifeffit` context"
+msgstr ""
+
+#: ../../output/project.rst:306
+msgid ""
+"In each case, :quoted:`ftaja` is the group name which should be used as "
+"the key for the data field. In :demeter:`Demeter`, :quoted:`ftaja` will "
+"be the return value of"
+msgstr ""
+
+#: ../../output/project.rst:314
+msgid ""
+"Each data field consists of a dictionary of attributes, and 2 or more "
+"lists of numbers representing data arrays associated with the group."
+msgstr ""
+
+#: ../../output/project.rst:318
+msgid "subfield name"
+msgstr ""
+
+#: ../../output/project.rst:318
+msgid "purpose"
+msgstr ""
+
+#: ../../output/project.rst:318
+msgid "required"
+msgstr ""
+
+#: ../../output/project.rst:320
+msgid "args"
+msgstr ""
+
+#: ../../output/project.rst:320
+msgid "attribute dictionary"
+msgstr ""
+
+#: ../../output/project.rst:320 ../../output/project.rst:322
+#: ../../output/project.rst:324
+msgid "yes"
+msgstr ""
+
+#: ../../output/project.rst:322
+msgid "x"
+msgstr ""
+
+#: ../../output/project.rst:322
+msgid "abscissa array (energy or k)"
+msgstr ""
+
+#: ../../output/project.rst:324
+msgid "y"
+msgstr ""
+
+#: ../../output/project.rst:324
+msgid "ordinate array (|mu| (E) or |chi| (k))"
+msgstr ""
+
+#: ../../output/project.rst:326
+msgid "i0"
+msgstr ""
+
+#: ../../output/project.rst:326
+msgid "i0 array"
+msgstr ""
+
+#: ../../output/project.rst:326 ../../output/project.rst:328
+#: ../../output/project.rst:330 ../../output/project.rst:332
+msgid "no"
+msgstr ""
+
+#: ../../output/project.rst:328
+msgid "signal"
+msgstr ""
+
+#: ../../output/project.rst:328
+msgid "signal array"
+msgstr ""
+
+#: ../../output/project.rst:330
+msgid "stddev"
+msgstr ""
+
+#: ../../output/project.rst:330
+msgid "standard deviation array"
+msgstr ""
+
+#: ../../output/project.rst:332
+msgid "xdi"
+msgstr ""
+
+#: ../../output/project.rst:332
+msgid "metadata dictionary"
+msgstr ""
+
+#: ../../output/project.rst:335
+msgid ""
+":demeter:`athena` figures out whether to interpret ``x`` and ``y`` as "
+"energy/|mu| or k/|chi| based on the value of the attribute from the "
+"``args`` dictionary."
+msgstr ""
+
+#: ../../output/project.rst:339
+msgid ""
+"Here's an example of a data field for a group named :quoted:`ftaja`. "
+"(:demeter:`athena` uses, but does not require, random 5-character strings"
+" as group names.)"
+msgstr ""
+
+#: ../../output/project.rst:353
+msgid ""
+"A proper JSON parser is used to read the project file. The content must "
+"be valid JSON, but can be linted in any way. :demeter:`athena` writes the"
+" data subfields as single lines, but that is **not required**."
+msgstr ""
+
+#: ../../output/project.rst:359
+msgid "Attributes"
+msgstr ""
+
+#: ../../output/project.rst:361
+msgid ""
+"The following tables explain all the attributes found in a project file "
+"written by :demeter:`athena`. They are all listed here for the sake of "
+"completeness and to document the contents of an :demeter:`athena`-written"
+" :demeter:`athena` project file."
+msgstr ""
+
+#: ../../output/project.rst:366
+msgid ""
+"Every input parameter has a sensible default, thus any or all of these "
+"can be skipped in a project file written outside of :demeter:`athena`. "
+":demeter:`athena` will do the right thing with any that are missing."
+msgstr ""
+
+#: ../../output/project.rst:371
+msgid ""
+"For example, a project file can have only parameters related to "
+":demeter:`autobk`.  Those will be used by :demeter:`athena` and "
+":demeter:`athena`'s defaults will be used elsewhere."
+msgstr ""
+
+#: ../../output/project.rst:375
+msgid ""
+"Attributes described with things like *output*, *determined from data*, "
+"or *user-supplied* can be ignored by an external application writing a "
+"project file. Those attributes are either evaluated by :demeter:`athena` "
+"during normal operation or can safely be ignored."
+msgstr ""
+
+#: ../../output/project.rst:380
+msgid ""
+"The lexicon of attribute names is open for discussion. The "
+":demeter:`athena` project file is basically a serialization of "
+":demeter:`demeter` Data objects and the keys of the ``args`` dictionary "
+"are the attribute names used by that object."
+msgstr ""
+
+#: ../../output/project.rst:385
+msgid ""
+"The `object system <https://metacpan.org/pod/Moose>`__ used by "
+":demeter:`demeter` has a convenient aliasing system for symbol names. It "
+"will be sufficiently easy for :demeter:`demeter` to be retrofitted to use"
+" a different lexicon."
+msgstr ""
+
+#: ../../output/project.rst:391
+msgid "Essential attributes"
+msgstr ""
+
+#: ../../output/project.rst:393
+msgid ""
+"A data entry in the project file cannot be considered complete without "
+"these attributes included in the ``args`` dictionary."
+msgstr ""
+
+#: ../../output/project.rst:397 ../../output/project.rst:418
+#: ../../output/project.rst:503 ../../output/project.rst:528
+#: ../../output/project.rst:547 ../../output/project.rst:589
+#: ../../output/project.rst:607 ../../output/project.rst:649
+#: ../../output/project.rst:684
+msgid "attribute name"
+msgstr ""
+
+#: ../../output/project.rst:397 ../../output/project.rst:418
+#: ../../output/project.rst:503 ../../output/project.rst:528
+#: ../../output/project.rst:547 ../../output/project.rst:589
+#: ../../output/project.rst:607 ../../output/project.rst:649
+#: ../../output/project.rst:684
+msgid "description"
+msgstr ""
+
+#: ../../output/project.rst:397
+msgid "options"
+msgstr ""
+
+#: ../../output/project.rst:399
+msgid "datatype"
+msgstr ""
+
+#: ../../output/project.rst:399
+msgid "identify the type of data contained in the data entry"
+msgstr ""
+
+#: ../../output/project.rst:399
+msgid "xmu, xanes, chi, xmudat"
+msgstr ""
+
+#: ../../output/project.rst:401
+msgid "group"
+msgstr ""
+
+#: ../../output/project.rst:401
+msgid "string used as the group name"
+msgstr ""
+
+#: ../../output/project.rst:401
+msgid "Athena uses random 5-character strings"
+msgstr ""
+
+#: ../../output/project.rst:403
+msgid "label"
+msgstr ""
+
+#: ../../output/project.rst:403
+msgid "string used as a label, for example in Athena's group list"
+msgstr ""
+
+#: ../../output/project.rst:403
+msgid "default is the file name"
+msgstr ""
+
+#: ../../output/project.rst:405
+msgid "is_nor"
+msgstr ""
+
+#: ../../output/project.rst:405
+msgid "flag indicating |mu| (E) data is already normalized"
+msgstr ""
+
+#: ../../output/project.rst:405 ../../output/project.rst:440
+#: ../../output/project.rst:444 ../../output/project.rst:517
+#: ../../output/project.rst:555 ../../output/project.rst:571
+#: ../../output/project.rst:659 ../../output/project.rst:663
+#: ../../output/project.rst:665 ../../output/project.rst:690
+#: ../../output/project.rst:692 ../../output/project.rst:700
+#: ../../output/project.rst:706 ../../output/project.rst:708
+#: ../../output/project.rst:712 ../../output/project.rst:728
+#: ../../output/project.rst:730 ../../output/project.rst:744
+#: ../../output/project.rst:746 ../../output/project.rst:760
+msgid "false"
+msgstr ""
+
+#: ../../output/project.rst:408
+msgid ""
+"I suppose that ``group`` is not necessary since the same string is used "
+"as the key. Hmmm...."
+msgstr ""
+
+#: ../../output/project.rst:411
+msgid "Note that the ``label`` need not be unique, but the ``name`` **must** be."
+msgstr ""
+
+#: ../../output/project.rst:415
+msgid "Background removal attributes"
+msgstr ""
+
+#: ../../output/project.rst:418 ../../output/project.rst:503
+#: ../../output/project.rst:528 ../../output/project.rst:547
+#: ../../output/project.rst:589 ../../output/project.rst:607
+#: ../../output/project.rst:649 ../../output/project.rst:684
+msgid ":demeter:`Demeter`'s default"
+msgstr ""
+
+#: ../../output/project.rst:420
+msgid "bkg_algorithm"
+msgstr ""
+
+#: ../../output/project.rst:420
+msgid "autobk or cl"
+msgstr ""
+
+#: ../../output/project.rst:420
+msgid "autobk (cl not currently available)"
+msgstr ""
+
+#: ../../output/project.rst:422
+msgid "bkg_cl"
+msgstr ""
+
+#: ../../output/project.rst:422
+msgid "*not currently used*"
+msgstr ""
+
+#: ../../output/project.rst:424
+msgid "bkg_clamp1"
+msgstr ""
+
+#: ../../output/project.rst:424
+msgid "lower clamp value"
+msgstr ""
+
+#: ../../output/project.rst:424 ../../output/project.rst:428
+#: ../../output/project.rst:436 ../../output/project.rst:478
+#: ../../output/project.rst:534 ../../output/project.rst:593
+msgid "0"
+msgstr ""
+
+#: ../../output/project.rst:426
+msgid "bkg_clamp2"
+msgstr ""
+
+#: ../../output/project.rst:426
+msgid "upper clamp value"
+msgstr ""
+
+#: ../../output/project.rst:426
+msgid "24"
+msgstr ""
+
+#: ../../output/project.rst:428
+msgid "bkg_deltaeshift"
+msgstr ""
+
+#: ../../output/project.rst:428
+msgid "uncertainty in fitted energy shift"
+msgstr ""
+
+#: ../../output/project.rst:430
+msgid "bkg_dk"
+msgstr ""
+
+#: ../../output/project.rst:430
+msgid "sill width for autobk Fourier transform"
+msgstr ""
+
+#: ../../output/project.rst:430 ../../output/project.rst:450
+#: ../../output/project.rst:474 ../../output/project.rst:530
+#: ../../output/project.rst:591 ../../output/project.rst:651
+#: ../../output/project.rst:716
+msgid "1"
+msgstr ""
+
+#: ../../output/project.rst:432
+msgid "bkg_e0"
+msgstr ""
+
+#: ../../output/project.rst:432
+msgid "edge position in eV"
+msgstr ""
+
+#: ../../output/project.rst:432 ../../output/project.rst:438
+#: ../../output/project.rst:448 ../../output/project.rst:454
+#: ../../output/project.rst:456 ../../output/project.rst:458
+#: ../../output/project.rst:460 ../../output/project.rst:476
+#: ../../output/project.rst:492 ../../output/project.rst:653
+#: ../../output/project.rst:655 ../../output/project.rst:657
+#: ../../output/project.rst:673 ../../output/project.rst:714
+#: ../../output/project.rst:720 ../../output/project.rst:724
+#: ../../output/project.rst:732 ../../output/project.rst:734
+msgid "*determined from data*"
+msgstr ""
+
+#: ../../output/project.rst:434
+msgid "bkg_e0fraction"
+msgstr ""
+
+#: ../../output/project.rst:434
+msgid "fraction used in Athena's edge fraction algorithm"
+msgstr ""
+
+#: ../../output/project.rst:434 ../../output/project.rst:557
+msgid "0.5"
+msgstr ""
+
+#: ../../output/project.rst:436
+msgid "bkg_eshift"
+msgstr ""
+
+#: ../../output/project.rst:436
+msgid "energy shift for alignment or calibration"
+msgstr ""
+
+#: ../../output/project.rst:438
+msgid "bkg_fittedstep"
+msgstr ""
+
+#: ../../output/project.rst:438
+msgid "determined value for edge step"
+msgstr ""
+
+#: ../../output/project.rst:440
+msgid "bkg_fixstep"
+msgstr ""
+
+#: ../../output/project.rst:440
+msgid "flag to fix edge step to user-supplied value"
+msgstr ""
+
+#: ../../output/project.rst:442
+msgid "bkg_flatten"
+msgstr ""
+
+#: ../../output/project.rst:442
+msgid "flag to plot \"flattened\" data"
+msgstr ""
+
+#: ../../output/project.rst:442 ../../output/project.rst:549
+#: ../../output/project.rst:551 ../../output/project.rst:553
+#: ../../output/project.rst:565 ../../output/project.rst:669
+msgid "true"
+msgstr ""
+
+#: ../../output/project.rst:444
+msgid "bkg_fnorm"
+msgstr ""
+
+#: ../../output/project.rst:444
+msgid "flag to do functional normalization"
+msgstr ""
+
+#: ../../output/project.rst:446
+msgid "bkg_formere0"
+msgstr ""
+
+#: ../../output/project.rst:446
+msgid "saved value of e0 when changing its value"
+msgstr ""
+
+#: ../../output/project.rst:448
+msgid "bkg_int"
+msgstr ""
+
+#: ../../output/project.rst:448
+msgid "intercept of pre-edge line"
+msgstr ""
+
+#: ../../output/project.rst:450
+msgid "bkg_kw"
+msgstr ""
+
+#: ../../output/project.rst:450
+msgid "k-weight used in autobk Fourier transform"
+msgstr ""
+
+#: ../../output/project.rst:452
+msgid "bkg_kwindow"
+msgstr ""
+
+#: ../../output/project.rst:452
+msgid "functional form of window for autobk FT"
+msgstr ""
+
+#: ../../output/project.rst:452 ../../output/project.rst:511
+#: ../../output/project.rst:536
+msgid "hanning"
+msgstr ""
+
+#: ../../output/project.rst:454
+msgid "bkg_nc0"
+msgstr ""
+
+#: ../../output/project.rst:454
+msgid "post-edge polynomial constant parameter"
+msgstr ""
+
+#: ../../output/project.rst:456
+msgid "bkg_nc1"
+msgstr ""
+
+#: ../../output/project.rst:456
+msgid "post-edge polynomial linear parameter"
+msgstr ""
+
+#: ../../output/project.rst:458
+msgid "bkg_nc2"
+msgstr ""
+
+#: ../../output/project.rst:458
+msgid "post-edge polynomial quadratic parameter"
+msgstr ""
+
+#: ../../output/project.rst:460
+msgid "bkg_nc3"
+msgstr ""
+
+#: ../../output/project.rst:460
+msgid "post-edge polynomial quartic parameter"
+msgstr ""
+
+#: ../../output/project.rst:462
+msgid "bkg_nclamp"
+msgstr ""
+
+#: ../../output/project.rst:462
+msgid "number of data points used in clamp"
+msgstr ""
+
+#: ../../output/project.rst:462
+msgid "5"
+msgstr ""
+
+#: ../../output/project.rst:464
+msgid "bkg_nnorm"
+msgstr ""
+
+#: ../../output/project.rst:464
+msgid "normalization order (1,2,3)"
+msgstr ""
+
+#: ../../output/project.rst:464
+msgid "3 (2 for XANES data)"
+msgstr ""
+
+#: ../../output/project.rst:466
+msgid "bkg_nor1"
+msgstr ""
+
+#: ../../output/project.rst:466
+msgid "lower bound of post-edge region"
+msgstr ""
+
+#: ../../output/project.rst:466
+msgid "150 above edge"
+msgstr ""
+
+#: ../../output/project.rst:468
+msgid "bkg_nor2"
+msgstr ""
+
+#: ../../output/project.rst:468
+msgid "upper bound of post-edge region"
+msgstr ""
+
+#: ../../output/project.rst:468
+msgid "100 volts from end of data"
+msgstr ""
+
+#: ../../output/project.rst:470
+msgid "bkg_pre1"
+msgstr ""
+
+#: ../../output/project.rst:470
+msgid "lower bound of pre-edge region"
+msgstr ""
+
+#: ../../output/project.rst:470
+msgid "-150 from edge"
+msgstr ""
+
+#: ../../output/project.rst:472
+msgid "bkg_pre2"
+msgstr ""
+
+#: ../../output/project.rst:472
+msgid "upper bound of pre-edge region"
+msgstr ""
+
+#: ../../output/project.rst:472
+msgid "-30 from edge"
+msgstr ""
+
+#: ../../output/project.rst:474
+msgid "bkg_rbkg"
+msgstr ""
+
+#: ../../output/project.rst:474
+msgid "autobk Rbkg value"
+msgstr ""
+
+#: ../../output/project.rst:476
+msgid "bkg_slope"
+msgstr ""
+
+#: ../../output/project.rst:476
+msgid "slope of pre-edge line"
+msgstr ""
+
+#: ../../output/project.rst:478
+msgid "bkg_spl1"
+msgstr ""
+
+#: ../../output/project.rst:478
+msgid "lower bound of autobk spline in k"
+msgstr ""
+
+#: ../../output/project.rst:480
+msgid "bkg_spl1e"
+msgstr ""
+
+#: ../../output/project.rst:480
+msgid "lower bound of autobk spline in energy"
+msgstr ""
+
+#: ../../output/project.rst:480
+msgid "0 (relative to edge)"
+msgstr ""
+
+#: ../../output/project.rst:482
+msgid "bkg_spl2"
+msgstr ""
+
+#: ../../output/project.rst:482
+msgid "upper bound of autobk spline in k"
+msgstr ""
+
+#: ../../output/project.rst:482 ../../output/project.rst:484
+msgid "end of data"
+msgstr ""
+
+#: ../../output/project.rst:484
+msgid "bkg_spl2e"
+msgstr ""
+
+#: ../../output/project.rst:484
+msgid "upper bound of autobk spline in energy"
+msgstr ""
+
+#: ../../output/project.rst:486
+msgid "bkg_stan"
+msgstr ""
+
+#: ../../output/project.rst:486
+msgid "group used as background removal standard"
+msgstr ""
+
+#: ../../output/project.rst:486 ../../output/project.rst:496
+#: ../../output/project.rst:519
+msgid "none"
+msgstr ""
+
+#: ../../output/project.rst:488
+msgid "bkg_step"
+msgstr ""
+
+#: ../../output/project.rst:488
+msgid "edge step"
+msgstr ""
+
+#: ../../output/project.rst:488
+msgid "*determined from data* or *user-supplied*"
+msgstr ""
+
+#: ../../output/project.rst:490
+msgid "bkg_tiee0"
+msgstr ""
+
+#: ../../output/project.rst:490
+msgid "*unused*"
+msgstr ""
+
+#: ../../output/project.rst:492
+msgid "bkg_z"
+msgstr ""
+
+#: ../../output/project.rst:492
+msgid "1- or 2-letter symbol of absorber"
+msgstr ""
+
+#: ../../output/project.rst:494
+msgid "nknots"
+msgstr ""
+
+#: ../../output/project.rst:494
+msgid "number of knots used in Autobk"
+msgstr ""
+
+#: ../../output/project.rst:494
+msgid "*determined from bkg parameters*"
+msgstr ""
+
+#: ../../output/project.rst:496
+msgid "referencegroup"
+msgstr ""
+
+#: ../../output/project.rst:496
+msgid "group name of group used as background standard"
+msgstr ""
+
+#: ../../output/project.rst:500
+msgid "Forward transform parameters"
+msgstr ""
+
+#: ../../output/project.rst:505
+msgid "fft_edge"
+msgstr ""
+
+#: ../../output/project.rst:505
+msgid "absorption edge of measurement"
+msgstr ""
+
+#: ../../output/project.rst:505
+msgid "determined from data"
+msgstr ""
+
+#: ../../output/project.rst:507
+msgid "fft_kmin"
+msgstr ""
+
+#: ../../output/project.rst:507
+msgid "lower end of trasnform range"
+msgstr ""
+
+#: ../../output/project.rst:507 ../../output/project.rst:532
+msgid "3"
+msgstr ""
+
+#: ../../output/project.rst:509
+msgid "fft_kmax"
+msgstr ""
+
+#: ../../output/project.rst:509
+msgid "upper end of trasnform range"
+msgstr ""
+
+#: ../../output/project.rst:509
+msgid "2 inv Ang from end of data"
+msgstr ""
+
+#: ../../output/project.rst:511
+msgid "fft_kwindow"
+msgstr ""
+
+#: ../../output/project.rst:511 ../../output/project.rst:536
+msgid "functional form of window"
+msgstr ""
+
+#: ../../output/project.rst:513
+msgid "fft_dk"
+msgstr ""
+
+#: ../../output/project.rst:513 ../../output/project.rst:534
+msgid "window sill width"
+msgstr ""
+
+#: ../../output/project.rst:513
+msgid "2"
+msgstr ""
+
+#: ../../output/project.rst:515
+msgid "fft_pctype"
+msgstr ""
+
+#: ../../output/project.rst:515
+msgid "phase correction type ('central' or 'path')"
+msgstr ""
+
+#: ../../output/project.rst:515
+msgid "central"
+msgstr ""
+
+#: ../../output/project.rst:517
+msgid "fft_pc"
+msgstr ""
+
+#: ../../output/project.rst:517
+msgid "flag for phase corrected transform"
+msgstr ""
+
+#: ../../output/project.rst:519
+msgid "fft_pcpathgroup"
+msgstr ""
+
+#: ../../output/project.rst:519
+msgid "path to use for phase corrected transform"
+msgstr ""
+
+#: ../../output/project.rst:521
+msgid "rmax_out"
+msgstr ""
+
+#: ../../output/project.rst:521
+msgid "maximum value of R grid"
+msgstr ""
+
+#: ../../output/project.rst:521
+msgid "10"
+msgstr ""
+
+#: ../../output/project.rst:525
+msgid "Backward transform parameters"
+msgstr ""
+
+#: ../../output/project.rst:530
+msgid "bft_rmin"
+msgstr ""
+
+#: ../../output/project.rst:530
+msgid "lower end of backtransform/fitting range"
+msgstr ""
+
+#: ../../output/project.rst:532
+msgid "bft_rmax"
+msgstr ""
+
+#: ../../output/project.rst:532
+msgid "upper end of backtransform/fitting range"
+msgstr ""
+
+#: ../../output/project.rst:534
+msgid "bft_dr"
+msgstr ""
+
+#: ../../output/project.rst:536
+msgid "bft_rwindow"
+msgstr ""
+
+#: ../../output/project.rst:539 ../../output/project.rst:582
+msgid ""
+"Note that the fitting range in :demeter:`artemis` is the back-transform "
+"range in :demeter:`athena` and uses the same attributes."
+msgstr ""
+
+#: ../../output/project.rst:544
+msgid "Fitting parameters"
+msgstr ""
+
+#: ../../output/project.rst:549
+msgid "fit_k1"
+msgstr ""
+
+#: ../../output/project.rst:549
+msgid "flag to use k=1 weighting in fit"
+msgstr ""
+
+#: ../../output/project.rst:551
+msgid "fit_k2"
+msgstr ""
+
+#: ../../output/project.rst:551
+msgid "flag to use k=2 weighting in fit"
+msgstr ""
+
+#: ../../output/project.rst:553
+msgid "fit_k3"
+msgstr ""
+
+#: ../../output/project.rst:553
+msgid "flag to use k=3 weighting in fit"
+msgstr ""
+
+#: ../../output/project.rst:555
+msgid "fit_karb"
+msgstr ""
+
+#: ../../output/project.rst:555
+msgid "flag to use user-supplied k weighting in fit"
+msgstr ""
+
+#: ../../output/project.rst:557
+msgid "fit_karbvalue"
+msgstr ""
+
+#: ../../output/project.rst:557
+msgid "user-supplied k-weighting"
+msgstr ""
+
+#: ../../output/project.rst:559
+msgid "fit_space"
+msgstr ""
+
+#: ../../output/project.rst:559
+msgid "space in which to evaluate fit (k, R, q)"
+msgstr ""
+
+#: ../../output/project.rst:559
+msgid "R"
+msgstr ""
+
+#: ../../output/project.rst:561
+msgid "fit_epsilon"
+msgstr ""
+
+#: ../../output/project.rst:561
+msgid "measurement uncertainty"
+msgstr ""
+
+#: ../../output/project.rst:561
+msgid "0 (i.e. use :demeter:`Larch`'s estimate)"
+msgstr ""
+
+#: ../../output/project.rst:563
+msgid "fit_cormin"
+msgstr ""
+
+#: ../../output/project.rst:563
+msgid "smallest correlation to report in log file"
+msgstr ""
+
+#: ../../output/project.rst:563
+msgid "0.4"
+msgstr ""
+
+#: ../../output/project.rst:565
+msgid "fit_include"
+msgstr ""
+
+#: ../../output/project.rst:565
+msgid "flag to include this data set in a fit"
+msgstr ""
+
+#: ../../output/project.rst:567
+msgid "fit_data"
+msgstr ""
+
+#: ../../output/project.rst:567
+msgid "data count in a multiple data set fit"
+msgstr ""
+
+#: ../../output/project.rst:567 ../../output/project.rst:579
+msgid "*set at time of fit*"
+msgstr ""
+
+#: ../../output/project.rst:569
+msgid "fit_plotafterfit"
+msgstr ""
+
+#: ../../output/project.rst:569
+msgid "flag for pushing data to Artemis' plot list after fit finishes"
+msgstr ""
+
+#: ../../output/project.rst:569
+msgid "true for first data set in project"
+msgstr ""
+
+#: ../../output/project.rst:571
+msgid "fit_dobkg"
+msgstr ""
+
+#: ../../output/project.rst:571
+msgid "flag for background corefinement"
+msgstr ""
+
+#: ../../output/project.rst:573
+msgid "fit_rfactor1"
+msgstr ""
+
+#: ../../output/project.rst:573
+msgid "R-factor computed with k-weight = 1"
+msgstr ""
+
+#: ../../output/project.rst:573 ../../output/project.rst:575
+#: ../../output/project.rst:577
+msgid "*output*"
+msgstr ""
+
+#: ../../output/project.rst:575
+msgid "fit_rfactor2"
+msgstr ""
+
+#: ../../output/project.rst:575
+msgid "R-factor computed with k-weight = 2"
+msgstr ""
+
+#: ../../output/project.rst:577
+msgid "fit_rfactor3"
+msgstr ""
+
+#: ../../output/project.rst:577
+msgid "R-factor computed with k-weight = 3"
+msgstr ""
+
+#: ../../output/project.rst:579
+msgid "fit_group"
+msgstr ""
+
+#: ../../output/project.rst:579
+msgid "pointer to the fit group that this data is a part of"
+msgstr ""
+
+#: ../../output/project.rst:586
+msgid "Plotting parameters"
+msgstr ""
+
+#: ../../output/project.rst:591
+msgid "plot_scale"
+msgstr ""
+
+#: ../../output/project.rst:591
+msgid "multiplier used when plotting data"
+msgstr ""
+
+#: ../../output/project.rst:593
+msgid "plot_yoffset"
+msgstr ""
+
+#: ../../output/project.rst:593
+msgid "vertical offset used when plotting data"
+msgstr ""
+
+#: ../../output/project.rst:595
+msgid "plotspaces"
+msgstr ""
+
+#: ../../output/project.rst:595
+msgid "string explaining how a data group can be plotted"
+msgstr ""
+
+#: ../../output/project.rst:595
+msgid "*determined from datatype attribute*"
+msgstr ""
+
+#: ../../output/project.rst:599
+msgid "Parameters related to contructing data from column ascii files"
+msgstr ""
+
+#: ../../output/project.rst:601
+msgid ""
+"An external application saving an :demeter:`athena` project file can "
+"probably ignore this group of attributes. In :demeter:`athena`, for a "
+"derived data group (a merge of data, for example) the string attributes "
+"are set to an empty string and the booleans are set to false."
+msgstr ""
+
+#: ../../output/project.rst:609
+msgid "chi_column"
+msgstr ""
+
+#: ../../output/project.rst:609
+msgid "string used to construct k array"
+msgstr ""
+
+#: ../../output/project.rst:609 ../../output/project.rst:611
+#: ../../output/project.rst:613 ../../output/project.rst:615
+#: ../../output/project.rst:619 ../../output/project.rst:621
+#: ../../output/project.rst:623 ../../output/project.rst:625
+#: ../../output/project.rst:627 ../../output/project.rst:629
+#: ../../output/project.rst:631 ../../output/project.rst:633
+#: ../../output/project.rst:637 ../../output/project.rst:639
+msgid "*user-supplied*"
+msgstr ""
+
+#: ../../output/project.rst:611
+msgid "chi_string"
+msgstr ""
+
+#: ../../output/project.rst:611
+msgid "string used to |chi| (k) from columns"
+msgstr ""
+
+#: ../../output/project.rst:613
+msgid "columns"
+msgstr ""
+
+#: ../../output/project.rst:613
+msgid "string of column labels"
+msgstr ""
+
+#: ../../output/project.rst:615
+msgid "denominator"
+msgstr ""
+
+#: ../../output/project.rst:615
+msgid "string used to construct denominator of data"
+msgstr ""
+
+#: ../../output/project.rst:617
+msgid "display"
+msgstr ""
+
+#: ../../output/project.rst:617
+msgid "flag used during Athena data import"
+msgstr ""
+
+#: ../../output/project.rst:617
+msgid "true for first data imported"
+msgstr ""
+
+#: ../../output/project.rst:619
+msgid "energy"
+msgstr ""
+
+#: ../../output/project.rst:619
+msgid "string used to construct energy array"
+msgstr ""
+
+#: ../../output/project.rst:621
+msgid "energy_string"
+msgstr ""
+
+#: ../../output/project.rst:621
+msgid "string used to construct energy from columns"
+msgstr ""
+
+#: ../../output/project.rst:623
+msgid "inv"
+msgstr ""
+
+#: ../../output/project.rst:623
+msgid "flag used to negate signal"
+msgstr ""
+
+#: ../../output/project.rst:625
+msgid "is_kev"
+msgstr ""
+
+#: ../../output/project.rst:625
+msgid "flag indicating energy column was in keV units"
+msgstr ""
+
+#: ../../output/project.rst:627
+msgid "i0_string"
+msgstr ""
+
+#: ../../output/project.rst:627
+msgid "string used to construct I0 from columns"
+msgstr ""
+
+#: ../../output/project.rst:629
+msgid "ln"
+msgstr ""
+
+#: ../../output/project.rst:629
+msgid "flag indicating transmission data"
+msgstr ""
+
+#: ../../output/project.rst:631
+msgid "multiplier"
+msgstr ""
+
+#: ../../output/project.rst:631
+msgid "multiplicative constant"
+msgstr ""
+
+#: ../../output/project.rst:633
+msgid "numerator"
+msgstr ""
+
+#: ../../output/project.rst:633
+msgid "string used to construct numerator of data"
+msgstr ""
+
+#: ../../output/project.rst:635
+msgid "read_asraw"
+msgstr ""
+
+#: ../../output/project.rst:635
+msgid "flag related to use of Ifeffit's read_data()"
+msgstr ""
+
+#: ../../output/project.rst:635
+msgid "false in most cases"
+msgstr ""
+
+#: ../../output/project.rst:637
+msgid "signal_string"
+msgstr ""
+
+#: ../../output/project.rst:637
+msgid "string used to construct signal from columns"
+msgstr ""
+
+#: ../../output/project.rst:639
+msgid "xmu_string"
+msgstr ""
+
+#: ../../output/project.rst:639
+msgid "string used to |mu| (E) from columns"
+msgstr ""
+
+#: ../../output/project.rst:643
+msgid "Other data processing parameters"
+msgstr ""
+
+#: ../../output/project.rst:645
+msgid ""
+"Again, these are all things that an external program is unlikely to need "
+"to specify."
+msgstr ""
+
+#: ../../output/project.rst:651
+msgid "importance"
+msgstr ""
+
+#: ../../output/project.rst:651
+msgid "user-supplied relative merge weight"
+msgstr ""
+
+#: ../../output/project.rst:653
+msgid "epsk"
+msgstr ""
+
+#: ../../output/project.rst:653
+msgid "measurement uncertainty in k"
+msgstr ""
+
+#: ../../output/project.rst:655
+msgid "epsr"
+msgstr ""
+
+#: ../../output/project.rst:655
+msgid "measurement uncertainty in R"
+msgstr ""
+
+#: ../../output/project.rst:657
+msgid "i0_scale"
+msgstr ""
+
+#: ../../output/project.rst:657
+msgid "in a plot of data with i0&signal, this scales i0 to the size of the data"
+msgstr ""
+
+#: ../../output/project.rst:659
+msgid "is_col"
+msgstr ""
+
+#: ../../output/project.rst:659
+msgid "flag indicating data originated as column data"
+msgstr ""
+
+#: ../../output/project.rst:661
+msgid "is_fit"
+msgstr ""
+
+#: ../../output/project.rst:661 ../../output/project.rst:667
+msgid "???"
+msgstr ""
+
+#: ../../output/project.rst:663
+msgid "is_merge"
+msgstr ""
+
+#: ../../output/project.rst:663
+msgid "flag indicating data group was made by merging data"
+msgstr ""
+
+#: ../../output/project.rst:665
+msgid "is_pixel"
+msgstr ""
+
+#: ../../output/project.rst:665
+msgid "flag indicating dispersive XAS data"
+msgstr ""
+
+#: ../../output/project.rst:667
+msgid "is_special"
+msgstr ""
+
+#: ../../output/project.rst:669
+msgid ":strike:`is_xmu`"
+msgstr ""
+
+#: ../../output/project.rst:669
+msgid ""
+"flag indicating |mu| (E) data (**deprecated**, but seen in old project "
+"files)"
+msgstr ""
+
+#: ../../output/project.rst:671
+msgid "rebinned"
+msgstr ""
+
+#: ../../output/project.rst:671
+msgid "flag indicating data group was made by rebinning data"
+msgstr ""
+
+#: ../../output/project.rst:673
+msgid "signal_scale"
+msgstr ""
+
+#: ../../output/project.rst:673
+msgid ""
+"in a plot of data with i0&signal, this scales signal to the size of the "
+"data"
+msgstr ""
+
+#: ../../output/project.rst:677
+msgid "And all the rest"
+msgstr ""
+
+#: ../../output/project.rst:679
+msgid ""
+"Much of this need not be written by an external application.  Some of "
+"this is chaff. I've been working on :demeter:`athena` for a loooong time "
+"now...."
+msgstr ""
+
+#: ../../output/project.rst:686
+msgid "annotation"
+msgstr ""
+
+#: ../../output/project.rst:686
+msgid "inherited attribute not used by Data objects"
+msgstr ""
+
+#: ../../output/project.rst:688
+msgid "beamline"
+msgstr ""
+
+#: ../../output/project.rst:688
+msgid "name of beamline where data was measured (used to autoinsert metadata)"
+msgstr ""
+
+#: ../../output/project.rst:690
+msgid "beamline_identified"
+msgstr ""
+
+#: ../../output/project.rst:690
+msgid "flag stating whether beamline was identified"
+msgstr ""
+
+#: ../../output/project.rst:692
+msgid "collided"
+msgstr ""
+
+#: ../../output/project.rst:692
+msgid "flag set true if a group name collision is identified"
+msgstr ""
+
+#: ../../output/project.rst:694
+msgid "daq"
+msgstr ""
+
+#: ../../output/project.rst:694
+msgid "identifies the data acquisition software, used for automated metadata"
+msgstr ""
+
+#: ../../output/project.rst:696
+msgid "datagroup"
+msgstr ""
+
+#: ../../output/project.rst:696
+msgid "generally the same as group -- serves a real function in Artemis"
+msgstr ""
+
+#: ../../output/project.rst:698
+msgid "file"
+msgstr ""
+
+#: ../../output/project.rst:698
+msgid "fully resolved name of source file for data"
+msgstr ""
+
+#: ../../output/project.rst:700
+msgid "forcekey"
+msgstr ""
+
+#: ../../output/project.rst:700
+msgid "flag used to help select correct string for use in plot legend"
+msgstr ""
+
+#: ../../output/project.rst:702
+msgid "from_athena"
+msgstr ""
+
+#: ../../output/project.rst:702
+msgid "flag stating whether the data group was imported from a project file"
+msgstr ""
+
+#: ../../output/project.rst:702
+msgid "false (set true wehn reading Athena project)"
+msgstr ""
+
+#: ../../output/project.rst:704
+msgid "from_yaml"
+msgstr ""
+
+#: ../../output/project.rst:704
+msgid "flag stating whether the data group was imported from an Artemis project"
+msgstr ""
+
+#: ../../output/project.rst:704
+msgid "false (set true wehn reading Artemis project)"
+msgstr ""
+
+#: ../../output/project.rst:706
+msgid ":strike:`frozen`"
+msgstr ""
+
+#: ../../output/project.rst:706
+msgid "**deprecated**"
+msgstr ""
+
+#: ../../output/project.rst:708
+msgid "generated"
+msgstr ""
+
+#: ../../output/project.rst:708
+msgid "flag set true if the data are generated (e.g. a merged group)"
+msgstr ""
+
+#: ../../output/project.rst:710
+msgid ":strike:`mark`"
+msgstr ""
+
+#: ../../output/project.rst:710
+msgid "*apparently not used for anything*"
+msgstr ""
+
+#: ../../output/project.rst:712
+msgid "marked"
+msgstr ""
+
+#: ../../output/project.rst:712
+msgid "flag stating whether the data group is marked in Athena's group list"
+msgstr ""
+
+#: ../../output/project.rst:714
+msgid "maxk"
+msgstr ""
+
+#: ../../output/project.rst:714
+msgid "end of k range of data"
+msgstr ""
+
+#: ../../output/project.rst:716
+msgid "merge_weight"
+msgstr ""
+
+#: ../../output/project.rst:716
+msgid "weight used for this data group in a merge"
+msgstr ""
+
+#: ../../output/project.rst:718
+msgid "nidp"
+msgstr ""
+
+#: ../../output/project.rst:718
+msgid "number of independent points in the data"
+msgstr ""
+
+#: ../../output/project.rst:718
+msgid "*determined from fft and bft parameters*"
+msgstr ""
+
+#: ../../output/project.rst:720
+msgid "npts"
+msgstr ""
+
+#: ../../output/project.rst:720
+msgid "number of points in data"
+msgstr ""
+
+#: ../../output/project.rst:722
+msgid "plotkey"
+msgstr ""
+
+#: ../../output/project.rst:722
+msgid "string used in plot legend for data group"
+msgstr ""
+
+#: ../../output/project.rst:722
+msgid "*determined on the fly*"
+msgstr ""
+
+#: ../../output/project.rst:724
+msgid "prjrecord"
+msgstr ""
+
+#: ../../output/project.rst:724
+msgid "string identifying filename and record number of data from a project file"
+msgstr ""
+
+#: ../../output/project.rst:726
+msgid "provenance"
+msgstr ""
+
+#: ../../output/project.rst:726
+msgid "a short string explaining where the data group came from"
+msgstr ""
+
+#: ../../output/project.rst:726
+msgid "*set when data is imported*"
+msgstr ""
+
+#: ../../output/project.rst:728
+msgid "quenched"
+msgstr ""
+
+#: ../../output/project.rst:728
+msgid "flag set true if attribute values are to be invarient"
+msgstr ""
+
+#: ../../output/project.rst:730
+msgid "quickmerge"
+msgstr ""
+
+#: ../../output/project.rst:730
+msgid "flag indicating a certain merging algorithm is in process"
+msgstr ""
+
+#: ../../output/project.rst:732
+msgid "recommended_kmax"
+msgstr ""
+
+#: ../../output/project.rst:732
+msgid "Larch's/Ifeffit's best guess of the best kmax value"
+msgstr ""
+
+#: ../../output/project.rst:734
+msgid "recordtype"
+msgstr ""
+
+#: ../../output/project.rst:734
+msgid "string used as a label to explain datattype attribute"
+msgstr ""
+
+#: ../../output/project.rst:736
+msgid "source"
+msgstr ""
+
+#: ../../output/project.rst:736
+msgid "redundant with file (?)"
+msgstr ""
+
+#: ../../output/project.rst:738
+msgid "tag"
+msgstr ""
+
+#: ../../output/project.rst:738
+msgid "usually same as the group attribute"
+msgstr ""
+
+#: ../../output/project.rst:740
+msgid "titles"
+msgstr ""
+
+#: ../../output/project.rst:740
+msgid "list of title lines taken from source file"
+msgstr ""
+
+#: ../../output/project.rst:740
+msgid "empty list"
+msgstr ""
+
+#: ../../output/project.rst:742
+msgid "trouble"
+msgstr ""
+
+#: ../../output/project.rst:742
+msgid "string containing results of Artemis sanity checks on fitting model"
+msgstr ""
+
+#: ../../output/project.rst:742
+msgid "empty string"
+msgstr ""
+
+#: ../../output/project.rst:744
+msgid "tying"
+msgstr ""
+
+#: ../../output/project.rst:744
+msgid ""
+"flag used to avoid infinite recursion when setting e0 of data and "
+"reference"
+msgstr ""
+
+#: ../../output/project.rst:746
+msgid "unreadable"
+msgstr ""
+
+#: ../../output/project.rst:746
+msgid "flag indicating data file could not be read"
+msgstr ""
+
+#: ../../output/project.rst:748
+msgid "update_bft"
+msgstr ""
+
+#: ../../output/project.rst:748
+msgid "flag indicating need to perform back transform"
+msgstr ""
+
+#: ../../output/project.rst:748 ../../output/project.rst:750
+#: ../../output/project.rst:752 ../../output/project.rst:754
+#: ../../output/project.rst:756 ../../output/project.rst:758
+msgid "*as needed*"
+msgstr ""
+
+#: ../../output/project.rst:750
+msgid "update_bkg"
+msgstr ""
+
+#: ../../output/project.rst:750
+msgid "flag indicating need to perform autobk"
+msgstr ""
+
+#: ../../output/project.rst:752
+msgid "update_columns"
+msgstr ""
+
+#: ../../output/project.rst:752
+msgid "flag indicating need to construct data from columns"
+msgstr ""
+
+#: ../../output/project.rst:754
+msgid "update_data"
+msgstr ""
+
+#: ../../output/project.rst:754
+msgid "flag indicating need to read data from file"
+msgstr ""
+
+#: ../../output/project.rst:756
+msgid "update_fft"
+msgstr ""
+
+#: ../../output/project.rst:756
+msgid "flag indicating need to perform forward transform"
+msgstr ""
+
+#: ../../output/project.rst:758
+msgid "update_norm"
+msgstr ""
+
+#: ../../output/project.rst:758
+msgid "flag indicating need to perform normalization"
+msgstr ""
+
+#: ../../output/project.rst:760
+msgid "xdi_willbecloned"
+msgstr ""
+
+#: ../../output/project.rst:760
+msgid "flag used to indicate whether XDI metadata is transfered to derived group"
+msgstr ""
+
+#: ../../output/project.rst:762
+msgid "xdifile"
+msgstr ""
+
+#: ../../output/project.rst:762
+msgid "filename when recognized as an XDI file"
+msgstr ""
+
+#: ../../output/project.rst:764
+msgid "xmax"
+msgstr ""
+
+#: ../../output/project.rst:764 ../../output/project.rst:766
+msgid "used in display of description of data in Athena"
+msgstr ""
+
+#: ../../output/project.rst:764
+msgid "beginning of data range"
+msgstr ""
+
+#: ../../output/project.rst:766
+msgid "xmin"
+msgstr ""
+
+#: ../../output/project.rst:766
+msgid "end of data range"
+msgstr ""
+
+#: ../../output/project.rst:780
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../output/project.rst:785
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../output/project.rst:789
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

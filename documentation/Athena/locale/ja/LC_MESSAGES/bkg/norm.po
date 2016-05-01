@@ -1,0 +1,490 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../bkg/norm.rst:46
+msgid "Normalization"
+msgstr "規格化"
+
+#: ../../bkg/norm.rst:48
+msgid ""
+"Normalization is the process of regularizing your data with respect to "
+"variations in sample preparation, sample thickness, absorber "
+"concentration, detector and amplifier settings, and any other aspects of "
+"the measurement. Normalized data can be directly compared, regardless of "
+"the details of the experiment. Normalization of your data is essential "
+"for comparison to theory. The scale of the |mu| (E) and |chi| (k) spectra"
+" computed by :demeter:`feff` is chosen for comparison to normalized data."
+msgstr ""
+"規格化は，試料調製，試料厚さ，吸収元素の濃度，検出器，アンプ設定やその他の"
+"測定条件についてデータを正規化することです．規格化したデータは，実験条件に"
+"関係なく比較することができます．また，データの規格化は理論と比較するときには"
+"必須です．FEFF で計算した |mu| (E) と |chi| (k) スペクトルのスケールは，"
+"規格化されたデータと比較できるように選ばれています．"
+
+#: ../../bkg/norm.rst:57
+msgid "The relationship between |mu| (E) and |chi| (k) is:"
+msgstr "|mu| (E) と |chi| (k) の関係は，次の通りです: "
+
+#: ../../bkg/norm.rst:59
+msgid "|mu| (E) = |mu|\\ :sub:`0`\\ (E) \\* (1 + |chi| (E))"
+msgstr ""
+
+#: ../../bkg/norm.rst:61
+msgid "which means that"
+msgstr "すなわち，"
+
+#: ../../bkg/norm.rst:63
+msgid "|chi| (E) = (|mu| (E) - |mu|\\ :sub:`0`\\ (E)) / |mu|\\ :sub:`0`\\ (E)"
+msgstr ""
+
+#: ../../bkg/norm.rst:65
+msgid ""
+"The approximation of |mu|\\ :sub:`0`\\ (E) in an experimental spectrum is"
+" a topic `that will be discussed shortly <rbkg.html>`__."
+msgstr ""
+"実験スペクトルにおける |mu|\\ :sub:`0`\\ (E) の近似については，"
+" `後ほど <rbkg.html>`__ 紹介します．"
+
+#: ../../bkg/norm.rst:68
+msgid ""
+"This equation is not, in fact, the equation that is commonly used to "
+"extract |chi| (k) from the measured spectrum. The reason that equation is"
+" problematic is the factor of |mu|\\ :sub:`0`\\ (E) in the denominator. "
+"In practice, one cannot trust the |mu|\\ :sub:`0`\\ (E) to be "
+"sufficiently well behaved that it can be used as a multiplicative factor."
+" An example is shown below."
+msgstr ""
+"この式は，実際には測定されたスペクトルから |chi| (k) を抽出するために"
+"使われる一般的な式ではありません．この式が問題なのは，分母に |mu|\\ "
+":sub:`0`\\ (E) の項があることです．実際には，|mu|\\ :sub:`0`\\ (E) が"
+"かけ算可能な項として存在するとは期待できないからです．"
+"例えば，以下のような場合が考えられます．"
+
+#: ../../bkg/norm.rst:79
+msgid ""
+"|mu| (E) data for gold hydroxide, which crosses the zero axis in the "
+"EXAFS region."
+msgstr "水酸化金の |mu| (E) データ．EXAFS 領域で 0 と交差している"
+
+#: ../../bkg/norm.rst:82
+msgid ""
+"In the case of the gold spectrum, the detector setting were such that the"
+" spectrum crosses the zero-axis. Dividing these spectra by |mu|\\ "
+":sub:`0`\\ (E) would be a disaster as the division would invert the phase"
+" of the extracted |chi| (k) data at the point of the zero-crossing."
+msgstr ""
+"この金のスペクトルの場合，検出器の設定がスペクトルが 0 をまたぐような状態です．"
+"このスペクトルを |mu|\\ :sub:`0`\\ (E) で割ってしまうと，割り算のせいで 0 付近の"
+"点で抽出された |chi| (k) データの位相が反転して，めちゃくちゃになってしまいます．"
+
+#: ../../bkg/norm.rst:88
+msgid ""
+"To address this problem, we typically avoid functional normalization and "
+"instead perform an *edge step normalization*. The formula is"
+msgstr ""
+"この問題を解決するために，典型的にはこのような規格化ではなく，代わりに"
+"吸収端における吸収量の変化に基づく規格化を行います．その式は以下の通りです．"
+
+#: ../../bkg/norm.rst:91
+msgid ""
+"|chi| (E) = (|mu| (E) - |mu|\\ :sub:`0` (E)) / |mu|\\ :sub:`0`\\ (E\\ "
+":sub:`0`)"
+msgstr ""
+
+#: ../../bkg/norm.rst:93
+msgid ""
+"The difference is the term in the denominator. |mu|\\ :sub:`0`\\ (E\\ "
+":sub:`0`) is the value of the background function evaluated at the edge "
+"energy. This addresses the problem of a poorly behaved |mu|\\ :sub:`0` "
+"(E) function, but introduces another issue. Because the true |mu|\\ "
+":sub:`0` (E) function should have some energy dependence, normalizing by "
+"|mu|\\ :sub:`0`\\ (E\\ :sub:`0`) introduces an attenuation into |chi| (k)"
+" that is roughly linear in energy. An attenuation that is linear in "
+"energy is quadratic in wavenumber. Consequently, the edge step "
+"normalization introduces an artificial |sigma|\\ :sup:`2` term to the "
+"|chi| (k) data that adds to whatever thermal and static |sigma|\\ "
+":sup:`2` may exist in the data."
+msgstr ""
+"違いは分母にある項です．|mu|\\ :sub:`0`\\ (E\\ :sub:`0`) は吸収端における"
+"バックグラウンド関数の値です．これにより，好ましくない |mu|\\ :sub:`0`\\ (E)"
+" 関数の問題が解決されますが，別の問題が起きてしまいます．すなわち，真の "
+"|mu|\\ :sub:`0` (E) 関数には多少エネルギー依存性があるので，|mu|\\ :sub:`0`\\ (E\\ :sub:`0`)"
+"で規格化してしまうと，エネルギーに対しておおよそ線形に |chi| (k) が減衰"
+"してしまいます．エネルギーに対して線形なこの減衰は波数の二次式です．従って，"
+"吸収端による規格化は，|chi| (k) について，データに元々存在すると考えられる"
+"熱的あるいは静的な |sigma|\\ :sup:`2` の項の他に，人為的に |sigma|\\ :sup:`2` "
+"の値を増やしてしまうことになります．"
+
+#: ../../bkg/norm.rst:105
+msgid ""
+"This artificial |sigma|\\ :sup:`2` term is typically quite small and "
+"represents a much less severe problem than a misbehaving functional "
+"normalization."
+msgstr ""
+"この人為的な |sigma|\\ :sup:`2` は典型的にはとても小さく，不適切な"
+"規格化をしてしまう場合に比べてほとんど問題になりません．"
+
+#: ../../bkg/norm.rst:112
+msgid "The normalization algorithm"
+msgstr "規格化アルゴリズム"
+
+#: ../../bkg/norm.rst:114
+msgid ""
+"The normalization of a spectrum is controlled by the value of the "
+":procparam:`e0`, :procparam:`pre-edge range`, and "
+":procparam:`normalization range` parameters. These parameters are "
+"highlighted in this screenshot."
+msgstr ""
+"スペクトルの規格化は ":procparam:`e0`, :procparam:`pre-edge range`, "
+"そして ":procparam:`normalization range` パラメータによって制御されます．"
+"下図の赤丸で囲ったところです．"
+
+#: ../../bkg/norm.rst:123
+msgid "Selecting the normalization parameters in :demeter:`athena`."
+msgstr ":demeter:`athena` における規格化パラメータの選択"
+
+#: ../../bkg/norm.rst:125
+msgid ""
+"The :procparam:`pre-edge range` and :procparam:`normalization range` "
+"parameters define two regions of the data |nd| one before the edge and "
+"one after the edge. A line is regressed to the data in the :procparam"
+":`pre-edge range` and a polynomial is regressed to the data in the "
+":procparam:`normalization range`. By default, a three-term (quadratic) "
+"polynomial is used as the post-edge line, but its order can be controlled"
+" using the :procparam:`normalization order` parameter. Note that *all* of"
+" the data in the :procparam:`pre-edge range` and in the "
+":procparam:`normalization range` are used in the regressions, thus the "
+"regressions are relatively insensitive to the exact value of boundaries "
+"of those data ranges."
+msgstr ""
+":procparam:`pre-edge range` と :procparam:`normalization range` "
+"パラメータは，2つの領域，すなわち吸収端前と吸収端後の領域を定義しています．"
+" :procparam:`pre-edge range` のデータに対して直線による回帰式，"
+" :procparam:`normalization range` のデータに対しては多項式による回帰式が"
+"計算されます．デフォルトでは，吸収端後の領域について，三次の多項式が"
+"使われますが，次数は :procparam:`normalization order` パラメータを使って"
+"制御することができます．:procparam:`pre-edge range` あるいは "
+" :procparam:`normalization range` にあるすべてのデータが利用されることに"
+"注意してください．つまり，回帰式はデータ範囲の境界付近の正確な値には"
+"あまり影響を受けません．"
+
+#: ../../bkg/norm.rst:137
+msgid ""
+"The criteria for good pre- and post-edge lines are a bit subjective. It "
+"is very easy to see that the parameters are well chosen for these copper "
+"foil data. Both lines on the left side of this figure obviously pass "
+"through the middle of the data in their respective ranges."
+msgstr ""
+"吸収端前後の線を引く際に「よい」とされる基準はある程度主観的なものです．"
+"以下のような銅箔のデータについてはパラメータが適切に設定されていることが"
+"わかります．左の図では，それぞれの領域について両方の線が明らかにデータの"
+"真ん中を通っています．"
+
+#: ../../bkg/norm.rst:149
+msgid "Cu foil |mu| (E) with pre and post lines."
+msgstr "銅箔 |mu| (E) と吸収端前後の線"
+
+#: ../../bkg/norm.rst:156
+msgid "Normalized |mu| (E) data for a copper foil."
+msgstr "銅箔の規格化された |mu| (E) データ"
+
+#: ../../bkg/norm.rst:162
+msgid ""
+"Data can be plotted with the pre-edge and normalization lines using "
+"controls in the `energy plot tabs <../plot/tabs.html#plotting-in-"
+"energy>`__. It is a very good idea to visually inspect the pre-edge and "
+"normalization lines for at least some of your data to verify that your "
+"choice of normalization parameters is reasonable."
+msgstr ""
+"`エネルギープロットタブ <../plot/tabs.html#plotting-in-"energy>`__ に"
+"あるチェックボックスを使うと，データをプレエッジおよび規格化の線とともに"
+"プロットすることができます．少なくともあなたのデータのうちのいくつかについて，"
+"プレエッジと規格化の線を表示してみることは，規格化パラメータが適切に"
+"選択されているかを確認する上で，とてもよい考えでしょう．"
+
+#: ../../bkg/norm.rst:169
+msgid ""
+"When plotting the pre- and post-edge lines, the positions of the "
+":procparam:`pre-edge range`, and :procparam:`normalization range` "
+"parameters are shown by the little orange markers. (The upper bound of "
+"the :procparam:`normalization range` is off screen in the plot above of "
+"the copper foil.)"
+msgstr ""
+"プレエッジおよびポストエッジの線をプロットすると，:procparam:`pre-edge range` "
+"と :procparam:`normalization range` パラメータの位置が小さなオレンジ色の印で"
+"表示されます．(:procparam:`normalization range` の上限値はグラフの右端から"
+"はみ出ているため、上図の銅箔のグラフでは表示されていません．) "
+
+#: ../../bkg/norm.rst:175
+msgid ""
+"The normalization constant, |mu|\\ :sub:`0`\\ (E\\ :sub:`0`) is evaluated"
+" by extrapolating the pre- and post-edge lines to :procparam:`e0` and "
+"subtracting the e0-crossing of the pre-edge line from the e0-crossing of "
+"the post-edge line. This difference is the value of the :procparam:`edge "
+"step` parameter."
+msgstr ""
+"規格化定数 |mu|\\ :sub:`0`\\ (E\\ :sub:`0`) は :procparam:`e0` に対して，"
+"プレエッジおよびポストエッジの線を外挿することで評価され，ポストエッジと"
+" e0 が交わったところからプレエッジと e0 が交わった値を引いたものです．"
+"この差は :procparam:`edge step` に示されています．"
+
+#: ../../bkg/norm.rst:180
+msgid ""
+"The pre-edge line is extrapolated to all energies in the measurement "
+"range of the data and subtracted from |mu| (E). This has the effect of "
+"putting the pre-edge portion of the data on the y=0 axis. The pre-edge "
+"subtracted data are then divided by |mu|\\ :sub:`0`\\ (E\\ :sub:`0`). The"
+" result is shown on the right side of the figure above."
+msgstr ""
+"プレエッジの線はデータの測定範囲全体に対して外挿され，|mu| (E) から"
+"差し引かれます．このことによって，吸収端前の線を y = 0 に合わせることが"
+"できます．プレエッジが差し引かれたデータは |mu|\\ :sub:`0`\\ (E\\ :sub:`0`)"
+"で割り算され，上図のグラフのようになります．"
+
+#: ../../bkg/norm.rst:186
+msgid ""
+"an option was added to the context menu attached to the :procparam:`edge "
+"step` label for approximating the error bar on the edge step."
+msgstr ""
+":procparam:`edge step` ラベルのコンテキストメニューに吸収端のジャンプの"
+"大きさのエラーバーを見積もるための機能がつきました．"
+
+#: ../../bkg/norm.rst:192
+msgid "The flattening algorithm"
+msgstr "平滑化アルゴリズム"
+
+#: ../../bkg/norm.rst:194
+msgid ""
+"For display of XANES data and certain kinds of analysis of |mu| (E) "
+"spectra, :demeter:`athena` provides an additional bit of sugar. By "
+"default, the *flattened* spectrum is plotted in energy rather than the "
+"normalized spectrum. In the following plot, flattened data are shown "
+"along with a copy of the data that has the flattening turned off."
+msgstr ""
+"XANES のデータやある種の |mu| (E) スペクトルの解析結果を表示するために，"
+":demeter:`athena` では，ちょっとした補助機能を提供しています．デフォルトでは，"
+"単に規格化されたスペクトルではなく， *平滑化された (flattened)* スペクトルが"
+"エネルギーに対してプロットされます．下図に平滑化されたグラフと一緒に"
+"平滑化していないグラフを表示しています．"
+
+#: ../../bkg/norm.rst:205
+msgid "Comparing normalized (red) and flattened (blue) data using a Cu foil."
+msgstr "銅箔での規格化したスペクトル(赤)と平滑化したスペクトル(青)の比較"
+
+#: ../../bkg/norm.rst:207
+msgid ""
+"To display the flattened data, the difference in slope and quadrature "
+"between the pre- and post-edge lines is subtracted from the data, but "
+"only after :procparam:`e0`. This has the effect of pushing the "
+"oscillatory part of the data up to the y=1 line. The flattened |mu| (E) "
+"data thus go from 0 to 1. Note that this is for display and has no impact"
+" whatsoever on the extraction of |chi| (k) from the |mu| (E) spectrum."
+msgstr ""
+"平滑化されたデータを表示するために，:procparam:`e0` より後ろの部分について，"
+"元のデータから吸収端前後の線の傾きと回帰曲線の差を引いています．"
+"このことは，データの振動部分を y = 1 まで押し上げる効果があります．"
+"平滑化された |mu| (E) データは，結果として 0 から 1 にわたることになります．"
+"これは表示上のもので，|mu| (E) から ~|chi| (k) の抽出には影響を与えません．"
+
+#: ../../bkg/norm.rst:214
+msgid ""
+"This is a nice way of displaying XANES data as it removes many "
+"differences in the shape of the post-edge region from the data. Computing"
+" `difference spectra <../analysis/diff.html>`__ or `self absorption "
+"corrections <../process/sa.html>`__, performing `linear combination "
+"fitting <../analysis/lcf.html>`__ or `peak fitting "
+"<../analysis/peak.html>`__, and many other chores often benefit from "
+"using flattened data rather than simply normalized data."
+msgstr ""
+"これは，XANES データを比較する際に，データの吸収端後の領域の違いを"
+"取り除くことができるよい方法です．`差スペクトル <../analysis/diff.html>`__ や"
+" `自己吸収補正 <../process/sa.html>`__ を計算したり，"
+" `線形結合フィッティング <../analysis/lcf.html>`__ や `ピークフィッティング <../analysis/peak.html>`__ "
+"を行う場合，その他の場合にも単に規格化されたデータよりも平滑化されたデータを"
+"使うとよい場合があります．"
+
+#: ../../bkg/norm.rst:222
+msgid ""
+"This idea was swiped from `SixPACK <http://www.sams-"
+"xrays.com/#!sixpack/rovht>`__."
+msgstr ""
+"このアイデアは `SixPACK <http://www.sams-xrays.com/#!sixpack/rovht>`__ から取り入れられました．"
+
+#: ../../bkg/norm.rst:227
+msgid "Getting the post-edge right"
+msgstr "規格化をうまく行う方法"
+
+#: ../../bkg/norm.rst:229
+msgid ""
+"It is important to always take care selecting the post-edge range. "
+"Mistakes made in selecting the :procparam:`normalization range` "
+"parameters can have a profound impact on the extracted |chi| (k) data. "
+"Shown below is an extreme case of a poor choice of "
+":procparam:`normalization range` parameters. In this case, the upper "
+"bound was chosen to be on the high energy side of a subsequent edge in "
+"the spectrum. The resulting :procparam:`edge step` is very wrong and the "
+"flattened data are highly distorted."
+msgstr ""
+"吸収端後の範囲の選び方は重要です．"
+" :procparam:`normalization range` の設定を間違えると，|chi| (k) の抽出に"
+"悪影響を及ぼすかもしれません．下図に， :procparam:`normalization range` "
+"パラメータが極端に不適切な例を示します．この例では，上端にスペクトルに"
+"おいて連続した吸収端の高い側を選んでしまっています．結果的に得られる"
+" :procparam:`edge step` が間違っており，平滑化されたデータはひどくゆがんで"
+"しまっています．"
+
+#: ../../bkg/norm.rst:246
+msgid ""
+"The post-edge line is chosen very poorly for this BaTiO\\ :sub:`3` "
+"spectrum. The upper end of the normalization range is on the other side "
+"of the Ba L\\ :sub:`III` edge."
+msgstr ""
+"normalization range が不適切に選択された BaTiO\\ :sub:`3` のスペクトル．"
+"normalization range の上端が Ba L\\ :sub:`III` 端の側にある．"
+
+#: ../../bkg/norm.rst:255
+msgid ""
+"The poor choice of normalization range for BaTiO\\ :sub:`3` results in "
+"very poorly normalized Ti K edge data."
+msgstr ""
+"BaTiO\\ :sub:`3` の normalization range が不適切だと Ti K-edge の"
+"データがうまく規格化されません．"
+
+#: ../../bkg/norm.rst:262
+msgid ""
+"The previous example is obviously an extreme case, but it illustrates the"
+" need to examine the normalization parameters as you process your data. "
+"In many cases, subtle mistakes in the choice of normalization parameters "
+"can have an impact on how the XANES data are interpreted and in how the "
+"|chi| (k) data are normalized."
+msgstr ""
+"上図は大げさな例ですが，データを処理するときに規格化パラメータをよく確認する"
+"ことが大切であることがわかります．多くの場合，規格化パラメータが少しでも"
+"変化すると，XANES データの解釈や |chi| (k) データの規格化に影響を与えます．"
+
+#: ../../bkg/norm.rst:276
+msgid "One choice of :procparam:`norm1`."
+msgstr ":procparam:`norm1` の選択例"
+
+#: ../../bkg/norm.rst:283
+msgid "Another choice of :procparam:`norm1`."
+msgstr ":procparam:`norm1` の他の選択例"
+
+#: ../../bkg/norm.rst:290
+msgid ""
+"Example of a subtle effect in how the post-edge line is chosen in a "
+"hydrated uranyl species.  This compared the flattened XANES data for "
+"different choices of post-edge line in a hydrated uranyl species."
+msgstr ""
+"水和されたウラン種において，異なる規格化を行ったことによるわずかな影響の例．"
+"ここでは，平滑化された XANES スペクトルを比較のために示している"
+
+#: ../../bkg/norm.rst:299
+msgid ""
+"In this example, the different choice for the lower bound of the "
+"normalization range (42 eV in one case, 125 eV in the other) has an "
+"impact on the flattening of these uranium edge data data, which in turn "
+"may have in impact in the evaluation of average valence in the system.  "
+"The small difference in the :procparam:`edge step` will also slightly "
+"attenuate |chi| (k)."
+msgstr ""
+"この例において，normalization range の下限値として，42 eV を選択するか"
+" 125 eV を選択するかは，これらのウランの吸収端データの平滑化に影響し，"
+"最終的には価数の評価にも影響する可能性があります．:procparam:`edge step` "
+"の小さな違いは |chi| (k) をわずかに減衰させてしまう可能性もあります．"
+
+#: ../../bkg/norm.rst:309
+msgid "Getting the pre-edge right"
+msgstr "プレエッジをうまく引く方法"
+
+#: ../../bkg/norm.rst:311
+msgid ""
+"The choice of the :procparam:`pre-edge range` parameters is similarly "
+"important and also requires visual inspection. A poor choice can result "
+"in an incorrect value of the :procparam:`edge step` and in distortions to"
+" the flattened data. In the following spectrum, we see the presence of a "
+"small yttrium K-edge at 17038 eV which distorts the pre-edge for a "
+"uranium L\\ :sub:`III`-edge spectrum at 17166 eV as shown in the figure "
+"below. In this case the :procparam:`pre-edge range` should be chosen to "
+"be entirely above the yttrium K-edge energy."
+msgstr ""
+":procparam:`pre-edge range` パラメータの選び方も重要で，グラフ化して"
+"確認することをお勧めします．不適当に選んでしまうと， :procparam:`edge step` "
+"の値が正しくなくなり，平滑化されたデータがゆがんでしまいます．下図のスペクトル"
+"では， 17038 eV にある小さなイットリウム K 吸収端の存在が 17166 eV にある"
+"ウランの L\\ :sub:`III` 吸収端をゆがめてしまっている様子がわかります．"
+"この場合，:procparam:`pre-edge range` はイットリウム K 吸収端より大きい値に"
+"するべきでしょう．"
+
+#: ../../bkg/norm.rst:326
+msgid "A sediment sample with both uranium and yttrium."
+msgstr "ウランとイットリウムの混合試料のXAFSスペクトル "
+
+#: ../../bkg/norm.rst:330
+msgid "Measuring and normalizing XANES data"
+msgstr "XANES データの測定と規格化"
+
+#: ../../bkg/norm.rst:332
+msgid ""
+"If time and the demands of the experiment permit, it is always a good "
+"idea to measure significant amounts of the pre- and post-edge regions. "
+"About 150 volts in the pre-edge and at least 300 volts in the post-edge "
+"is a good rule of thumb. With shorter regions, it may be difficult to "
+"find normalization boundaries that provide good normalization lines.  "
+"Without a good normalization, it can be difficult to compare a XANES "
+"measurement quantitatively with other measurements."
+msgstr ""
+"もし時間と実験条件が許せば，吸収端前後の範囲で十分な量のデータを測定するのは"
+"常によいアイデアと言えます．例えば，吸収端前は約 150 eV，吸収端後は 300 eV "
+"以上の範囲で測定することをお勧めします．より短い範囲で測定すると，よい規格化を"
+"行うために十分な規格化範囲をとれないかもしれません．正しく規格化されていないと，"
+"他の XANES 測定結果と定量的な比較をすることは難しくなるでしょう．"
+
+#: ../../bkg/norm.rst:341
+msgid ""
+"Reducing the :procparam:`normalization order` might help in the case of "
+"limited post-edge range. When measuring XANES spectra in a step scan, it "
+"is often a good idea to add several widely spaced steps to the end of a "
+"scan to extend the :procparam:`normalization range` without adding "
+"excessive time to scan."
+msgstr ""
+"吸収端後の範囲が小さいときは， :procparam:`normalization order` を"
+"小さくすると良いかもしれません．ステップスキャンで XANES 測定をするときは，"
+"測定の終わりに，広い点間隔のデータを測定すると，測定時間を増やさずに"
+" :procparam:`normalization range` を広く取ることができます．"
+
+#: ../../bkg/norm.rst:356
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../bkg/norm.rst:361
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../bkg/norm.rst:365
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

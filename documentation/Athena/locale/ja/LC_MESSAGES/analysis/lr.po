@@ -1,0 +1,211 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Athena package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Athena 0.9.24\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-27 20:35+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../analysis/lr.rst:45
+msgid "Log-ratio/phase-difference analysis"
+msgstr "対数比/位相差分析"
+
+#: ../../analysis/lr.rst:48
+msgid ""
+"Log-ratio/phase-difference analysis is a purely empirical technique that "
+"can be used to determine changes in the distribution parameters of the "
+"first coordination shell for certain kinds of data. This technique is "
+"most useful for data with a well-separated first coordination shell, i.e."
+" one for which data from higher coordination shells is spectrally "
+"isolated from the first shell. An excellent example of a situation where "
+"this analysis would be useful would be a temperature series. In that "
+"case, log-ratio analysis can be used to measure the variation in "
+"|sigma|\\ :sup:`2` as a function of temperature and phase difference "
+"analysis can be used to measure variation in bond length."
+msgstr ""
+"対数比/位相差解析は純粋に経験的な手法であり，ある種のデータの第一配位圏の"
+"パラメータの変化を決定するために使われることがあります．この手法は"
+"よく分離された第一配位圏，すなわち，第二配位圏以降が第一配位圏より"
+"スペクトルとして十分離れているデータである場合に有用です．この解析が"
+"有用でありうる状況のすばらしい例としては，温度変化が考えられます．"
+"この場合，対数比解析は，温度の関数としての |sigma|\\ :sup:`2` の変化を"
+"求めたり，位相差解析は結合長の変化を求めるために使われたりします．"
+
+#: ../../analysis/lr.rst:60
+msgid ""
+"The approach of log-ratio/phase-difference analysis is to compare unknown"
+" data to a well known standard. The standard might be a room temperature "
+"measurement in the case of a temperature series. Or it might be a well "
+"ordered oxide for comparison with more disordered oxide forms. In any "
+"case, the analysis returns the differences between the standard and the "
+"unknown of the various cumulants of the distribution of atoms in the "
+"first shell."
+msgstr ""
+"対数比/位相差解析のアプローチは未知のデータを十分既知の標準と比較すると"
+"いうものです．温度変化の場合，例えば標準スペクトルとして，室温で測定された"
+"ものが考えられます．より構造的に乱雑さが大きな酸化物と比較する場合には，"
+"よく秩序だった酸化物かもしれません． どの場合についても，この解析は"
+"標準物質と未知物質の第一配位圏における原子のばらつきを様々なキュムラントの"
+"差として返すだけです．"
+
+#: ../../analysis/lr.rst:68
+msgid ""
+"The analysis is performed by first by Fourier filtering both the data and"
+" unknown to spectrally isolate the signal from the first coordination "
+"shell. Then polynomials are fitted to the log of the ratio of the "
+"amplitudes of the |chi| (q) functions and to the difference of the phases of "
+"the |chi| (q) function."
+msgstr ""
+"解析はまずフーリエフィルターを両方のデータに対して適用し，第一配位圏の信号を"
+"スペクトル的に分離します．そして多項式を使って |chi| (q) 関数の強度比の対数"
+"あるいは，|chi| (q) 関数の位相の差分に対してフィッティングを行います．"
+
+#: ../../analysis/lr.rst:79
+msgid "These are fit using the cumulant expansion:"
+msgstr "これらはキュムラント展開を使ったフィッティングです．"
+
+#: ../../analysis/lr.rst:87
+msgid ""
+"The standard is selected from the menu at the top of this tool. The "
+"unknown is the current group, i.e. the one highlighted in the group list."
+msgstr ""
+"標準スペクトルはこのツールの上にあるメニューから選択することができます．"
+"未知試料は現在選択されているグループ，すなわちグループリストで"
+"強調されているものです．"
+
+#: ../../analysis/lr.rst:91
+msgid ""
+"There are some other caveats along with the fact that this technique "
+"requires a spectrally isolated first shell."
+msgstr ""
+"また，この手法はスペクトル的に分離された第一配位圏を必要とするため，"
+"いくつか注意すべき点があります．"
+
+#: ../../analysis/lr.rst:94
+msgid ""
+"A perfectly ordered coordination shell is not necessary, but the "
+"distribution of atoms in the first shell must be well described by an "
+"expansion in a small number of cumulants. Thus, this technique may be "
+"inappropriate for highly disordered materials."
+msgstr ""
+"完全に秩序だった配位圏は必須ではありませんが，第一配位圏の原子の"
+"ばらつきはいくつかのキュムラントによってうまく記述される必要があります．"
+"よって，この手法は構造的な乱雑さの大きい試料に対しては不適当です．"
+
+#: ../../analysis/lr.rst:99
+msgid ""
+"Although this analysis is often referred to in the literature as "
+":quoted:`model independent analysis`, that is as much a shortcoming as an"
+" advantage. The technique can be used to measure changes in structural "
+"cumulants, but cannot be used to measure absolute values of those "
+"cumulants."
+msgstr ""
+"この解析はしばしば文献の中で :quoted:`モデルによらない分析手法` として"
+"言及される場合がありますが，利点を強調しすぎています．この手法は構造に"
+"由来するキュムラントの変化を解析するのに使うことができますが，それぞれの"
+"キュムラントの絶対値を得ることはできません．"
+
+#: ../../analysis/lr.rst:105
+msgid ""
+"This analysis cannot be performed on higher coordination shells except in"
+" the vary rare case of a second shell which is spectrally isolated both "
+"from the first shell and from all higher shells."
+msgstr ""
+"この解析を第二配位圏以降に利用するには，第二配位圏が第一配位圏とも，"
+"第二配位圏より遠いところともスペクトル的に分離されているという極めて"
+"まれな条件が必要です．"
+
+#: ../../analysis/lr.rst:109
+msgid ""
+"The presence of spectral weight from any higher shell or from any "
+"multiple scattering paths will add considerable systematic uncertainty to"
+" this analysis."
+msgstr ""
+"より遠い配位圏あるいは多重散乱によって，解析対象の配位圏に影響がある場合は，"
+"解析結果に対して系統的な不確実性が含まれてしまいます．"
+
+#: ../../analysis/lr.rst:113
+msgid ""
+"When you select :guilabel:`Log-Ratio` from the main menu, the main window"
+" is replaced with the log-ratio/phase-difference tool, shown below."
+msgstr ""
+"メインメニューから :guilabel:`Log-Ratio` を選択すると，メインウィンドウは"
+"以下のような対数比/位相差ツールに置き換えられます．"
+
+#: ../../analysis/lr.rst:122
+msgid "The log-ratio/phase-difference tool."
+msgstr "log-ratio/phase-difference ツール"
+
+#: ../../analysis/lr.rst:124
+msgid ""
+"Once you select Fourier transform parameters and ranges for use in the "
+"analysis, you can click the :button:`Fit,light` button to perform the "
+"fit. The fit to the log-ratio of the amplitudes is plotted when the fit "
+"is over. The buttons can be used to plot either the fit to the log-ratio "
+"of amplitudes or the fit to the phase difference. The fits use all "
+"cumulants up to the fourth. Depending on your data quality, choice of "
+"Fourier transform ranges can be important and quite sensitive. You can "
+"save the log-ratio and phase-difference data along with the fits to a "
+"file by clicking the :button:`Save ratio data and fit,light` button."
+msgstr ""
+"解析に使うフーリエ変換パラメータと範囲を選択し，:button:`Fit,light` "
+"ボタンをクリックすることでフィッティングが実行されます．強度の対数比に"
+"対するフィッティング結果は，フィッティングが終わるとプロットされます．"
+"ボタンは強度の対数比に対するフィッティングだけでなく位相差に対する"
+"フィッティングをプロットするためにつかうこともできます．フィッティングに"
+"おいては最大で4次のキュムラントまで利用します．データの質に応じて，"
+"フーリエ変換範囲の選択することが重要で結果に大きな影響を与える場合が"
+"あります．:button:`Save ratio data and fit,light` ボタンをクリックする"
+"ことで，対数比および位相差のデータをフィッティング結果と共に保存する
+"ことができます．"
+
+#: ../../analysis/lr.rst:144
+msgid "The results of the log-ratio fit to the Cu metal."
+msgstr "金属銅における対数比フィッティングの結果"
+
+#: ../../analysis/lr.rst:153
+msgid "The results of the phase-difference fit to the Cu metal."
+msgstr "金属銅における位相差フィッティングの結果"
+
+#: ../../analysis/lr.rst:159
+msgid ""
+"The three plot buttons behave just like the purple plot buttons would "
+"behave were only the standard and unknown marked."
+msgstr ""
+"3つのプロットボタンはちょうど紫色のプロットボタンと同じように働き，"
+"標準とマークのついた未知物質についてのみ働きます．"
+
+#: ../../analysis/lr.rst:162
+msgid "My favorite explanation of this analysis method is"
+msgstr "この手法に関するお勧めの解説は以下のものです．"
+
+#: ../../analysis/lr.rst:176
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../analysis/lr.rst:181
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../analysis/lr.rst:185
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+
