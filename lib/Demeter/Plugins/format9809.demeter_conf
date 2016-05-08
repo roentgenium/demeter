@@ -1,0 +1,22 @@
+section=format9809
+section_description
+  These variables determine the column selection for the Format9809 plugin.
+
+variable=detector
+type=string
+default=ssd
+description
+  The multielement detector.
+
+variable=shapingtime
+type=real
+default=0.25
+description
+  The deadtime for multielment detector.
+
+variable=unified
+type=boolean
+default=false
+description
+  Use unified deadtime parameters for multielment detector.
+
