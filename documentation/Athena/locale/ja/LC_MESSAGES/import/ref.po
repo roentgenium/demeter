@@ -139,7 +139,7 @@ msgid ""
 msgstr ""
 "時々，このように2つのデータグループを関連付けた方がよいことがあります．"
 "これは，関連付けたい2つのデータグループにマークを付けてから，"
-" :menuselection:`Group --> Tie "reference channel` を選択することでできます．"
+" :menuselection:`Group --> Tie reference channel` を選択することでできます．"
 
 #: ../../import/ref.rst
 msgid "Todo"
