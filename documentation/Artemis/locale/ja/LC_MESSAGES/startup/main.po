@@ -1,0 +1,614 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Artemis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Artemis 0.9.25\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-14 22:07+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../startup/main.rst:43
+msgid "The main window"
+msgstr ""
+
+#: ../../startup/main.rst:45
+msgid ""
+"The main window provides an overview of the state of :demeter:`artemis` "
+"as well as of your current fitting project. This window is divided into 7"
+" areas."
+msgstr ""
+
+#: ../../startup/main.rst:54
+msgid "The main window."
+msgstr ""
+
+#: ../../startup/main.rst:57
+msgid "At the top is a menu bar. We will examine the contents of each menu below."
+msgstr ""
+
+#: ../../startup/main.rst:60
+msgid ""
+"At the bottom is the status bar. This area is used to convey messages to "
+"you during the course of operating the program."
+msgstr ""
+
+#: ../../startup/main.rst:63
+msgid ""
+"On the left is a stack of buttons used to show and hide various parts of "
+":demeter:`artemis`. Each of these will be described in detail later in "
+"the document."
+msgstr ""
+
+#: ../../startup/main.rst:67
+msgid ""
+"To the right is the listing of data groups. The :button:`Add,light` "
+"button is used to import a new data set into :demeter:`artemis`. As data "
+"are imported, they will listed as a stack of buttons below the "
+":button:`Add,light` button."
+msgstr ""
+
+#: ../../startup/main.rst:72
+msgid ""
+"Next comes the listing of :demeter:`feff` calculations. The "
+":button:`Add,light` button is used to import new structural data set into"
+" :demeter:`artemis`. This may be input data for :demeter:`feff`, an "
+":file:`atoms.inp` file, or a CIF file containing crystal structure data. "
+"As :demeter:`feff` calculations are started, they will listed as a stack "
+"of buttons below the :button:`Add,light` button."
+msgstr ""
+
+#: ../../startup/main.rst:79
+msgid ""
+"The wide area to the right of the :demeter:`feff` calculations contains "
+"several controls for the current fitting project. The :guilabel:`Name` "
+"and :guilabel:`Description` boxes are used to describe the current state "
+"of your fitting project. The name should be a concise description of the "
+"current fit and is used as a label identifying a specific fit. The "
+"description is a lengthier, free-form bit of text describing the current "
+"fit in more detail. This text will be written to log files. "
+":demeter:`artemis` does a decent job of automatically generating text for"
+" both of these boxes, but providing your own text will help you to "
+"document the progression of your fitting project. This section also has "
+"controls for selecting the space in which your fit is evaluated and for "
+"saving a project file in a single click."
+msgstr ""
+
+#: ../../startup/main.rst:93
+msgid ""
+"On the far right is the :button:`Fit,light` button. As you might imagine,"
+" this button is clicked to initiate a fit. The color of this button will "
+"change to provide a `heuristic evaluation <../fit/happiness.html>`__ of "
+"the quality of each fit. Below the :button:`Fit,light` button is "
+":button:`Show log,light` button, used to show or hide a window containing"
+" the results from the most recent fit."
+msgstr ""
+
+#: ../../startup/main.rst:103
+msgid "File drag and drop"
+msgstr ""
+
+#: ../../startup/main.rst:105
+msgid ""
+"The data set and :demeter:`feff` calculation area on the main window, "
+"areas 4 and 5 above, are drop targets for files dragged from your "
+"computer's file manager."
+msgstr ""
+
+#: ../../startup/main.rst:109
+msgid ""
+"You can drop :demeter:`athena` project files (:file:`.prj`) onto the data"
+" set area. To import data from some other source, you are required to use"
+" the :guilabel:`File` menu."
+msgstr ""
+
+#: ../../startup/main.rst:113
+msgid ""
+"You can drop CIF, :demeter:`atoms` input, or :demeter:`feff` input files "
+"onto the :demeter:`feff` calculation area."
+msgstr ""
+
+#: ../../startup/main.rst:116
+msgid ""
+"You can drop an :demeter:`artemis` project file (:file:`.fpj`) onto "
+"either of the data set and :demeter:`feff` calculation areas. To import "
+"old-style artemis project files or :demeter:`demeter` serializations, you"
+" are required to use the :file:`File` menu."
+msgstr ""
+
+#: ../../startup/main.rst:121
+msgid ""
+"You can only drag and drop one file at a time. If you try to drag more "
+"than one of any file type, a warning will be issued in the status bar and"
+" no import will happen. Similarly, you may not drop a folder."
+msgstr ""
+
+#: ../../startup/main.rst:127
+msgid "The File menu"
+msgstr ""
+
+#: ../../startup/main.rst:129
+msgid ""
+"Clicking on :guilabel:`File` displays this menu, which is mostly used for"
+" various kinds of input and output. Note that some menu items that have "
+"keyboard shortcuts attached and that these shortcuts are shown in the "
+"menu."
+msgstr ""
+
+#: ../../startup/main.rst:140
+msgid "The :guilabel:`File` menu."
+msgstr ""
+
+#: ../../startup/main.rst:142
+msgid ""
+"The first option is used to import any kind of data into "
+":demeter:`artemis`, including :demeter:`artemis` or :demeter:`athena` "
+"project files, ASCII files containing |chi| (k) data, :demeter:`feff` or "
+":demeter:`atoms` input files, CIF files, or a few other things. "
+":demeter:`artemis` is usually good about properly identifying the type of"
+" input file and doing the right thing with it. In the rare situation "
+"where this doesn't work, try the :guilabel:`import` submenu."
+msgstr ""
+
+#: ../../startup/main.rst:150
+msgid ""
+"The second option provides a submenu of recently imported files broken "
+"down by file type, including :demeter:`artemis` projects, "
+":demeter:`athena` projects, structure data for :demeter:`atoms` or "
+":demeter:`feff`, and a couple of other more obscure file types."
+msgstr ""
+
+#: ../../startup/main.rst:155
+msgid ""
+"The next three items are used to save :demeter:`artemis` project files. "
+":guilabel:`Save project` saves the current state of the project to its "
+"current, prompting for a name if it does not yet have one. "
+":guilabel:`Save project as` will prompt for the name to which to save the"
+" current state of the project. :guilabel:`Save current fit` will save a "
+"project file containing only the current fit, without any of the history."
+" These project files are the sort that can be dragged from your "
+"computer's file manager onto the data or :demeter:`feff` list."
+msgstr ""
+
+#: ../../startup/main.rst:165
+msgid ""
+"The :guilabel:`import` submenu is used to specify the file type to "
+"import.  Typically, this is not necessary and is only provided for the "
+"rare situation when :demeter:`artemis` fails to recognize one of its "
+"standard input data types."
+msgstr ""
+
+#: ../../startup/main.rst:170
+msgid ""
+"The :guilabel:`export` submenu is used to generate files in the format of"
+" an :demeter:`ifeffit` script or a perl script using :demeter:`demeter`. "
+"These files attempt to capture the current state of your fitting project."
+" It is unlikely that the output of either of these export options will be"
+" immediately useful without some editing. The purpose of these export "
+"options is to allow you to use :demeter:`artemis` to develop a fitting "
+"model, then use the exported file in some other way, for instance as part"
+" of a script for automated batch processing."
+msgstr ""
+
+#: ../../startup/main.rst:180
+msgid ""
+"The next menu item displays a window used to set `program preferences. "
+"<../prefs.html>`__"
+msgstr ""
+
+#: ../../startup/main.rst:183
+msgid ""
+"Finally, there are menu items for closing the current fitting project and"
+" for exiting the program. Each of these will prompt you to save your "
+"fitting option if you have not recently done so."
+msgstr ""
+
+#: ../../startup/main.rst:189
+msgid "The Monitor menu"
+msgstr ""
+
+#: ../../startup/main.rst:191
+msgid ""
+"This menu provides several options for monitoring the state of "
+":demeter:`artemis`, :demeter:`ifeffit`, and the plotting backend (usually"
+" :program:`Gnuplot`)."
+msgstr ""
+
+#: ../../startup/main.rst:201
+msgid "The :guilabel:`Monitor` menu."
+msgstr ""
+
+#: ../../startup/main.rst:203
+msgid ""
+"The command buffer contains a record of every data processing command "
+"sent to :demeter:`ifeffit` or :demeter:`larch` and every plotting command"
+" sent to the plotting backend. Bruce uses these buffers to debug the "
+"prgram as he implements new features. You may want to use these buffers "
+"to learn the details of interacting directly with :demeter:`ifeffit`, "
+":demeter:`larch`, or the plotting backend."
+msgstr ""
+
+#: ../../startup/main.rst:211
+msgid ""
+"The `status bar buffer <../monitor.html#the-status-buffer>`_ contains a "
+"record of nearly every message sent the status bar in the main window as "
+"well as those messages displayed in the status bars of other windows in "
+":demeter:`artemis`. All messages are time stamped."
+msgstr ""
+
+#: ../../startup/main.rst:216
+msgid ""
+"The :guilabel:`Show Ifeffit` menu will cause :demeter:`ifeffit` to "
+"display detailed information in the command buffer about the internal "
+"state of different kind of data. This is another thing Bruce uses to "
+"debug program issues."
+msgstr ""
+
+#: ../../startup/main.rst:221
+msgid ""
+"The :guilabel:`Debug options` menu contains several items used to display"
+" technical information about the current state of :demeter:`artemis`. "
+"Again, this is a tool Bruce uses when developing the program. After "
+"reporting a bug to the :demeter:`ifeffit` mailing list, Bruce may ask for"
+" information obtained using these menu items. This submenu is only "
+"displayed if the :configparam:`Artemis,debug_menus` configuration "
+"parameter is set to a true value."
+msgstr ""
+
+#: ../../startup/main.rst:230
+msgid ""
+":guilabel:`Show Ifeffit's memory use` item displays a crude, somewhat "
+"unreliable calculation of the resources still available to "
+":demeter:`ifeffit`."
+msgstr ""
+
+#: ../../startup/main.rst:235
+msgid "The Plot menu"
+msgstr ""
+
+#: ../../startup/main.rst:243
+msgid "The :guilabel:`Plot` menu."
+msgstr ""
+
+#: ../../startup/main.rst:246
+msgid ""
+"When using :program:`Gnuplot` as the plotting backend, you have an option"
+" to direct plots to multiple windows, thus allowing you to plot something"
+" new without removing an existing plot. This menu controls which of four "
+"such plot displays is active."
+msgstr ""
+
+#: ../../startup/main.rst:251
+msgid ""
+"The top two options are used to export the most recent plot to a PNG or "
+"PDF file. You will be prompted for a filename."
+msgstr ""
+
+#: ../../startup/main.rst:254
+msgid ""
+"The bottom two options tick on or off the :guilabel:`Plot after fit` "
+"buttons for each data set, which may be useful for a multiple data set "
+"fit."
+msgstr ""
+
+#: ../../startup/main.rst:257
+msgid ""
+":demeter:`artemis` can make plots in a style that resembles the famous "
+"`XKCD comic <http://xkcd.com/>`__. To make use of this most essential "
+"feature, you should first download and install the `Humor-Sans font "
+"<http://antiyawn.com/uploads/humorsans.html>`__ onto your computer. Once "
+"you have installed the font, simply check the :menuselection:`Plot --> "
+"Plot XKCD style` button. Enjoy!"
+msgstr ""
+
+#: ../../startup/main.rst:266
+msgid "The Main help menu"
+msgstr ""
+
+#: ../../startup/main.rst:268
+msgid ""
+"This menu is used to display this document or to display information "
+"about :demeter:`artemis`, including its open source licensing terms."
+msgstr ""
+
+#: ../../startup/main.rst:277
+msgid "The :guilabel:`Help` menu."
+msgstr ""
+
+#: ../../startup/main.rst:282
+msgid "Status bar"
+msgstr ""
+
+#: ../../startup/main.rst:284
+msgid ""
+"This area in the main window is used to display various kinds of "
+"messages, including updates on long-running tasks, hints about controls "
+"underneath the mouse, and other announcements."
+msgstr ""
+
+#: ../../startup/main.rst:288
+msgid ""
+"On some platforms, the status bar is able to display color.  If you are "
+"one one of those platforms, the status bar will display with a green "
+"background during a long running task and with a red background when an "
+"error has occured or when something needs your immediate attention."
+msgstr ""
+
+#: ../../startup/main.rst:294
+msgid ""
+"Many controls in the main window and elsewhere have hints attached to "
+"them which will be displayed in this status bar when the mouse passes "
+"over.  These hints are intended to teach about the functionality of the "
+"control beheath the mouse.  Hints are not recorded in the status bar "
+"buffer."
+msgstr ""
+
+#: ../../startup/main.rst:300
+msgid ""
+"Many short and long running tasks display updates of various kinds. Many "
+"of these are recorded in the `status bar buffer <../monitor.html#the-"
+"status-buffer>`_.  Messages displayed in the status bar with a green or "
+"red background are recorded in the status bar buffer with green or red "
+"text.  Messages which only indicate the progress of a long running task "
+"are not recorded in the buffer."
+msgstr ""
+
+#: ../../startup/main.rst:309
+msgid "The Data list"
+msgstr ""
+
+#: ../../startup/main.rst:311
+msgid ""
+"The data list starts off with a single control, which is used to import "
+"data into your fitting project. Clicking the :button:`Add,light` button "
+"will open the standard file selection dialog for your platform. That is, "
+"on Windows, the standard Windows file selection dialog is used; on Linux,"
+" the standard Gnome file selection dialog is used; and so on."
+msgstr ""
+
+#: ../../startup/main.rst:324
+msgid "The data list."
+msgstr ""
+
+#: ../../startup/main.rst:327
+msgid ""
+"The standard manner of importing data into :demeter:`artemis` is to use "
+"an :demeter:`athena` project file. Thus the file selection dialog will, "
+"by default, look for files with the :file:`.prj` extension. You may also "
+"drag :file:`.prj` files from your computer's file manager and drop them "
+"onto the data list."
+msgstr ""
+
+#: ../../startup/main.rst:333
+msgid ""
+"As you import data, a stack of buttons |nd| one for each data group |nd| "
+"is made. These buttons are used to show or hide the windows associated "
+"with each data group. In this example, a multiple data set fit (i.e. one "
+"in which models for more than one data set are co-refined) is shown. One "
+"of the associated data windows is displayed on screen, as indicated by "
+"the depressed state of the button labeled :guilabel:`Dimethyltin "
+"dichloride`. The other data window is hidden. `See the Data window "
+"chapter. <../data.html>`__"
+msgstr ""
+
+#: ../../startup/main.rst:342
+msgid ""
+":demeter:`artemis` has a very different relationship to your data than "
+":demeter:`athena`.  The very purpose of :demeter:`athena` is to process "
+"large quantities of data, thus a typical :demeter:`athena` project will "
+"contain many |nd| perhaps dozens |nd| of data groups. :demeter:`artemis` "
+"expects that you will import only that data whose EXAFS you intend to "
+"analyze.  If you are doing a single-data-set analysis, the "
+":guilabel:`Data` list will contain only that item.  If you import many "
+"data sets without actually using them in the fitting model, "
+":demeter:`artemis` may get confused.  *And so will you*."
+msgstr ""
+
+#: ../../startup/main.rst:355
+msgid "The Athena project selection dialog"
+msgstr ""
+
+#: ../../startup/main.rst:357
+msgid ""
+"When importing data from an :demeter:`athena` project file, the project "
+"selection dialog is shown. It presents you with a list of all data groups"
+" from the project file. The file listing is configured such that only one"
+" item can be selected at a time. The selected data group is also plotted."
+" Any title lines from that data group are displayed in the text box on "
+"the upper right."
+msgstr ""
+
+#: ../../startup/main.rst:370
+msgid "The :demeter:`athena` project selection dialog."
+msgstr ""
+
+#: ../../startup/main.rst:372
+msgid ""
+"The plot that is made when you select a data group is controlled by the "
+":guilabel:`Plot as` box of radio buttons.  These buttons have no impact "
+"on how the data imported into :demeter:`artemis`.  They are only used to "
+"determine how the data are displayed to you as you select the data group "
+"to import.  Unlike the :demeter:`athena` project selection dialog, this "
+"one only allows you to select one data group at a time."
+msgstr ""
+
+#: ../../startup/main.rst:380
+msgid ""
+"The next set of radio buttons selects what set of Fourier transform and "
+"fitting parameters will be used. The first choice says to use the values "
+"found in the :demeter:`athena` project file. The second choice says to "
+"use :demeter:`artemis`'s default values. The third choice is only "
+"relevant when replacing the data in a current fitting project. In that "
+"case, the values currently selected for the data being replaced will be "
+"retained."
+msgstr ""
+
+#: ../../startup/main.rst:388
+msgid ""
+"To continue importing data, click the :button:`Import,light` button. The "
+":button:`Cancel,light` button dismisses this dialog without importing "
+"data."
+msgstr ""
+
+#: ../../startup/main.rst:392
+msgid "The recent data dialog"
+msgstr ""
+
+#: ../../startup/main.rst:394
+msgid ""
+"You can access a list of recently imported data by :mark:`rightclick,..` "
+"*right* clicking on the :button:`Add,light` button. This presents a "
+"dialog with a selection list.  Click on one of your recent files, then "
+"click :button:`OK,light` or type :button:`Return`.  Alternately, "
+":mark:`leftclick,..` double-click on your choice in the list of recent "
+"files."
+msgstr ""
+
+#: ../../startup/main.rst:407
+msgid "The recent data dialog."
+msgstr ""
+
+#: ../../startup/main.rst:411
+msgid "The Feff list"
+msgstr ""
+
+#: ../../startup/main.rst:413
+msgid ""
+"The :demeter:`feff` list starts off with a single control, which is used "
+"to import structural data into your fitting project.  Clicking the "
+":button:`Add,light` button will open the standard file selection dialog "
+"for your platform. That is, on Windows, the standard Windows file "
+"selection dialog is used; on Linux, the standard Gnome file selection "
+"dialog is used; and so on."
+msgstr ""
+
+#: ../../startup/main.rst:426
+msgid "The :demeter:`feff` list."
+msgstr ""
+
+#: ../../startup/main.rst:428
+msgid ""
+"The standard manner of importing structural data into :demeter:`artemis` "
+"is to import an input file for :demeter:`atoms` or :demeter:`feff` or to "
+"import a CIF file containing crystal data. Thus the file selection dialog"
+" will, by default, look for files with the :file:`.inp` or :file:`.cif` "
+"extension."
+msgstr ""
+
+#: ../../startup/main.rst:434
+msgid ""
+"As you import structural data, a stack of buttons |nd| one for each "
+":demeter:`feff` calculation |nd| is made. These buttons are used to show "
+"or hide the windows associated with each data group. In this example, two"
+" :demeter:`feff` calculations have been made. Neither is being displayed "
+"on screen. `See the Atoms/Feff chapter. <../feff/index.html>`__"
+msgstr ""
+
+#: ../../startup/main.rst:441
+msgid ""
+":mark:`rightclick,..` *Right* clicking on the :button:`Add,light` button "
+"will present the same recent file selection dialog as for the data list. "
+"In this case, the list will contain recently imported :demeter:`atoms`, "
+":demeter:`feff`, or CIF files."
+msgstr ""
+
+#: ../../startup/main.rst:446
+msgid ""
+"You may also drag CIF, :demeter:`atoms` input, or :demeter:`feff` input "
+"files from your computer's file manager and drop them onto the "
+":demeter:`feff` list."
+msgstr ""
+
+#: ../../startup/main.rst:452
+msgid "Fit information"
+msgstr ""
+
+#: ../../startup/main.rst:454
+msgid ""
+"This section of the main window is used to specify properties of the fit."
+" The name is a short bit of text that will be used as a label for each "
+"fit. The number will be auto-incremented unless you explicitly set it."
+msgstr ""
+
+#: ../../startup/main.rst:465
+msgid "The fit properties."
+msgstr ""
+
+#: ../../startup/main.rst:467
+msgid ""
+"The description is a longer bit of text which you can use to describe the"
+" current fitting model. Here, too, the number is auto-incremented unless "
+"you explcitly set it. The text from this box is written to the log file, "
+"thus can be used to document your fitting model."
+msgstr ""
+
+#: ../../startup/main.rst:472
+msgid ""
+"The set of radio buttons is used to select the space in which the fit "
+"will be evaluated. The default is to evaluate the fit in R space."
+msgstr ""
+
+#: ../../startup/main.rst:475
+msgid ""
+"Finally, the :button:`Save,light` button is used to quickly save your "
+"fitting model to a project file. If you model is already associated with "
+"a file, this is a quick one-click saving tool. If no project file is "
+"associated, the file selection dialog will prompt you for a file. The "
+"default is to use the .fpj extension."
+msgstr ""
+
+#: ../../startup/main.rst:483
+msgid "Fit and log buttons"
+msgstr ""
+
+#: ../../startup/main.rst:485
+msgid ""
+"All the way to the right of the main window are the :button:`Fit,light` "
+"and :button:`Show log,light` buttons.  Click the Fit button to initiate "
+"the fit. The log button is used to show and hide a window which displays "
+"the log from the most recent fit. `See the chapter on the Log and Journal"
+" windows. <../logjournal.html>`__ In the event of a fit that exits "
+"abnormally, error messages explaining the problems will be show in the "
+"log window."
+msgstr ""
+
+#: ../../startup/main.rst:499
+msgid "The :button:`Fit,light` and :button:`Show log,light` buttons."
+msgstr ""
+
+#: ../../startup/main.rst:502
+msgid ""
+"At start-up the Fit button is yellow. After each fit, the color of this "
+"button will range from red to green as a heuristic indication of the fit "
+"quality. `See the happiness section for more details "
+"<../fit/happiness.html>`__."
+msgstr ""
+
+#: ../../startup/main.rst:516
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../startup/main.rst:521
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../startup/main.rst:525
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

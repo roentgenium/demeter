@@ -1,0 +1,149 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Artemis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Artemis 0.9.25\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-14 22:07+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../extended/ipots.rst:44
+msgid "Unique potential styles"
+msgstr ""
+
+#: ../../extended/ipots.rst:46
+msgid "Consider this :file:`atoms.inp` file for sodium uranyl triacetate:"
+msgstr ""
+
+#: ../../extended/ipots.rst:69
+msgid ""
+"This crystal has 4 elemental species distributed over 8 crystallographic "
+"positions. Two of the oxygen sites are the two oxygenyl sites with U-O "
+"double bond distance of about 1.76 |AA|. The remaining oxygen sites are "
+"single bonded at a distance of about 2.46 |AA|."
+msgstr ""
+
+#: ../../extended/ipots.rst:74
+msgid ""
+"In `the Atoms and Feff chapter <../feff/index.html>`__, the concept of "
+"unique potential styles was introduced. Here we show examples of how "
+"these work using sodium uranyl triacetate."
+msgstr ""
+
+#: ../../extended/ipots.rst:81
+msgid "Each element gets a unique potential"
+msgstr ""
+
+#: ../../extended/ipots.rst:83
+msgid ""
+"Choosing the :guilabel:`elements` style assigns a unique potenitial to "
+"each atomic species in the crystal. Using this style results in the "
+"following :file:`feff.inp` file:"
+msgstr ""
+
+#: ../../extended/ipots.rst:119
+msgid ""
+"This is reasonable input for :demeter:`feff`. Indeed, for many crystals, "
+"the elements style is exactly what you want. With four elements in the "
+"cyrstal, five unique potentials are made. The absorber is always "
+"potential index 0. The remaining uranium atoms are given potential index "
+"1."
+msgstr ""
+
+#: ../../extended/ipots.rst:125
+msgid ""
+"For this material, it is probably a poor idea to give the axial (double "
+"bonded, distance 1.76 |AA|) and equatorial (single bonded, distance 2.46 "
+"|AA|) the same potential index. Doing so forces their muffin tin radii to"
+" be the same. Given this substantial difference in distance, it is "
+"probably a good idea to let the two types of oxygen atoms have different "
+"muffin tin radii so that their scattering amplitudes and phase shifts can"
+" be computed differently. That introduces a more chemically reasonable "
+"potential model."
+msgstr ""
+
+#: ../../extended/ipots.rst:137
+msgid "Each tag gets a unique potential"
+msgstr ""
+
+#: ../../extended/ipots.rst:139
+msgid ""
+"The two oxygen types can get differnt unique potentials by choosing the "
+":guilabel:`tags` style. Note that, in the :file:`atoms.inp` file, pairs "
+"of oxygen sites were given the tags :quoted:`Oax` and :quoted:`Oeq`.  "
+"Also note that the two carbon sites were given the same tag. With all "
+"this, we get the following :file:`feff.inp` file:"
+msgstr ""
+
+#: ../../extended/ipots.rst:178
+msgid ""
+"Note that potential indeces 3 and 4 are both for oxygen atoms. 3 is for "
+"the short, axial oxygens and 4 is for the longer, equatorial oxygens."
+msgstr ""
+
+#: ../../extended/ipots.rst:184
+msgid "Each site gets a unique potential"
+msgstr ""
+
+#: ../../extended/ipots.rst:186
+msgid ""
+"The final option for potential assignement is the :guilabel:`sites` "
+"style. In this style, each crystallographic position gets its own "
+"potential index."
+msgstr ""
+
+#: ../../extended/ipots.rst:190
+msgid ""
+"This is a somewhat dangerous option because :demeter:`feff` only allows "
+"up to 7 potentials beyond the absorber (for a total of 8). In this "
+"crystal, we have 8 sites which results in 8 unique potentials. The "
+"software dutifully writes out the :file:`feff.inp` file below, but it "
+"also issues this warning."
+msgstr ""
+
+#: ../../extended/ipots.rst:201
+msgid "The sites error dialog."
+msgstr ""
+
+#: ../../extended/ipots.rst:241
+msgid ""
+"If you attempt to run :demeter:`feff` with this input data, "
+":demeter:`artemis` will complain with the rather repetitious error "
+"message shown below and not run :demeter:`feff`. You have to fix the "
+":demeter:`feff` input data either by hand-editing or by re-running "
+":demeter:`atoms` with a different potentials style."
+msgstr ""
+
+#: ../../extended/ipots.rst:252
+msgid "Too many unique potentials in the Feff run."
+msgstr ""
+
+#: ../../extended/ipots.rst:262
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../extended/ipots.rst:267
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../extended/ipots.rst:271
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Artemis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Artemis 0.9.25\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-14 22:07+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../atoms/index.rst:45
+msgid "Crystallography for EXAFS"
+msgstr ""
+
+#: ../../atoms/index.rst:47
+msgid ""
+"This chapter provides an overview of crystallography tools as implemented"
+" in :demeter:`artemis`. Crystallographic data is provided either in the "
+"form of a CIF file or in a simpler format that has long been the input "
+"format for my :demeter:`atoms` program."
+msgstr ""
+
+#: ../../atoms/index.rst:52
+msgid ""
+"Compared to other crystallography codes, the crystallography capabilities"
+" in :demeter:`artemis` are, perhaps, a little crude and incomplete. The "
+"goal is to provide enough functionality to support the needs of the X-ray"
+" absorption spectroscopist."
+msgstr ""
+
+#: ../../atoms/index.rst:57
+msgid ""
+"This section discussed conventions for `denoting space groups "
+"<space.html>`__, the details of calculations using `tables of absorption "
+"coefficients <abs.html>`__, and provides a `worked example "
+"<example.html>`__."
+msgstr ""
+
+#: ../../atoms/index.rst:80
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../atoms/index.rst:85
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../atoms/index.rst:89
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

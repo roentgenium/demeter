@@ -1,0 +1,142 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Artemis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Artemis 0.9.25\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-14 22:07+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../plot/vpaths.rst:44
+msgid "Creating and plotting VPaths"
+msgstr ""
+
+#: ../../plot/vpaths.rst:46
+msgid ""
+"A common problem with visualizing the paths that contribute to a fit "
+"occurs when several single and multiple scatteriung paths contribute "
+"spectral wieght in the same region of R space. In a well-ordered material"
+" like these data on a cobalt foil, a distant single scattering path may "
+"be of the same length as two or more important collinear multiple "
+"scattering paths. The fit involves a subtle superposition of all the "
+"paths in the fit. This single scattering path and its related multiple "
+"scattering paths all contribute spectral weight in the same region of "
+"R-space."
+msgstr ""
+
+#: ../../plot/vpaths.rst:61
+msgid "A plot of overlapping paths"
+msgstr ""
+
+#: ../../plot/vpaths.rst:63
+msgid ""
+"Plotting them together results in a complicated figure with lots of "
+"overlapping traces. It is hard to see how each path contributes to the "
+"fit. Indeed, it is hard to ascertain much beyond the fact that these "
+"three paths have a complicated phase relationship between them."
+msgstr ""
+
+#: ../../plot/vpaths.rst:68
+msgid ""
+":demeter:`artemis` offers a handy visualization tool called a virtual "
+"path, or VPath. A VPath is simply a group of paths which are added "
+"together after being evaluated in a fit. The sum of these paths is then "
+"plotted as a single item in a fit. Here is the plot made with the VPath "
+"constructed from the three paths in the previous figure. While this plot "
+"hides the individual contributions of the three path, it shows how those "
+"three affect the fit when added together."
+msgstr ""
+
+#: ../../plot/vpaths.rst:81
+msgid "A plot with the overlapping paths made into a single VPath"
+msgstr ""
+
+#: ../../plot/vpaths.rst:83
+msgid ""
+"The VPath is made by marking the contributing paths, then choosing "
+":menuselection:`Actions --> Make VPath`. You will be prompted for a name "
+"for the VPath. This name will be used to identify the VPath in a plot. "
+"The VPath is then inserted into the list of the VPaths tab."
+msgstr ""
+
+#: ../../plot/vpaths.rst:93
+msgid "The make VPath dialog"
+msgstr ""
+
+#: ../../plot/vpaths.rst:95
+msgid ""
+"Here is another example of how a VPath can help visualize the components "
+"of a fit.  The data in the following figures are of uranium L\\ "
+":sub:`III` edge EXAFS of uranyl acetate in solution. Uranyl compounds are"
+" notable for having two, very short double-bonded oxygen atoms in a trans"
+" configuration and at a distance of about 1.78 |AA|. The remaining oxygen"
+" atoms lie in an equatorial plane.  These are single-bonded and at a "
+"distance of around 2.4 |AA|."
+msgstr ""
+
+#: ../../plot/vpaths.rst:108
+msgid "A schematic of the uranyl moiety."
+msgstr ""
+
+#: ../../plot/vpaths.rst:111
+msgid ""
+"The two axial oxygen atoms usually have a rather small |sigma|\\ :sup:`2`"
+" and contribute very strongly at low R in the Fourier transform. Because "
+"those oxygen atoms are at such a short distance, there are a few multiple"
+" scattering paths that contribute significant spectral weight just beyond"
+" the region dominated by single scattering from the equatorial oxygen "
+"atoms."
+msgstr ""
+
+#: ../../plot/vpaths.rst:118
+msgid ""
+"Here is the plot the fit to the uranyl acetate data along with each of "
+"the single and multiple scattering paths that involve the axial oxygen "
+"atoms.  Again, it is hard to appreciate how the various multiple "
+"scattering paths contribute to the fit."
+msgstr ""
+
+#: ../../plot/vpaths.rst:129
+msgid "A plot of the axial oxygen paths in uranyl acetate"
+msgstr ""
+
+#: ../../plot/vpaths.rst:131
+msgid ""
+"In this case, it is nice to combine all these paths into a VPath which "
+"represents the entire contribution to the EXAFS from the axial oxygen "
+"atoms."
+msgstr ""
+
+#: ../../plot/vpaths.rst:141
+msgid "A plot with the axial oxygen paths made into a VPath"
+msgstr ""
+
+#: ../../plot/vpaths.rst:151
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../plot/vpaths.rst:156
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../plot/vpaths.rst:160
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

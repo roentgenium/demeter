@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Artemis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Artemis 0.9.25\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-14 22:07+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../examples/index.rst:43
+msgid "Worked examples"
+msgstr ""
+
+#: ../../examples/index.rst:45
+msgid ""
+"This section presents some worked examples of EXAFS data analysis using "
+":demeter:`artemis`. These should give a sense of the work flow of a "
+"typical analysis project."
+msgstr ""
+
+#: ../../examples/index.rst:56
+msgid "**Iron pyrite**"
+msgstr ""
+
+#: ../../examples/index.rst:50
+msgid ""
+"This is Bruce's favorite teaching example, FeS\\ :sub:`2`. This is a "
+"cubic crystal, not too structurall complicated, but with enough "
+"interesting features to make it a good teaching tool. The data and "
+"crystal structure for this example `can be found here "
+"<https://github.com/bruceravel/XAS-"
+"Education/tree/master/Examples/FeS2>`__."
+msgstr ""
+
+#: ../../examples/index.rst:56
+msgid ""
+"`FeS2 lecture notes <https://speakerdeck.com/bruceravel/discussion-of-"
+"the-fes2-exafs-analysis-example>`_"
+msgstr ""
+
+#: ../../examples/index.rst:64
+msgid "**Methyltin**"
+msgstr ""
+
+#: ../../examples/index.rst:59
+msgid ""
+"This demonstrates a multiple data set fit using Sn K edge data on "
+"dimethyl tin dichloride and monomethyl tin trichloride. The data and "
+"crystal structure for this example `can be found here "
+"<https://github.com/bruceravel/XAS-"
+"Education/tree/master/Examples/Methyltin>`__."
+msgstr ""
+
+#: ../../examples/index.rst:64
+msgid ""
+"`Methyltin lecture notes <https://speakerdeck.com/bruceravel/methyltin-"
+"an-artemis-example>`_"
+msgstr ""
+
+#: ../../examples/index.rst:83
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../examples/index.rst:88
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../examples/index.rst:92
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

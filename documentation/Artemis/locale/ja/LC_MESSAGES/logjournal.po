@@ -1,0 +1,124 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Artemis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Artemis 0.9.25\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-14 22:07+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../logjournal.rst:50
+msgid "The Log and Journal windows"
+msgstr ""
+
+#: ../../logjournal.rst:54
+msgid "The Log window"
+msgstr ""
+
+#: ../../logjournal.rst:56
+msgid ""
+"After the fit completes and the result of the fit is plotted, the Log "
+"window is displayed. The :button:`Log,light` button on the bottom left of"
+" the Main window is used to display and hide this window."
+msgstr ""
+
+#: ../../logjournal.rst:65
+msgid "The Log window."
+msgstr ""
+
+#: ../../logjournal.rst:68
+msgid ""
+"All of the details of the fit are recorded in the text displayed in this "
+"window. Below the descriptive fitting properties displayed at the top in "
+"blue text are the main fitting statistics, including |chi|\\ :sup:`2`, "
+"|chi|\\ :sup:`2`\\ :sub:`v`, the R-factor, |epsilon| (k), |epsilon| (R), "
+"and counts of the number of independent points and the number of "
+":guess:`guess` parameters. Those are followed by the details of `the "
+"happiness evaluation <fit/happiness.html>`__. Two lines of the fitting "
+"statistics are colored with the same color determined from the happiness "
+"and used for the Fit button and the various plotting buttons."
+msgstr ""
+
+#: ../../logjournal.rst:79
+msgid ""
+"Following the statistical parameters are tables of the :guess:`guess`, "
+":def:`def`, :set:`set`, :restrain:`restraint`, and :after:`after` "
+"parameters.  Error bars are given for the :guess:`guess` parameters. "
+"Correlations between :guess:`guess` parameters follow."
+msgstr ""
+
+#: ../../logjournal.rst:84
+msgid ""
+"Scrolling down in this, you find tables of evaluated path parameters for "
+"each of the paths and each of the data sets.  Note that unceretainties "
+"are **not** propagated through to the path parameters. In the current "
+"version of :demeter:`artemis`, that chore is left for the user.  "
+":demeter:`larch` does do error propagation, so eventually that will get "
+"implemented in :demeter:`artemis`."
+msgstr ""
+
+#: ../../logjournal.rst:91
+msgid ""
+"The text in the log file is identical to the log text from the most "
+"recent fit in `the History window <history.html>`__."
+msgstr ""
+
+#: ../../logjournal.rst:94
+msgid ""
+"The buttons at the bottom of the Log window can be used to save the log "
+"to a text file or to print its contents."
+msgstr ""
+
+#: ../../logjournal.rst:99
+msgid "The Journal window"
+msgstr ""
+
+#: ../../logjournal.rst:101
+msgid ""
+"Clicking the :button:`Journal,light` button on the right side of the Main"
+" window displays and hides the Journal window.  This is simply a blank "
+"text box in which you can write notes about your fitting project (or love"
+" letters) to your collaborators.  The text found in this box will be "
+"saved to and restored from the project file."
+msgstr ""
+
+#: ../../logjournal.rst:107
+msgid ""
+"The :button:`Save,light` button at the bottom of the Log window can be "
+"used to save the journal to a text file.  You will be prompted for the "
+"name of the file."
+msgstr ""
+
+#: ../../logjournal.rst:116
+msgid "The Journal window."
+msgstr ""
+
+#: ../../logjournal.rst:127
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../logjournal.rst:132
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../logjournal.rst:136
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

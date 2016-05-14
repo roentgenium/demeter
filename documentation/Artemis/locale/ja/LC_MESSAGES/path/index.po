@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Artemis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Artemis 0.9.25\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-14 22:07+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../path/index.rst:43
+msgid "The Path page"
+msgstr ""
+
+#: ../../path/index.rst:45
+msgid ""
+"In this chapter, the method for associating paths with data sets is "
+"explained. We will also see how to begin constructing a fitting model."
+msgstr ""
+
+#: ../../path/index.rst:48
+msgid ""
+"Shown below is the Data window, `which we have already seen "
+"<../data.html>`__, with some data from a gold foil already imported. I "
+"have passed the cursor over the active text which says :guilabel:`Import "
+"crystal data or a Feff calculation`. :mark:`leftclick,..` Clicking will "
+"open the standard file selection dialog, prompting you for an "
+":file:`atoms.inp`, :file:`feff.inp` or CIF file.  The same thing can be "
+"done by clicking the :button:`Add,light` button above the "
+":guilabel:`Feff` list in the Main window, by selecting "
+":menuselection:`File --> Open project of data` in the Main window, or by "
+"using the :button:`Control`-:button:`o` keyboard shortcut."
+msgstr ""
+
+#: ../../path/index.rst:65
+msgid "The Data window with no paths associated."
+msgstr ""
+
+#: ../../path/index.rst:67
+msgid ""
+"From the file dialog, I select an :file:`atoms.inp` file containing these"
+" crystal data:"
+msgstr ""
+
+#: ../../path/index.rst:78
+msgid ""
+"This crystal data is entered in a :demeter:`feff` window and posted to "
+"the screen."
+msgstr ""
+
+#: ../../path/index.rst:85
+msgid "The Atoms and Feff window containing gold metal crystal data."
+msgstr ""
+
+#: ../../path/index.rst:87
+msgid "Running :demeter:`atoms` then :demeter:`feff` results in this path list:"
+msgstr ""
+
+#: ../../path/index.rst:95
+msgid "The path list for the gold metal calculation."
+msgstr ""
+
+#: ../../path/index.rst:97
+msgid ""
+"By :mark:`leftclick,..` clicking on path :guilabel:`0000` in the list "
+"then shift-:mark:`leftclick,..` clicking on path :guilabel:`0012`, the "
+"first 13 paths are selected"
+msgstr ""
+
+#: ../../path/index.rst:106
+msgid "The first 13 paths have been selected."
+msgstr ""
+
+#: ../../path/index.rst:108
+msgid ""
+"Now :mark:`leftclick,..` click on any of the selected paths. While "
+"holding down the left mouse button, drag those paths over to the right "
+"side of the Data window and drop them by releasing the mouse button. This"
+" will place all 13 of those paths in the path list on the Data window "
+"containing the data on the gold foil."
+msgstr ""
+
+#: ../../path/index.rst:119
+msgid ""
+"The Data window has been populated with the 13 paths from the Feff "
+"calculation."
+msgstr ""
+
+#: ../../path/index.rst:122
+msgid ""
+"At this point we can begin examining the paths by plotting them along "
+"with the data. The path plotting tools are explained in `the chapter on "
+"the Plot window <../plot/index.html>`__."
+msgstr ""
+
+#: ../../path/index.rst:126
+msgid ""
+"Also at this point, we can begin creating a fitting model to fit the gold"
+" foil data using these paths from the :demeter:`feff` calculation."
+msgstr ""
+
+#: ../../path/index.rst:149
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../path/index.rst:154
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../path/index.rst:158
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

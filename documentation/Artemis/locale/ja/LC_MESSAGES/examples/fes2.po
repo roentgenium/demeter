@@ -1,0 +1,377 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Artemis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Artemis 0.9.25\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-14 22:07+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../examples/fes2.rst:45
+msgid "Example 1: FeS2"
+msgstr ""
+
+#: ../../examples/fes2.rst:47
+msgid ""
+"Introduction, blah blah, known crystal structure, blah blah, learn the "
+"mechanics of the program, blah blah"
+msgstr ""
+
+#: ../../examples/fes2.rst:50
+msgid ""
+"`Lecture notes <https://speakerdeck.com/bruceravel/discussion-of-the-fes2"
+"-exafs-analysis-example>`_"
+msgstr ""
+
+#: ../../examples/fes2.rst:54
+msgid "Import data"
+msgstr ""
+
+#: ../../examples/fes2.rst:56
+msgid ""
+"After starting :demeter:`artemis`, click on the :button:`Add,light` "
+"button at the top of the :guilabel:`Data sets` list in the Main window. "
+"This will open a file selection dialog. Click to find the "
+":demeter:`athena` project file containing the data you want to analyze. "
+"Opening that project file displays the project selection dialog."
+msgstr ""
+
+#: ../../examples/fes2.rst:69
+msgid "Import data into Artemis"
+msgstr ""
+
+#: ../../examples/fes2.rst:71
+msgid ""
+"The project file used here has several iron standards. Select FeS\\ "
+":sub:`2` from the list. That data set gets plotted when selected."
+msgstr ""
+
+#: ../../examples/fes2.rst:74
+msgid ""
+"Now click the :button:`Import,light` button. That data set gets imported "
+"into :demeter:`artemis`.  An entry for the FeS\\ :sub:`2` is created in "
+"the Data list, a window for interacting with the FeS\\ :sub:`2` data is "
+"created, and the FeS\\ :sub:`2` data are plotted as |chi| (k)."
+msgstr ""
+
+#: ../../examples/fes2.rst:80
+msgid ""
+"The next step is to prepare for the :demeter:`feff` calculation using the"
+" known FeS\\ :sub:`2` crystal structure. Clicking on the line in the Data"
+" window that says :guilabel:`Import crystal data or a Feff calculation` "
+"will post a file selection dialog.  Click to find the :file:`atoms.inp` "
+"file containing the FeS\\ :sub:`2` crystal structure."
+msgstr ""
+
+#: ../../examples/fes2.rst:92
+msgid "Import crystal data into Artemis"
+msgstr ""
+
+#: ../../examples/fes2.rst:94
+msgid ""
+"With the FeS\\ :sub:`2` crystal data imported, run :demeter:`atoms` by "
+"clicking the :button:`Run Atoms,light` button on the :demeter:`atoms` tab"
+" of the :demeter:`feff` windows. That will display the :demeter:`feff` "
+"tab containing the :demeter:`feff` input data. Click the :button:`Run "
+"Feff,light` button to compute the scattering potentials and to run the "
+"pathfinder."
+msgstr ""
+
+#: ../../examples/fes2.rst:101
+msgid ""
+"Once the :demeter:`feff` calculation is finished, the path intepretation "
+"list is shown in the Paths tab. This is the list of scattering paths, "
+"sorted by increasing path length. Select the first 11 paths by "
+":mark:`leftclick,..` clicking on the path :guilabel:`0000`, then "
+":button:`Shift`-:mark:`leftclick,..` clicking on path :guilabel:`0010`.  "
+"The selected paths will be highlighted. :mark:`leftclick,..` Click on one"
+" of the highlighted paths and, without letting go of the mouse button, "
+"drag the paths over to the Data window.  Drop the paths on the empty Path"
+" list."
+msgstr ""
+
+#: ../../examples/fes2.rst:117
+msgid "Drag and drop paths onto a data set"
+msgstr ""
+
+#: ../../examples/fes2.rst:119
+msgid ""
+"Dropping the paths on the Path list will associate those paths with that "
+"data set. That is, that group of paths is now available to be used in the"
+" fitting model for understanding the FeS\\ :sub:`2` data."
+msgstr ""
+
+#: ../../examples/fes2.rst:123
+msgid ""
+"Each path will get its own Path page. The Path page for a path is "
+"displayed when that path is clicked upon in the Path list. Shown below is"
+" the FeS\\ :sub:`2` data with its 11 paths. The first path in the list, "
+"the one representing the contribution to the EXAFS from the S single "
+"scattering path at 2.257 |AA|, is currently displayed."
+msgstr ""
+
+#: ../../examples/fes2.rst:135
+msgid "Paths associated with a data set"
+msgstr ""
+
+#: ../../examples/fes2.rst:140
+msgid "Examine the scattering paths"
+msgstr ""
+
+#: ../../examples/fes2.rst:142
+msgid ""
+"The first chore is to understand how the various paths from the "
+":demeter:`feff` calculation relate to the data. To this end, we need to "
+"populate the Plotting list with data and paths and make some plots."
+msgstr ""
+
+#: ../../examples/fes2.rst:146
+msgid ""
+"First let's examine how the single scattering paths relate to the data.  "
+"Mark each of the first four single scattring paths |nd| the ones labeled "
+":guilabel:`S.1`, :guilabel:`S.2`, :guilabel:`S.3`, and :guilabel:`Fe.1` "
+"|nd| by clicking on their check buttons.  Transfer those four paths to "
+"the Plotting list by selecting :menuselection:`Actions --> Transfer "
+"marked`."
+msgstr ""
+
+#: ../../examples/fes2.rst:153
+msgid ""
+"With the Plotting list poluated as shown below, click on the "
+":button:`R,light` plot button in the Plot window to make the plot shown."
+msgstr ""
+
+#: ../../examples/fes2.rst:163
+msgid "FeS2 data plotted with the first four single scattering paths"
+msgstr ""
+
+#: ../../examples/fes2.rst:165
+msgid ""
+"The first interesting thing to note is that the first peak in the data "
+"seems to be entirely explained by the path from the S atom at 2.257 |AA|."
+"  None of the other single scattering paths contribute significantly to "
+"the region of R-space."
+msgstr ""
+
+#: ../../examples/fes2.rst:170
+msgid ""
+"The second interesting thing to note is that the next three single "
+"scattering paths are not so well separated from one another. While it may"
+" be tempting to point at the peaks at 2.93 |AA| and 3.45 |AA| and assert "
+"that they are due to the second shell S and the fourth shell Fe, it is "
+"already clear that the situation is more complicated. Those three single "
+"scattering paths overlap one another. Each contriobutes at least some "
+"spectral weight to both of the peaks at 2.93 |AA| and 3.45 |AA|."
+msgstr ""
+
+#: ../../examples/fes2.rst:178
+msgid ""
+"The first peak shold be reather simple to interpret, but higher shells "
+"are some kind of superposition of many paths."
+msgstr ""
+
+#: ../../examples/fes2.rst:181
+msgid "What about the multiple scattering paths?"
+msgstr ""
+
+#: ../../examples/fes2.rst:183
+msgid ""
+"To examine those, first clear the Plotting list by clicking the "
+":button:`Clear,light` button at the bottom of the Plot window. Transfer "
+"the FeS\\ :sub:`2` data back to the Plotting list by clicking its "
+"transfer button: |transfer button|. Mark the first three multiple "
+"scattering paths by clicking their mark buttons.  Select "
+":menuselection:`Actions --> Transfer marked`."
+msgstr ""
+
+#: ../../examples/fes2.rst:190
+msgid ""
+"With the Plotting list newly populated, make a new plot of \\| |chi|\\ "
+"(R)\\|."
+msgstr ""
+
+#: ../../examples/fes2.rst:198
+msgid "FeS2 data plotted with the first three multiple scattering paths"
+msgstr ""
+
+#: ../../examples/fes2.rst:200
+msgid ""
+"The two paths labeled :guilabel:`S.1 S.1`, which represent two different "
+"ways for the photoelectron to scatter from a S atom in the first "
+"coordination shell then scatter from another S atom in the first "
+"coordination shell, contribute rather little spectra weight. Given their "
+"small size, it seems possible that we may be able to ignore those paths "
+"when we analyze our FeS\\ :sub:`2` data."
+msgstr ""
+
+#: ../../examples/fes2.rst:207
+msgid ""
+"The :guilabel:`S.1 S.2` path, which first scatters from a S in the first "
+"coordination shell then from a S in the second coordination shell, "
+"contributes significantly to the peak at 2.93 |AA|. It seems unlikely "
+"that we will be able to ignore that path."
+msgstr ""
+
+#: ../../examples/fes2.rst:212
+msgid ""
+"To examine the next three multiple scattering paths, clear the Plotting "
+"list, mark those paths, and repopulate the Plotting list."
+msgstr ""
+
+#: ../../examples/fes2.rst:221
+msgid "FeS2 data plotted with the next three multiple scattering paths"
+msgstr ""
+
+#: ../../examples/fes2.rst:223
+msgid ""
+"The :guilabel:`S.1 Fe.1` path, which scatters from a S atom in the first "
+"coordination shell then scatters from an Fe atom in the fourth "
+"coordination shell, is quite substantial. It will certainly need to be "
+"considered in our fit. The other two paths are tiny."
+msgstr ""
+
+#: ../../examples/fes2.rst:230
+msgid "Fit to the first coordination shell"
+msgstr ""
+
+#: ../../examples/fes2.rst:232
+msgid ""
+"We begin by doing an analysis of the first shell. As we saw above, we "
+"only need the first path in the path list. To prepare for the fit, we do "
+"the following:"
+msgstr ""
+
+#: ../../examples/fes2.rst:236
+msgid ""
+"Exclude all but the first path from the fit. With the first path selected"
+" in the path list and displayed, select :menuselection:`Marks --> Mark "
+"after current`. This will mark all paths except for the first one. Then "
+"select :menuselection:`Actions --> Exclude marked`. This will exclude "
+"those paths from the fit. That is indicated by the triple parentheses in "
+"the path list."
+msgstr ""
+
+#: ../../examples/fes2.rst:243
+msgid ""
+"Set the values of R\\ :sub:`min` and R\\ :sub:`max` to cover just the "
+"first peak."
+msgstr ""
+
+#: ../../examples/fes2.rst:246
+msgid ""
+"For this simple first shell fit, we set up a simple, four-parameter "
+"model. The parameters ``amp``, ``enot``, ``delr``, and ``ss`` are defined"
+" in the GDS window and given sensible initial guess values."
+msgstr ""
+
+#: ../../examples/fes2.rst:250
+msgid ""
+"The path parameters for the first shell path are set. S\\ :sup:`2`\\ "
+":sub:`0` is set to ``amp``, E\\ :sub:`0` is set to ``enot``, |Delta| R is"
+" set to ``delr``, and |sigma|\\ :sup:`2` is set to ``ss``."
+msgstr ""
+
+#: ../../examples/fes2.rst:254
+msgid ""
+"Note that the current settings for k- and R-range result in a bit more "
+"than 7 independent points, as computed from the Nyquist criterion. With "
+"only 4 guess parameters, this should be a reasonable fitting model."
+msgstr ""
+
+#: ../../examples/fes2.rst:264
+msgid "Setting up for a first shell fit"
+msgstr ""
+
+#: ../../examples/fes2.rst:266
+msgid ""
+"Now hit the :button:`Fit,light` button. Upon completion of the fit, the "
+"following things happen:"
+msgstr ""
+
+#: ../../examples/fes2.rst:269
+msgid "An :quoted:`Rmr` plot is made of the data and the fit."
+msgstr ""
+
+#: ../../examples/fes2.rst:271
+msgid "The log Window is displayed with the results of the fit"
+msgstr ""
+
+#: ../../examples/fes2.rst:273
+msgid ""
+"The :button:`Fit,light` and plot buttons are recolored according to the "
+"evaluation of the happiness parameter."
+msgstr ""
+
+#: ../../examples/fes2.rst:276
+msgid "The Plotting list is cleared and repopulated with the data."
+msgstr ""
+
+#: ../../examples/fes2.rst:278
+msgid ""
+"The fit is entered into the History window (which is not in the "
+"screenshot below)."
+msgstr ""
+
+#: ../../examples/fes2.rst:287
+msgid "Results of the first shell fit"
+msgstr ""
+
+#: ../../examples/fes2.rst:289
+msgid ""
+"This is not a bad result. The value of ``enot`` is small, indicatng that "
+"a reasonable value of E\\ :sub:`0` was chosen back in :demeter:`athena`. "
+"``delr`` is small and consistent with 0, as we should expect for a known "
+"crystal. ``ss`` is a reasonable value with a reasonable error bar. The "
+"only confusing parameter is ``amp``, which is a bit smaller than we might"
+" expect for a S\\ :sup:`2`\\ :sub:`0` value."
+msgstr ""
+
+#: ../../examples/fes2.rst:297
+msgid ""
+"The correlations between parameters are of a size that we expect. The "
+"R-factor evaluates to about 2% misfit. |chi|\\ :sup:`2`\\ :sub:`v` is "
+"really huge, but that likely means that |epsilon| was not evaluated "
+"correctly. All in all, this is a reasonable fit."
+msgstr ""
+
+#: ../../examples/fes2.rst:304
+msgid "Extending the fit to higher shells"
+msgstr ""
+
+#: ../../examples/fes2.rst:308
+msgid "The final fitting model"
+msgstr ""
+
+#: ../../examples/fes2.rst:312
+msgid "Additional questions"
+msgstr ""
+
+#: ../../examples/fes2.rst:323
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../examples/fes2.rst:328
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../examples/fes2.rst:332
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

@@ -1,0 +1,147 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Artemis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Artemis 0.9.25\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-14 22:07+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../monitor.rst:44
+msgid "Monitoring things"
+msgstr ""
+
+#: ../../monitor.rst:46
+msgid ""
+":demeter:`artemis` provides a number of tools for keeping track of things"
+" going on behind the scenes. These tools are found either in the Monitor "
+"menu on the Main window or the Debug menu on the Data window."
+msgstr ""
+
+#: ../../monitor.rst:50
+msgid ""
+"In the normal course of operations, consulting the monitoring tools "
+"should not be necessary. But if something is not working quite right, "
+"they can be invaluable for diagnosing the problem."
+msgstr ""
+
+#: ../../monitor.rst:56
+msgid "The Command buffer"
+msgstr ""
+
+#: ../../monitor.rst:58
+msgid ""
+"The command buffer window contains a record of every data processing and "
+"fitting command sent to :demeter:`ifeffit`. At the bottom of this window "
+"is the plotting buffer, which contains every command sent to the plotting"
+" backend (usually :program:`Gnuplot`)."
+msgstr ""
+
+#: ../../monitor.rst:63
+msgid ""
+"These are very useful both for diagnosing problems and for learning the "
+"details of how :demeter:`ifeffit`, :demeter:`larch` and "
+":program:`Gnuplot` work."
+msgstr ""
+
+#: ../../monitor.rst:72
+msgid "The command buffer window"
+msgstr ""
+
+#: ../../monitor.rst:76
+msgid ""
+"At the bottom of the window is a simple command line for sending "
+"instructions directly to :demeter:`ifeffit` or :demeter:`larch`."
+msgstr ""
+
+#: ../../monitor.rst:81
+msgid "The Status buffer"
+msgstr ""
+
+#: ../../monitor.rst:83
+msgid ""
+"Every message sent to any of the status bars in :demeter:`artemis` is "
+"time-stamped and logged in the status buffer. This provides a sort of "
+"record of the major actions taken during your current :demeter:`artemis` "
+"session. The contents of this buffer can be saved to a file."
+msgstr ""
+
+#: ../../monitor.rst:94
+msgid "The status buffer window"
+msgstr ""
+
+#: ../../monitor.rst:98
+msgid "Interacting with Ifeffit"
+msgstr ""
+
+#: ../../monitor.rst:100
+msgid ""
+"One of the submenus in the Monitor menu on the Main window allows you to "
+"examine :demeter:`ifeffit` data structures. The results of these "
+"examination commands are displayed in the command buffer. In this "
+"example, all arrays currently defined in :demeter:`ifeffit` have been "
+"shown."
+msgstr ""
+
+#: ../../monitor.rst:111
+msgid "Showing Ifeffit arrays"
+msgstr ""
+
+#: ../../monitor.rst:114
+msgid ""
+"Options exist for showing specific :demeter:`ifeffit` data group, all "
+"arrays, all scalars, all strings, all paths, or all :demeter:`feff` "
+"paths. The last one is simply a listing all :file:`feffNNNN.dat` files "
+"imported into :demeter:`ifeffit`."
+msgstr ""
+
+#: ../../monitor.rst:119
+msgid ""
+"You can also inquire about how much of :demeter:`ifeffit`'s statically "
+"allocated memory is in use and whether you are in danger of exceeding "
+"capacity.  This information is displayed in the Main window status bar."
+msgstr ""
+
+#: ../../monitor.rst:126
+msgid "Debugging Demeter"
+msgstr ""
+
+#: ../../monitor.rst:128
+msgid ""
+"Several additional menu items are turned on when "
+":configparam:`Artemis,debug_menus` is set to a true value. The items in "
+"these menus provide tools for debugging :demeter:`artemis` by showing the"
+" current state of :demeter:`demeter` and its data structures. These tools"
+" are invaluable for developing the software, but are probably of limited "
+"value to the general user."
+msgstr ""
+
+#: ../../monitor.rst:144
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../monitor.rst:149
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../monitor.rst:153
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

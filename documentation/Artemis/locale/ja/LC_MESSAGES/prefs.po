@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Artemis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Artemis 0.9.25\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-14 22:07+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../prefs.rst:44
+msgid "Managing preferences"
+msgstr ""
+
+#: ../../prefs.rst:46
+msgid ""
+":demeter:`demeter` has a mountain of preferences available for the user "
+"to tinker with.  This may, I suppose, be a problem.  There is a school of"
+" thought in user interface design that asserts that a program should be "
+"simple, offering the user a small number of carefully considered "
+"configurable options, all of which have sensible defaults. That sort of "
+"thing is usually considered :quoted:`user friendly`, while a dizzying "
+"array of configrable options is considered to be hostile to the user."
+msgstr ""
+
+#: ../../prefs.rst:55
+msgid ""
+"I don't disagree with that.  However, I am not so lucky as to have teams "
+"dedicated to user interface design and product testing.  I don't have the"
+" luxury of testing design decisions to determine if they are successful."
+msgstr ""
+
+#: ../../prefs.rst:60
+msgid ""
+"Unfortunately, there are a lot of aspects of the software that need "
+"sensible default values. In general, I have a good idea what a sensible "
+"value might be, but I am rarely certain. My solution for any option or "
+"parameter whose sensible default is open to interpretation is to make it "
+"configurable.  As a result, there are 100s of aspects of "
+":demeter:`demeter` that can be configured, ranging from default parameter"
+" values to the colors of things that get plotted."
+msgstr ""
+
+#: ../../prefs.rst:73
+msgid "The preferences dialog in Artemis."
+msgstr ""
+
+#: ../../prefs.rst:76
+msgid ""
+":demeter:`artemis` presents all of :demeter:`demeter`'s configuration "
+"options in the Preferences window, which can be displayed from the File "
+"Menu.  Shown here, the :guilabel:`artemis` group has been opened and the "
+":configparam:`Artemis,plot_after_fit` option has been selected. Since it "
+"takes one of predefined list of possible values, you are presented with "
+"an option menu for selecting among the possibilities. The default value "
+"can be restored by pressing the button labeled as :demeter:`demeter`'s "
+"default. In the text area, the option is described. Once you change an "
+"option, you can apply it to the current session or apply it and save its "
+"value to :demeter:`demeter`'s initialization file."
+msgstr ""
+
+#: ../../prefs.rst:88
+msgid ""
+"Different configuration options take different kinds of values. For "
+"example, some are filenames, strings, real numbers, integers, colors, and"
+" so on. Controls appropriate to the value type will be provided when the "
+"option is clicked on."
+msgstr ""
+
+#: ../../prefs.rst:101
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../prefs.rst:106
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../prefs.rst:110
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

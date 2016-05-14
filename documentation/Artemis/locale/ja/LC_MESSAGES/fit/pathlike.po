@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Artemis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Artemis 0.9.25\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-14 22:07+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../fit/pathlike.rst:44
+msgid "Using path-like objects"
+msgstr ""
+
+#: ../../fit/pathlike.rst:46
+msgid ""
+"An important feature of :demeter:`artemis` is the ability to make "
+"interesting things that are constructed from tools that :demeter:`feff` "
+"provides, but which are not paths in the traditional sense of being "
+"strictly associated with one of the :file:`feffNNNN.dat` files that comes"
+" from a normal execution of :demeter:`feff`."
+msgstr ""
+
+#: ../../fit/pathlike.rst:53
+msgid ""
+"Some of these path-like objects are directly associated with a particular"
+" :demeter:`feff` calculation.  For example, an SSPath created on the "
+"Path-like tab on the :demeter:`feff` window is created directly from the "
+"scattering potentials from that :demeter:`feff` calculation.  Similarly, "
+"a histogram-based path-like object also uses a particular :demeter:`feff`"
+" calculation."
+msgstr ""
+
+#: ../../fit/pathlike.rst:60
+msgid ""
+"Other path-like objects either have a hidden relationship with a "
+":demeter:`feff` calculation or none at all.  The path from a quick first "
+"shell theory calculation does have a :demeter:`feff` calculation "
+"associated with it, but it is done in a way that the user never interacts"
+" with that calculation.  The quick first shell path does not have an "
+"entry in the :demeter:`feff` list on the Main window.  An empirical "
+"standard, as the name implies, is derived from data and therefor is not "
+"associated with any :demeter:`feff` calculation."
+msgstr ""
+
+#: ../../fit/pathlike.rst:69
+msgid ""
+"Although each of these path-like objects derives from a different place "
+"than a typical path, :demeter:`artemis` presents them to the user "
+"identically.  Each kind of path-like object is displayed using all the "
+"same controls as a normal path and each is parametered and used in a fit "
+"in the same way."
+msgstr ""
+
+#: ../../fit/pathlike.rst:75
+msgid ""
+"`Information about SSPaths <../feff/pathlike.html#single-scattering-"
+"paths>`_"
+msgstr ""
+
+#: ../../fit/pathlike.rst:77
+msgid "Information about histograms (*not written yet*)"
+msgstr ""
+
+#: ../../fit/pathlike.rst:79
+msgid "`Information about the quick first shell theory <../extended/qfs.html>`_"
+msgstr ""
+
+#: ../../fit/pathlike.rst:81
+msgid "`Information about empirical standards <../extended/empirical.html>`_"
+msgstr ""
+
+#: ../../fit/pathlike.rst:93
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../fit/pathlike.rst:98
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../fit/pathlike.rst:102
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

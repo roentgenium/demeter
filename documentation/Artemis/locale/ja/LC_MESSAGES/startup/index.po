@@ -1,0 +1,182 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Artemis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Artemis 0.9.25\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-14 22:07+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../startup/index.rst:43
+msgid "Starting Artemis"
+msgstr "Artemis を使い始める"
+
+#: ../../startup/index.rst:45
+msgid ""
+"The :demeter:`artemis` program is launched on Windows by "
+":mark:`leftclick,..` double-clicking the :demeter:`artemis` icon on the "
+"desk top, by selecting ``artemis`` from the :demeter:`demeter` menu in "
+"the Start Menu, or by typing :command:`dartemis` (with a silent "
+":button:`d`) at the command prompt.  If you installed :demeter:`demeter` "
+"using the standard installer package, you can also :mark:`leftclick,..` "
+"double-click on an :demeter:`artemis` project file (i.e. one with a "
+":file:`.fpj` extension) to open it in :demeter:`artemis`."
+msgstr ""
+":demeter:`artemis` を Windows 上で立ち上げるにはデスクトップの"
+" :demeter:`artemis` アイコンを :mark:`leftclick,..` ダブルクリックするか，"
+"スタートメニューの :demeter:`demeter` メニューから ``artemis`` を選択して下さい．"
+"あるいは，コマンドプロンプトで，:command:`dartemis` (:button:`d` が必要です)"
+"を実行して下さい．もし，:demeter:`demeter` を標準のインストーラパッケージから"
+"インストールしたのであれば，:demeter:`artemis` プロジェクトファイル (すなわち，"
+":file:`.fpj` 拡張子がついたもの）を，:mark:`leftclick,..` ダブルクリックする"
+"ことでも，その中身を，:demeter:`artemis` で開くことができます．"
+
+#: ../../startup/index.rst:55
+msgid ""
+"On a unix computer, :demeter:`artemis` is launched by typing "
+":command:`dartemis` in the shell. Depending on how :demeter:`demeter` was"
+" installed on your computer, there may be some kind of application "
+"launcher, such as a desktop icon, a panel or dashboard launcher, or an "
+"entry in some kind of application menu."
+msgstr ""
+
+#: ../../startup/index.rst
+msgid "Todo"
+msgstr ""
+
+#: ../../startup/index.rst:61
+msgid "Describe how this is done on a Mac..."
+msgstr ""
+
+#: ../../startup/index.rst:63
+msgid "Once started, :demeter:`artemis` displays two windows, as shown below."
+msgstr ""
+
+#: ../../startup/index.rst:70
+msgid ""
+"The program, as it appears upon starting.  The :quoted:`main window` is "
+"the one accross the top of the screen.  The :quoted:`Plot window` is the "
+"skinny one on the left side."
+msgstr ""
+
+#: ../../startup/index.rst:74
+msgid ""
+"Everything will certainly look a little different on your computer. This "
+"and all other screenshots in this document were taken on an Ubuntu Linux "
+"computer running KDE with custom window decorations. Although the details"
+" of the appearance may differ, all functionality is the same on all "
+"platforms. (You may not have a `cool insect "
+"<https://www.flickr.com/photos/opoterser/3684369721/>`_ as the background"
+" image.  Your loss.)"
+msgstr ""
+
+#: ../../startup/index.rst:82
+msgid ""
+"The window across the top of your screen is the :quoted:`main window`. It"
+" provides an overview of the state of the program and of your fitting "
+"project. The window along the left side of the screen is the "
+":quoted:`Plot window`. It is used to control how certain plots of your "
+"data, fits, paths, and other things are displayed."
+msgstr ""
+
+#: ../../startup/index.rst:88
+msgid ""
+"The plot window can be hidden by clicking the :button:`Plot,light` button"
+" on the left side of the main window. Clicking that button again will "
+"make the plot window reappear in the same place on your screen."
+msgstr ""
+
+#: ../../startup/index.rst:92
+msgid ""
+"The following two sections provide an overview of the functionality in "
+"these two windows. We will return these many times throughout this "
+"document."
+msgstr ""
+
+#: ../../startup/index.rst:98
+msgid "Folders and log files"
+msgstr ""
+
+#: ../../startup/index.rst:100
+msgid ""
+"On occasion, it is helpful to know something about how :demeter:`artemis`"
+" writes information to disk during its operations."
+msgstr ""
+
+#: ../../startup/index.rst:103
+msgid "**working folder**"
+msgstr ""
+
+#: ../../startup/index.rst:105
+msgid ""
+"Many of :demeter:`artemis`' chores involve writing temporary files. "
+"Project files are unpacked in temporary folders. The :program:`Gnuplot` "
+"interface writes temporary files as part of plot creation. These files "
+"are stored in the :quoted:`stash folder`. On linux (and other unixes) "
+"this is :file:`~/.horae/stash/`.  On Windows this is "
+":file:`%APPDATA%\\\\demeter\\\\stash`."
+msgstr ""
+
+#: ../../startup/index.rst:113
+msgid "**log files**"
+msgstr ""
+
+#: ../../startup/index.rst:115
+msgid ""
+"When :demeter:`artemis` runs into problems, it attempts to write enough "
+"information to the screen that the problem can be addressed. This screen "
+"information is what Bruce needs to troubleshoot bugs. On a linux (or "
+"other unix) machine, simply run :demeter:`artemis` from the command line "
+"and the informative screen messages will be written to the screen. On a "
+"Windows machine, it is uncommon to run the software from the command "
+"line, so :demeter:`artemis` has been instrumented to write a run-time log"
+" file. This log file is called dartemis.log and can be found in the "
+":file:`%APPDATA%\\\\demeter` folder."
+msgstr ""
+
+#: ../../startup/index.rst:126
+msgid ""
+"``%APPDATA%`` is :file:`C:\\\\Users\\\\<username>\\\\AppDataRoaming\\\\` "
+"on Windows 7."
+msgstr ""
+
+#: ../../startup/index.rst:129
+msgid ""
+"It is "
+":file:`C:\\\\Documents and Settings\\\\<username>\\\\Application Data` on"
+" Windows XP and Vista."
+msgstr ""
+
+#: ../../startup/index.rst:132
+msgid "In either case, ``<username>`` is your log-in name."
+msgstr ""
+
+#: ../../startup/index.rst:151
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../startup/index.rst:156
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../startup/index.rst:160
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

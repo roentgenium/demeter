@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Artemis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Artemis 0.9.25\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-14 22:07+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../feff/aggregate.rst:44
+msgid "Aggregate Feff calculation"
+msgstr ""
+
+#: ../../feff/aggregate.rst:46
+msgid ""
+"If crystal data has two or more inequivalent sites occupied by the same "
+"kind of atom, some additional functionality is enabled when one of the "
+"inequivalent sites is selected as the absorber. As you can see in the "
+"following screenshot, the :button:`Aggregate,light` button is available, "
+"as are controls for setting the `fuzzy degeneracy "
+"<../extended/fuzzy.html>`__ parameters."
+msgstr ""
+
+#: ../../feff/aggregate.rst:58
+msgid ""
+"Crystal data for CaZrTi\\ :sub:`2`\\ O\\ :sub:`7` with a Ti atom "
+"selected, enabling the aggregate calculation controls."
+msgstr ""
+
+#: ../../feff/aggregate.rst:61
+msgid ""
+"In the aggregate :demeter:`feff` calculation, the path finder is run for "
+"each inequivalent position containing the same central atom. The path "
+"lists are merged together, weighted by fractional population of the site "
+"in the unit cell, before running the check for `fuzzy degeneracy "
+"<../extended/fuzzy.html>`__. The weighting by population fraction means "
+"that a bin of paths can be occupied by a non-integer number of atoms."
+msgstr ""
+
+#: ../../feff/aggregate.rst:69
+msgid ""
+"In the example of CaZrTi\\ :sub:`2`\\ O\\ :sub:`7`, there are three Ti "
+"sites. The are 8 :guilabel:`Ti1` atoms in the unit cell and 4 each of "
+":guilabel:`Ti2` and :guilabel:`Ti3`.  Thus half the Ti atoms are from "
+"site 1 and a quarter each from sites 2 and 3. Each Ti site is surrounded "
+"by 6 oxygen atoms at a variety of distances. :guilabel:`Ti1` has O atoms "
+"at 1.843 |AA|, 1.880 |AA|, 1.927 |AA|, 1.987 |AA|, 2.0007 |AA|, and 2.023"
+" |AA|. :guilabel:`Ti2` has 2 O atoms at each of 1.786 |AA|, 2.050 |AA|, "
+"2.498 |AA|. :guilabel:`Ti3` has 2 O atoms at each of 1.975 |AA|, 1.877 "
+"|AA|, 1.975 |AA|. In short, the Ti K edge of CaZrTi\\ :sub:`2`\\ O\\ "
+":sub:`7` is a mess!"
+msgstr ""
+
+#: ../../feff/aggregate.rst:81
+msgid ""
+"Using a bin size of 0.1 |AA| and combining the three sites together "
+"weighted by their fractional populations in the unit cell, we end up with"
+" 4 distances. There are 2.5 O atoms at 1.852 |AA|, 2.5 O atoms at 1.984 "
+"|AA|, 0.5 O atoms at 2.050 |AA|, and 0.5 O atoms at 2.498 |AA|."
+msgstr ""
+
+#: ../../feff/aggregate.rst:86
+msgid ""
+"Instead of having to parameterize 12 different Ti-O distances, keeping "
+"track of fractional populations when parameterizing the S\\ :sup:`2`\\ "
+":sub:`0` values for each path, the aggregate :demeter:`feff` calculation "
+"requires managing only 4 paths."
+msgstr ""
+
+#: ../../feff/aggregate.rst:91
+msgid ""
+"For a complete discussion of the the aggregate :demeter:`feff` "
+"calculation, see"
+msgstr ""
+
+#: ../../feff/aggregate.rst:106
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../feff/aggregate.rst:111
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../feff/aggregate.rst:115
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

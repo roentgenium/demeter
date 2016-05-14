@@ -1,0 +1,153 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Artemis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Artemis 0.9.25\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-14 22:07+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../feff/pathlike.rst:44
+msgid "The Path-like tab"
+msgstr ""
+
+#: ../../feff/pathlike.rst:46
+msgid ""
+"One of the powerful features in :demeter:`artemis` is the ability to "
+"define :quoted:`path-like` objects. A path-like object is one which can "
+"be treated like a normal path from :demeter:`feff`. It can be used in a "
+"fit and it can be plotted.  It is not, however, the result of a normal "
+":demeter:`feff` calculation. Instead, :demeter:`feff` has been run in "
+"some special way to generate a theoretical |chi| (k) spectrum for "
+"something different from all the items listed on the Paths tab."
+msgstr ""
+
+#: ../../feff/pathlike.rst:54
+msgid ""
+":demeter:`artemis` defines a number of kinds of path-like objects. "
+"Controls for generating these things are divided into different pages "
+"accessible by the menu at the top of the Path-like tab. The first item in"
+" that menu is for defining :guilabel:`SSPaths`."
+msgstr ""
+
+#: ../../feff/pathlike.rst:64
+msgid "The Pathlike tab."
+msgstr ""
+
+#: ../../feff/pathlike.rst:68
+msgid "Single Scattering Paths"
+msgstr ""
+
+#: ../../feff/pathlike.rst:70
+msgid ""
+"The concept of a :quoted:`Single Scattering Path` (or :quoted:`SSPath`) "
+"is that it uses the potentials from a :demeter:`feff` calculation to "
+"compute the single scattering contribution from an atom that exists in "
+"that :demeter:`feff` calculation but at a distance not represented in the"
+" list of cartesian coordinates."
+msgstr ""
+
+#: ../../feff/pathlike.rst:83
+msgid "Plot of a path-like object."
+msgstr ""
+
+#: ../../feff/pathlike.rst:86
+msgid ""
+"In the example shown, a :demeter:`feff` calculation has been run on "
+"LaCoO\\ :sub:`3`, a trigonal perovskite-like material with 6 oxygen "
+"scatterers at 1.93 |AA|, 8 La scatterers at 3.28 |AA| or 3.34 |AA|, and 6"
+" Co scatterers at 3.83 |AA|."
+msgstr ""
+
+#: ../../feff/pathlike.rst:91
+msgid ""
+"Suppose we had some reason to wonder what a Co scatterer at a distance of"
+" 3 |AA| would look like in a fit. (For example, we might suspect that "
+"some phase segregation happened during synthesis, resulting in some CoO.)"
+" In that case, the distance on the :guilabel:`SSPath` page would be set "
+"to 3.0 |AA| and the Co scatterer would be selected from the group of "
+"radio buttons.  This group of radio buttons corresponds to the list of "
+"unique potentials in the input data for :demeter:`feff`."
+msgstr ""
+
+#: ../../feff/pathlike.rst:100
+#, python-format
+msgid ""
+"The method for associating this :guilabel:`SSPath` with data will be "
+"explained in the `next chapter <../path/index.html>`__. For now, we "
+"simply look at :numref:`Fig. %s <fig-feffplotss>` to compare the normal "
+"Co scatterer at 3.83 |AA| (blue) with the SSPath computed at 3 |AA| "
+"(red)."
+msgstr ""
+
+#: ../../feff/pathlike.rst:106
+msgid ""
+"Use of :guilabel:`SSPath` for modeling scatterers at such a long distance"
+" is much superior to using a `quick first shell theory "
+"<../path/pathlike.html>`__. The advantage of this approach is that it "
+"uses well constructed scattering potentials |nd| i.e. potentials from a "
+"real structure |nd| to make the special path. Using the quick first shell"
+" technique on a path this long results in poorly constructed potentials. "
+"This is explained in detail in `the extended discussions chapter "
+"<../extended/qfs.html>`__."
+msgstr ""
+
+#: ../../feff/pathlike.rst:115
+msgid "The SSPath is discussed in"
+msgstr ""
+
+#: ../../feff/pathlike.rst:124
+msgid "FSPaths"
+msgstr ""
+
+#: ../../feff/pathlike.rst:126
+msgid ""
+"Model the effect of variable forward scattering angle in nearly collinear"
+" multiple scattering paths."
+msgstr ""
+
+#: ../../feff/pathlike.rst
+msgid "Todo"
+msgstr ""
+
+#: ../../feff/pathlike.rst:129
+msgid "FSPaths have not yet been implemented."
+msgstr ""
+
+#: ../../feff/pathlike.rst:134
+msgid "Histogram paths"
+msgstr ""
+
+#: ../../feff/pathlike.rst:136
+msgid "Document the histogram system."
+msgstr ""
+
+#: ../../feff/pathlike.rst:147
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../feff/pathlike.rst:152
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../feff/pathlike.rst:156
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

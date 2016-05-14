@@ -1,0 +1,250 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Artemis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Artemis 0.9.25\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-14 22:07+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../extended/fuzzy.rst:51
+msgid "Fuzzy degeneracy"
+msgstr ""
+
+#: ../../extended/fuzzy.rst:56
+msgid "How the path finder works"
+msgstr ""
+
+#: ../../extended/fuzzy.rst:58
+msgid ""
+"Given a list of atomic coordinates for a cluster of atoms, multiple "
+"scattering paths can be found from those atoms."
+msgstr ""
+
+#: ../../extended/fuzzy.rst:66
+msgid "Constructing generations of multiple scattering paths."
+msgstr ""
+
+#: ../../extended/fuzzy.rst:68
+#, python-format
+msgid ""
+"A `heap <https://en.wikipedia.org/wiki/Heap_%28data_structure%29>`_ is a "
+"tree-shaped data structure. Each node is guaranteed to represent a "
+"shorter path length than all nodes below it.  The top node is, thus, "
+"guaranteed to be the shortest path.  For more details, see"
+msgstr ""
+
+#: ../../extended/fuzzy.rst:79
+#, python-format
+msgid ""
+"Find all paths (:blueatom:`0` :redatom:`i` :blueatom:`0`), :redatom:`i` "
+"|neq| :blueatom:`0` in the cluster. These paths are represented by the "
+"two-leg diagram in :numref:`Fig. %s <fig-pathfinder>`.  Put each such "
+"path in a heap."
+msgstr ""
+
+#: ../../extended/fuzzy.rst:84
+#, python-format
+msgid ""
+"For each such path, add a leg with :yellowatom:`j` |neq| :redatom:`i` and"
+" :yellowatom:`j` |neq| :blueatom:`0`. Put all (:blueatom:`0` :redatom:`i`"
+" :yellowatom:`j` :blueatom:`0`) in the heap. These paths are represented "
+"by the three-leg diagram in :numref:`Fig. %s <fig-pathfinder>`."
+msgstr ""
+
+#: ../../extended/fuzzy.rst:90
+msgid ""
+"Up to some order of scattering, populate the heap with (:blueatom:`0` "
+":redatom:`i` ... x :blueatom:`0`)"
+msgstr ""
+
+#: ../../extended/fuzzy.rst:93
+msgid ""
+"Test each path (:blueatom:`0` :redatom:`i` ... x :blueatom:`0`) for "
+"magnitude. If small, discard and do not consider any (:blueatom:`0` "
+":redatom:`i` ... x y :blueatom:`0`)"
+msgstr ""
+
+#: ../../extended/fuzzy.rst:98
+msgid ""
+"Use up all atoms in the cluster and up to some order of scattering "
+"(:demeter:`feff`'s default is 7 legs)."
+msgstr ""
+
+#: ../../extended/fuzzy.rst:108
+msgid "A schematic of a heap."
+msgstr ""
+
+#: ../../extended/fuzzy.rst:111
+msgid ""
+"Construct the path list by repeatedly pulling the top path from the heap "
+"until the heap is empty. When the top node is removed, the remaining "
+"nodes rearrange themselves such that heap retains the property that each "
+"node represents a shorter path than all those below it."
+msgstr ""
+
+#: ../../extended/fuzzy.rst:117
+msgid ""
+"The resulting path list is guaranteed to be sorted by increasing path "
+"length. The list is then examined to find :quoted:`degenerate` paths. "
+"Degenerate paths are ones that contribute identically to the EXAFS. A "
+"simple example would be the single scattering paths from the various "
+"atoms in the first coordination shell. Since each atom is the same "
+"distance away from the absorber, each contributes identically to the "
+"EXAFS. Thus these paths are degenerate. After being screened for "
+"degeneracy, the path list is presented to the user."
+msgstr ""
+
+#: ../../extended/fuzzy.rst:128
+msgid "The pathfinder in Feff and Artemis"
+msgstr ""
+
+#: ../../extended/fuzzy.rst:130
+msgid ""
+"One of the features of :demeter:`artemis` is a rewrite of "
+":demeter:`feff`'s pathfinder."
+msgstr ""
+
+#: ../../extended/fuzzy.rst:132
+msgid "The new path finder has two huge advantages over :demeter:`feff`'s:"
+msgstr ""
+
+#: ../../extended/fuzzy.rst:134
+msgid ""
+"User configurable fuzzy degeneracy. :demeter:`feff` considers paths that "
+"differ in length by 0.00001 |AA| to be non-degenerate. :demeter:`artemis`"
+" can group together these nearly degenerate paths."
+msgstr ""
+
+#: ../../extended/fuzzy.rst:139
+msgid ""
+"The scattering geometries of the degenerate paths are stored and are "
+"available for use and examination.  :demeter:`feff` discards the details "
+"of the degenerate paths."
+msgstr ""
+
+#: ../../extended/fuzzy.rst:143
+msgid ""
+"The first point |nd| the use of fuzzy degeneracy |nd| is the topic of "
+"this section."
+msgstr ""
+
+#: ../../extended/fuzzy.rst:146
+msgid ""
+":demeter:`feff`'s path finder, however, has its advantages over "
+":demeter:`artemis`':"
+msgstr ""
+
+#: ../../extended/fuzzy.rst:149
+msgid ""
+"As it is written in a compiled language, it is considerably faster. "
+"Fortunately, the path finder does not need to be run very often."
+msgstr ""
+
+#: ../../extended/fuzzy.rst:152
+msgid ""
+":demeter:`feff` uses its fast plane wave calculation to approximate the "
+"importance of path. Low importance paths can be removed from "
+"consideration, as can all higher order paths built from that path. "
+":demeter:`artemis` does not have access to the plane wave calculation, so"
+" it must consider rather more paths than :demeter:`feff`'s pathfinder.  "
+":demeter:`artemis` relies instead on some simple heuristics to trim the "
+"tree of paths."
+msgstr ""
+
+#: ../../extended/fuzzy.rst:160
+msgid ""
+":demeter:`feff`'s path finder considers up to seven-legged paths. "
+":demeter:`artemis` can do five- and six-legged paths, but it is slow.  In"
+" any case, it is rather unusual to need more than four-legged paths in an"
+" EXAFS analysis.  (Cubic metals analyzed beyond about 6 |AA| and cyanide "
+"bridged structures like prussian blue are two examples.)"
+msgstr ""
+
+#: ../../extended/fuzzy.rst
+msgid "Todo"
+msgstr ""
+
+#: ../../extended/fuzzy.rst:167
+msgid ""
+":demeter:`artemis`' path finder does not currently handle ellipticity.  "
+"So that's another advantage at the moment for :demeter:`feff`'s path "
+"finder."
+msgstr ""
+
+#: ../../extended/fuzzy.rst:174
+msgid "An example of using fuzzy degeneracy"
+msgstr ""
+
+#: ../../extended/fuzzy.rst:176
+msgid ""
+"As the path finder organizes all the scattering geometries it finds among"
+" the atoms in the input atoms list, it will make a fuzzy comparison to "
+"sort the paths into nearly-degenerate bins. That is, all paths whose "
+"lengths are within a small margin will be considered degenerate. The "
+"width of this bin is set by the :configparam:`Pathfinder,fuzz` "
+"preference."
+msgstr ""
+
+#: ../../extended/fuzzy.rst:183
+msgid ""
+"Consider this :file:`feff.inp` file (made from `this crystal data "
+"<https://raw.github.com/bruceravel/XAS-"
+"Education/master/Examples/Xtal/PbFe12O19.inp>`__):"
+msgstr ""
+
+#: ../../extended/fuzzy.rst:239
+msgid ""
+"Using the default :configparam:`Pathfinder,fuzz` parameter of 0.03 |AA|, "
+"will give these paths. Note that the ``Fe4`` and ``Fe5`` scatterers, "
+"which differ by about 0.11 |AA|, get merged into a single scattering "
+"path. This path has a value of R\\ :sub:`eff` that is the average of the "
+"constituent paths and a degenaracy that is the sum of the constituent "
+"paths."
+msgstr ""
+
+#: ../../extended/fuzzy.rst:254
+msgid ""
+"Resetting the :configparam:`Pathfinder,fuzz` to 0.01 separates those two "
+"nearly degenerate paths into separate scattering paths."
+msgstr ""
+
+#: ../../extended/fuzzy.rst:266
+msgid ""
+"To make the pathfinder neglect fuzzy degeneracy, thus behaving like "
+":demeter:`feff`'s pathfinder, set :configparam:`Pathfinder,fuzz` to 0."
+msgstr ""
+
+#: ../../extended/fuzzy.rst:269
+msgid "Fuzzy degeneracy is discussed in"
+msgstr ""
+
+#: ../../extended/fuzzy.rst:283
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../extended/fuzzy.rst:288
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../extended/fuzzy.rst:292
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

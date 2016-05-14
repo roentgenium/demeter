@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Artemis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Artemis 0.9.25\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-14 22:07+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../plot/indic.rst:44
+msgid "Plot Indicators"
+msgstr ""
+
+#: ../../plot/indic.rst:46
+#, python-format
+msgid ""
+"In :demeter:`demeter`, an indicator is a vertical line used to mark a "
+"specific position on the x-axis.  In this example, it is the dotted pink "
+"line at 2.067 |AA| in :numref:`Fig. %s <fig-indicplot>`.  An indicator "
+"for a position in R is not plotted in k or q.  An indicator for a "
+"position in k or q is not plotted in R.  Inidactors for positions in k or"
+" q are also plotted in q or k."
+msgstr ""
+
+#: ../../plot/indic.rst:58
+msgid "The Indicator tab"
+msgstr ""
+
+#: ../../plot/indic.rst:60
+msgid ""
+"To set an indicator, click the target button, then :mark:`leftclick,..` "
+"double-click on a point in the current plot. Once set, the position and "
+"space can be edited using the associated choice menu and text control. "
+"The check button turns the indicator on or off in subsequent plots. The "
+"buttons at the bottom toggle the check buttons for each indicator."
+msgstr ""
+
+#: ../../plot/indic.rst:73
+msgid "Plot with indicator"
+msgstr ""
+
+#: ../../plot/indic.rst:83
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../plot/indic.rst:88
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../plot/indic.rst:92
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

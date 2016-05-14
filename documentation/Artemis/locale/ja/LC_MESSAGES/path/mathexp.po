@@ -1,0 +1,179 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Artemis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Artemis 0.9.25\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-14 22:07+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../path/mathexp.rst:46
+msgid "Setting math expressions"
+msgstr ""
+
+#: ../../path/mathexp.rst:48
+msgid ""
+"Once some paths have been dragged from the :demeter:`feff` window onto "
+"the Data window containing the gold foil data, it is time to begin "
+"defining math expressions for the path parameters. In the following "
+"figure, the path corresponding to the first coordination shell has been "
+"selected from the path list. A path is selected by :mark:`leftclick,..` "
+"left clicking on its label in the path list. Doing so, displays that path"
+" on the right side of the Data window."
+msgstr ""
+
+#: ../../path/mathexp.rst:57
+msgid ""
+"At the top of the Path page are two checkboxes. One is used to include "
+"and exclude a path from the fitting model. In this way, you can control "
+"which paths are used in a fit without having to remove them from the path"
+" list. The other check box is used to indicate if the current path should"
+" be transfered to the plotting list in the Plot window at the end of a "
+"fit."
+msgstr ""
+
+#: ../../path/mathexp.rst
+msgid "Todo"
+msgstr ""
+
+#: ../../path/mathexp.rst:64
+msgid ""
+"Implement and explain the two items in the :guilabel:`other path options`"
+" pane."
+msgstr ""
+
+#: ../../path/mathexp.rst:67
+msgid ""
+"The text box contains a brief description of the geometry of the "
+"scattering path. For a path with degeneracy greater than 1, the "
+"scattering geometry of one of the degenerate paths is shown. The simple "
+"explanation of the shape of the path and its heuristic importance are "
+"also given in the text box."
+msgstr ""
+
+#: ../../path/mathexp.rst:73
+msgid ""
+"Implement a way to display a text box which shows all the paths "
+"contributing to the degeneracy + report on fuzziness of the degeneracy."
+msgstr ""
+
+#: ../../path/mathexp.rst:77
+msgid ""
+"Beneath the scattering geometry is a table of labels and text boxes for "
+"the path parameters.  Math expressions are entered into these text boxes."
+msgstr ""
+
+#: ../../path/mathexp.rst:86
+msgid "Math expressions have been set for the first shell path."
+msgstr ""
+
+#: ../../path/mathexp.rst:88
+msgid ""
+"In the preceding image, a simple fitting model appropriate for a cubic, "
+"monoatomic material like our gold foil has been entered for the first "
+"shell path.  This includes simple expressions for S\\ :sup:`2`\\ :sub:`0`"
+" and E\\ :sub:`0` consisting of variables that will be floated in the "
+"fit. A `model of isotropic expansion <../extended/delr.html>`__ is "
+"provided for |Delta| R.  The |sigma|\\ :sup:`2` path parameter is "
+"expressed using `the correlated Debye model <../extended/ss.html>`__. The"
+" other path parameter text boxes have been left blank and will not be "
+"modified in the fit."
+msgstr ""
+
+#: ../../path/mathexp.rst:102
+msgid ""
+"This, of course, establishes the parameterization only for the first "
+"path.  The same editing of path parameter math expressions must happen "
+"for all the other paths used in the fit."
+msgstr ""
+
+#: ../../path/mathexp.rst:106
+msgid ""
+"The most obvious way to do this editing chore is to :mark:`leftclick,..` "
+"click on each successive path in the path list, then :mark:`leftclick,..`"
+" click into each text box, then type in the math expressions.  That, "
+"however, is both tedious and error-prone."
+msgstr ""
+
+#: ../../path/mathexp.rst:116
+msgid "The path parameter context menu."
+msgstr ""
+
+#: ../../path/mathexp.rst:118
+msgid ""
+"For math expressions that are the same for every path |nd| E\\ :sub:`0` "
+"is a common example |nd| :demeter:`artemis` provides some automation "
+"tools. Each of the path parameter labels on the Path page is sensitive to"
+" either :mark:`leftclick,..` left or :mark:`rightclick,..` right click.  "
+"Either kind of click posts a menu like the one of the right. The top "
+"option is used to erase the contents of the associated text both, but "
+"only on this path."
+msgstr ""
+
+#: ../../path/mathexp.rst:126
+msgid ""
+"The next four options are used to push the math expression for the "
+"associated path parameter onto other paths. These four options allow some"
+" control over the paths that are targeted to receive the pushed path "
+"parameter values."
+msgstr ""
+
+#: ../../path/mathexp.rst:131
+msgid ""
+"The last two options are used to grab the math expression from one of the"
+" surrounding paths."
+msgstr ""
+
+#: ../../path/mathexp.rst:134
+msgid ""
+"The menu that pops up for the |sigma|\\ :sup:`2` parameter has two "
+"additional options.  One inserts a math expression for using the "
+"correlated Debye function for |sigma|\\ :sup:`2`, the other inserts the "
+"math expression for an Einstein model.  `Both the Debye and Einstein "
+"functions <../extended/ss.html>`__ depend on the measurement temperature "
+"and a characteristic temperature.  Typically, the measurement temperature"
+" is a :set:`set` variable and the characteristic temperature is a "
+":guess:`guess`. When either function is inserted into the text box, "
+"parameters are automatically created `on the GDS page <../gds.html>`__."
+msgstr ""
+
+#: ../../path/mathexp.rst:145
+msgid ""
+"The Path menu on the Data page offers a way of pushing all the path "
+"parameters from the displayed path to other paths. The same options for "
+"targeting other paths are presented."
+msgstr ""
+
+#: ../../path/mathexp.rst:154
+msgid "Push all path parameters to other paths."
+msgstr ""
+
+#: ../../path/mathexp.rst:164
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../path/mathexp.rst:169
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../path/mathexp.rst:173
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

@@ -1,0 +1,312 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Artemis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Artemis 0.9.25\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-14 22:07+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../extended/delr.rst:44
+msgid "Geometric parametrization of bond length"
+msgstr ""
+
+#: ../../extended/delr.rst:49
+msgid "Volumetric expansion coefficient"
+msgstr ""
+
+#: ../../extended/delr.rst:51
+msgid "FeS\\ :sub:`2` is a cubic crystal. Here is the crystal data"
+msgstr ""
+
+#: ../../extended/delr.rst:66
+msgid ""
+"In this case, there are only two parameters that determine the locations "
+"of all the atoms in the cluster |nd| the lattice constant ``a`` and the "
+"position of the S atom in the unit cell. For now, we'll neglect the "
+"effect of the position of the S atom."
+msgstr ""
+
+#: ../../extended/delr.rst:71
+msgid ""
+"In the `FeS2 worked example <../examples/fes2.html>`__, a "
+"parameterization was used which related |Delta| R for all the paths to a "
+"volumetric expansion coefficient, |Delta| R= |alpha| |cdot| R\\ "
+":sub:`eff`. Why does this work?"
+msgstr ""
+
+#: ../../extended/delr.rst:76
+msgid ""
+"The distance d\\ :sub:`eff` between any two atoms in a cubic crystal is "
+"some geometrical factor multiplied by the lattice constant. That factor "
+"depends on the positions of the atoms in the unit cell, but is a pure "
+"number."
+msgstr ""
+
+#: ../../extended/delr.rst:81
+msgid ""
+"Thus, from the :demeter:`feff` calculation, d\\ :sub:`eff`\\ (i, j) = c\\"
+" :sub:`i,j`\\ |cdot| a\\ :sub:`0` for any two atoms i and j. For any two "
+"pairs of atoms, c\\ :sub:`i,j` is a different number, but the distances "
+"between all pairs of atoms are related by simple geometry and the value "
+"of the lattice constant."
+msgstr ""
+
+#: ../../extended/delr.rst:87
+msgid ""
+"We consider an isotropic expansion (or contraction, if |alpha|  is "
+"negative) of the unit, which is reasonable for a cubic lattice that does "
+"not undergo a phase transition. So a = (1 + |alpha|) |cdot| a\\ :sub:`0`."
+msgstr ""
+
+#: ../../extended/delr.rst:91
+msgid ""
+"The distance between any two atoms, after accounting for the isotropic "
+"expansion (or contraction) is"
+msgstr ""
+
+#: ../../extended/delr.rst:94
+msgid "d\\ :sub:`i,j` = d\\ :sub:`eff`\\ (i,j) + |Delta| d(i,j)"
+msgstr ""
+
+#: ../../extended/delr.rst:95
+msgid "d\\ :sub:`i,j` = c\\ :sub:`i,j` |cdot|  a"
+msgstr ""
+
+#: ../../extended/delr.rst:96
+msgid "d\\ :sub:`i,j` = c\\ :sub:`i,j` |cdot|  (1+ |alpha| ) |cdot| a\\ :sub:`0`"
+msgstr ""
+
+#: ../../extended/delr.rst:97
+msgid ""
+"d\\ :sub:`i,j` = c\\ :sub:`i,j`\\ |cdot| a\\ :sub:`0` + c\\ :sub:`i,j`\\ "
+"|cdot| |alpha| |cdot| a\\ :sub:`0`"
+msgstr ""
+
+#: ../../extended/delr.rst:98
+msgid ""
+"|therefore| |Delta| d(i,j) = c\\ :sub:`i,j`\\ |cdot| |alpha| |cdot| a\\ "
+":sub:`0`"
+msgstr ""
+
+#: ../../extended/delr.rst:99
+msgid "and |Delta| d(i,j) = |alpha| |cdot| d\\ :sub:`eff`\\ (i,j)"
+msgstr ""
+
+#: ../../extended/delr.rst:101
+msgid ""
+"The expression |alpha| |cdot| d\\ :sub:`eff` works for all legs of any SS"
+" or MS path in a cubic crystal (assuming that there are no internal "
+"degrees of freedom, like the parameter for the position of the S atom in "
+"FeS\\ :sub:`2`). The length of a path, then, is the sum of the length of "
+"each leg. |Delta| R for a path is the sum of |Delta| d for each leg. The "
+"sum of the d\\ :sub:`eff` values is R\\ :sub:`eff`, thus |Delta| R= "
+"|alpha| |cdot| R\\ :sub:`eff`."
+msgstr ""
+
+#: ../../extended/delr.rst:109
+msgid ""
+"While this trick is only valid for a cubic crystal, it does ilustrate two"
+" important points about :demeter:`artemis`. First, it is an example of an"
+" interesting math expression relating a path's |Delta| R value to a "
+"fitting parameter. The |Delta| R of the path is not itself a variable of "
+"the fit, rather it is written in terms of |alpha|, which is a variable of"
+" the fit."
+msgstr ""
+
+#: ../../extended/delr.rst:116
+msgid ""
+"Second, it is an example of a constraint which uses the information "
+"content of the data very well. We can include any number of paths with "
+"introducing new parameters for their |Delta| R values. |alpha| is a "
+"robust fitting parameter in the sense that every path is involved in its "
+"determination."
+msgstr ""
+
+#: ../../extended/delr.rst:125
+msgid "Propagating crystal distortion parameters"
+msgstr ""
+
+#: ../../extended/delr.rst:127
+msgid ""
+"The room temperature structure of PbTiO\\ :sub:`3` is a tetragonal "
+"modification of the perovskite structure. The c-axis is considerably "
+"longer than the a-axis. The Pb atoms lie at the corners of the tetragonal"
+" cell, the Ti atom lies near the center of the cell, and the O atoms lie "
+"near the centers of the faces."
+msgstr ""
+
+#: ../../extended/delr.rst:133
+msgid ""
+"In a setting which places the Pb atoms at positions of high symmetry, "
+"i.e. right on the cell corners, the other atoms are displaced from sites "
+"of symmetry c-direction. Here is the crystal data:"
+msgstr ""
+
+#: ../../extended/delr.rst:151
+msgid ""
+"There are 5 parameters that determine the positions of all the atoms in "
+"the crystal, thus there are 5 parameters that determine the lengths of "
+"all scattering paths. They are the two lattice constants, the "
+"z-displacement of the Ti away from z=0, the z-displacement of the axial "
+"oxygen atom away from z=0.5, and the z-displacement of the planar oxygen "
+"atom away from z=0.5."
+msgstr ""
+
+#: ../../extended/delr.rst:158
+msgid "We set up a set of guess, def, and set parameters to encode this:"
+msgstr ""
+
+#: ../../extended/delr.rst:182
+msgid "Schematic of the displacement in PbTiO\\ :sub:`3`."
+msgstr ""
+
+#: ../../extended/delr.rst:185
+msgid ""
+"I have also defined an after parameter which computes the volume of the "
+"unit cell. While this will not serve a purpose in the fitting model, it "
+"is useful information to report to the log file."
+msgstr ""
+
+#: ../../extended/delr.rst:189
+msgid ""
+"A 2-dimensional cut through this distorted perovskite is shown to the "
+"right. The Pb atoms are above and below this plane, the axial oxygen "
+"atoms are in line with the titanium atoms. The planar oxygen atoms are in"
+" a slightly non-collinear, buckled alignment with the Ti atoms."
+msgstr ""
+
+#: ../../extended/delr.rst:194
+msgid ""
+"The distortions of the Ti and O atoms split the first coordination shell "
+"into three distance. Along the z-direction, there is a short Ti-O "
+"distance and long one. In the buckled plane, there are four equivalent "
+"Ti-O distances."
+msgstr ""
+
+#: ../../extended/delr.rst:199
+msgid ""
+"Computing these distances requires some simple geometry, with the planar "
+"distance being just a bit more complicated."
+msgstr ""
+
+#: ../../extended/delr.rst:209
+msgid ""
+"The second shell Pb atoms are similarly computed using trigonometry and "
+"the appropriate structural parameters."
+msgstr ""
+
+#: ../../extended/delr.rst:217
+msgid ""
+"Finally, the Ti-Ti distances in the thrid coordination shell are "
+"comparatively trivial. This shell is split by the tetragonal distortion "
+"into two subshells. The distances are the lattice constants, as you can "
+"be seen in the schematic above."
+msgstr ""
+
+#: ../../extended/delr.rst:222
+msgid ""
+"We now have math expressions for the interatomic distances between the Ti"
+" absorber and each type of scatterer up to the third coordination shell. "
+"These math expressions for these 7 paths are expressed in terms of the 5 "
+"guess parameters above. The nice thing about these expressions is that "
+"the interatomic distances are expressed in terms of easily intepretable "
+"parameters of the crystal structure."
+msgstr ""
+
+#: ../../extended/delr.rst:229
+msgid ""
+"Now, encoding the |Delta| R path parameter for each of these paths is "
+"simple.  We just subtract R\\ :sub:`eff` from the corresponding math "
+"expression."
+msgstr ""
+
+#: ../../extended/delr.rst:256
+msgid ""
+"There are important collinear or nearly-collinear multiple scattering "
+"paths at the distance of the third shell Ti atom. These are shown in the "
+"yellow and green shaded areas of the schematic above."
+msgstr ""
+
+#: ../../extended/delr.rst:260
+msgid ""
+"The |Delta| R parameters for the axial multiple scattering paths are "
+"simply the same as for the corresponding single scattering path. This is "
+"the case because the distortions in PbTiO\\ :sub:`3` are all in the ẑ "
+"direction, so those MS paths must have the same length as the "
+"corresponding SS paths."
+msgstr ""
+
+#: ../../extended/delr.rst:266
+msgid ""
+"In the planar direction, you need to add up the lengths of the legs and "
+"subtract R\\ :sub:`eff` for their |Delta| R parameters:"
+msgstr ""
+
+#: ../../extended/delr.rst:277
+msgid ""
+"This strategy of adding up leg lengths works for any kind of multiple "
+"scattering path you include in this fit."
+msgstr ""
+
+#: ../../extended/delr.rst:280
+msgid ""
+"This is lovely! With 5 guess parameters and some well-considered math "
+"expressions, we are able to encode |Delta| R parameters for all the paths"
+" in the fit. As more scattering paths are considered for the fit, it is "
+"not necessary to include any more guess parameters for |Delta| R."
+msgstr ""
+
+#: ../../extended/delr.rst:289
+msgid "Parametrizations of distance in non-crystalline materials"
+msgstr ""
+
+#: ../../extended/delr.rst:291
+msgid ""
+"Interesting geometrical constraints on distance are not the sole province"
+" of crystalline materials. In the following two papers, I show the "
+"details of an analysis of Hg bound to the pyrimidine ring of a nucleotide"
+" in a synthetic DNA structure. To cope with severe information limits in "
+"my data, I made some simplifying assumptions about the structure of the "
+"Hg/DNA complex. I then employed a bit of trigonometry to express all the "
+"absorber-scatterer distances as functions of a small number of guess "
+"parameters."
+msgstr ""
+
+#: ../../extended/delr.rst
+msgid "Todo"
+msgstr ""
+
+#: ../../extended/delr.rst:305
+msgid "Summarize parametrization from J Phys Conf Proc paper"
+msgstr ""
+
+#: ../../extended/delr.rst:315
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../extended/delr.rst:320
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../extended/delr.rst:324
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

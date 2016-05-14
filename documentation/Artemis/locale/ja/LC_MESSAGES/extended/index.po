@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Artemis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Artemis 0.9.25\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-14 22:07+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../extended/index.rst:44
+msgid "Extended discussions"
+msgstr ""
+
+#: ../../extended/index.rst:46
+msgid ""
+"This section is a catch-all for topics of data analysis and the operation"
+" of :demeter:`artemis` that simply did not fit in other parts of this "
+"users' guide."
+msgstr ""
+
+#: ../../extended/index.rst
+msgid "Todo"
+msgstr ""
+
+#: ../../extended/index.rst:51
+msgid ""
+"Pages are needed explaining: (1) Histograms, (2) background co-refinement"
+" (3) constraints and restraints"
+msgstr ""
+
+#: ../../extended/index.rst:58
+msgid "**Topics related to fitting EXAFS data**"
+msgstr ""
+
+#: ../../extended/index.rst:71
+msgid "**Topics related to running Feff**"
+msgstr ""
+
+#: ../../extended/index.rst:90
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../extended/index.rst:95
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../extended/index.rst:99
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

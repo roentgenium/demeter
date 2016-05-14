@@ -1,0 +1,146 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Artemis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Artemis 0.9.25\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-14 22:07+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../feff/feff.rst:43
+msgid "The Feff tab"
+msgstr ""
+
+#: ../../feff/feff.rst:45
+msgid ""
+"The :demeter:`feff6` document can be `found here "
+"<http://www.feffproject.org/FEFF/Docs/feff6/feff6.html>`__."
+msgstr ""
+
+#: ../../feff/feff.rst:48
+msgid ""
+"The :demeter:`feff9` document can be `found here "
+"<http://leonardo.phys.washington.edu/feff/wiki/static/f/e/f/FEFF_Documentation_b0ae.html>`__."
+msgstr ""
+
+#: ../../feff/feff.rst:51
+msgid ""
+"When you click the :button:`Run Atoms,light` button on the "
+":demeter:`atoms` tab, the resulting input data for :demeter:`feff`, which"
+" constists of a list of Cartesian coordinates for the atoms in the "
+"cluster, is written to the :demeter:`feff` tab. The :demeter:`feff` tab "
+"is then displayed."
+msgstr ""
+
+#: ../../feff/feff.rst:62
+msgid "The Feff tab."
+msgstr ""
+
+#: ../../feff/feff.rst:64
+msgid ""
+"The box containing the :demeter:`feff` input data is a simple text entry "
+"box. If you wish to make any modifications to the input data for the "
+":demeter:`feff` calculation, you can edit the text directly. Although it "
+"is most common to run the :demeter:`feff` calculation straight away, "
+"there are a number of situations where directly editing the input data "
+"prior to running :demeter:`feff` is desirable."
+msgstr ""
+
+#: ../../feff/feff.rst:71
+msgid ""
+"The :button:`Open,light` button can be used to import a different "
+":file:`feff.inp` file.  :mark:`rightclick,..` *Right clicking* that "
+"button posts the recently used file dialog. The :button:`Save,light` "
+"button will post the standard column selection dialog for choosing a file"
+" name for saving the current :demeter:`feff` input data. The "
+":button:`Clear,light` button will remove all text from the big text box."
+msgstr ""
+
+#: ../../feff/feff.rst:79
+msgid ""
+"The :demeter:`feff` calculation is started by clicking the :button:`Run "
+"Feff,light` button."
+msgstr ""
+
+#: ../../feff/feff.rst:82
+msgid ""
+"Above the box containing the :file:`feff.inp` file are three text "
+"controls. The first contains the name of this :demeter:`feff` "
+"calculation. The other two set the parameters used for `fuzzy degeneracy "
+"<../extended/fuzzy.html>`__."
+msgstr ""
+
+#: ../../feff/feff.rst:87
+msgid ""
+"See `the discussion of 5- and 6-legged paths "
+"<../extended/finesix.html>`__ before telling :demeter:`artemis` to "
+"compute paths of higher order than triple scattering."
+msgstr ""
+
+#: ../../feff/feff.rst:93
+msgid "Feff documentation"
+msgstr ""
+
+#: ../../feff/feff.rst:95
+msgid ""
+"This page allows you to link directly to :demeter:`feff`'s documentation."
+"  :mark:`rightclick,..` Right clicking on the text window containing the "
+":file:`feff.inp` usually posts the standard :guilabel:`cut/copy/paste` "
+"menu.  However, if you :mark:`rightclick,..` right click on one of "
+":demeter:`feff`'s keywords (or :quoted:`cards`), you will get a small "
+"menu which will link you to the documentation for that keyword. Clicking "
+"on the posted menu will open a browser and display the appropriate "
+"document page from `The Feff Project website <http://feffproject.org>`__."
+msgstr ""
+
+#: ../../feff/feff.rst:110
+msgid "Right clicking on a Feff card for a direct link to Feff's documentation."
+msgstr ""
+
+#: ../../feff/feff.rst:116
+msgid "Feff input templates"
+msgstr ""
+
+#: ../../feff/feff.rst:118
+msgid ""
+"The :guilabel:`Template` button is used to put boilerplate for "
+":demeter:`feff` input data into the big text box. This is useful if your "
+"list of Cartesian coordinates comes from some other source. In that case,"
+" you might cut and paste that text from the other source and fill in the "
+"indicated blanks and the ``POTENTIALS`` list as appropriate for your "
+"calculation."
+msgstr ""
+
+#: ../../feff/feff.rst:130
+msgid "A Feff template."
+msgstr ""
+
+#: ../../feff/feff.rst:141
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../feff/feff.rst:146
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../feff/feff.rst:150
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+

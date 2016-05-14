@@ -1,0 +1,219 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2016, Bruce Ravel
+# This file is distributed under the same license as the Artemis package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Artemis 0.9.25\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-14 22:07+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../extended/fivesix.rst:44
+msgid "5 & 6 legged paths"
+msgstr ""
+
+#: ../../extended/fivesix.rst:48
+msgid "Examples of situations requiring consideration of higher order paths"
+msgstr ""
+
+#: ../../extended/fivesix.rst:50
+msgid ""
+"Normally, the `pathfinder <../feff/paths.html>`__ in :demeter:`artemis`'s"
+" implementation of :demeter:`feff` only considers up to triple scattering"
+" (4-legged) paths. This is for two reasons. First, :demeter:`artemis`'s "
+"pathfinder is a bit slow. Second, it is rather uncommon to need higher "
+"order paths in an EXAFS analysis. Here are a few examples."
+msgstr ""
+
+#: ../../extended/fivesix.rst:57
+msgid ""
+"Paradibromobenzene is a benzene molecule |nd| a ring of 6 carbon atoms "
+"|nd| with two of the hydrogen ligands replaced by bromine. The bromine "
+"atoms are in the para (1-4) arrangement, i.e. on opposite corners of the "
+"benzene ring."
+msgstr ""
+
+#: ../../extended/fivesix.rst:62
+msgid ""
+"Being the only heavy scatterer in a rigid structure, the second bromine "
+"atom is quite evident in the EXAFS, giving rise to the large peak just "
+"above 6 |AA| in the |chi| (R) data shown below."
+msgstr ""
+
+#: ../../extended/fivesix.rst:73
+msgid "The paradibromobenzene molecule"
+msgstr ""
+
+#: ../../extended/fivesix.rst:80
+msgid "|chi| (R) data for paradibromobenzene."
+msgstr ""
+
+#: ../../extended/fivesix.rst:87
+msgid ""
+"That big peak resulting from the second bromine atom includes not just "
+"the single scattering contribution, but a number of collinear multiple "
+"scattering paths. This includes the 5-legged paths that scatter from both"
+" carbon atoms on the way to (or from) the bromine atoms, and the 6-legged"
+" path that includes forward scattering from both carbon atoms in both "
+"directions."
+msgstr ""
+
+#: ../../extended/fivesix.rst:94
+msgid ""
+"5- and 6-legged paths are, in general, only important in EXAFS for "
+"structures that are both rigid and have 4 collinear atoms. This is pretty"
+" high bar, which is why examples are few and far between. That said, here"
+" are a couple more examples."
+msgstr ""
+
+#: ../../extended/fivesix.rst:106
+msgid "Prussian blue"
+msgstr ""
+
+#: ../../extended/fivesix.rst:108
+msgid ""
+"Prussian blue, ferric ferrocyanate, represents a class of framework-"
+"structured materials that have metal atoms at corner positions in the "
+"unit cell. These metal atoms are bridged by cyanide molecules. This is "
+"much like a rocksalt structure, but with the cation replaced by a cyanide"
+" molecule oriented in the direction of the bond."
+msgstr ""
+
+#: ../../extended/fivesix.rst:114
+msgid ""
+"The metal anions are separated by about 5.1 |AA|, thus are at a distance "
+"that can easily be resolved and analyzed with good EXAFS data. To "
+"interpret that part of the EXAFS signal, however, it is necessary to "
+"consider all the multiple scattering paths involving the C, N, and Fe "
+"atoms. This includes significant, collinear 5- and 6-legged paths."
+msgstr ""
+
+#: ../../extended/fivesix.rst:121
+msgid ""
+"The final example is good ol' copper metal, which is often analyzed out "
+"to about 5 |AA|, a distance which includes 5 coordination shells and a "
+"number of double and triple scattering paths. To analyze farther in R, "
+"one eventual gets to the single scattering path which includes the face "
+"center atom in the diagonally adjacent cell. In the figure below, the "
+"absorber is represented by the pink atom. The distant neighbor is the "
+"farthest lavender-colored atom. To analyze the single scattering "
+"contribution from that distance would require consideration of all the "
+"multiple scattering among the pink and lavender atoms, which are "
+"collinear along that unit cell diagonal."
+msgstr ""
+
+#: ../../extended/fivesix.rst:139
+msgid ""
+"4 unit cells of FCC copper with the collinear atoms contributing at about"
+" 7 |AA| highlighted in lavender."
+msgstr ""
+
+#: ../../extended/fivesix.rst:147
+msgid ""
+"On the right is χ(R) data for copper metal. The signal from the various "
+"SS and MS involving the lavender atoms paths contributes to the the peaks"
+" around 7 |AA|."
+msgstr ""
+
+#: ../../extended/fivesix.rst:159
+msgid "5 and 6 legged paths in Artemis"
+msgstr ""
+
+#: ../../extended/fivesix.rst:161
+msgid ""
+"Enabling the calculation of 5- and 6-legged paths significantly slows "
+"down the pathfinder calculation in :demeter:`artemis`. If you are unsure "
+"whether you need 5- and 6-legged paths, you almost certainly **do not** "
+"want to do so!"
+msgstr ""
+
+#: ../../extended/fivesix.rst:166
+msgid ""
+"The default behavior in :demeter:`artemis` is to compute up to 4-legged "
+"paths. For any :demeter:`feff` calculation, this can be extended to "
+"include 5- and 6-legged paths by selecting the :guilabel:`6` button, as "
+"indicated in the screenshot below.  Note that this sets the order of "
+"scattering paths only for the current :demeter:`feff` calculation. The "
+"default for all subsequent :demeter:`feff` calculations will again be "
+"4-legged paths. The `aggregate calculation <../feff/aggregate.html>`__ is"
+" always made with up to 4-legged paths."
+msgstr ""
+
+#: ../../extended/fivesix.rst:183
+msgid ""
+"The Feff tool showing the check box for selecting order of multiple "
+"scattering."
+msgstr ""
+
+#: ../../extended/fivesix.rst:187
+msgid ""
+"Besides being slow, the other consequence of setting the upper order of "
+"multiple scattering to 6 is that the `path list <../feff/paths.html>`__ "
+"will be much longer and possibly more confusing. Really, truly! Don't use"
+" this feature of :demeter:`artemis` unless you have a very good reason to"
+" do so."
+msgstr ""
+
+#: ../../extended/fivesix.rst:193
+msgid ""
+"Some `configuration parameters <../prefs.html>`__ that relate to choice "
+"of the order of multiple scattering:"
+msgstr ""
+
+#: ../../extended/fivesix.rst:196
+msgid ""
+":configparam:`Pathfinder,suppress_5_6_not_straight`: When true, only "
+"consider 5- and 6-legged paths that have scattering angles within "
+":configparam:`Pathfinder,fs_angle` (typically 20 degrees) of 0 or 180 "
+"degrees.  That is, suppress all paths with angles far from forward and "
+"backward scattering."
+msgstr ""
+
+#: ../../extended/fivesix.rst:202
+msgid ""
+":configparam:`Atoms,suppress_nleg_warning`: When true, this will suppress"
+" the dialog box posted by :demeter:`atoms` when you select the "
+":guilabel:`6` button warning you against considering 5- and 6-legged "
+"paths."
+msgstr ""
+
+#: ../../extended/fivesix.rst:207
+msgid ""
+":configparam:`Pathfinder,eta_suppress`: If you need to consider nearly "
+"collinear paths in a structure with buckling of atomic planes, you may "
+"need to set this parameter to false. When true, it suppresses any path "
+"with a non-zero Eulerian |eta| angle. In most cases, this is a good "
+"heuristic for removing irrelevant paths from the path list, however for "
+"orders of scattering above 4 and nearly collinear paths, this filter "
+"might remove desirable paths. Use this with caution as it will greatly "
+"expand the size of the path list."
+msgstr ""
+
+#: ../../extended/fivesix.rst:224
+msgid ""
+":demeter:`demeter` is copyright |copy| 2009-2016 Bruce Ravel |ndash| This"
+" document is copyright |copy| 2016 Bruce Ravel"
+msgstr ""
+
+#: ../../extended/fivesix.rst:229
+msgid ""
+"This document is licensed under `The Creative Commons Attribution-"
+"ShareAlike License <http://creativecommons.org/licenses/by-sa/3.0/>`__."
+msgstr ""
+
+#: ../../extended/fivesix.rst:233
+msgid ""
+"If :demeter:`demeter` and this document are useful to you, please "
+"consider `supporting The Creative Commons "
+"<http://creativecommons.org/support/>`__."
+msgstr ""
+
